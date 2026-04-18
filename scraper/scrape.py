@@ -102,11 +102,7 @@ def fetch_url(url: str, extra_headers: Optional[dict] = None) -> Optional[str]:
         with urlopen(req, timeout=REQUEST_TIMEOUT_SEC) as resp:
             raw = resp.read()
         return raw.decode("utf-8", errors="replace")
-    except HTTPError as e:
-        if e.code in (403, 404, 500):
-            return None
-        raise
-    except (URLError, TimeoutError, OSError):
+    except (HTTPError, URLError, TimeoutError, OSError):
         return None
 
 # ---------------------------------------------------------------------------

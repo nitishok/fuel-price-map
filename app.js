@@ -259,7 +259,7 @@ function updateStatusLine() {
     timeStyle: "short",
   });
   statusEl.textContent =
-    `Prices for ${FUEL_CITIES.length} cities • last updated ${pretty} • source: ${DATA_SOURCE}`;
+    `Prices for ${FUEL_CITIES.length} cities • last updated ${pretty}`;
   statusEl.classList.remove("is-stale");
 }
 
