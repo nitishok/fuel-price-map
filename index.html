@@ -63,7 +63,7 @@
     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
     crossorigin=""
   />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css?v=7" />
 </head>
 <body>
   <header class="app-header">
@@ -85,7 +85,7 @@
     </div>
   </header>
 
-  <main>
+  <main class="map-viewport">
     <div id="map" role="application" aria-label="Map of India"></div>
     <aside id="info-panel" class="info-panel">
       <h2>Fuel Prices in India</h2>
@@ -151,6 +151,55 @@
     </aside>
   </main>
 
+  <!-- ── Below-map content: metro cities + state table ── -->
+  <section class="content-section">
+
+    <!-- Metro cities grid — first below the map -->
+    <div class="content-block">
+      <h2 class="content-heading">Fuel Prices in Top 20 Indian Metro Cities</h2>
+      <p class="content-desc">Today's petrol &amp; diesel rates across India's biggest economic hubs. Click a row to locate the city on the map.</p>
+      <div class="table-wrap">
+        <table class="state-table" id="metro-table">
+          <thead>
+            <tr>
+              <th>City</th>
+              <th class="th-left">State</th>
+              <th>Petrol</th>
+              <th>Diesel</th>
+            </tr>
+          </thead>
+          <tbody id="metro-table-body">
+            <tr><td colspan="4" class="tbl-loading">Loading…</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- State table — moved to the end -->
+    <div class="content-block">
+      <h2 class="content-heading">Petrol &amp; Diesel Prices by State</h2>
+      <p class="content-desc">Average fuel prices across all cities tracked per state, sorted cheapest petrol first. Includes the city with the lowest petrol and diesel price in each state.</p>
+      <div class="table-wrap">
+        <table class="state-table" id="state-table">
+          <thead>
+            <tr>
+              <th>State / UT</th>
+              <th>Avg Petrol</th>
+              <th>Avg Diesel</th>
+              <th class="th-left">Lowest Petrol</th>
+              <th class="th-left">Lowest Diesel</th>
+              <th>Cities</th>
+            </tr>
+          </thead>
+          <tbody id="state-table-body">
+            <tr><td colspan="6" class="tbl-loading">Loading…</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </section>
+
   <footer class="site-footer">
     <p>&copy; 2026 whatispetrolprice.in &middot; All rights reserved</p>
     <p>
@@ -166,7 +215,7 @@
     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
     crossorigin=""
   ></script>
-  <script src="data.js"></script>
-  <script src="app.js"></script>
+  <script src="data.js?v=3"></script>
+  <script src="app.js?v=4"></script>
 </body>
 </html>

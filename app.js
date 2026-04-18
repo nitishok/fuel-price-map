@@ -20,6 +20,7 @@ async function loadFreshData() {
     rebuildMarkers();
     updateStatusLine();
     updateQuickStats();
+    updateBelowMap();
   } catch (err) {
     // data.json unavailable (e.g. opened via file://) — silently fall back.
     console.warn("data.json unavailable, using bundled data.js", err);
@@ -289,6 +290,98 @@ function updateQuickStats() {
   el("qs-costliest-diesel").textContent= fmt(byDiesel[byDiesel.length - 1].diesel, byDiesel[byDiesel.length - 1].name);
 }
 
+// ---------- metro cities grid ----------
+
+const METRO_CITIES = [
+  "Mumbai", "New Delhi", "Bengaluru", "Hyderabad", "Ahmedabad",
+  "Chennai", "Kolkata", "Surat", "Pune", "Jaipur",
+  "Lucknow", "Kanpur", "Nagpur", "Indore", "Bhopal",
+  "Visakhapatnam", "Patna", "Vadodara", "Kochi", "Coimbatore",
+  "Guwahati", "Ranchi", "Chandigarh", "Thiruvananthapuram", "Varanasi"
+];
+
+function updateMetroCities() {
+  const tbody = document.getElementById("metro-table-body");
+  if (!tbody || !FUEL_CITIES.length) return;
+
+  tbody.innerHTML = METRO_CITIES.map((name, i) => {
+    const city = FUEL_CITIES.find(c => c.name.toLowerCase() === name.toLowerCase());
+    if (!city) {
+      return `<tr class="${i % 2 === 0 ? "tr-even" : "tr-odd"}">
+        <td class="td-state">${name}</td>
+        <td class="td-city" colspan="3">data unavailable</td>
+      </tr>`;
+    }
+    return `<tr class="${i % 2 === 0 ? "tr-even" : "tr-odd"} metro-row" data-name="${city.name}" style="cursor:pointer">
+      <td class="td-state">${city.name}</td>
+      <td class="td-city">${city.state}</td>
+      <td class="td-petrol">₹${city.petrol.toFixed(2)}</td>
+      <td class="td-diesel">₹${city.diesel.toFixed(2)}</td>
+    </tr>`;
+  }).join("");
+
+  // Click row → pan map to city
+  tbody.querySelectorAll(".metro-row").forEach(row => {
+    row.addEventListener("click", () => {
+      const name = row.getAttribute("data-name");
+      const entry = markersByName.get(name.toLowerCase());
+      if (!entry) return;
+      map.setView([entry.city.lat, entry.city.lng], 11, { animate: true });
+      entry.marker.openPopup();
+      showPriceCard(entry.city, 0);
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  });
+}
+
+// ---------- below-map content: state table ----------
+
+function updateBelowMap() {
+  if (!FUEL_CITIES.length) return;
+
+  // ── Metro cities ──
+  updateMetroCities();
+
+  // ── State table ──
+  const stateMap = {};
+  for (const c of FUEL_CITIES) {
+    if (!stateMap[c.state]) stateMap[c.state] = { petrol: [], diesel: [], cities: [], count: 0 };
+    stateMap[c.state].petrol.push(c.petrol);
+    stateMap[c.state].diesel.push(c.diesel);
+    stateMap[c.state].cities.push(c);
+    stateMap[c.state].count++;
+  }
+  const avg = arr => arr.reduce((s, v) => s + v, 0) / arr.length;
+  const states = Object.entries(stateMap)
+    .map(([name, d]) => {
+      const lowestPetrol = d.cities.reduce((a, b) => a.petrol < b.petrol ? a : b);
+      const lowestDiesel = d.cities.reduce((a, b) => a.diesel < b.diesel ? a : b);
+      return {
+        name,
+        avgPetrol: avg(d.petrol),
+        avgDiesel: avg(d.diesel),
+        count: d.count,
+        lowestPetrolCity: `₹${lowestPetrol.petrol.toFixed(2)} (${lowestPetrol.name})`,
+        lowestDieselCity: `₹${lowestDiesel.diesel.toFixed(2)} (${lowestDiesel.name})`,
+      };
+    })
+    .sort((a, b) => a.avgPetrol - b.avgPetrol);
+
+  const tbody = document.getElementById("state-table-body");
+  if (tbody) {
+    tbody.innerHTML = states.map((s, i) => `
+      <tr class="${i % 2 === 0 ? "tr-even" : "tr-odd"}">
+        <td class="td-state">${s.name}</td>
+        <td class="td-petrol">₹${s.avgPetrol.toFixed(2)}</td>
+        <td class="td-diesel">₹${s.avgDiesel.toFixed(2)}</td>
+        <td class="td-city">${s.lowestPetrolCity}</td>
+        <td class="td-city td-city--diesel">${s.lowestDieselCity}</td>
+        <td class="td-count">${s.count}</td>
+      </tr>`).join("");
+  }
+}
+
 updateStatusLine();
 updateQuickStats();
+updateBelowMap();
 loadFreshData();

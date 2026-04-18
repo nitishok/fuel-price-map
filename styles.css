@@ -16,7 +16,6 @@
 html, body {
   margin: 0;
   padding: 0;
-  height: 100%;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif;
   color: #1f2937;
@@ -26,7 +25,14 @@ html, body {
 body {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
+}
+
+/* The map+panel row fills exactly the viewport minus the header */
+.map-viewport {
+  display: flex;
+  flex: none;
+  height: calc(100vh - 64px); /* header height approx */
 }
 
 .app-header {
@@ -113,7 +119,6 @@ body {
 }
 
 main {
-  flex: 1;
   display: flex;
   min-height: 0;
 }
@@ -353,6 +358,90 @@ main {
   font-size: 11px;
   color: #6b7280;
   line-height: 1.5;
+}
+
+/* ── Below-map content section ── */
+.content-section {
+  background: #f9fafb;
+  border-top: 1px solid #e5e7eb;
+  padding: 24px 16px 32px;
+}
+
+.content-block {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.content-heading {
+  margin: 0 0 4px 0;
+  font-size: 15px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.content-desc {
+  margin: 0 0 12px 0;
+  font-size: 12px;
+  color: #6b7280;
+  line-height: 1.5;
+}
+
+/* State table */
+.table-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.state-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.state-table thead th {
+  background: #f0fdf9;
+  color: #0f766e;
+  font-weight: 600;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 8px 10px;
+  text-align: left;
+  border-bottom: 2px solid #99f6e4;
+  white-space: nowrap;
+}
+
+.state-table thead th:not(:first-child) {
+  text-align: right;
+}
+
+.tr-even { background: #fff; }
+.tr-odd  { background: #f9fafb; }
+
+.state-table td {
+  padding: 7px 10px;
+  border-bottom: 1px solid #f3f4f6;
+  color: #374151;
+}
+
+.td-state  { font-weight: 500; color: #111827; }
+.td-petrol { text-align: right; color: #065f46; font-weight: 500; }
+.td-diesel { text-align: right; color: #1e3a8a; font-weight: 500; }
+.td-count  { text-align: right; color: #374151; }
+.tbl-loading { text-align: center; color: #9ca3af; padding: 20px; }
+
+/* State table + metro table extra columns */
+.th-left { text-align: left !important; }
+.td-city { color: #374151; text-align: left; }
+.td-city--diesel { color: #1e3a8a; }
+
+@media (min-width: 700px) {
+  .content-section {
+    padding: 28px 32px 40px;
+  }
 }
 
 /* ── Footer ── */
