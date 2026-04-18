@@ -3,7 +3,51 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>India Fuel Price Map</title>
+
+  <!-- Primary SEO -->
+  <title>Live Petrol &amp; Diesel Prices India | City-wise Fuel Rate Map</title>
+  <meta name="description" content="Check today's petrol and diesel prices across 236 cities in India. Live city-wise fuel rate map updated hourly from official retail listings. Find cheapest petrol prices near you." />
+  <meta name="keywords" content="petrol price today, diesel price today, petrol price India, fuel price map, city wise petrol price, today petrol rate, petrol price per litre, diesel rate India, fuel prices 2026" />
+  <meta name="author" content="whatispetrolprice.in" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.whatispetrolprice.in/" />
+
+  <!-- Open Graph (WhatsApp / Facebook previews) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.whatispetrolprice.in/" />
+  <meta property="og:title" content="Live Petrol &amp; Diesel Prices India | City-wise Fuel Rate Map" />
+  <meta property="og:description" content="Check today's petrol and diesel prices across 236 cities in India. Live fuel rate map updated hourly." />
+  <meta property="og:site_name" content="whatispetrolprice.in" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Live Petrol &amp; Diesel Prices India | City-wise Fuel Rate Map" />
+  <meta name="twitter:description" content="Check today's petrol and diesel prices across 236 cities in India. Updated hourly." />
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "whatispetrolprice.in",
+    "url": "https://www.whatispetrolprice.in/",
+    "description": "Live petrol and diesel prices across 236 cities in India, updated hourly from official retail listings.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "whatispetrolprice.in",
+      "url": "https://www.whatispetrolprice.in/"
+    },
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://www.whatispetrolprice.in/?city={search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-SH6P2BJFRM"></script>
@@ -70,6 +114,40 @@
         Prices are sourced daily from publicly available retail listings and
         may not reflect real-time rates.
       </p>
+
+      <!-- Option A: Current Prices -->
+      <div class="quick-stats">
+        <h3 class="qs-title">Current Prices</h3>
+        <div class="qs-row"><span class="qs-label">Average petrol price</span><strong id="qs-avg-petrol">—</strong></div>
+        <div class="qs-row"><span class="qs-label">Average diesel price</span><strong id="qs-avg-diesel">—</strong></div>
+        <div class="qs-divider"></div>
+        <div class="qs-row qs-cheapest"><span class="qs-label">Cheapest petrol</span><strong id="qs-cheapest-petrol">—</strong></div>
+        <div class="qs-row qs-costliest"><span class="qs-label">Costliest petrol</span><strong id="qs-costliest-petrol">—</strong></div>
+        <div class="qs-divider"></div>
+        <div class="qs-row qs-cheapest"><span class="qs-label">Cheapest diesel</span><strong id="qs-cheapest-diesel">—</strong></div>
+        <div class="qs-row qs-costliest"><span class="qs-label">Costliest diesel</span><strong id="qs-costliest-diesel">—</strong></div>
+      </div>
+
+      <!-- Option B: Mini FAQ -->
+      <div class="faq-section">
+        <h3 class="faq-title">FAQs</h3>
+        <div class="faq-item">
+          <p class="faq-q">Why do petrol prices differ by city?</p>
+          <p class="faq-a">Fuel prices vary due to local VAT, freight charges, and state-level taxes applied on top of the central base price revised daily by oil companies.</p>
+        </div>
+        <div class="faq-item">
+          <p class="faq-q">How often are prices updated?</p>
+          <p class="faq-a">This map fetches fresh prices every hour from publicly available retail fuel listings across India.</p>
+        </div>
+        <div class="faq-item">
+          <p class="faq-q">Which city has the cheapest petrol today?</p>
+          <p class="faq-a">Check the "Today's Snapshot" above — or click any marker on the map to see city-specific petrol and diesel rates.</p>
+        </div>
+        <div class="faq-item">
+          <p class="faq-q">Are these prices official?</p>
+          <p class="faq-a">Prices are sourced from publicly available retail listings and are for informational purposes only. For the exact rate, check with your local fuel station.</p>
+        </div>
+      </div>
     </aside>
   </main>
 

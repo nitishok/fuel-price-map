@@ -19,6 +19,7 @@ async function loadFreshData() {
     DATA_SOURCE = json.source || "data.json";
     rebuildMarkers();
     updateStatusLine();
+    updateQuickStats();
   } catch (err) {
     // data.json unavailable (e.g. opened via file://) — silently fall back.
     console.warn("data.json unavailable, using bundled data.js", err);
@@ -266,5 +267,28 @@ function updateStatusLine() {
   statusEl.classList.remove("is-stale");
 }
 
+// ---------- quick stats ----------
+
+function updateQuickStats() {
+  if (!FUEL_CITIES.length) return;
+
+  const avgPetrol = FUEL_CITIES.reduce((s, c) => s + c.petrol, 0) / FUEL_CITIES.length;
+  const avgDiesel = FUEL_CITIES.reduce((s, c) => s + c.diesel, 0) / FUEL_CITIES.length;
+
+  const byPetrol  = [...FUEL_CITIES].sort((a, b) => a.petrol - b.petrol);
+  const byDiesel  = [...FUEL_CITIES].sort((a, b) => a.diesel - b.diesel);
+
+  const fmt = (price, city) => `₹${price.toFixed(2)}/L (${city})`;
+
+  const el = (id) => document.getElementById(id);
+  el("qs-avg-petrol").textContent      = `₹${avgPetrol.toFixed(2)}/L`;
+  el("qs-avg-diesel").textContent      = `₹${avgDiesel.toFixed(2)}/L`;
+  el("qs-cheapest-petrol").textContent = fmt(byPetrol[0].petrol,  byPetrol[0].name);
+  el("qs-costliest-petrol").textContent= fmt(byPetrol[byPetrol.length - 1].petrol, byPetrol[byPetrol.length - 1].name);
+  el("qs-cheapest-diesel").textContent = fmt(byDiesel[0].diesel,  byDiesel[0].name);
+  el("qs-costliest-diesel").textContent= fmt(byDiesel[byDiesel.length - 1].diesel, byDiesel[byDiesel.length - 1].name);
+}
+
 updateStatusLine();
+updateQuickStats();
 loadFreshData();
