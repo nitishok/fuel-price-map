@@ -1,0 +1,14 @@
+# Python
+scraper/__pycache__/
+scraper/*.pyc
+*.py[cod]
+
+# macOS
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
+
+# Local dev server / Claude tooling
+.claude/

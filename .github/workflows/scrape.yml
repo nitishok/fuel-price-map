@@ -1,0 +1,42 @@
+name: Daily fuel price refresh
+
+on:
+  schedule:
+    # 8:30 AM IST = 03:00 UTC
+    - cron: '0 3 * * *'
+  workflow_dispatch:   # lets you trigger manually from the Actions tab
+
+permissions:
+  contents: write      # needed to commit data.json back
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30   # scraper takes ~10 min for 236 cities
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run scraper
+        run: python3 scraper/scrape.py --verbose
+
+      - name: Commit updated data.json
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data.json
+          # Only commit if data.json actually changed
+          git diff --staged --quiet && echo "No changes to data.json" || \
+            git commit -m "chore: refresh fuel prices $(date -u +'%Y-%m-%d') [skip ci]"
+
+      - name: Push changes
+        uses: ad-m/github-push-action@v0.8.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: main

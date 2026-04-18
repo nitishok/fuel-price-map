@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>India Fuel Price Map</title>
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="app-header">
+    <div class="title">
+      <h1>India Fuel Price Map</h1>
+      <p class="subtitle">
+        Pan and zoom the map, or search a city. Click anywhere to see the
+        nearest town's petrol &amp; diesel prices.
+      </p>
+    </div>
+    <div class="search-wrap">
+      <input
+        id="search"
+        type="text"
+        placeholder="Search city or town (e.g. Mumbai, Jaipur, Kochi)"
+        autocomplete="off"
+      />
+      <ul id="search-results" class="search-results hidden"></ul>
+    </div>
+  </header>
+
+  <main>
+    <div id="map" role="application" aria-label="Map of India"></div>
+    <aside id="info-panel" class="info-panel">
+      <h2>Fuel Prices</h2>
+      <p class="hint">Click on the map or a marker to view prices.</p>
+      <div id="price-card" class="price-card hidden">
+        <div class="price-card-header">
+          <h3 id="pc-name">—</h3>
+          <p id="pc-region">—</p>
+        </div>
+        <div class="prices">
+          <div class="price petrol">
+            <span class="label">Petrol</span>
+            <span class="value" id="pc-petrol">—</span>
+            <span class="unit">₹ / L</span>
+          </div>
+          <div class="price diesel">
+            <span class="label">Diesel</span>
+            <span class="value" id="pc-diesel">—</span>
+            <span class="unit">₹ / L</span>
+          </div>
+        </div>
+        <p class="distance" id="pc-distance"></p>
+      </div>
+      <p id="data-status" class="data-status">Loading…</p>
+      <p class="disclaimer">
+        Prices are scraped daily from publicly-listed retail values and may
+        lag the official rate. For authoritative numbers, check your Oil
+        Marketing Company (IOCL/BPCL/HPCL).
+      </p>
+    </aside>
+  </main>
+
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""
+  ></script>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+# The scraper uses Python 3 standard library only — no pip install needed.
+# Python >= 3.8 is required.
+#
+# If you want to run a quick smoke-test of the HTTP stack:
+#   python3 -c "import urllib.request, re, json, time; print('OK')"
