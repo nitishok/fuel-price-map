@@ -47,6 +47,9 @@ L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
   maxZoom: 19,
 }).addTo(map);
 
+// Remove "Leaflet" branding — keep only the required OSM attribution.
+map.attributionControl.setPrefix("");
+
 // ---------- helpers ----------
 
 function haversineKm(lat1, lon1, lat2, lon2) {
