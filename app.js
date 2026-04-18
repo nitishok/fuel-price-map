@@ -309,12 +309,11 @@ function updateMetroCities() {
     if (!city) {
       return `<tr class="${i % 2 === 0 ? "tr-even" : "tr-odd"}">
         <td class="td-state">${name}</td>
-        <td class="td-city" colspan="3">data unavailable</td>
+        <td class="td-city" colspan="2">data unavailable</td>
       </tr>`;
     }
     return `<tr class="${i % 2 === 0 ? "tr-even" : "tr-odd"} metro-row" data-name="${city.name}" style="cursor:pointer">
       <td class="td-state">${city.name}</td>
-      <td class="td-city">${city.state}</td>
       <td class="td-petrol">₹${city.petrol.toFixed(2)}</td>
       <td class="td-diesel">₹${city.diesel.toFixed(2)}</td>
     </tr>`;
