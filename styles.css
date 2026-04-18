@@ -284,3 +284,24 @@ main {
     border-top: 1px solid #e5e7eb;
   }
 }
+
+/* ── Footer ── */
+.site-footer {
+  background: #1f2937;
+  color: #9ca3af;
+  font-size: 11px;
+  line-height: 1.6;
+  padding: 12px 24px;
+  text-align: center;
+  flex-shrink: 0;
+}
+.site-footer p {
+  margin: 2px 0;
+}
+.site-footer a {
+  color: #6b7280;
+  text-decoration: none;
+}
+.site-footer a:hover {
+  color: #d1d5db;
+}
