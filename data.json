@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-19T17:38:01+00:00",
+  "lastUpdated": "2026-04-19T18:46:52+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -744,7 +744,7 @@
       "lat": 23.2156,
       "lng": 72.6369,
       "petrol": 94.8,
-      "diesel": 90.15
+      "diesel": 90.47
     },
     {
       "name": "Bhuj",
@@ -960,7 +960,7 @@
       "lat": 28.6692,
       "lng": 77.4538,
       "petrol": 94.69,
-      "diesel": 87.79
+      "diesel": 87.7
     },
     {
       "name": "Prayagraj",
@@ -1872,7 +1872,7 @@
       "lat": 10.9254,
       "lng": 79.838,
       "petrol": 100.79,
-      "diesel": 86.42
+      "diesel": 92.38
     },
     {
       "name": "Yanam",
