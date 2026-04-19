@@ -24,6 +24,7 @@ Usage:
 from __future__ import annotations
 
 import argparse
+import http.client
 import json
 import os
 import re
@@ -103,7 +104,8 @@ def fetch_url(url: str, extra_headers: Optional[dict] = None) -> Optional[str]:
         with urlopen(req, timeout=REQUEST_TIMEOUT_SEC) as resp:
             raw = resp.read()
         return raw.decode("utf-8", errors="replace")
-    except (HTTPError, URLError, TimeoutError, OSError):
+    except (HTTPError, URLError, TimeoutError, OSError,
+            http.client.IncompleteRead, http.client.RemoteDisconnected):
         return None
 
 # ---------------------------------------------------------------------------
