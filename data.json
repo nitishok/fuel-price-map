@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-19T15:40:57+00:00",
+  "lastUpdated": "2026-04-19T16:40:35+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -288,7 +288,7 @@
       "lat": 9.9252,
       "lng": 78.1198,
       "petrol": 101.51,
-      "diesel": 93.28
+      "diesel": 93.13
     },
     {
       "name": "Tiruchirappalli",
@@ -864,7 +864,7 @@
       "lat": 27.2152,
       "lng": 77.4977,
       "petrol": 104.71,
-      "diesel": 89.99
+      "diesel": 90.21
     },
     {
       "name": "Sikar",
