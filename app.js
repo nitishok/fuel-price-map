@@ -7,16 +7,35 @@
 let FUEL_CITIES = Array.isArray(window.FUEL_DATA) ? window.FUEL_DATA.slice() : [];
 let LAST_UPDATED = null;
 let DATA_SOURCE = "seed:data.js";
+// city name (lowercase) → { petrol, diesel } from previous day
+let YESTERDAY_MAP = new Map();
 
 async function loadFreshData() {
   try {
-    const resp = await fetch("./data.json", { cache: "no-store" });
-    if (!resp.ok) return;
-    const json = await resp.json();
-    if (!json || !Array.isArray(json.cities)) return;
-    FUEL_CITIES = json.cities;
-    LAST_UPDATED = json.lastUpdated || null;
-    DATA_SOURCE = json.source || "data.json";
+    const [dataResp, yestResp] = await Promise.all([
+      fetch("./data.json",           { cache: "no-store" }),
+      fetch("./data-yesterday.json", { cache: "no-store" }),
+    ]);
+
+    if (dataResp.ok) {
+      const json = await dataResp.json();
+      if (json && Array.isArray(json.cities)) {
+        FUEL_CITIES  = json.cities;
+        LAST_UPDATED = json.lastUpdated || null;
+        DATA_SOURCE  = json.source || "data.json";
+      }
+    }
+
+    if (yestResp.ok) {
+      const yest = await yestResp.json();
+      if (yest && Array.isArray(yest.cities)) {
+        YESTERDAY_MAP.clear();
+        for (const c of yest.cities) {
+          YESTERDAY_MAP.set(c.name.toLowerCase(), { petrol: c.petrol, diesel: c.diesel });
+        }
+      }
+    }
+
     rebuildMarkers();
     updateStatusLine();
     updateQuickStats();
@@ -83,22 +102,41 @@ function fmtPrice(n) {
   return n.toFixed(2);
 }
 
+// Returns an HTML badge showing price change vs yesterday.
+// Price UP   → red   ▲  (costs more — bad for driver)
+// Price DOWN → green ▼  (costs less — good for driver)
+function deltaHtml(current, yesterday) {
+  if (yesterday == null) return "";
+  const diff = current - yesterday;
+  if (Math.abs(diff) < 0.005) return "";
+  const sign = diff > 0 ? "▲" : "▼";
+  const cls  = diff > 0 ? "delta-up" : "delta-dn";
+  return `<span class="${cls}">${sign}${Math.abs(diff).toFixed(2)}</span>`;
+}
+
+// For table cells: wraps price + a fixed-width delta slot so columns stay
+// aligned regardless of whether a delta badge is shown or not.
+function priceCellHtml(price, yesterdayPrice) {
+  if (!YESTERDAY_MAP.size) return `₹${price.toFixed(2)}`;
+  const badge = deltaHtml(price, yesterdayPrice ?? null) || `<span class="delta-ph"></span>`;
+  return `<span class="price-cell"><span class="pv">₹${price.toFixed(2)}</span>${badge}</span>`;
+}
+
 // ---------- markers ----------
 
 const markerGroup = L.layerGroup().addTo(map);
 const markersByName = new Map();
 
 function popupHtml(c) {
+  const yest = YESTERDAY_MAP.get(c.name.toLowerCase());
+  const pd = yest ? deltaHtml(c.petrol, yest.petrol) : "";
+  const dd = yest ? deltaHtml(c.diesel, yest.diesel) : "";
   return `
     <div class="popup-inner">
       <div class="name">${c.name}</div>
       <div class="region">${c.state}</div>
-      <div class="row"><span class="k">Petrol</span><span class="v">₹ ${fmtPrice(
-        c.petrol
-      )}</span></div>
-      <div class="row"><span class="k">Diesel</span><span class="v">₹ ${fmtPrice(
-        c.diesel
-      )}</span></div>
+      <div class="row"><span class="k">Petrol</span><span class="v">₹ ${fmtPrice(c.petrol)} ${pd}</span></div>
+      <div class="row"><span class="k">Diesel</span><span class="v">₹ ${fmtPrice(c.diesel)} ${dd}</span></div>
     </div>
   `;
 }
@@ -279,15 +317,25 @@ function updateQuickStats() {
   const byPetrol  = [...FUEL_CITIES].sort((a, b) => a.petrol - b.petrol);
   const byDiesel  = [...FUEL_CITIES].sort((a, b) => a.diesel - b.diesel);
 
-  const fmt = (price, city) => `₹${price.toFixed(2)}/L (${city})`;
-
   const el = (id) => document.getElementById(id);
-  el("qs-avg-petrol").textContent      = `₹${avgPetrol.toFixed(2)}/L`;
-  el("qs-avg-diesel").textContent      = `₹${avgDiesel.toFixed(2)}/L`;
-  el("qs-cheapest-petrol").textContent = fmt(byPetrol[0].petrol,  byPetrol[0].name);
-  el("qs-costliest-petrol").textContent= fmt(byPetrol[byPetrol.length - 1].petrol, byPetrol[byPetrol.length - 1].name);
-  el("qs-cheapest-diesel").textContent = fmt(byDiesel[0].diesel,  byDiesel[0].name);
-  el("qs-costliest-diesel").textContent= fmt(byDiesel[byDiesel.length - 1].diesel, byDiesel[byDiesel.length - 1].name);
+
+  // Average prices — show delta vs yesterday's average if data available
+  if (YESTERDAY_MAP.size) {
+    const yvals = [...YESTERDAY_MAP.values()];
+    const yAvgPetrol = yvals.reduce((s, c) => s + c.petrol, 0) / yvals.length;
+    const yAvgDiesel = yvals.reduce((s, c) => s + c.diesel, 0) / yvals.length;
+    el("qs-avg-petrol").innerHTML = `₹${avgPetrol.toFixed(2)}/L ${deltaHtml(avgPetrol, yAvgPetrol)}`;
+    el("qs-avg-diesel").innerHTML = `₹${avgDiesel.toFixed(2)}/L ${deltaHtml(avgDiesel, yAvgDiesel)}`;
+  } else {
+    el("qs-avg-petrol").textContent = `₹${avgPetrol.toFixed(2)}/L`;
+    el("qs-avg-diesel").textContent = `₹${avgDiesel.toFixed(2)}/L`;
+  }
+
+  const fmt = (price, city) => `₹${price.toFixed(2)}/L (${city})`;
+  el("qs-cheapest-petrol").textContent  = fmt(byPetrol[0].petrol,  byPetrol[0].name);
+  el("qs-costliest-petrol").textContent = fmt(byPetrol[byPetrol.length - 1].petrol, byPetrol[byPetrol.length - 1].name);
+  el("qs-cheapest-diesel").textContent  = fmt(byDiesel[0].diesel,  byDiesel[0].name);
+  el("qs-costliest-diesel").textContent = fmt(byDiesel[byDiesel.length - 1].diesel, byDiesel[byDiesel.length - 1].name);
 }
 
 // ---------- metro cities grid ----------
@@ -312,10 +360,11 @@ function updateMetroCities() {
         <td class="td-city" colspan="2">data unavailable</td>
       </tr>`;
     }
+    const yest = YESTERDAY_MAP.get(city.name.toLowerCase());
     return `<tr class="${i % 2 === 0 ? "tr-even" : "tr-odd"} metro-row" data-name="${city.name}" style="cursor:pointer">
       <td class="td-state">${city.name}</td>
-      <td class="td-petrol">₹${city.petrol.toFixed(2)}</td>
-      <td class="td-diesel">₹${city.diesel.toFixed(2)}</td>
+      <td class="td-petrol">${priceCellHtml(city.petrol, yest?.petrol)}</td>
+      <td class="td-diesel">${priceCellHtml(city.diesel, yest?.diesel)}</td>
     </tr>`;
   }).join("");
 
@@ -351,6 +400,23 @@ function updateBelowMap() {
     stateMap[c.state].count++;
   }
   const avg = arr => arr.reduce((s, v) => s + v, 0) / arr.length;
+
+  // Build yesterday's average per state (for delta badges)
+  const yestStateAvg = {};
+  if (YESTERDAY_MAP.size) {
+    const yestState = {};
+    for (const c of FUEL_CITIES) {
+      const y = YESTERDAY_MAP.get(c.name.toLowerCase());
+      if (!y) continue;
+      if (!yestState[c.state]) yestState[c.state] = { petrol: [], diesel: [] };
+      yestState[c.state].petrol.push(y.petrol);
+      yestState[c.state].diesel.push(y.diesel);
+    }
+    for (const [state, d] of Object.entries(yestState)) {
+      yestStateAvg[state] = { petrol: avg(d.petrol), diesel: avg(d.diesel) };
+    }
+  }
+
   const states = Object.entries(stateMap)
     .map(([name, d]) => {
       const lowestPetrol = d.cities.reduce((a, b) => a.petrol < b.petrol ? a : b);
@@ -368,15 +434,18 @@ function updateBelowMap() {
 
   const tbody = document.getElementById("state-table-body");
   if (tbody) {
-    tbody.innerHTML = states.map((s, i) => `
+    tbody.innerHTML = states.map((s, i) => {
+      const y = yestStateAvg[s.name];
+      return `
       <tr class="${i % 2 === 0 ? "tr-even" : "tr-odd"}">
         <td class="td-state">${s.name}</td>
-        <td class="td-petrol">₹${s.avgPetrol.toFixed(2)}</td>
-        <td class="td-diesel">₹${s.avgDiesel.toFixed(2)}</td>
+        <td class="td-petrol">${priceCellHtml(s.avgPetrol, y?.petrol)}</td>
+        <td class="td-diesel">${priceCellHtml(s.avgDiesel, y?.diesel)}</td>
         <td class="td-city">${s.lowestPetrolCity}</td>
         <td class="td-city td-city--diesel">${s.lowestDieselCity}</td>
         <td class="td-count">${s.count}</td>
-      </tr>`).join("");
+      </tr>`;
+    }).join("");
   }
 }
 

@@ -42,6 +42,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 PROJECT_ROOT = os.path.dirname(HERE)
 DATA_JSON = os.path.join(PROJECT_ROOT, "data.json")
 DATA_JS = os.path.join(PROJECT_ROOT, "data.js")
+DATA_YESTERDAY_JSON = os.path.join(PROJECT_ROOT, "data-yesterday.json")
 
 # ---------------------------------------------------------------------------
 # Config
@@ -280,6 +281,41 @@ def bootstrap_from_data_js() -> dict:
     return {"lastUpdated": None, "source": "bootstrap:data.js", "cities": cities}
 
 
+def maybe_snapshot_yesterday(data: dict) -> None:
+    """Save data as data-yesterday.json when it's from a previous IST calendar day.
+
+    Called with the *pre-scrape* dataset so yesterday's file always holds the
+    prices that were live before today's scrape run.
+    """
+    from datetime import timezone, timedelta
+    IST = timezone(timedelta(hours=5, minutes=30))
+    today_ist = datetime.now(IST).date()
+
+    if not os.path.exists(DATA_YESTERDAY_JSON):
+        # First ever run — bootstrap yesterday file from current data.
+        with open(DATA_YESTERDAY_JSON, "w", encoding="utf-8") as f:
+            json.dump(data, f, indent=2, ensure_ascii=False)
+            f.write("\n")
+        print("Bootstrapped data-yesterday.json", file=sys.stderr)
+        return
+
+    last_updated = data.get("lastUpdated")
+    if not last_updated:
+        return
+    try:
+        last_dt = datetime.fromisoformat(last_updated).astimezone(IST)
+        if last_dt.date() < today_ist:
+            with open(DATA_YESTERDAY_JSON, "w", encoding="utf-8") as f:
+                json.dump(data, f, indent=2, ensure_ascii=False)
+                f.write("\n")
+            print(
+                f"Snapshotted data-yesterday.json (previous date: {last_dt.date()})",
+                file=sys.stderr,
+            )
+    except (ValueError, TypeError):
+        pass
+
+
 def load_dataset() -> dict:
     if os.path.exists(DATA_JSON):
         with open(DATA_JSON, "r", encoding="utf-8") as f:
@@ -307,6 +343,9 @@ def main(argv: list[str]) -> int:
     args = parser.parse_args(argv)
 
     data = load_dataset()
+    # Deep-copy pre-scrape prices so maybe_snapshot_yesterday sees unmodified data.
+    import copy
+    pre_scrape_data = copy.deepcopy(data)
     cities = data["cities"]
     targets = cities
     if args.city:
@@ -363,6 +402,7 @@ def main(argv: list[str]) -> int:
         print("--dry-run: not writing data.json", file=sys.stderr)
         return 0
 
+    maybe_snapshot_yesterday(pre_scrape_data)
     save_dataset(data)
     print(f"\nWrote {DATA_JSON}", file=sys.stderr)
     return 0

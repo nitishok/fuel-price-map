@@ -444,6 +444,38 @@ main {
   }
 }
 
+/* ── Price delta badges (vs yesterday) ── */
+
+/* Table price cells: price value + fixed-width delta slot side by side */
+.price-cell {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 3px;
+}
+.pv {
+  /* price value — inherits text-align: right from the td */
+}
+.delta-up,
+.delta-dn,
+.delta-ph {
+  min-width: 44px;     /* enough for "▲99.99" — keeps columns aligned */
+  white-space: nowrap;
+  text-align: left;
+}
+.delta-up {
+  color: #dc2626;      /* red  — price rose, costs more */
+  font-size: 11px;
+  font-weight: 700;
+}
+.delta-dn {
+  color: #059669;      /* green — price fell, costs less */
+  font-size: 11px;
+  font-weight: 700;
+}
+.delta-ph {
+  /* invisible placeholder keeps column width consistent when no change */
+}
+
 /* ── Footer ── */
 .site-footer {
   background: #1f2937;
