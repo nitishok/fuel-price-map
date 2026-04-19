@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-19T16:40:35+00:00",
+  "lastUpdated": "2026-04-19T17:38:01+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -1872,7 +1872,7 @@
       "lat": 10.9254,
       "lng": 79.838,
       "petrol": 100.79,
-      "diesel": 92.38
+      "diesel": 86.42
     },
     {
       "name": "Yanam",
