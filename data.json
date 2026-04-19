@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-19T02:04:01+00:00",
+  "lastUpdated": "2026-04-19T06:36:28+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -112,7 +112,7 @@
       "lat": 21.0077,
       "lng": 75.5626,
       "petrol": 105.49,
-      "diesel": 100.9
+      "diesel": 92.01
     },
     {
       "name": "Ratnagiri",
@@ -344,7 +344,7 @@
       "lat": 10.787,
       "lng": 79.1378,
       "petrol": 101.41,
-      "diesel": 93.02
+      "diesel": 101.41
     },
     {
       "name": "Dindigul",
@@ -392,7 +392,7 @@
       "lat": 8.5241,
       "lng": 76.9366,
       "petrol": 107.47,
-      "diesel": 107.47
+      "diesel": 96.47
     },
     {
       "name": "Kochi",
@@ -400,7 +400,7 @@
       "lat": 9.9312,
       "lng": 76.2673,
       "petrol": 107.47,
-      "diesel": 107.47
+      "diesel": 96.47
     },
     {
       "name": "Kozhikode",
@@ -424,7 +424,7 @@
       "lat": 8.8932,
       "lng": 76.6141,
       "petrol": 107.47,
-      "diesel": 107.47
+      "diesel": 96.47
     },
     {
       "name": "Alappuzha",
@@ -432,7 +432,7 @@
       "lat": 9.4981,
       "lng": 76.3388,
       "petrol": 107.47,
-      "diesel": 107.47
+      "diesel": 96.47
     },
     {
       "name": "Kottayam",
@@ -440,7 +440,7 @@
       "lat": 9.5916,
       "lng": 76.5222,
       "petrol": 107.47,
-      "diesel": 107.47
+      "diesel": 96.47
     },
     {
       "name": "Palakkad",
@@ -448,7 +448,7 @@
       "lat": 10.7867,
       "lng": 76.6548,
       "petrol": 107.47,
-      "diesel": 107.47
+      "diesel": 96.47
     },
     {
       "name": "Kannur",
@@ -472,7 +472,7 @@
       "lat": 12.4996,
       "lng": 74.9869,
       "petrol": 107.47,
-      "diesel": 107.47
+      "diesel": 96.47
     },
     {
       "name": "Munnar",
@@ -480,14 +480,14 @@
       "lat": 10.0889,
       "lng": 77.0595,
       "petrol": 107.47,
-      "diesel": 107.47
+      "diesel": 96.47
     },
     {
       "name": "Hyderabad",
       "state": "Telangana",
       "lat": 17.385,
       "lng": 78.4867,
-      "petrol": 107.45,
+      "petrol": 107.41,
       "diesel": 95.69
     },
     {
@@ -575,7 +575,7 @@
       "state": "Andhra Pradesh",
       "lat": 16.3067,
       "lng": 80.4365,
-      "petrol": 97.4,
+      "petrol": 109.55,
       "diesel": 97.4
     },
     {
@@ -823,7 +823,7 @@
       "state": "Rajasthan",
       "lat": 24.5854,
       "lng": 73.7125,
-      "petrol": 105.5,
+      "petrol": 90.92,
       "diesel": 90.92
     },
     {
@@ -1303,7 +1303,7 @@
       "state": "Haryana",
       "lat": 29.6857,
       "lng": 76.9905,
-      "petrol": 94.72,
+      "petrol": 87.53,
       "diesel": 87.53
     },
     {
@@ -1543,7 +1543,7 @@
       "state": "Uttarakhand",
       "lat": 30.3165,
       "lng": 78.0322,
-      "petrol": 88.33,
+      "petrol": 93.51,
       "diesel": 88.33
     },
     {
@@ -1567,7 +1567,7 @@
       "state": "Uttarakhand",
       "lat": 30.0869,
       "lng": 78.2676,
-      "petrol": 88.33,
+      "petrol": 93.51,
       "diesel": 88.33
     },
     {
@@ -1583,7 +1583,7 @@
       "state": "Uttarakhand",
       "lat": 28.9845,
       "lng": 79.4141,
-      "petrol": 88.33,
+      "petrol": 93.51,
       "diesel": 88.33
     },
     {
@@ -1591,7 +1591,7 @@
       "state": "Uttarakhand",
       "lat": 29.2176,
       "lng": 78.9593,
-      "petrol": 88.33,
+      "petrol": 93.51,
       "diesel": 88.33
     },
     {
@@ -1799,7 +1799,7 @@
       "state": "Nagaland",
       "lat": 25.6751,
       "lng": 94.1086,
-      "petrol": 97.7,
+      "petrol": 83.83,
       "diesel": 83.83
     },
     {
@@ -1807,7 +1807,7 @@
       "state": "Nagaland",
       "lat": 25.9091,
       "lng": 93.7266,
-      "petrol": 97.7,
+      "petrol": 83.83,
       "diesel": 83.83
     },
     {
@@ -1847,7 +1847,7 @@
       "state": "A&N Islands (UT)",
       "lat": 11.6234,
       "lng": 92.7265,
-      "petrol": 82.46,
+      "petrol": 78.05,
       "diesel": 78.05
     },
     {
