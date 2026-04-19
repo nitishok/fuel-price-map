@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-19T08:13:00+00:00",
+  "lastUpdated": "2026-04-19T09:49:46+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -288,7 +288,7 @@
       "lat": 9.9252,
       "lng": 78.1198,
       "petrol": 101.51,
-      "diesel": 93.28
+      "diesel": 93.13
     },
     {
       "name": "Tiruchirappalli",
