@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-20T15:22:15+00:00",
+  "lastUpdated": "2026-04-20T17:08:28+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -23,7 +23,7 @@
       "state": "Maharashtra",
       "lat": 19.076,
       "lng": 72.8777,
-      "petrol": 103.54,
+      "petrol": 103.49,
       "diesel": 90.01
     },
     {
@@ -1399,7 +1399,7 @@
       "state": "Assam",
       "lat": 26.1445,
       "lng": 91.7362,
-      "petrol": 93.23,
+      "petrol": 98.2,
       "diesel": 89.42
     },
     {
@@ -1664,7 +1664,7 @@
       "lat": 32.7266,
       "lng": 74.857,
       "petrol": 96.48,
-      "diesel": 83.32
+      "diesel": 83.33
     },
     {
       "name": "Anantnag",
