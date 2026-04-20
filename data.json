@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-20T02:03:13+00:00",
+  "lastUpdated": "2026-04-20T05:03:49+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -352,7 +352,7 @@
       "lat": 10.3624,
       "lng": 77.9695,
       "petrol": 101.68,
-      "diesel": 93.29
+      "diesel": 101.68
     },
     {
       "name": "Nagercoil",
@@ -927,7 +927,7 @@
       "state": "Uttar Pradesh",
       "lat": 26.4499,
       "lng": 80.3319,
-      "petrol": 94.44,
+      "petrol": 87.49,
       "diesel": 87.49
     },
     {
@@ -1215,7 +1215,7 @@
       "state": "Punjab",
       "lat": 30.901,
       "lng": 75.8573,
-      "petrol": 97.48,
+      "petrol": 86.75,
       "diesel": 87.97
     },
     {
@@ -1223,7 +1223,7 @@
       "state": "Punjab",
       "lat": 31.634,
       "lng": 74.8723,
-      "petrol": 97.48,
+      "petrol": 86.75,
       "diesel": 87.97
     },
     {
@@ -1247,7 +1247,7 @@
       "state": "Punjab",
       "lat": 30.211,
       "lng": 74.9455,
-      "petrol": 97.48,
+      "petrol": 86.75,
       "diesel": 87.97
     },
     {
@@ -1255,7 +1255,7 @@
       "state": "Punjab",
       "lat": 32.2746,
       "lng": 75.6521,
-      "petrol": 97.48,
+      "petrol": 86.75,
       "diesel": 87.97
     },
     {
@@ -1511,8 +1511,8 @@
       "state": "Chhattisgarh",
       "lat": 22.0797,
       "lng": 82.1409,
-      "petrol": 95.07,
-      "diesel": 87.31
+      "petrol": 87.31,
+      "diesel": 95.07
     },
     {
       "name": "Durg",
@@ -1599,7 +1599,7 @@
       "state": "Himachal Pradesh",
       "lat": 31.1048,
       "lng": 77.1734,
-      "petrol": 95.07,
+      "petrol": 87.31,
       "diesel": 87.31
     },
     {
@@ -1607,40 +1607,40 @@
       "state": "Himachal Pradesh",
       "lat": 32.2396,
       "lng": 77.1887,
-      "petrol": 95.07,
-      "diesel": 87.31
+      "petrol": 87.31,
+      "diesel": 95.07
     },
     {
       "name": "Dharamshala",
       "state": "Himachal Pradesh",
       "lat": 32.219,
       "lng": 76.3234,
-      "petrol": 95.07,
-      "diesel": 87.31
+      "petrol": 87.31,
+      "diesel": 95.07
     },
     {
       "name": "Kullu",
       "state": "Himachal Pradesh",
       "lat": 31.9578,
       "lng": 77.1094,
-      "petrol": 95.07,
-      "diesel": 87.31
+      "petrol": 87.31,
+      "diesel": 95.07
     },
     {
       "name": "Solan",
       "state": "Himachal Pradesh",
       "lat": 30.9045,
       "lng": 77.0967,
-      "petrol": 95.07,
-      "diesel": 87.31
+      "petrol": 87.31,
+      "diesel": 95.07
     },
     {
       "name": "Mandi",
       "state": "Himachal Pradesh",
       "lat": 31.708,
       "lng": 76.9318,
-      "petrol": 95.07,
-      "diesel": 87.31
+      "petrol": 87.31,
+      "diesel": 95.07
     },
     {
       "name": "Bilaspur HP",
@@ -1656,7 +1656,7 @@
       "lat": 34.0837,
       "lng": 74.7973,
       "petrol": 100.93,
-      "diesel": 87.01
+      "diesel": 100.93
     },
     {
       "name": "Jammu",
@@ -1799,7 +1799,7 @@
       "state": "Nagaland",
       "lat": 25.6751,
       "lng": 94.1086,
-      "petrol": 83.83,
+      "petrol": 97.7,
       "diesel": 83.83
     },
     {
@@ -1807,7 +1807,7 @@
       "state": "Nagaland",
       "lat": 25.9091,
       "lng": 93.7266,
-      "petrol": 83.83,
+      "petrol": 97.7,
       "diesel": 83.83
     },
     {
@@ -1847,7 +1847,7 @@
       "state": "A&N Islands (UT)",
       "lat": 11.6234,
       "lng": 92.7265,
-      "petrol": 78.05,
+      "petrol": 82.46,
       "diesel": 78.05
     },
     {
