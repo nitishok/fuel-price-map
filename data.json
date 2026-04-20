@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-20T05:03:49+00:00",
+  "lastUpdated": "2026-04-20T07:23:53+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -56,7 +56,7 @@
       "lat": 21.1458,
       "lng": 79.0882,
       "petrol": 104.0,
-      "diesel": 90.56
+      "diesel": 104.0
     },
     {
       "name": "Nashik",
@@ -288,7 +288,7 @@
       "lat": 9.9252,
       "lng": 78.1198,
       "petrol": 101.51,
-      "diesel": 93.13
+      "diesel": 101.51
     },
     {
       "name": "Tiruchirappalli",
@@ -344,7 +344,7 @@
       "lat": 10.787,
       "lng": 79.1378,
       "petrol": 101.41,
-      "diesel": 101.41
+      "diesel": 93.02
     },
     {
       "name": "Dindigul",
@@ -823,8 +823,8 @@
       "state": "Rajasthan",
       "lat": 24.5854,
       "lng": 73.7125,
-      "petrol": 90.92,
-      "diesel": 90.92
+      "petrol": 105.5,
+      "diesel": 105.5
     },
     {
       "name": "Kota",
@@ -944,7 +944,7 @@
       "lat": 25.3176,
       "lng": 82.9739,
       "petrol": 95.53,
-      "diesel": 95.53
+      "diesel": 88.7
     },
     {
       "name": "Noida",
@@ -1303,7 +1303,7 @@
       "state": "Haryana",
       "lat": 29.6857,
       "lng": 76.9905,
-      "petrol": 87.53,
+      "petrol": 94.72,
       "diesel": 87.53
     },
     {
@@ -1600,7 +1600,7 @@
       "lat": 31.1048,
       "lng": 77.1734,
       "petrol": 87.31,
-      "diesel": 87.31
+      "diesel": 95.07
     },
     {
       "name": "Manali",
