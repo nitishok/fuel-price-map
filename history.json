@@ -1,0 +1,177 @@
+{
+  "Mumbai": [
+    {
+      "date": "2026-04-22",
+      "petrol": 103.49,
+      "diesel": 90.01
+    }
+  ],
+  "New Delhi": [
+    {
+      "date": "2026-04-22",
+      "petrol": 94.77,
+      "diesel": 87.67
+    }
+  ],
+  "Bengaluru": [
+    {
+      "date": "2026-04-22",
+      "petrol": 102.9,
+      "diesel": 90.98
+    }
+  ],
+  "Hyderabad": [
+    {
+      "date": "2026-04-22",
+      "petrol": 107.45,
+      "diesel": 95.69
+    }
+  ],
+  "Ahmedabad": [
+    {
+      "date": "2026-04-22",
+      "petrol": 94.48,
+      "diesel": 90.15
+    }
+  ],
+  "Chennai": [
+    {
+      "date": "2026-04-22",
+      "petrol": 100.79,
+      "diesel": 92.38
+    }
+  ],
+  "Kolkata": [
+    {
+      "date": "2026-04-22",
+      "petrol": 104.99,
+      "diesel": 91.81
+    }
+  ],
+  "Surat": [
+    {
+      "date": "2026-04-22",
+      "petrol": 94.35,
+      "diesel": 90.04
+    }
+  ],
+  "Pune": [
+    {
+      "date": "2026-04-22",
+      "petrol": 103.8,
+      "diesel": 90.34
+    }
+  ],
+  "Jaipur": [
+    {
+      "date": "2026-04-22",
+      "petrol": 104.71,
+      "diesel": 90.21
+    }
+  ],
+  "Lucknow": [
+    {
+      "date": "2026-04-22",
+      "petrol": 94.69,
+      "diesel": 87.8
+    }
+  ],
+  "Kanpur": [
+    {
+      "date": "2026-04-22",
+      "petrol": 94.44,
+      "diesel": 87.49
+    }
+  ],
+  "Nagpur": [
+    {
+      "date": "2026-04-22",
+      "petrol": 104.0,
+      "diesel": 90.56
+    }
+  ],
+  "Indore": [
+    {
+      "date": "2026-04-22",
+      "petrol": 106.48,
+      "diesel": 91.88
+    }
+  ],
+  "Bhopal": [
+    {
+      "date": "2026-04-22",
+      "petrol": 106.51,
+      "diesel": 91.88
+    }
+  ],
+  "Visakhapatnam": [
+    {
+      "date": "2026-04-22",
+      "petrol": 108.33,
+      "diesel": 96.22
+    }
+  ],
+  "Patna": [
+    {
+      "date": "2026-04-22",
+      "petrol": 105.22,
+      "diesel": 92.09
+    }
+  ],
+  "Vadodara": [
+    {
+      "date": "2026-04-22",
+      "petrol": 94.15,
+      "diesel": 89.82
+    }
+  ],
+  "Kochi": [
+    {
+      "date": "2026-04-22",
+      "petrol": 107.47,
+      "diesel": 107.47
+    }
+  ],
+  "Coimbatore": [
+    {
+      "date": "2026-04-22",
+      "petrol": 101.28,
+      "diesel": 92.88
+    }
+  ],
+  "Guwahati": [
+    {
+      "date": "2026-04-22",
+      "petrol": 98.2,
+      "diesel": 89.42
+    }
+  ],
+  "Ranchi": [
+    {
+      "date": "2026-04-22",
+      "petrol": 97.85,
+      "diesel": 92.6
+    }
+  ],
+  "Chandigarh": [
+    {
+      "date": "2026-04-22",
+      "petrol": 94.28,
+      "diesel": 82.44
+    }
+  ],
+  "Thiruvananthapuram": [
+    {
+      "date": "2026-04-22",
+      "petrol": 107.47,
+      "diesel": 107.47
+    }
+  ],
+  "Varanasi": [
+    {
+      "date": "2026-04-22",
+      "petrol": 95.53,
+      "diesel": 95.53
+    }
+  ]
+}

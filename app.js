@@ -340,6 +340,18 @@ function updateQuickStats() {
 
 // ---------- metro cities grid ----------
 
+const CITY_SLUGS = {
+  "Mumbai": "mumbai", "New Delhi": "delhi", "Bengaluru": "bangalore",
+  "Hyderabad": "hyderabad", "Ahmedabad": "ahmedabad", "Chennai": "chennai",
+  "Kolkata": "kolkata", "Surat": "surat", "Pune": "pune", "Jaipur": "jaipur",
+  "Lucknow": "lucknow", "Kanpur": "kanpur", "Nagpur": "nagpur",
+  "Indore": "indore", "Bhopal": "bhopal", "Visakhapatnam": "visakhapatnam",
+  "Patna": "patna", "Vadodara": "vadodara", "Kochi": "kochi",
+  "Coimbatore": "coimbatore", "Guwahati": "guwahati", "Ranchi": "ranchi",
+  "Chandigarh": "chandigarh", "Thiruvananthapuram": "thiruvananthapuram",
+  "Varanasi": "varanasi",
+};
+
 const METRO_CITIES = [
   "Mumbai", "New Delhi", "Bengaluru", "Hyderabad", "Ahmedabad",
   "Chennai", "Kolkata", "Surat", "Pune", "Jaipur",
@@ -361,8 +373,12 @@ function updateMetroCities() {
       </tr>`;
     }
     const yest = YESTERDAY_MAP.get(city.name.toLowerCase());
+    const slug = CITY_SLUGS[city.name];
+    const cityLabel = slug
+      ? `<a href="/${slug}" class="city-page-link" title="See 10-day history for ${city.name}">${city.name}</a>`
+      : city.name;
     return `<tr class="${i % 2 === 0 ? "tr-even" : "tr-odd"} metro-row" data-name="${city.name}" style="cursor:pointer">
-      <td class="td-state">${city.name}</td>
+      <td class="td-state">${cityLabel}</td>
       <td class="td-petrol">${priceCellHtml(city.petrol, yest?.petrol)}</td>
       <td class="td-diesel">${priceCellHtml(city.diesel, yest?.diesel)}</td>
     </tr>`;

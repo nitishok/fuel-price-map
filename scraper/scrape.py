@@ -44,6 +44,36 @@ PROJECT_ROOT = os.path.dirname(HERE)
 DATA_JSON = os.path.join(PROJECT_ROOT, "data.json")
 DATA_JS = os.path.join(PROJECT_ROOT, "data.js")
 DATA_YESTERDAY_JSON = os.path.join(PROJECT_ROOT, "data-yesterday.json")
+HISTORY_JSON = os.path.join(PROJECT_ROOT, "history.json")
+
+# City name → URL slug for individual city pages
+METRO_CITY_SLUGS: dict[str, str] = {
+    "Mumbai": "mumbai",
+    "New Delhi": "delhi",
+    "Bengaluru": "bangalore",
+    "Hyderabad": "hyderabad",
+    "Ahmedabad": "ahmedabad",
+    "Chennai": "chennai",
+    "Kolkata": "kolkata",
+    "Surat": "surat",
+    "Pune": "pune",
+    "Jaipur": "jaipur",
+    "Lucknow": "lucknow",
+    "Kanpur": "kanpur",
+    "Nagpur": "nagpur",
+    "Indore": "indore",
+    "Bhopal": "bhopal",
+    "Visakhapatnam": "visakhapatnam",
+    "Patna": "patna",
+    "Vadodara": "vadodara",
+    "Kochi": "kochi",
+    "Coimbatore": "coimbatore",
+    "Guwahati": "guwahati",
+    "Ranchi": "ranchi",
+    "Chandigarh": "chandigarh",
+    "Thiruvananthapuram": "thiruvananthapuram",
+    "Varanasi": "varanasi",
+}
 
 # ---------------------------------------------------------------------------
 # Config
@@ -318,6 +348,43 @@ def maybe_snapshot_yesterday(data: dict) -> None:
         pass
 
 
+def update_history(data: dict) -> None:
+    """Append today's prices for the 25 metro cities to history.json (once per IST day)."""
+    from datetime import timezone, timedelta
+    IST = timezone(timedelta(hours=5, minutes=30))
+    today_str = datetime.now(IST).date().isoformat()
+
+    if os.path.exists(HISTORY_JSON):
+        with open(HISTORY_JSON, encoding="utf-8") as f:
+            history: dict[str, list] = json.load(f)
+    else:
+        history = {}
+
+    city_map = {c["name"]: c for c in data.get("cities", [])}
+    changed = False
+
+    for city_name in METRO_CITY_SLUGS:
+        city = city_map.get(city_name)
+        if not city:
+            continue
+        entries = history.setdefault(city_name, [])
+        if entries and entries[0].get("date") == today_str:
+            continue  # already recorded today
+        entries.insert(0, {
+            "date": today_str,
+            "petrol": round(city["petrol"], 2),
+            "diesel": round(city["diesel"], 2),
+        })
+        history[city_name] = entries[:10]
+        changed = True
+
+    if changed:
+        with open(HISTORY_JSON, "w", encoding="utf-8") as f:
+            json.dump(history, f, indent=2, ensure_ascii=False)
+            f.write("\n")
+        print("Updated history.json", file=sys.stderr)
+
+
 def load_dataset() -> dict:
     if os.path.exists(DATA_JSON):
         with open(DATA_JSON, "r", encoding="utf-8") as f:
@@ -406,6 +473,7 @@ def main(argv: list[str]) -> int:
 
     maybe_snapshot_yesterday(pre_scrape_data)
     save_dataset(data)
+    update_history(data)
     print(f"\nWrote {DATA_JSON}", file=sys.stderr)
     return 0
 
