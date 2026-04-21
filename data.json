@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-21T19:10:52+00:00",
+  "lastUpdated": "2026-04-21T21:48:46+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -744,7 +744,7 @@
       "lat": 23.2156,
       "lng": 72.6369,
       "petrol": 94.8,
-      "diesel": 90.15
+      "diesel": 90.47
     },
     {
       "name": "Bhuj",
@@ -1207,7 +1207,7 @@
       "state": "Chandigarh (UT)",
       "lat": 30.7333,
       "lng": 76.7794,
-      "petrol": 94.3,
+      "petrol": 94.28,
       "diesel": 82.44
     },
     {
@@ -1663,7 +1663,7 @@
       "state": "Jammu & Kashmir (UT)",
       "lat": 32.7266,
       "lng": 74.857,
-      "petrol": 96.48,
+      "petrol": 96.42,
       "diesel": 83.33
     },
     {
