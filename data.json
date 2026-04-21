@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-21T07:06:13+00:00",
+  "lastUpdated": "2026-04-21T08:39:12+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -23,7 +23,7 @@
       "state": "Maharashtra",
       "lat": 19.076,
       "lng": 72.8777,
-      "petrol": 103.49,
+      "petrol": 103.54,
       "diesel": 90.01
     },
     {
