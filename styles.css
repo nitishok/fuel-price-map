@@ -54,6 +54,15 @@ body {
   letter-spacing: 0.2px;
 }
 
+.brand-today {
+  color: #5eead4;
+}
+
+.brand-in {
+  color: rgba(255, 255, 255, 0.45);
+  font-weight: 500;
+}
+
 .app-header .subtitle {
   margin: 2px 0 0;
   font-size: 12px;
