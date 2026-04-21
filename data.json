@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-21T18:05:55+00:00",
+  "lastUpdated": "2026-04-21T19:10:52+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -24,7 +24,7 @@
       "lat": 19.076,
       "lng": 72.8777,
       "petrol": 103.49,
-      "diesel": 90.03
+      "diesel": 90.01
     },
     {
       "name": "Thane",
@@ -88,7 +88,7 @@
       "lat": 17.6599,
       "lng": 75.9064,
       "petrol": 104.23,
-      "diesel": 90.82
+      "diesel": 90.78
     },
     {
       "name": "Amravati",
@@ -271,7 +271,7 @@
       "state": "Tamil Nadu",
       "lat": 13.0827,
       "lng": 80.2707,
-      "petrol": 100.8,
+      "petrol": 100.79,
       "diesel": 92.38
     },
     {
@@ -952,7 +952,7 @@
       "lat": 28.5355,
       "lng": 77.391,
       "petrol": 94.87,
-      "diesel": 87.89
+      "diesel": 88.0
     },
     {
       "name": "Ghaziabad",
@@ -960,7 +960,7 @@
       "lat": 28.6692,
       "lng": 77.4538,
       "petrol": 94.69,
-      "diesel": 87.7
+      "diesel": 87.79
     },
     {
       "name": "Prayagraj",
@@ -1207,7 +1207,7 @@
       "state": "Chandigarh (UT)",
       "lat": 30.7333,
       "lng": 76.7794,
-      "petrol": 94.28,
+      "petrol": 94.3,
       "diesel": 82.44
     },
     {
