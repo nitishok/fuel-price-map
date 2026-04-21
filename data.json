@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-21T17:02:55+00:00",
+  "lastUpdated": "2026-04-21T18:05:55+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -24,7 +24,7 @@
       "lat": 19.076,
       "lng": 72.8777,
       "petrol": 103.49,
-      "diesel": 90.01
+      "diesel": 90.03
     },
     {
       "name": "Thane",
@@ -88,7 +88,7 @@
       "lat": 17.6599,
       "lng": 75.9064,
       "petrol": 104.23,
-      "diesel": 90.78
+      "diesel": 90.82
     },
     {
       "name": "Amravati",
@@ -184,7 +184,7 @@
       "lat": 15.8497,
       "lng": 74.4977,
       "petrol": 102.73,
-      "diesel": 90.91
+      "diesel": 90.85
     },
     {
       "name": "Davangere",
@@ -223,7 +223,7 @@
       "state": "Karnataka",
       "lat": 13.3409,
       "lng": 74.7421,
-      "petrol": 102.26,
+      "petrol": 102.36,
       "diesel": 90.44
     },
     {
@@ -271,7 +271,7 @@
       "state": "Tamil Nadu",
       "lat": 13.0827,
       "lng": 80.2707,
-      "petrol": 100.79,
+      "petrol": 100.8,
       "diesel": 92.38
     },
     {
@@ -287,7 +287,7 @@
       "state": "Tamil Nadu",
       "lat": 9.9252,
       "lng": 78.1198,
-      "petrol": 101.68,
+      "petrol": 101.51,
       "diesel": 93.13
     },
     {
@@ -319,7 +319,7 @@
       "state": "Tamil Nadu",
       "lat": 12.9165,
       "lng": 79.1325,
-      "petrol": 102.42,
+      "petrol": 102.11,
       "diesel": 93.66
     },
     {
@@ -551,7 +551,7 @@
       "state": "Andhra Pradesh",
       "lat": 17.6868,
       "lng": 83.2185,
-      "petrol": 108.66,
+      "petrol": 108.33,
       "diesel": 96.22
     },
     {
@@ -863,7 +863,7 @@
       "state": "Rajasthan",
       "lat": 27.2152,
       "lng": 77.4977,
-      "petrol": 104.51,
+      "petrol": 104.71,
       "diesel": 90.21
     },
     {
@@ -952,7 +952,7 @@
       "lat": 28.5355,
       "lng": 77.391,
       "petrol": 94.87,
-      "diesel": 88.0
+      "diesel": 87.89
     },
     {
       "name": "Ghaziabad",
@@ -960,7 +960,7 @@
       "lat": 28.6692,
       "lng": 77.4538,
       "petrol": 94.69,
-      "diesel": 87.79
+      "diesel": 87.7
     },
     {
       "name": "Prayagraj",
@@ -1455,7 +1455,7 @@
       "state": "Jharkhand",
       "lat": 23.3441,
       "lng": 85.3096,
-      "petrol": 97.86,
+      "petrol": 97.85,
       "diesel": 92.6
     },
     {
