@@ -384,7 +384,10 @@ function updateMetroCities() {
     </tr>`;
   }).join("");
 
-  // Click row → pan map to city
+  // City name link → city page; clicking rest of row → pan map
+  tbody.querySelectorAll(".city-page-link").forEach(a => {
+    a.addEventListener("click", e => e.stopPropagation());
+  });
   tbody.querySelectorAll(".metro-row").forEach(row => {
     row.addEventListener("click", () => {
       const name = row.getAttribute("data-name");

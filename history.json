@@ -3,175 +3,200 @@
     {
       "date": "2026-04-22",
       "petrol": 103.49,
-      "diesel": 90.01
+      "diesel": 90.01,
+      "updated": "2026-04-22T01:21+05:30"
     }
   ],
   "New Delhi": [
     {
       "date": "2026-04-22",
       "petrol": 94.77,
-      "diesel": 87.67
+      "diesel": 87.67,
+      "updated": "2026-04-22T01:21+05:30"
     }
   ],
   "Bengaluru": [
     {
       "date": "2026-04-22",
       "petrol": 102.9,
-      "diesel": 90.98
+      "diesel": 90.98,
+      "updated": "2026-04-22T01:21+05:30"
     }
   ],
   "Hyderabad": [
     {
       "date": "2026-04-22",
       "petrol": 107.45,
-      "diesel": 95.69
+      "diesel": 95.69,
+      "updated": "2026-04-22T01:21+05:30"
     }
   ],
   "Ahmedabad": [
     {
       "date": "2026-04-22",
       "petrol": 94.48,
-      "diesel": 90.15
+      "diesel": 90.15,
+      "updated": "2026-04-22T01:21+05:30"
     }
   ],
   "Chennai": [
     {
       "date": "2026-04-22",
       "petrol": 100.79,
-      "diesel": 92.38
+      "diesel": 92.38,
+      "updated": "2026-04-22T01:21+05:30"
     }
   ],
   "Kolkata": [
     {
       "date": "2026-04-22",
       "petrol": 104.99,
-      "diesel": 91.81
+      "diesel": 91.81,
+      "updated": "2026-04-22T01:21+05:30"
     }
   ],
   "Surat": [
     {
       "date": "2026-04-22",
       "petrol": 94.35,
-      "diesel": 90.04
+      "diesel": 90.04,
+      "updated": "2026-04-22T01:21+05:30"
     }
   ],
   "Pune": [
     {
       "date": "2026-04-22",
       "petrol": 103.8,
-      "diesel": 90.34
+      "diesel": 90.34,
+      "updated": "2026-04-22T01:21+05:30"
     }
   ],
   "Jaipur": [
     {
       "date": "2026-04-22",
       "petrol": 104.71,
-      "diesel": 90.21
+      "diesel": 90.21,
+      "updated": "2026-04-22T01:21+05:30"
     }
   ],
   "Lucknow": [
     {
       "date": "2026-04-22",
       "petrol": 94.69,
-      "diesel": 87.8
+      "diesel": 87.8,
+      "updated": "2026-04-22T01:21+05:30"
     }
   ],
   "Kanpur": [
     {
       "date": "2026-04-22",
       "petrol": 94.44,
-      "diesel": 87.49
+      "diesel": 87.49,
+      "updated": "2026-04-22T01:21+05:30"
     }
   ],
   "Nagpur": [
     {
       "date": "2026-04-22",
       "petrol": 104.0,
-      "diesel": 90.56
+      "diesel": 90.56,
+      "updated": "2026-04-22T01:21+05:30"
     }
   ],
   "Indore": [
     {
       "date": "2026-04-22",
       "petrol": 106.48,
-      "diesel": 91.88
+      "diesel": 91.88,
+      "updated": "2026-04-22T01:21+05:30"
     }
   ],
   "Bhopal": [
     {
       "date": "2026-04-22",
       "petrol": 106.51,
-      "diesel": 91.88
+      "diesel": 91.88,
+      "updated": "2026-04-22T01:21+05:30"
     }
   ],
   "Visakhapatnam": [
     {
       "date": "2026-04-22",
       "petrol": 108.33,
-      "diesel": 96.22
+      "diesel": 96.22,
+      "updated": "2026-04-22T01:21+05:30"
     }
   ],
   "Patna": [
     {
       "date": "2026-04-22",
       "petrol": 105.22,
-      "diesel": 92.09
+      "diesel": 92.09,
+      "updated": "2026-04-22T01:21+05:30"
     }
   ],
   "Vadodara": [
     {
       "date": "2026-04-22",
       "petrol": 94.15,
-      "diesel": 89.82
+      "diesel": 89.82,
+      "updated": "2026-04-22T01:21+05:30"
     }
   ],
   "Kochi": [
     {
       "date": "2026-04-22",
       "petrol": 107.47,
-      "diesel": 107.47
+      "diesel": 107.47,
+      "updated": "2026-04-22T01:21+05:30"
     }
   ],
   "Coimbatore": [
     {
       "date": "2026-04-22",
       "petrol": 101.28,
-      "diesel": 92.88
+      "diesel": 92.88,
+      "updated": "2026-04-22T01:21+05:30"
     }
   ],
   "Guwahati": [
     {
       "date": "2026-04-22",
       "petrol": 98.2,
-      "diesel": 89.42
+      "diesel": 89.42,
+      "updated": "2026-04-22T01:21+05:30"
     }
   ],
   "Ranchi": [
     {
       "date": "2026-04-22",
       "petrol": 97.85,
-      "diesel": 92.6
+      "diesel": 92.6,
+      "updated": "2026-04-22T01:21+05:30"
     }
   ],
   "Chandigarh": [
     {
       "date": "2026-04-22",
       "petrol": 94.28,
-      "diesel": 82.44
+      "diesel": 82.44,
+      "updated": "2026-04-22T01:21+05:30"
     }
   ],
   "Thiruvananthapuram": [
     {
       "date": "2026-04-22",
       "petrol": 107.47,
-      "diesel": 107.47
+      "diesel": 107.47,
+      "updated": "2026-04-22T01:21+05:30"
     }
   ],
   "Varanasi": [
     {
       "date": "2026-04-22",
       "petrol": 95.53,
-      "diesel": 95.53
+      "diesel": 95.53,
+      "updated": "2026-04-22T01:21+05:30"
     }
   ]
 }

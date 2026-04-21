@@ -52,6 +52,17 @@ def format_date(date_str: str) -> str:
         return date_str
 
 
+def format_updated(updated_str: str | None, date_str: str) -> str:
+    """Return human-readable 'DD Mon YYYY, HH:MM AM/PM IST' from ISO timestamp."""
+    if updated_str:
+        try:
+            dt = datetime.strptime(updated_str[:16], "%Y-%m-%dT%H:%M")
+            return dt.strftime("%-d %b %Y, %-I:%M %p IST")
+        except ValueError:
+            pass
+    return format_date(date_str)
+
+
 def delta_html(current: float, previous: float | None) -> str:
     if previous is None:
         return ""
@@ -75,7 +86,10 @@ def generate_page(city_name: str, slug: str, entries: list[dict]) -> str:
     pp = prev["petrol"] if prev else None
     pd = prev["diesel"] if prev else None
 
-    today_date_str = format_date(entries[0]["date"]) if entries else "Today"
+    today_date_str = format_updated(
+        entries[0].get("updated") if entries else None,
+        entries[0]["date"] if entries else "",
+    )
 
     petrol_delta = delta_html(tp, pp)
     diesel_delta = delta_html(td, pd)
@@ -166,7 +180,7 @@ def generate_page(city_name: str, slug: str, entries: list[dict]) -> str:
 </header>
 <div class="wrap">
   <h1>Petrol &amp; Diesel Price in {city_name}</h1>
-  <p class="sub">Updated {today_date_str} &middot; Source: BankBazaar / PetrolDieselPrice</p>
+  <p class="sub">Updated {today_date_str}</p>
 
   <div class="hero">
     <div class="card">
@@ -197,7 +211,7 @@ def generate_page(city_name: str, slug: str, entries: list[dict]) -> str:
   </table>
 
   <a class="back" href="/">🗺 View Live Price Map</a>
-  <p class="note">Prices updated automatically every hour. Data sourced from BankBazaar and PetrolDieselPrice.com.</p>
+  <p class="note">Prices are updated automatically every hour.</p>
 </div>
 </body>
 </html>

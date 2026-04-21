@@ -352,7 +352,9 @@ def update_history(data: dict) -> None:
     """Append today's prices for the 25 metro cities to history.json (once per IST day)."""
     from datetime import timezone, timedelta
     IST = timezone(timedelta(hours=5, minutes=30))
-    today_str = datetime.now(IST).date().isoformat()
+    now_ist = datetime.now(IST)
+    today_str = now_ist.date().isoformat()
+    updated_str = now_ist.strftime("%Y-%m-%dT%H:%M+05:30")
 
     if os.path.exists(HISTORY_JSON):
         with open(HISTORY_JSON, encoding="utf-8") as f:
@@ -372,6 +374,7 @@ def update_history(data: dict) -> None:
             continue  # already recorded today
         entries.insert(0, {
             "date": today_str,
+            "updated": updated_str,
             "petrol": round(city["petrol"], 2),
             "diesel": round(city["diesel"], 2),
         })
