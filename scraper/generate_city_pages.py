@@ -77,7 +77,7 @@ def delta_html(current: float, previous: float | None) -> str:
     )
 
 
-def generate_page(city_name: str, slug: str, entries: list[dict]) -> str:
+def generate_page(city_name: str, slug: str, entries: list[dict], all_cities: dict[str, str]) -> str:
     today = entries[0] if entries else None
     prev = entries[1] if len(entries) > 1 else None
 
@@ -114,6 +114,13 @@ def generate_page(city_name: str, slug: str, entries: list[dict]) -> str:
 
     if not rows_html:
         rows_html = '<tr><td colspan="3" class="empty">No history yet — check back tomorrow.</td></tr>'
+
+    # Cross-links to all other city pages
+    other_links = "\n".join(
+        f'    <a href="/{s}/" class="clink">{n}</a>'
+        for n, s in all_cities.items()
+        if s != slug
+    )
 
     schema = json.dumps(
         {
@@ -171,6 +178,11 @@ def generate_page(city_name: str, slug: str, entries: list[dict]) -> str:
     .back{{display:inline-flex;align-items:center;gap:6px;margin-top:26px;font-size:13px;color:#0f766e;text-decoration:none;font-weight:600}}
     .back:hover{{text-decoration:underline}}
     .note{{font-size:11px;color:#9ca3af;margin-top:14px}}
+    .cities-section{{margin-top:32px;padding-top:20px;border-top:1px solid #e5e7eb}}
+    .cities-title{{font-size:13px;font-weight:700;color:#374151;margin-bottom:10px}}
+    .cities-grid{{display:flex;flex-wrap:wrap;gap:8px}}
+    .clink{{font-size:12px;color:#0f766e;text-decoration:none;background:#f0fdf9;border:1px solid #d1fae5;border-radius:6px;padding:4px 10px;white-space:nowrap}}
+    .clink:hover{{background:#d1fae5;text-decoration:none}}
   </style>
 </head>
 <body>
@@ -179,7 +191,7 @@ def generate_page(city_name: str, slug: str, entries: list[dict]) -> str:
   <a href="/">← Live Map</a>
 </header>
 <div class="wrap">
-  <h1>Petrol &amp; Diesel Price in {city_name}</h1>
+  <h1>Petrol &amp; Diesel Price in {city_name} Today</h1>
   <p class="sub">Updated {today_date_str}</p>
 
   <div class="hero">
@@ -212,6 +224,13 @@ def generate_page(city_name: str, slug: str, entries: list[dict]) -> str:
 
   <a class="back" href="/">🗺 View Live Price Map</a>
   <p class="note">Prices are updated automatically every hour.</p>
+
+  <div class="cities-section">
+    <p class="cities-title">Fuel Prices in Other Cities</p>
+    <div class="cities-grid">
+{other_links}
+    </div>
+  </div>
 </div>
 </body>
 </html>
@@ -233,7 +252,7 @@ def main() -> int:
             print(f"  SKIP {city_name} — no data in history.json", file=sys.stderr)
             continue
 
-        page_html = generate_page(city_name, slug, entries)
+        page_html = generate_page(city_name, slug, entries, METRO_CITY_SLUGS)
 
         city_dir = os.path.join(PROJECT_ROOT, slug)
         os.makedirs(city_dir, exist_ok=True)
