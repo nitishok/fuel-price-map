@@ -19,7 +19,9 @@
     .hdr-title:hover{opacity:.9}
     .brand-t{color:#5eead4}
     .brand-i{color:rgba(255,255,255,0.45);font-weight:500}
-    .hdr-nav{color:#fff;text-decoration:none;font-size:13px;opacity:.85;font-weight:500}
+    .hdr-left{display:flex;flex-direction:column;gap:2px}
+    .hdr-sub{font-size:12px;color:rgba(255,255,255,0.82);margin:0;font-weight:400}
+    .hdr-nav{color:#fff;text-decoration:none;font-size:13px;opacity:.85;font-weight:500;white-space:nowrap}
     .hdr-nav:hover{opacity:1;text-decoration:underline}
     .wrap{max-width:640px;margin:0 auto;padding:24px 16px 60px}
     h1{font-size:21px;font-weight:800;color:#0f766e;margin-bottom:4px}
@@ -51,7 +53,10 @@
 </head>
 <body>
 <header class="hdr">
-  <a href="/" class="hdr-title">⛽ FuelPrice<span class="brand-t">Today</span><span class="brand-i">.in</span></a>
+  <div class="hdr-left">
+    <a href="/" class="hdr-title">⛽ FuelPrice<span class="brand-t">Today</span><span class="brand-i">.in</span></a>
+    <p class="hdr-sub">Live petrol &amp; diesel prices in Guwahati. Updated hourly from official pump rates.</p>
+  </div>
   <a href="/" class="hdr-nav">← Live Map</a>
 </header>
 <div class="wrap">
