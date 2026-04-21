@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-21T02:00:01+00:00",
+  "lastUpdated": "2026-04-21T04:55:44+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -56,7 +56,7 @@
       "lat": 21.1458,
       "lng": 79.0882,
       "petrol": 104.0,
-      "diesel": 104.0
+      "diesel": 90.56
     },
     {
       "name": "Nashik",
@@ -288,7 +288,7 @@
       "lat": 9.9252,
       "lng": 78.1198,
       "petrol": 101.51,
-      "diesel": 101.51
+      "diesel": 93.13
     },
     {
       "name": "Tiruchirappalli",
@@ -352,7 +352,7 @@
       "lat": 10.3624,
       "lng": 77.9695,
       "petrol": 101.68,
-      "diesel": 101.68
+      "diesel": 93.29
     },
     {
       "name": "Nagercoil",
@@ -728,7 +728,7 @@
       "lat": 22.3072,
       "lng": 73.1812,
       "petrol": 94.15,
-      "diesel": 89.82
+      "diesel": 94.15
     },
     {
       "name": "Rajkot",
@@ -736,7 +736,7 @@
       "lat": 22.3039,
       "lng": 70.8022,
       "petrol": 94.25,
-      "diesel": 89.94
+      "diesel": 94.25
     },
     {
       "name": "Gandhinagar",
@@ -824,7 +824,7 @@
       "lat": 24.5854,
       "lng": 73.7125,
       "petrol": 105.5,
-      "diesel": 105.5
+      "diesel": 90.92
     },
     {
       "name": "Kota",
@@ -927,7 +927,7 @@
       "state": "Uttar Pradesh",
       "lat": 26.4499,
       "lng": 80.3319,
-      "petrol": 87.49,
+      "petrol": 94.44,
       "diesel": 87.49
     },
     {
@@ -1072,7 +1072,7 @@
       "lat": 22.7196,
       "lng": 75.8577,
       "petrol": 106.48,
-      "diesel": 91.88
+      "diesel": 106.48
     },
     {
       "name": "Gwalior",
@@ -1215,7 +1215,7 @@
       "state": "Punjab",
       "lat": 30.901,
       "lng": 75.8573,
-      "petrol": 86.75,
+      "petrol": 97.48,
       "diesel": 87.97
     },
     {
@@ -1223,7 +1223,7 @@
       "state": "Punjab",
       "lat": 31.634,
       "lng": 74.8723,
-      "petrol": 86.75,
+      "petrol": 97.48,
       "diesel": 87.97
     },
     {
@@ -1247,7 +1247,7 @@
       "state": "Punjab",
       "lat": 30.211,
       "lng": 74.9455,
-      "petrol": 86.75,
+      "petrol": 97.48,
       "diesel": 87.97
     },
     {
@@ -1255,7 +1255,7 @@
       "state": "Punjab",
       "lat": 32.2746,
       "lng": 75.6521,
-      "petrol": 86.75,
+      "petrol": 97.48,
       "diesel": 87.97
     },
     {
@@ -1272,7 +1272,7 @@
       "lat": 28.4595,
       "lng": 77.0266,
       "petrol": 95.24,
-      "diesel": 88.09
+      "diesel": 95.24
     },
     {
       "name": "Faridabad",
@@ -1511,8 +1511,8 @@
       "state": "Chhattisgarh",
       "lat": 22.0797,
       "lng": 82.1409,
-      "petrol": 87.31,
-      "diesel": 95.07
+      "petrol": 95.07,
+      "diesel": 87.31
     },
     {
       "name": "Durg",
@@ -1599,48 +1599,48 @@
       "state": "Himachal Pradesh",
       "lat": 31.1048,
       "lng": 77.1734,
-      "petrol": 87.31,
-      "diesel": 95.07
+      "petrol": 95.07,
+      "diesel": 87.31
     },
     {
       "name": "Manali",
       "state": "Himachal Pradesh",
       "lat": 32.2396,
       "lng": 77.1887,
-      "petrol": 87.31,
-      "diesel": 95.07
+      "petrol": 95.07,
+      "diesel": 87.31
     },
     {
       "name": "Dharamshala",
       "state": "Himachal Pradesh",
       "lat": 32.219,
       "lng": 76.3234,
-      "petrol": 87.31,
-      "diesel": 95.07
+      "petrol": 95.07,
+      "diesel": 87.31
     },
     {
       "name": "Kullu",
       "state": "Himachal Pradesh",
       "lat": 31.9578,
       "lng": 77.1094,
-      "petrol": 87.31,
-      "diesel": 95.07
+      "petrol": 95.07,
+      "diesel": 87.31
     },
     {
       "name": "Solan",
       "state": "Himachal Pradesh",
       "lat": 30.9045,
       "lng": 77.0967,
-      "petrol": 87.31,
-      "diesel": 95.07
+      "petrol": 95.07,
+      "diesel": 87.31
     },
     {
       "name": "Mandi",
       "state": "Himachal Pradesh",
       "lat": 31.708,
       "lng": 76.9318,
-      "petrol": 87.31,
-      "diesel": 95.07
+      "petrol": 95.07,
+      "diesel": 87.31
     },
     {
       "name": "Bilaspur HP",
@@ -1656,7 +1656,7 @@
       "lat": 34.0837,
       "lng": 74.7973,
       "petrol": 100.93,
-      "diesel": 100.93
+      "diesel": 87.01
     },
     {
       "name": "Jammu",
