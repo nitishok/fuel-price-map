@@ -154,7 +154,7 @@ def generate_page(city_name: str, slug: str, entries: list[dict], all_cities: di
     *{{box-sizing:border-box;margin:0;padding:0}}
     body{{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#f8fafc;color:#111827;line-height:1.5}}
     .hdr{{background:linear-gradient(135deg,#0f766e,#0ea5e9);color:#fff;padding:13px 20px;display:flex;align-items:center;justify-content:space-between;box-shadow:0 2px 8px rgba(0,0,0,0.15)}}
-    .hdr-title{{font-size:16px;font-weight:700;color:#fff;text-decoration:none}}
+    .hdr-title{{font-size:18px;font-weight:700;color:#fff;text-decoration:none}}
     .hdr-title:hover{{opacity:.9}}
     .brand-t{{color:#5eead4}}
     .brand-i{{color:rgba(255,255,255,0.45);font-weight:500}}
