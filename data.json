@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-21T22:40:49+00:00",
+  "lastUpdated": "2026-04-21T23:39:17+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -600,7 +600,7 @@
       "lat": 14.4426,
       "lng": 79.9865,
       "petrol": 110.05,
-      "diesel": 97.81
+      "diesel": 98.3
     },
     {
       "name": "Kadapa",
