@@ -15,6 +15,7 @@ from datetime import datetime
 HERE = os.path.dirname(os.path.abspath(__file__))
 PROJECT_ROOT = os.path.dirname(HERE)
 HISTORY_JSON = os.path.join(PROJECT_ROOT, "history.json")
+DATA_JSON = os.path.join(PROJECT_ROOT, "data.json")
 
 METRO_CITY_SLUGS: dict[str, str] = {
     "Mumbai": "mumbai",
@@ -63,6 +64,23 @@ def format_updated(updated_str: str | None, date_str: str) -> str:
     return format_date(date_str)
 
 
+def get_last_scrape_timestamp() -> str:
+    """Read lastUpdated from data.json, convert UTC → IST, return formatted string."""
+    try:
+        with open(DATA_JSON, encoding="utf-8") as f:
+            data = json.load(f)
+        utc_str = data.get("lastUpdated", "")
+        if utc_str:
+            from datetime import timezone, timedelta
+            IST = timezone(timedelta(hours=5, minutes=30))
+            dt_utc = datetime.fromisoformat(utc_str)
+            dt_ist = dt_utc.astimezone(IST)
+            return dt_ist.strftime("%-d %b %Y, %-I:%M %p IST")
+    except Exception:
+        pass
+    return ""
+
+
 def delta_html(current: float, previous: float | None) -> str:
     if previous is None:
         return ""
@@ -77,7 +95,7 @@ def delta_html(current: float, previous: float | None) -> str:
     )
 
 
-def generate_page(city_name: str, slug: str, entries: list[dict], all_cities: dict[str, str]) -> str:
+def generate_page(city_name: str, slug: str, entries: list[dict], all_cities: dict[str, str], scrape_ts: str = "") -> str:
     today = entries[0] if entries else None
     prev = entries[1] if len(entries) > 1 else None
 
@@ -86,7 +104,7 @@ def generate_page(city_name: str, slug: str, entries: list[dict], all_cities: di
     pp = prev["petrol"] if prev else None
     pd = prev["diesel"] if prev else None
 
-    today_date_str = format_updated(
+    today_date_str = scrape_ts or format_updated(
         entries[0].get("updated") if entries else None,
         entries[0]["date"] if entries else "",
     )
@@ -253,6 +271,10 @@ def main() -> int:
     with open(HISTORY_JSON, encoding="utf-8") as f:
         history: dict[str, list] = json.load(f)
 
+    scrape_ts = get_last_scrape_timestamp()
+    if scrape_ts:
+        print(f"  Using scrape timestamp: {scrape_ts}", file=sys.stderr)
+
     count = 0
     for city_name, slug in METRO_CITY_SLUGS.items():
         entries = history.get(city_name, [])
@@ -260,7 +282,7 @@ def main() -> int:
             print(f"  SKIP {city_name} — no data in history.json", file=sys.stderr)
             continue
 
-        page_html = generate_page(city_name, slug, entries, METRO_CITY_SLUGS)
+        page_html = generate_page(city_name, slug, entries, METRO_CITY_SLUGS, scrape_ts)
 
         city_dir = os.path.join(PROJECT_ROOT, slug)
         os.makedirs(city_dir, exist_ok=True)
