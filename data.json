@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-22T19:12:19+00:00",
+  "lastUpdated": "2026-04-22T20:54:59+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -808,7 +808,7 @@
       "lat": 26.9124,
       "lng": 75.7873,
       "petrol": 90.21,
-      "diesel": 90.21
+      "diesel": 90.36
     },
     {
       "name": "Jodhpur",
@@ -823,7 +823,7 @@
       "state": "Rajasthan",
       "lat": 24.5854,
       "lng": 73.7125,
-      "petrol": 105.5,
+      "petrol": 105.03,
       "diesel": 90.92
     },
     {
@@ -1271,7 +1271,7 @@
       "state": "Haryana",
       "lat": 28.4595,
       "lng": 77.0266,
-      "petrol": 95.24,
+      "petrol": 96.46,
       "diesel": 88.09
     },
     {
