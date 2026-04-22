@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-22T10:24:48+00:00",
+  "lastUpdated": "2026-04-22T12:06:05+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -23,7 +23,7 @@
       "state": "Maharashtra",
       "lat": 19.076,
       "lng": 72.8777,
-      "petrol": 103.54,
+      "petrol": 103.49,
       "diesel": 90.01
     },
     {
@@ -943,7 +943,7 @@
       "state": "Uttar Pradesh",
       "lat": 25.3176,
       "lng": 82.9739,
-      "petrol": 95.39,
+      "petrol": 95.53,
       "diesel": 88.7
     },
     {
@@ -960,7 +960,7 @@
       "lat": 28.6692,
       "lng": 77.4538,
       "petrol": 94.69,
-      "diesel": 87.7
+      "diesel": 87.79
     },
     {
       "name": "Prayagraj",
