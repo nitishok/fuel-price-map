@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-22T17:01:51+00:00",
+  "lastUpdated": "2026-04-22T18:04:29+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -23,7 +23,7 @@
       "state": "Maharashtra",
       "lat": 19.076,
       "lng": 72.8777,
-      "petrol": 103.49,
+      "petrol": 103.54,
       "diesel": 90.01
     },
     {
@@ -80,7 +80,7 @@
       "lat": 16.705,
       "lng": 74.2433,
       "petrol": 104.54,
-      "diesel": 89.02
+      "diesel": 104.54
     },
     {
       "name": "Solapur",
@@ -103,7 +103,7 @@
       "state": "Maharashtra",
       "lat": 16.8524,
       "lng": 74.5815,
-      "petrol": 103.43,
+      "petrol": 104.07,
       "diesel": 90.63
     },
     {
@@ -151,7 +151,7 @@
       "state": "Karnataka",
       "lat": 12.9716,
       "lng": 77.5946,
-      "petrol": 102.9,
+      "petrol": 102.92,
       "diesel": 90.98
     },
     {
@@ -1208,7 +1208,7 @@
       "lat": 30.7333,
       "lng": 76.7794,
       "petrol": 94.28,
-      "diesel": 82.45
+      "diesel": 82.44
     },
     {
       "name": "Ludhiana",
@@ -1216,7 +1216,7 @@
       "lat": 30.901,
       "lng": 75.8573,
       "petrol": 97.48,
-      "diesel": 87.98
+      "diesel": 87.97
     },
     {
       "name": "Amritsar",
@@ -1455,7 +1455,7 @@
       "state": "Jharkhand",
       "lat": 23.3441,
       "lng": 85.3096,
-      "petrol": 97.86,
+      "petrol": 97.85,
       "diesel": 92.6
     },
     {
