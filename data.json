@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-22T22:50:06+00:00",
+  "lastUpdated": "2026-04-22T23:48:18+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -495,7 +495,7 @@
       "state": "Telangana",
       "lat": 17.9689,
       "lng": 79.5941,
-      "petrol": 106.88,
+      "petrol": 106.84,
       "diesel": 95.15
     },
     {
