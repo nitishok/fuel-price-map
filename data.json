@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-22T13:16:20+00:00",
+  "lastUpdated": "2026-04-22T15:17:05+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -103,7 +103,7 @@
       "state": "Maharashtra",
       "lat": 16.8524,
       "lng": 74.5815,
-      "petrol": 104.07,
+      "petrol": 103.43,
       "diesel": 90.63
     },
     {
@@ -864,7 +864,7 @@
       "lat": 27.2152,
       "lng": 77.4977,
       "petrol": 90.21,
-      "diesel": 90.21
+      "diesel": 89.99
     },
     {
       "name": "Sikar",
@@ -943,7 +943,7 @@
       "state": "Uttar Pradesh",
       "lat": 25.3176,
       "lng": 82.9739,
-      "petrol": 95.53,
+      "petrol": 95.39,
       "diesel": 88.7
     },
     {
@@ -1664,7 +1664,7 @@
       "lat": 32.7266,
       "lng": 74.857,
       "petrol": 96.48,
-      "diesel": 83.32
+      "diesel": 83.33
     },
     {
       "name": "Anantnag",
