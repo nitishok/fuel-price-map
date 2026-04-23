@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-23T02:02:05+00:00",
+  "lastUpdated": "2026-04-23T04:56:25+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -31,7 +31,7 @@
       "state": "Maharashtra",
       "lat": 19.2183,
       "lng": 72.9781,
-      "petrol": 103.66,
+      "petrol": 103.59,
       "diesel": 90.12
     },
     {
@@ -80,7 +80,7 @@
       "lat": 16.705,
       "lng": 74.2433,
       "petrol": 104.54,
-      "diesel": 104.54
+      "diesel": 91.08
     },
     {
       "name": "Solapur",
@@ -319,7 +319,7 @@
       "state": "Tamil Nadu",
       "lat": 12.9165,
       "lng": 79.1325,
-      "petrol": 102.11,
+      "petrol": 93.66,
       "diesel": 93.66
     },
     {
@@ -464,7 +464,7 @@
       "lat": 11.051,
       "lng": 76.0711,
       "petrol": 106.24,
-      "diesel": 106.24
+      "diesel": 95.22
     },
     {
       "name": "Kasaragod",
@@ -496,7 +496,7 @@
       "lat": 17.9689,
       "lng": 79.5941,
       "petrol": 106.88,
-      "diesel": 95.15
+      "diesel": 106.88
     },
     {
       "name": "Nizamabad",
@@ -736,7 +736,7 @@
       "lat": 22.3039,
       "lng": 70.8022,
       "petrol": 94.25,
-      "diesel": 89.94
+      "diesel": 94.25
     },
     {
       "name": "Gandhinagar",
@@ -807,7 +807,7 @@
       "state": "Rajasthan",
       "lat": 26.9124,
       "lng": 75.7873,
-      "petrol": 90.21,
+      "petrol": 104.71,
       "diesel": 90.21
     },
     {
@@ -816,7 +816,7 @@
       "lat": 26.2389,
       "lng": 73.0243,
       "petrol": 104.52,
-      "diesel": 90.23
+      "diesel": 90.05
     },
     {
       "name": "Udaipur",
@@ -839,7 +839,7 @@
       "state": "Rajasthan",
       "lat": 26.4499,
       "lng": 74.6399,
-      "petrol": 90.21,
+      "petrol": 104.71,
       "diesel": 90.21
     },
     {
@@ -847,7 +847,7 @@
       "state": "Rajasthan",
       "lat": 28.0229,
       "lng": 73.3119,
-      "petrol": 90.21,
+      "petrol": 104.71,
       "diesel": 90.21
     },
     {
@@ -855,7 +855,7 @@
       "state": "Rajasthan",
       "lat": 27.553,
       "lng": 76.6346,
-      "petrol": 90.21,
+      "petrol": 104.71,
       "diesel": 90.21
     },
     {
@@ -863,7 +863,7 @@
       "state": "Rajasthan",
       "lat": 27.2152,
       "lng": 77.4977,
-      "petrol": 90.21,
+      "petrol": 104.71,
       "diesel": 90.21
     },
     {
@@ -871,7 +871,7 @@
       "state": "Rajasthan",
       "lat": 27.6094,
       "lng": 75.1399,
-      "petrol": 90.21,
+      "petrol": 104.71,
       "diesel": 90.21
     },
     {
@@ -879,7 +879,7 @@
       "state": "Rajasthan",
       "lat": 25.7711,
       "lng": 73.3234,
-      "petrol": 90.21,
+      "petrol": 104.71,
       "diesel": 90.21
     },
     {
@@ -887,7 +887,7 @@
       "state": "Rajasthan",
       "lat": 29.9094,
       "lng": 73.88,
-      "petrol": 90.21,
+      "petrol": 104.71,
       "diesel": 90.21
     },
     {
@@ -1207,7 +1207,7 @@
       "state": "Chandigarh (UT)",
       "lat": 30.7333,
       "lng": 76.7794,
-      "petrol": 94.28,
+      "petrol": 94.3,
       "diesel": 82.44
     },
     {
@@ -1399,7 +1399,7 @@
       "state": "Assam",
       "lat": 26.1445,
       "lng": 91.7362,
-      "petrol": 98.2,
+      "petrol": 93.23,
       "diesel": 89.42
     },
     {
@@ -1455,7 +1455,7 @@
       "state": "Jharkhand",
       "lat": 23.3441,
       "lng": 85.3096,
-      "petrol": 97.85,
+      "petrol": 92.6,
       "diesel": 92.6
     },
     {
@@ -1767,7 +1767,7 @@
       "state": "Tripura",
       "lat": 23.8315,
       "lng": 91.2868,
-      "petrol": 97.53,
+      "petrol": 86.55,
       "diesel": 86.55
     },
     {
