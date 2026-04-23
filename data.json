@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-23T21:50:04+00:00",
+  "lastUpdated": "2026-04-23T22:44:49+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -1399,7 +1399,7 @@
       "state": "Assam",
       "lat": 26.1445,
       "lng": 91.7362,
-      "petrol": 93.23,
+      "petrol": 98.2,
       "diesel": 89.42
     },
     {
