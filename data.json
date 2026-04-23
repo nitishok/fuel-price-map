@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-23T20:17:18+00:00",
+  "lastUpdated": "2026-04-23T21:50:04+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -303,7 +303,7 @@
       "state": "Tamil Nadu",
       "lat": 11.6643,
       "lng": 78.146,
-      "petrol": 101.92,
+      "petrol": 101.66,
       "diesel": 93.26
     },
     {
@@ -928,7 +928,7 @@
       "lat": 26.4499,
       "lng": 80.3319,
       "petrol": 94.44,
-      "diesel": 87.51
+      "diesel": 87.49
     },
     {
       "name": "Agra",
@@ -1399,7 +1399,7 @@
       "state": "Assam",
       "lat": 26.1445,
       "lng": 91.7362,
-      "petrol": 98.2,
+      "petrol": 93.23,
       "diesel": 89.42
     },
     {
