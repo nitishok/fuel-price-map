@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-23T04:56:25+00:00",
+  "lastUpdated": "2026-04-23T07:08:22+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -55,7 +55,7 @@
       "state": "Maharashtra",
       "lat": 21.1458,
       "lng": 79.0882,
-      "petrol": 90.56,
+      "petrol": 104.0,
       "diesel": 90.56
     },
     {
@@ -1207,7 +1207,7 @@
       "state": "Chandigarh (UT)",
       "lat": 30.7333,
       "lng": 76.7794,
-      "petrol": 94.3,
+      "petrol": 94.28,
       "diesel": 82.44
     },
     {
@@ -1272,7 +1272,7 @@
       "lat": 28.4595,
       "lng": 77.0266,
       "petrol": 95.24,
-      "diesel": 88.09
+      "diesel": 88.93
     },
     {
       "name": "Faridabad",
@@ -1399,7 +1399,7 @@
       "state": "Assam",
       "lat": 26.1445,
       "lng": 91.7362,
-      "petrol": 93.23,
+      "petrol": 98.2,
       "diesel": 89.42
     },
     {
