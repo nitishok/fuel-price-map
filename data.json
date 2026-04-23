@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-22T23:48:18+00:00",
+  "lastUpdated": "2026-04-23T02:02:05+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -31,7 +31,7 @@
       "state": "Maharashtra",
       "lat": 19.2183,
       "lng": 72.9781,
-      "petrol": 103.59,
+      "petrol": 103.66,
       "diesel": 90.12
     },
     {
@@ -495,7 +495,7 @@
       "state": "Telangana",
       "lat": 17.9689,
       "lng": 79.5941,
-      "petrol": 106.84,
+      "petrol": 106.88,
       "diesel": 95.15
     },
     {
@@ -816,7 +816,7 @@
       "lat": 26.2389,
       "lng": 73.0243,
       "petrol": 104.52,
-      "diesel": 90.05
+      "diesel": 90.23
     },
     {
       "name": "Udaipur",
