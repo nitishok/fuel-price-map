@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-24T16:55:44+00:00",
+  "lastUpdated": "2026-04-24T17:52:16+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -1303,7 +1303,7 @@
       "state": "Haryana",
       "lat": 29.6857,
       "lng": 76.9905,
-      "petrol": 95.92,
+      "petrol": 94.72,
       "diesel": 87.53
     },
     {
