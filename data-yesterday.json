@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-23T17:22:44+00:00",
+  "lastUpdated": "2026-04-24T17:52:16+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -63,7 +63,7 @@
       "state": "Maharashtra",
       "lat": 19.9975,
       "lng": 73.7898,
-      "petrol": 104.74,
+      "petrol": 91.25,
       "diesel": 91.25
     },
     {
@@ -319,7 +319,7 @@
       "state": "Tamil Nadu",
       "lat": 12.9165,
       "lng": 79.1325,
-      "petrol": 93.66,
+      "petrol": 102.11,
       "diesel": 93.66
     },
     {
@@ -407,7 +407,7 @@
       "state": "Kerala",
       "lat": 11.2588,
       "lng": 75.7804,
-      "petrol": 105.76,
+      "petrol": 94.76,
       "diesel": 94.76
     },
     {
@@ -496,7 +496,7 @@
       "lat": 17.9689,
       "lng": 79.5941,
       "petrol": 106.88,
-      "diesel": 106.88
+      "diesel": 95.15
     },
     {
       "name": "Nizamabad",
@@ -736,7 +736,7 @@
       "lat": 22.3039,
       "lng": 70.8022,
       "petrol": 94.25,
-      "diesel": 94.25
+      "diesel": 89.94
     },
     {
       "name": "Gandhinagar",
@@ -816,7 +816,7 @@
       "lat": 26.2389,
       "lng": 73.0243,
       "petrol": 104.52,
-      "diesel": 90.05
+      "diesel": 90.0
     },
     {
       "name": "Udaipur",
@@ -927,7 +927,7 @@
       "state": "Uttar Pradesh",
       "lat": 26.4499,
       "lng": 80.3319,
-      "petrol": 94.44,
+      "petrol": 87.49,
       "diesel": 87.49
     },
     {
@@ -952,7 +952,7 @@
       "lat": 28.5355,
       "lng": 77.391,
       "petrol": 94.87,
-      "diesel": 88.0
+      "diesel": 94.87
     },
     {
       "name": "Ghaziabad",
@@ -976,7 +976,7 @@
       "lat": 28.9845,
       "lng": 77.7064,
       "petrol": 94.49,
-      "diesel": 87.55
+      "diesel": 94.49
     },
     {
       "name": "Aligarh",
@@ -1655,7 +1655,7 @@
       "state": "Jammu & Kashmir (UT)",
       "lat": 34.0837,
       "lng": 74.7973,
-      "petrol": 100.93,
+      "petrol": 87.01,
       "diesel": 87.01
     },
     {
@@ -1664,14 +1664,14 @@
       "lat": 32.7266,
       "lng": 74.857,
       "petrol": 96.48,
-      "diesel": 83.32
+      "diesel": 83.33
     },
     {
       "name": "Anantnag",
       "state": "Jammu & Kashmir (UT)",
       "lat": 33.7311,
       "lng": 75.1487,
-      "petrol": 100.93,
+      "petrol": 87.01,
       "diesel": 86.11
     },
     {
@@ -1719,7 +1719,7 @@
       "state": "Ladakh (UT)",
       "lat": 34.1526,
       "lng": 77.577,
-      "petrol": 100.93,
+      "petrol": 87.01,
       "diesel": 91.46
     },
     {
@@ -1815,7 +1815,7 @@
       "state": "Arunachal Pradesh",
       "lat": 27.0844,
       "lng": 93.6053,
-      "petrol": 90.9,
+      "petrol": 80.4,
       "diesel": 80.4
     },
     {
@@ -1823,7 +1823,7 @@
       "state": "Arunachal Pradesh",
       "lat": 27.5859,
       "lng": 91.8594,
-      "petrol": 90.9,
+      "petrol": 80.4,
       "diesel": 81.0
     },
     {
@@ -1855,7 +1855,7 @@
       "state": "Lakshadweep (UT)",
       "lat": 10.5593,
       "lng": 72.6358,
-      "petrol": 100.93,
+      "petrol": 87.01,
       "diesel": 95.71
     },
     {
