@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-23T23:48:55+00:00",
+  "lastUpdated": "2026-04-24T02:02:56+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -1143,7 +1143,7 @@
       "state": "Bihar",
       "lat": 25.5941,
       "lng": 85.1376,
-      "petrol": 105.22,
+      "petrol": 105.18,
       "diesel": 92.09
     },
     {
