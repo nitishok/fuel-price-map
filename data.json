@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-25T12:54:29+00:00",
+  "lastUpdated": "2026-04-25T14:11:32+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -464,7 +464,7 @@
       "lat": 11.051,
       "lng": 76.0711,
       "petrol": 95.22,
-      "diesel": 95.27
+      "diesel": 95.22
     },
     {
       "name": "Kasaragod",
@@ -495,7 +495,7 @@
       "state": "Telangana",
       "lat": 17.9689,
       "lng": 79.5941,
-      "petrol": 106.88,
+      "petrol": 106.84,
       "diesel": 95.15
     },
     {
@@ -639,7 +639,7 @@
       "state": "West Bengal",
       "lat": 22.5726,
       "lng": 88.3639,
-      "petrol": 105.45,
+      "petrol": 104.99,
       "diesel": 91.81
     },
     {
@@ -1000,7 +1000,7 @@
       "lat": 28.367,
       "lng": 79.4304,
       "petrol": 94.79,
-      "diesel": 87.9
+      "diesel": 87.76
     },
     {
       "name": "Saharanpur",
