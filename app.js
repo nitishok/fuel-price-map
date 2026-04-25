@@ -292,7 +292,7 @@ function updateStatusLine() {
   if (!statusEl) return;
   if (!LAST_UPDATED) {
     statusEl.textContent =
-      `Showing seed sample prices (${FUEL_CITIES.length} cities). Run the scraper to fetch live values.`;
+      `Loading...`;
     statusEl.classList.add("is-stale");
     return;
   }
