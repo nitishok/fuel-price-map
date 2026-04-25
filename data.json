@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-25T15:45:35+00:00",
+  "lastUpdated": "2026-04-25T16:43:27+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -280,7 +280,7 @@
       "lat": 11.0168,
       "lng": 76.9558,
       "petrol": 101.28,
-      "diesel": 92.95
+      "diesel": 92.88
     },
     {
       "name": "Madurai",
@@ -415,7 +415,7 @@
       "state": "Kerala",
       "lat": 10.5276,
       "lng": 76.2144,
-      "petrol": 106.11,
+      "petrol": 105.92,
       "diesel": 95.07
     },
     {
@@ -599,7 +599,7 @@
       "state": "Andhra Pradesh",
       "lat": 14.4426,
       "lng": 79.9865,
-      "petrol": 110.05,
+      "petrol": 110.6,
       "diesel": 97.81
     },
     {
@@ -959,7 +959,7 @@
       "state": "Uttar Pradesh",
       "lat": 28.6692,
       "lng": 77.4538,
-      "petrol": 94.62,
+      "petrol": 94.69,
       "diesel": 87.79
     },
     {
@@ -1071,7 +1071,7 @@
       "state": "Madhya Pradesh",
       "lat": 22.7196,
       "lng": 75.8577,
-      "petrol": 106.48,
+      "petrol": 106.64,
       "diesel": 91.88
     },
     {
@@ -1144,7 +1144,7 @@
       "lat": 25.5941,
       "lng": 85.1376,
       "petrol": 105.22,
-      "diesel": 92.09
+      "diesel": 92.04
     },
     {
       "name": "Gaya",
