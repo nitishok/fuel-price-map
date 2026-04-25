@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-25T06:28:19+00:00",
+  "lastUpdated": "2026-04-25T08:12:48+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -608,7 +608,7 @@
       "lat": 14.4753,
       "lng": 78.8298,
       "petrol": 109.02,
-      "diesel": 95.69
+      "diesel": 96.93
     },
     {
       "name": "Anantapur",
