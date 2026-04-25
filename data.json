@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-25T14:51:48+00:00",
+  "lastUpdated": "2026-04-25T15:45:35+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -280,7 +280,7 @@
       "lat": 11.0168,
       "lng": 76.9558,
       "petrol": 101.28,
-      "diesel": 92.88
+      "diesel": 92.95
     },
     {
       "name": "Madurai",
@@ -959,7 +959,7 @@
       "state": "Uttar Pradesh",
       "lat": 28.6692,
       "lng": 77.4538,
-      "petrol": 94.69,
+      "petrol": 94.62,
       "diesel": 87.79
     },
     {
