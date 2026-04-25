@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-25T20:40:37+00:00",
+  "lastUpdated": "2026-04-25T21:37:42+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -1000,7 +1000,7 @@
       "lat": 28.367,
       "lng": 79.4304,
       "petrol": 94.79,
-      "diesel": 87.76
+      "diesel": 87.9
     },
     {
       "name": "Saharanpur",
