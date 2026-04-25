@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-25T04:41:50+00:00",
+  "lastUpdated": "2026-04-25T06:28:19+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -23,7 +23,7 @@
       "state": "Maharashtra",
       "lat": 19.076,
       "lng": 72.8777,
-      "petrol": 103.54,
+      "petrol": 103.49,
       "diesel": 90.01
     },
     {
@@ -63,7 +63,7 @@
       "state": "Maharashtra",
       "lat": 19.9975,
       "lng": 73.7898,
-      "petrol": 91.25,
+      "petrol": 104.74,
       "diesel": 91.25
     },
     {
@@ -95,7 +95,7 @@
       "state": "Maharashtra",
       "lat": 20.9374,
       "lng": 77.7796,
-      "petrol": 105.1,
+      "petrol": 93.78,
       "diesel": 91.63
     },
     {
@@ -1272,7 +1272,7 @@
       "lat": 28.4595,
       "lng": 77.0266,
       "petrol": 95.24,
-      "diesel": 88.09
+      "diesel": 95.24
     },
     {
       "name": "Faridabad",
