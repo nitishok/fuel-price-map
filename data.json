@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-25T18:49:35+00:00",
+  "lastUpdated": "2026-04-25T19:50:22+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -48,14 +48,14 @@
       "lat": 18.5204,
       "lng": 73.8567,
       "petrol": 103.8,
-      "diesel": 88.38
+      "diesel": 90.34
     },
     {
       "name": "Nagpur",
       "state": "Maharashtra",
       "lat": 21.1458,
       "lng": 79.0882,
-      "petrol": 104.0,
+      "petrol": 104.22,
       "diesel": 90.56
     },
     {
@@ -183,7 +183,7 @@
       "state": "Karnataka",
       "lat": 15.8497,
       "lng": 74.4977,
-      "petrol": 102.73,
+      "petrol": 102.77,
       "diesel": 90.85
     },
     {
@@ -935,7 +935,7 @@
       "state": "Uttar Pradesh",
       "lat": 27.1767,
       "lng": 78.0081,
-      "petrol": 95.75,
+      "petrol": 94.39,
       "diesel": 87.56
     },
     {
@@ -1655,15 +1655,15 @@
       "state": "Jammu & Kashmir (UT)",
       "lat": 34.0837,
       "lng": 74.7973,
-      "petrol": 100.93,
-      "diesel": 87.01
+      "petrol": 100.7,
+      "diesel": 86.88
     },
     {
       "name": "Jammu",
       "state": "Jammu & Kashmir (UT)",
       "lat": 32.7266,
       "lng": 74.857,
-      "petrol": 96.48,
+      "petrol": 96.42,
       "diesel": 83.33
     },
     {
