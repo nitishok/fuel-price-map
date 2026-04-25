@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-25T17:40:38+00:00",
+  "lastUpdated": "2026-04-25T18:49:35+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -48,7 +48,7 @@
       "lat": 18.5204,
       "lng": 73.8567,
       "petrol": 103.8,
-      "diesel": 90.34
+      "diesel": 88.38
     },
     {
       "name": "Nagpur",
@@ -975,7 +975,7 @@
       "state": "Uttar Pradesh",
       "lat": 28.9845,
       "lng": 77.7064,
-      "petrol": 94.4,
+      "petrol": 94.49,
       "diesel": 87.55
     },
     {
