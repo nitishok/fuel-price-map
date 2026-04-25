@@ -349,7 +349,7 @@ def maybe_snapshot_yesterday(data: dict) -> None:
 
 
 def update_history(data: dict) -> None:
-    """Append today's prices for the 25 metro cities to history.json (once per IST day)."""
+    """Update today's prices for the 25 metro cities in history.json on every scrape run."""
     from datetime import timezone, timedelta
     IST = timezone(timedelta(hours=5, minutes=30))
     now_ist = datetime.now(IST)
@@ -370,14 +370,16 @@ def update_history(data: dict) -> None:
         if not city:
             continue
         entries = history.setdefault(city_name, [])
-        if entries and entries[0].get("date") == today_str:
-            continue  # already recorded today
-        entries.insert(0, {
+        new_entry = {
             "date": today_str,
             "updated": updated_str,
             "petrol": round(city["petrol"], 2),
             "diesel": round(city["diesel"], 2),
-        })
+        }
+        if entries and entries[0].get("date") == today_str:
+            entries[0] = new_entry  # overwrite today's entry with latest prices
+        else:
+            entries.insert(0, new_entry)
         history[city_name] = entries[:10]
         changed = True
 
