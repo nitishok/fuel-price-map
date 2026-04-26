@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-26T21:40:59+00:00",
+  "lastUpdated": "2026-04-26T22:38:00+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -47,7 +47,7 @@
       "state": "Maharashtra",
       "lat": 18.5204,
       "lng": 73.8567,
-      "petrol": 103.24,
+      "petrol": 103.8,
       "diesel": 90.34
     },
     {
@@ -184,7 +184,7 @@
       "lat": 15.8497,
       "lng": 74.4977,
       "petrol": 102.73,
-      "diesel": 90.91
+      "diesel": 90.85
     },
     {
       "name": "Davangere",
@@ -415,7 +415,7 @@
       "state": "Kerala",
       "lat": 10.5276,
       "lng": 76.2144,
-      "petrol": 105.92,
+      "petrol": 106.11,
       "diesel": 95.07
     },
     {
