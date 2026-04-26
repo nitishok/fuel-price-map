@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-26T18:50:40+00:00",
+  "lastUpdated": "2026-04-26T19:50:54+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -32,7 +32,7 @@
       "lat": 19.2183,
       "lng": 72.9781,
       "petrol": 103.59,
-      "diesel": 90.12
+      "diesel": 90.15
     },
     {
       "name": "Navi Mumbai",
@@ -416,7 +416,7 @@
       "lat": 10.5276,
       "lng": 76.2144,
       "petrol": 106.11,
-      "diesel": 95.07
+      "diesel": 95.04
     },
     {
       "name": "Kollam",
@@ -1280,7 +1280,7 @@
       "lat": 28.4089,
       "lng": 77.3178,
       "petrol": 95.55,
-      "diesel": 88.39
+      "diesel": 89.2
     },
     {
       "name": "Panipat",
@@ -1504,7 +1504,7 @@
       "lat": 21.2514,
       "lng": 81.6296,
       "petrol": 99.42,
-      "diesel": 93.39
+      "diesel": 99.42
     },
     {
       "name": "Bilaspur",
