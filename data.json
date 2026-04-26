@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-26T09:56:32+00:00",
+  "lastUpdated": "2026-04-26T10:48:38+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -999,7 +999,7 @@
       "state": "Uttar Pradesh",
       "lat": 28.367,
       "lng": 79.4304,
-      "petrol": 94.66,
+      "petrol": 94.79,
       "diesel": 87.9
     },
     {
