@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-26T08:24:48+00:00",
+  "lastUpdated": "2026-04-26T09:56:32+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -96,7 +96,7 @@
       "lat": 20.9374,
       "lng": 77.7796,
       "petrol": 105.1,
-      "diesel": 91.82
+      "diesel": 91.63
     },
     {
       "name": "Sangli",
@@ -999,7 +999,7 @@
       "state": "Uttar Pradesh",
       "lat": 28.367,
       "lng": 79.4304,
-      "petrol": 94.79,
+      "petrol": 94.66,
       "diesel": 87.9
     },
     {
