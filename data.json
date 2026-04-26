@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-26T22:38:00+00:00",
+  "lastUpdated": "2026-04-26T23:41:45+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -312,7 +312,7 @@
       "lat": 8.7139,
       "lng": 77.7567,
       "petrol": 100.79,
-      "diesel": 92.72
+      "diesel": 92.95
     },
     {
       "name": "Vellore",
@@ -488,7 +488,7 @@
       "lat": 17.385,
       "lng": 78.4867,
       "petrol": 95.69,
-      "diesel": 95.69
+      "diesel": 95.65
     },
     {
       "name": "Warangal",
@@ -832,7 +832,7 @@
       "lat": 25.2138,
       "lng": 75.8648,
       "petrol": 104.25,
-      "diesel": 89.78
+      "diesel": 89.83
     },
     {
       "name": "Ajmer",
@@ -1543,7 +1543,7 @@
       "state": "Uttarakhand",
       "lat": 30.3165,
       "lng": 78.0322,
-      "petrol": 93.51,
+      "petrol": 93.17,
       "diesel": 88.33
     },
     {
