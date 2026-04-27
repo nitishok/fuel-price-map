@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-27T12:29:32+00:00",
+  "lastUpdated": "2026-04-27T15:12:06+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -23,7 +23,7 @@
       "state": "Maharashtra",
       "lat": 19.076,
       "lng": 72.8777,
-      "petrol": 103.49,
+      "petrol": 103.54,
       "diesel": 90.01
     },
     {
@@ -64,7 +64,7 @@
       "lat": 19.9975,
       "lng": 73.7898,
       "petrol": 104.74,
-      "diesel": 91.25
+      "diesel": 89.23
     },
     {
       "name": "Aurangabad",
@@ -183,7 +183,7 @@
       "state": "Karnataka",
       "lat": 15.8497,
       "lng": 74.4977,
-      "petrol": 102.73,
+      "petrol": 102.77,
       "diesel": 90.85
     },
     {
@@ -319,7 +319,7 @@
       "state": "Tamil Nadu",
       "lat": 12.9165,
       "lng": 79.1325,
-      "petrol": 102.42,
+      "petrol": 102.11,
       "diesel": 93.66
     },
     {
@@ -360,7 +360,7 @@
       "lat": 8.1788,
       "lng": 77.4334,
       "petrol": 101.73,
-      "diesel": 93.34
+      "diesel": 93.67
     },
     {
       "name": "Kanchipuram",
@@ -408,7 +408,7 @@
       "lat": 11.2588,
       "lng": 75.7804,
       "petrol": 105.76,
-      "diesel": 94.79
+      "diesel": 94.76
     },
     {
       "name": "Thrissur",
@@ -1207,7 +1207,7 @@
       "state": "Chandigarh (UT)",
       "lat": 30.7333,
       "lng": 76.7794,
-      "petrol": 94.28,
+      "petrol": 94.3,
       "diesel": 82.44
     },
     {
@@ -1399,7 +1399,7 @@
       "state": "Assam",
       "lat": 26.1445,
       "lng": 91.7362,
-      "petrol": 98.2,
+      "petrol": 93.23,
       "diesel": 89.42
     },
     {
