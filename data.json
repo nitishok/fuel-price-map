@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-28T02:15:47+00:00",
+  "lastUpdated": "2026-04-28T06:03:16+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -96,7 +96,7 @@
       "lat": 20.9374,
       "lng": 77.7796,
       "petrol": 105.1,
-      "diesel": 105.1
+      "diesel": 91.63
     },
     {
       "name": "Sangli",
@@ -183,7 +183,7 @@
       "state": "Karnataka",
       "lat": 15.8497,
       "lng": 74.4977,
-      "petrol": 102.73,
+      "petrol": 90.85,
       "diesel": 90.85
     },
     {
@@ -296,7 +296,7 @@
       "lat": 10.7905,
       "lng": 78.7047,
       "petrol": 101.23,
-      "diesel": 92.85
+      "diesel": 101.23
     },
     {
       "name": "Salem",
@@ -415,7 +415,7 @@
       "state": "Kerala",
       "lat": 10.5276,
       "lng": 76.2144,
-      "petrol": 106.11,
+      "petrol": 95.07,
       "diesel": 95.07
     },
     {
@@ -592,7 +592,7 @@
       "lat": 15.8281,
       "lng": 78.0373,
       "petrol": 109.99,
-      "diesel": 109.99
+      "diesel": 97.8
     },
     {
       "name": "Nellore",
@@ -711,7 +711,7 @@
       "state": "Gujarat",
       "lat": 23.0225,
       "lng": 72.5714,
-      "petrol": 94.48,
+      "petrol": 90.15,
       "diesel": 90.15
     },
     {
@@ -735,7 +735,7 @@
       "state": "Gujarat",
       "lat": 22.3039,
       "lng": 70.8022,
-      "petrol": 89.94,
+      "petrol": 94.25,
       "diesel": 89.94
     },
     {
@@ -751,7 +751,7 @@
       "state": "Gujarat",
       "lat": 23.242,
       "lng": 69.6669,
-      "petrol": 94.48,
+      "petrol": 90.15,
       "diesel": 90.15
     },
     {
@@ -767,7 +767,7 @@
       "state": "Gujarat",
       "lat": 21.7645,
       "lng": 72.1519,
-      "petrol": 94.48,
+      "petrol": 90.15,
       "diesel": 90.15
     },
     {
@@ -775,7 +775,7 @@
       "state": "Gujarat",
       "lat": 21.5222,
       "lng": 70.4579,
-      "petrol": 94.48,
+      "petrol": 90.15,
       "diesel": 90.15
     },
     {
@@ -783,7 +783,7 @@
       "state": "Gujarat",
       "lat": 22.5645,
       "lng": 72.9289,
-      "petrol": 94.48,
+      "petrol": 90.15,
       "diesel": 90.15
     },
     {
@@ -799,7 +799,7 @@
       "state": "Gujarat",
       "lat": 21.6417,
       "lng": 69.6293,
-      "petrol": 94.48,
+      "petrol": 90.15,
       "diesel": 90.15
     },
     {
@@ -807,7 +807,7 @@
       "state": "Rajasthan",
       "lat": 26.9124,
       "lng": 75.7873,
-      "petrol": 104.71,
+      "petrol": 90.21,
       "diesel": 90.21
     },
     {
@@ -839,7 +839,7 @@
       "state": "Rajasthan",
       "lat": 26.4499,
       "lng": 74.6399,
-      "petrol": 104.71,
+      "petrol": 90.21,
       "diesel": 90.21
     },
     {
@@ -847,7 +847,7 @@
       "state": "Rajasthan",
       "lat": 28.0229,
       "lng": 73.3119,
-      "petrol": 104.71,
+      "petrol": 90.21,
       "diesel": 90.21
     },
     {
@@ -855,7 +855,7 @@
       "state": "Rajasthan",
       "lat": 27.553,
       "lng": 76.6346,
-      "petrol": 104.71,
+      "petrol": 90.21,
       "diesel": 90.21
     },
     {
@@ -863,7 +863,7 @@
       "state": "Rajasthan",
       "lat": 27.2152,
       "lng": 77.4977,
-      "petrol": 104.71,
+      "petrol": 90.21,
       "diesel": 90.21
     },
     {
@@ -871,7 +871,7 @@
       "state": "Rajasthan",
       "lat": 27.6094,
       "lng": 75.1399,
-      "petrol": 104.71,
+      "petrol": 90.21,
       "diesel": 90.21
     },
     {
@@ -879,7 +879,7 @@
       "state": "Rajasthan",
       "lat": 25.7711,
       "lng": 73.3234,
-      "petrol": 104.71,
+      "petrol": 90.21,
       "diesel": 90.21
     },
     {
@@ -887,7 +887,7 @@
       "state": "Rajasthan",
       "lat": 29.9094,
       "lng": 73.88,
-      "petrol": 104.71,
+      "petrol": 90.21,
       "diesel": 90.21
     },
     {
@@ -951,7 +951,7 @@
       "state": "Uttar Pradesh",
       "lat": 28.5355,
       "lng": 77.391,
-      "petrol": 88.0,
+      "petrol": 94.87,
       "diesel": 88.0
     },
     {
@@ -975,7 +975,7 @@
       "state": "Uttar Pradesh",
       "lat": 28.9845,
       "lng": 77.7064,
-      "petrol": 94.49,
+      "petrol": 87.55,
       "diesel": 87.55
     },
     {
@@ -1144,7 +1144,7 @@
       "lat": 25.5941,
       "lng": 85.1376,
       "petrol": 105.22,
-      "diesel": 105.22
+      "diesel": 92.09
     },
     {
       "name": "Gaya",
@@ -1152,7 +1152,7 @@
       "lat": 24.7914,
       "lng": 85.0002,
       "petrol": 105.22,
-      "diesel": 105.22
+      "diesel": 92.09
     },
     {
       "name": "Muzaffarpur",
@@ -1160,7 +1160,7 @@
       "lat": 26.1197,
       "lng": 85.391,
       "petrol": 106.47,
-      "diesel": 105.22
+      "diesel": 92.09
     },
     {
       "name": "Bhagalpur",
@@ -1168,7 +1168,7 @@
       "lat": 25.2425,
       "lng": 86.9842,
       "petrol": 105.22,
-      "diesel": 105.22
+      "diesel": 92.09
     },
     {
       "name": "Darbhanga",
@@ -1176,7 +1176,7 @@
       "lat": 26.1542,
       "lng": 85.8918,
       "petrol": 105.22,
-      "diesel": 105.22
+      "diesel": 92.09
     },
     {
       "name": "Purnia",
@@ -1184,7 +1184,7 @@
       "lat": 25.7771,
       "lng": 87.4753,
       "petrol": 105.22,
-      "diesel": 105.22
+      "diesel": 92.09
     },
     {
       "name": "Begusarai",
@@ -1192,7 +1192,7 @@
       "lat": 25.4182,
       "lng": 86.1272,
       "petrol": 105.22,
-      "diesel": 105.22
+      "diesel": 92.09
     },
     {
       "name": "Ara",
@@ -1351,24 +1351,24 @@
       "state": "Odisha",
       "lat": 20.4625,
       "lng": 85.8828,
-      "petrol": 92.98,
-      "diesel": 92.98
+      "petrol": 101.41,
+      "diesel": 101.41
     },
     {
       "name": "Rourkela",
       "state": "Odisha",
       "lat": 22.2604,
       "lng": 84.8536,
-      "petrol": 92.98,
-      "diesel": 92.98
+      "petrol": 101.41,
+      "diesel": 101.41
     },
     {
       "name": "Puri",
       "state": "Odisha",
       "lat": 19.8135,
       "lng": 85.8312,
-      "petrol": 92.98,
-      "diesel": 92.98
+      "petrol": 101.41,
+      "diesel": 101.41
     },
     {
       "name": "Berhampur",
@@ -1383,16 +1383,16 @@
       "state": "Odisha",
       "lat": 21.4669,
       "lng": 83.9812,
-      "petrol": 92.98,
-      "diesel": 92.98
+      "petrol": 101.41,
+      "diesel": 101.41
     },
     {
       "name": "Balasore",
       "state": "Odisha",
       "lat": 21.4934,
       "lng": 86.9335,
-      "petrol": 92.98,
-      "diesel": 92.98
+      "petrol": 101.41,
+      "diesel": 101.41
     },
     {
       "name": "Guwahati",
@@ -1503,7 +1503,7 @@
       "state": "Chhattisgarh",
       "lat": 21.2514,
       "lng": 81.6296,
-      "petrol": 93.37,
+      "petrol": 99.42,
       "diesel": 93.37
     },
     {
@@ -1519,7 +1519,7 @@
       "state": "Chhattisgarh",
       "lat": 21.1938,
       "lng": 81.2849,
-      "petrol": 93.37,
+      "petrol": 99.42,
       "diesel": 93.37
     },
     {
@@ -1527,7 +1527,7 @@
       "state": "Chhattisgarh",
       "lat": 22.3595,
       "lng": 82.7501,
-      "petrol": 93.37,
+      "petrol": 99.42,
       "diesel": 93.37
     },
     {
@@ -1535,7 +1535,7 @@
       "state": "Chhattisgarh",
       "lat": 19.0778,
       "lng": 82.0239,
-      "petrol": 93.37,
+      "petrol": 99.42,
       "diesel": 93.37
     },
     {
@@ -1544,7 +1544,7 @@
       "lat": 30.3165,
       "lng": 78.0322,
       "petrol": 93.51,
-      "diesel": 93.51
+      "diesel": 88.33
     },
     {
       "name": "Haridwar",
@@ -1552,7 +1552,7 @@
       "lat": 29.9457,
       "lng": 78.1642,
       "petrol": 92.52,
-      "diesel": 93.51
+      "diesel": 88.33
     },
     {
       "name": "Nainital",
@@ -1568,7 +1568,7 @@
       "lat": 30.0869,
       "lng": 78.2676,
       "petrol": 93.51,
-      "diesel": 93.51
+      "diesel": 88.33
     },
     {
       "name": "Mussoorie",
@@ -1584,7 +1584,7 @@
       "lat": 28.9845,
       "lng": 79.4141,
       "petrol": 93.51,
-      "diesel": 93.51
+      "diesel": 88.33
     },
     {
       "name": "Kashipur",
@@ -1592,7 +1592,7 @@
       "lat": 29.2176,
       "lng": 78.9593,
       "petrol": 93.51,
-      "diesel": 93.51
+      "diesel": 88.33
     },
     {
       "name": "Shimla",
@@ -1775,7 +1775,7 @@
       "state": "Meghalaya",
       "lat": 25.5788,
       "lng": 91.8933,
-      "petrol": 87.5,
+      "petrol": 96.3,
       "diesel": 87.5
     },
     {
@@ -1800,7 +1800,7 @@
       "lat": 25.6751,
       "lng": 94.1086,
       "petrol": 97.7,
-      "diesel": 83.83
+      "diesel": 97.7
     },
     {
       "name": "Dimapur",
@@ -1808,7 +1808,7 @@
       "lat": 25.9091,
       "lng": 93.7266,
       "petrol": 97.7,
-      "diesel": 83.83
+      "diesel": 97.7
     },
     {
       "name": "Itanagar",
