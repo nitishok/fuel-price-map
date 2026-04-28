@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-28T21:12:38+00:00",
+  "lastUpdated": "2026-04-28T22:58:10+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -720,7 +720,7 @@
       "lat": 21.1702,
       "lng": 72.8311,
       "petrol": 94.35,
-      "diesel": 90.14
+      "diesel": 90.04
     },
     {
       "name": "Vadodara",
@@ -759,7 +759,7 @@
       "state": "Gujarat",
       "lat": 22.4707,
       "lng": 70.0577,
-      "petrol": 94.43,
+      "petrol": 94.42,
       "diesel": 90.09
     },
     {
@@ -927,7 +927,7 @@
       "state": "Uttar Pradesh",
       "lat": 26.4499,
       "lng": 80.3319,
-      "petrol": 94.44,
+      "petrol": 94.43,
       "diesel": 87.49
     },
     {
@@ -1312,7 +1312,7 @@
       "lat": 30.3782,
       "lng": 76.7767,
       "petrol": 95.53,
-      "diesel": 88.4
+      "diesel": 88.36
     },
     {
       "name": "Rohtak",
@@ -1656,7 +1656,7 @@
       "lat": 34.0837,
       "lng": 74.7973,
       "petrol": 100.93,
-      "diesel": 86.88
+      "diesel": 87.01
     },
     {
       "name": "Jammu",
