@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-28T15:33:07+00:00",
+  "lastUpdated": "2026-04-28T17:52:01+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -1304,7 +1304,7 @@
       "lat": 29.6857,
       "lng": 76.9905,
       "petrol": 94.72,
-      "diesel": 88.36
+      "diesel": 87.53
     },
     {
       "name": "Ambala",
