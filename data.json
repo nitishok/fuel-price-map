@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-28T11:10:11+00:00",
+  "lastUpdated": "2026-04-28T12:33:22+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -744,7 +744,7 @@
       "lat": 23.2156,
       "lng": 72.6369,
       "petrol": 94.8,
-      "diesel": 90.15
+      "diesel": 90.47
     },
     {
       "name": "Bhuj",
@@ -1775,7 +1775,7 @@
       "state": "Meghalaya",
       "lat": 25.5788,
       "lng": 91.8933,
-      "petrol": 96.22,
+      "petrol": 96.3,
       "diesel": 87.5
     },
     {
