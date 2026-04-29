@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-29T12:27:28+00:00",
+  "lastUpdated": "2026-04-29T15:16:07+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -928,7 +928,7 @@
       "lat": 26.4499,
       "lng": 80.3319,
       "petrol": 94.44,
-      "diesel": 87.51
+      "diesel": 87.49
     },
     {
       "name": "Agra",
@@ -1312,7 +1312,7 @@
       "lat": 30.3782,
       "lng": 76.7767,
       "petrol": 90.95,
-      "diesel": 88.4
+      "diesel": 88.36
     },
     {
       "name": "Rohtak",
