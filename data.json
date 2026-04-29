@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-29T21:05:29+00:00",
+  "lastUpdated": "2026-04-29T22:03:50+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -271,7 +271,7 @@
       "state": "Tamil Nadu",
       "lat": 13.0827,
       "lng": 80.2707,
-      "petrol": 100.79,
+      "petrol": 100.8,
       "diesel": 92.38
     },
     {
@@ -936,7 +936,7 @@
       "lat": 27.1767,
       "lng": 78.0081,
       "petrol": 94.5,
-      "diesel": 87.44
+      "diesel": 87.56
     },
     {
       "name": "Varanasi",
@@ -1599,7 +1599,7 @@
       "state": "Himachal Pradesh",
       "lat": 31.1048,
       "lng": 77.1734,
-      "petrol": 95.07,
+      "petrol": 95.27,
       "diesel": 95.07
     },
     {
