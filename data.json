@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-29T17:29:23+00:00",
+  "lastUpdated": "2026-04-29T19:21:28+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -223,7 +223,7 @@
       "state": "Karnataka",
       "lat": 13.3409,
       "lng": 74.7421,
-      "petrol": 102.26,
+      "petrol": 102.36,
       "diesel": 90.44
     },
     {
@@ -863,7 +863,7 @@
       "state": "Rajasthan",
       "lat": 27.2152,
       "lng": 77.4977,
-      "petrol": 104.71,
+      "petrol": 104.51,
       "diesel": 90.21
     },
     {
@@ -1504,7 +1504,7 @@
       "lat": 21.2514,
       "lng": 81.6296,
       "petrol": 99.42,
-      "diesel": 93.37
+      "diesel": 93.39
     },
     {
       "name": "Bilaspur",
@@ -1656,7 +1656,7 @@
       "lat": 34.0837,
       "lng": 74.7973,
       "petrol": 100.93,
-      "diesel": 87.01
+      "diesel": 86.88
     },
     {
       "name": "Jammu",
@@ -1664,7 +1664,7 @@
       "lat": 32.7266,
       "lng": 74.857,
       "petrol": 96.48,
-      "diesel": 83.32
+      "diesel": 83.33
     },
     {
       "name": "Anantnag",
