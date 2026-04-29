@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-29T15:16:07+00:00",
+  "lastUpdated": "2026-04-29T17:29:23+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -223,7 +223,7 @@
       "state": "Karnataka",
       "lat": 13.3409,
       "lng": 74.7421,
-      "petrol": 102.36,
+      "petrol": 102.26,
       "diesel": 90.44
     },
     {
@@ -1664,7 +1664,7 @@
       "lat": 32.7266,
       "lng": 74.857,
       "petrol": 96.48,
-      "diesel": 83.33
+      "diesel": 83.32
     },
     {
       "name": "Anantnag",
