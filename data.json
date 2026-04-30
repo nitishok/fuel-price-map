@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-29T23:56:02+00:00",
+  "lastUpdated": "2026-04-30T02:17:51+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -112,7 +112,7 @@
       "lat": 21.0077,
       "lng": 75.5626,
       "petrol": 105.49,
-      "diesel": 92.01
+      "diesel": 90.08
     },
     {
       "name": "Ratnagiri",
@@ -816,7 +816,7 @@
       "lat": 26.2389,
       "lng": 73.0243,
       "petrol": 104.52,
-      "diesel": 90.05
+      "diesel": 90.23
     },
     {
       "name": "Udaipur",
@@ -1064,7 +1064,7 @@
       "lat": 23.2599,
       "lng": 77.4126,
       "petrol": 106.51,
-      "diesel": 91.88
+      "diesel": 91.89
     },
     {
       "name": "Indore",
