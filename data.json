@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-30T10:58:07+00:00",
+  "lastUpdated": "2026-04-30T12:22:11+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -640,7 +640,7 @@
       "lat": 22.5726,
       "lng": 88.3639,
       "petrol": 104.99,
-      "diesel": 92.02
+      "diesel": 91.81
     },
     {
       "name": "Howrah",
@@ -1207,7 +1207,7 @@
       "state": "Chandigarh (UT)",
       "lat": 30.7333,
       "lng": 76.7794,
-      "petrol": 94.28,
+      "petrol": 94.3,
       "diesel": 82.44
     },
     {
