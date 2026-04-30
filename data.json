@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-30T17:22:41+00:00",
+  "lastUpdated": "2026-04-30T19:18:47+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -463,7 +463,7 @@
       "state": "Kerala",
       "lat": 11.051,
       "lng": 76.0711,
-      "petrol": 106.13,
+      "petrol": 106.24,
       "diesel": 95.22
     },
     {
@@ -1071,7 +1071,7 @@
       "state": "Madhya Pradesh",
       "lat": 22.7196,
       "lng": 75.8577,
-      "petrol": 106.64,
+      "petrol": 106.48,
       "diesel": 91.88
     },
     {
