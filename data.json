@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-30T15:11:55+00:00",
+  "lastUpdated": "2026-04-30T17:22:41+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -56,7 +56,7 @@
       "lat": 21.1458,
       "lng": 79.0882,
       "petrol": 104.0,
-      "diesel": 90.78
+      "diesel": 90.56
     },
     {
       "name": "Nashik",
@@ -463,7 +463,7 @@
       "state": "Kerala",
       "lat": 11.051,
       "lng": 76.0711,
-      "petrol": 106.24,
+      "petrol": 106.13,
       "diesel": 95.22
     },
     {
@@ -1071,7 +1071,7 @@
       "state": "Madhya Pradesh",
       "lat": 22.7196,
       "lng": 75.8577,
-      "petrol": 106.48,
+      "petrol": 106.64,
       "diesel": 91.88
     },
     {
