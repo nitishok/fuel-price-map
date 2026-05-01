@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-01T13:10:18+00:00",
+  "lastUpdated": "2026-05-01T14:27:46+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -1503,7 +1503,7 @@
       "state": "Chhattisgarh",
       "lat": 21.2514,
       "lng": 81.6296,
-      "petrol": 99.44,
+      "petrol": 99.42,
       "diesel": 93.37
     },
     {
