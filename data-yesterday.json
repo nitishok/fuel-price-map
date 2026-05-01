@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-30T17:22:41+00:00",
+  "lastUpdated": "2026-05-01T18:03:27+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -72,7 +72,7 @@
       "lat": 19.8762,
       "lng": 75.3433,
       "petrol": 106.75,
-      "diesel": 106.75
+      "diesel": 93.52
     },
     {
       "name": "Kolhapur",
@@ -280,14 +280,14 @@
       "lat": 11.0168,
       "lng": 76.9558,
       "petrol": 101.28,
-      "diesel": 92.88
+      "diesel": 101.28
     },
     {
       "name": "Madurai",
       "state": "Tamil Nadu",
       "lat": 9.9252,
       "lng": 78.1198,
-      "petrol": 101.51,
+      "petrol": 93.13,
       "diesel": 93.13
     },
     {
@@ -391,16 +391,16 @@
       "state": "Kerala",
       "lat": 8.5241,
       "lng": 76.9366,
-      "petrol": 107.47,
-      "diesel": 96.47
+      "petrol": 96.47,
+      "diesel": 107.47
     },
     {
       "name": "Kochi",
       "state": "Kerala",
       "lat": 9.9312,
       "lng": 76.2673,
-      "petrol": 107.47,
-      "diesel": 96.47
+      "petrol": 96.47,
+      "diesel": 107.47
     },
     {
       "name": "Kozhikode",
@@ -423,39 +423,39 @@
       "state": "Kerala",
       "lat": 8.8932,
       "lng": 76.6141,
-      "petrol": 107.47,
-      "diesel": 96.47
+      "petrol": 96.47,
+      "diesel": 107.47
     },
     {
       "name": "Alappuzha",
       "state": "Kerala",
       "lat": 9.4981,
       "lng": 76.3388,
-      "petrol": 107.47,
-      "diesel": 96.47
+      "petrol": 96.47,
+      "diesel": 107.47
     },
     {
       "name": "Kottayam",
       "state": "Kerala",
       "lat": 9.5916,
       "lng": 76.5222,
-      "petrol": 107.47,
-      "diesel": 96.47
+      "petrol": 96.47,
+      "diesel": 107.47
     },
     {
       "name": "Palakkad",
       "state": "Kerala",
       "lat": 10.7867,
       "lng": 76.6548,
-      "petrol": 107.47,
-      "diesel": 96.47
+      "petrol": 96.47,
+      "diesel": 107.47
     },
     {
       "name": "Kannur",
       "state": "Kerala",
       "lat": 11.8745,
       "lng": 75.3704,
-      "petrol": 107.47,
+      "petrol": 96.47,
       "diesel": 94.76
     },
     {
@@ -463,7 +463,7 @@
       "state": "Kerala",
       "lat": 11.051,
       "lng": 76.0711,
-      "petrol": 106.13,
+      "petrol": 106.24,
       "diesel": 95.22
     },
     {
@@ -471,16 +471,16 @@
       "state": "Kerala",
       "lat": 12.4996,
       "lng": 74.9869,
-      "petrol": 107.47,
-      "diesel": 96.47
+      "petrol": 96.47,
+      "diesel": 107.47
     },
     {
       "name": "Munnar",
       "state": "Kerala",
       "lat": 10.0889,
       "lng": 77.0595,
-      "petrol": 107.47,
-      "diesel": 96.47
+      "petrol": 96.47,
+      "diesel": 107.47
     },
     {
       "name": "Hyderabad",
@@ -815,7 +815,7 @@
       "state": "Rajasthan",
       "lat": 26.2389,
       "lng": 73.0243,
-      "petrol": 104.52,
+      "petrol": 90.05,
       "diesel": 90.05
     },
     {
@@ -936,14 +936,14 @@
       "lat": 27.1767,
       "lng": 78.0081,
       "petrol": 94.5,
-      "diesel": 94.5
+      "diesel": 87.56
     },
     {
       "name": "Varanasi",
       "state": "Uttar Pradesh",
       "lat": 25.3176,
       "lng": 82.9739,
-      "petrol": 95.53,
+      "petrol": 95.39,
       "diesel": 88.7
     },
     {
@@ -1071,7 +1071,7 @@
       "state": "Madhya Pradesh",
       "lat": 22.7196,
       "lng": 75.8577,
-      "petrol": 106.64,
+      "petrol": 106.48,
       "diesel": 91.88
     },
     {
@@ -1503,7 +1503,7 @@
       "state": "Chhattisgarh",
       "lat": 21.2514,
       "lng": 81.6296,
-      "petrol": 93.37,
+      "petrol": 99.42,
       "diesel": 93.37
     },
     {
@@ -1511,7 +1511,7 @@
       "state": "Chhattisgarh",
       "lat": 22.0797,
       "lng": 82.1409,
-      "petrol": 87.31,
+      "petrol": 95.07,
       "diesel": 87.31
     },
     {
@@ -1519,7 +1519,7 @@
       "state": "Chhattisgarh",
       "lat": 21.1938,
       "lng": 81.2849,
-      "petrol": 93.37,
+      "petrol": 99.42,
       "diesel": 93.37
     },
     {
@@ -1527,7 +1527,7 @@
       "state": "Chhattisgarh",
       "lat": 22.3595,
       "lng": 82.7501,
-      "petrol": 93.37,
+      "petrol": 99.42,
       "diesel": 93.37
     },
     {
@@ -1535,7 +1535,7 @@
       "state": "Chhattisgarh",
       "lat": 19.0778,
       "lng": 82.0239,
-      "petrol": 93.37,
+      "petrol": 99.42,
       "diesel": 93.37
     },
     {
@@ -1599,7 +1599,7 @@
       "state": "Himachal Pradesh",
       "lat": 31.1048,
       "lng": 77.1734,
-      "petrol": 87.31,
+      "petrol": 95.07,
       "diesel": 87.31
     },
     {
@@ -1607,7 +1607,7 @@
       "state": "Himachal Pradesh",
       "lat": 32.2396,
       "lng": 77.1887,
-      "petrol": 87.31,
+      "petrol": 95.07,
       "diesel": 87.31
     },
     {
@@ -1615,7 +1615,7 @@
       "state": "Himachal Pradesh",
       "lat": 32.219,
       "lng": 76.3234,
-      "petrol": 87.31,
+      "petrol": 95.07,
       "diesel": 87.31
     },
     {
@@ -1623,7 +1623,7 @@
       "state": "Himachal Pradesh",
       "lat": 31.9578,
       "lng": 77.1094,
-      "petrol": 87.31,
+      "petrol": 95.07,
       "diesel": 87.31
     },
     {
@@ -1631,7 +1631,7 @@
       "state": "Himachal Pradesh",
       "lat": 30.9045,
       "lng": 77.0967,
-      "petrol": 87.31,
+      "petrol": 95.07,
       "diesel": 87.31
     },
     {
@@ -1639,7 +1639,7 @@
       "state": "Himachal Pradesh",
       "lat": 31.708,
       "lng": 76.9318,
-      "petrol": 87.31,
+      "petrol": 95.07,
       "diesel": 87.31
     },
     {
