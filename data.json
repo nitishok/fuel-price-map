@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-01T14:27:46+00:00",
+  "lastUpdated": "2026-05-01T15:58:38+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -48,7 +48,7 @@
       "lat": 18.5204,
       "lng": 73.8567,
       "petrol": 103.8,
-      "diesel": 90.34
+      "diesel": 88.38
     },
     {
       "name": "Nagpur",
@@ -344,7 +344,7 @@
       "lat": 10.787,
       "lng": 79.1378,
       "petrol": 101.41,
-      "diesel": 93.02
+      "diesel": 93.29
     },
     {
       "name": "Dindigul",
