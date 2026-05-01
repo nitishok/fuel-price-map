@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-01T19:10:13+00:00",
+  "lastUpdated": "2026-05-01T20:18:17+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -24,7 +24,7 @@
       "lat": 19.076,
       "lng": 72.8777,
       "petrol": 103.49,
-      "diesel": 90.03
+      "diesel": 90.01
     },
     {
       "name": "Thane",
@@ -1272,7 +1272,7 @@
       "lat": 28.4595,
       "lng": 77.0266,
       "petrol": 95.24,
-      "diesel": 88.09
+      "diesel": 88.93
     },
     {
       "name": "Faridabad",
@@ -1399,7 +1399,7 @@
       "state": "Assam",
       "lat": 26.1445,
       "lng": 91.7362,
-      "petrol": 93.23,
+      "petrol": 98.2,
       "diesel": 89.42
     },
     {
@@ -1872,7 +1872,7 @@
       "lat": 10.9254,
       "lng": 79.838,
       "petrol": 100.79,
-      "diesel": 92.38
+      "diesel": 86.42
     },
     {
       "name": "Yanam",
