@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-02T13:00:56+00:00",
+  "lastUpdated": "2026-05-02T14:17:31+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -183,7 +183,7 @@
       "state": "Karnataka",
       "lat": 15.8497,
       "lng": 74.4977,
-      "petrol": 102.77,
+      "petrol": 102.73,
       "diesel": 102.73
     },
     {
@@ -272,7 +272,7 @@
       "lat": 13.0827,
       "lng": 80.2707,
       "petrol": 100.79,
-      "diesel": 92.39
+      "diesel": 92.38
     },
     {
       "name": "Coimbatore",
@@ -1664,7 +1664,7 @@
       "lat": 32.7266,
       "lng": 74.857,
       "petrol": 96.48,
-      "diesel": 83.32
+      "diesel": 83.33
     },
     {
       "name": "Anantnag",
