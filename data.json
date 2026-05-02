@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-02T10:53:12+00:00",
+  "lastUpdated": "2026-05-02T11:48:40+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -152,7 +152,7 @@
       "lat": 12.9716,
       "lng": 77.5946,
       "petrol": 102.9,
-      "diesel": 90.99
+      "diesel": 90.98
     },
     {
       "name": "Mysuru",
