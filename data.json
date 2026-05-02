@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-02T07:12:01+00:00",
+  "lastUpdated": "2026-05-02T08:33:02+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -24,7 +24,7 @@
       "lat": 19.076,
       "lng": 72.8777,
       "petrol": 103.49,
-      "diesel": 90.01
+      "diesel": 90.03
     },
     {
       "name": "Thane",
