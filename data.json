@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-02T17:49:24+00:00",
+  "lastUpdated": "2026-05-02T18:55:35+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -80,7 +80,7 @@
       "lat": 16.705,
       "lng": 74.2433,
       "petrol": 104.54,
-      "diesel": 104.54
+      "diesel": 89.02
     },
     {
       "name": "Solapur",
