@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-02T05:08:02+00:00",
+  "lastUpdated": "2026-05-02T07:12:01+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -399,7 +399,7 @@
       "state": "Kerala",
       "lat": 9.9312,
       "lng": 76.2673,
-      "petrol": 96.47,
+      "petrol": 107.47,
       "diesel": 96.47
     },
     {
@@ -447,7 +447,7 @@
       "state": "Kerala",
       "lat": 10.7867,
       "lng": 76.6548,
-      "petrol": 96.47,
+      "petrol": 107.47,
       "diesel": 96.47
     },
     {
@@ -455,7 +455,7 @@
       "state": "Kerala",
       "lat": 11.8745,
       "lng": 75.3704,
-      "petrol": 96.47,
+      "petrol": 107.47,
       "diesel": 94.76
     },
     {
@@ -471,7 +471,7 @@
       "state": "Kerala",
       "lat": 12.4996,
       "lng": 74.9869,
-      "petrol": 96.47,
+      "petrol": 107.47,
       "diesel": 96.47
     },
     {
@@ -1303,7 +1303,7 @@
       "state": "Haryana",
       "lat": 29.6857,
       "lng": 76.9905,
-      "petrol": 94.72,
+      "petrol": 87.53,
       "diesel": 87.53
     },
     {
