@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-02T19:59:59+00:00",
+  "lastUpdated": "2026-05-02T20:41:51+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -815,7 +815,7 @@
       "state": "Rajasthan",
       "lat": 26.2389,
       "lng": 73.0243,
-      "petrol": 104.71,
+      "petrol": 104.52,
       "diesel": 90.05
     },
     {
