@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-03T17:51:25+00:00",
+  "lastUpdated": "2026-05-03T18:57:04+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -416,7 +416,7 @@
       "lat": 10.5276,
       "lng": 76.2144,
       "petrol": 106.11,
-      "diesel": 95.07
+      "diesel": 95.04
     },
     {
       "name": "Kollam",
