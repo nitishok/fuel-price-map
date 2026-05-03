@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-03T09:26:32+00:00",
+  "lastUpdated": "2026-05-03T10:56:33+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -1207,7 +1207,7 @@
       "state": "Chandigarh (UT)",
       "lat": 30.7333,
       "lng": 76.7794,
-      "petrol": 94.3,
+      "petrol": 94.28,
       "diesel": 82.44
     },
     {
