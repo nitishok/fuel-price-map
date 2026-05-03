@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-03T22:41:01+00:00",
+  "lastUpdated": "2026-05-03T23:47:15+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -184,7 +184,7 @@
       "lat": 15.8497,
       "lng": 74.4977,
       "petrol": 102.73,
-      "diesel": 90.85
+      "diesel": 90.91
     },
     {
       "name": "Davangere",
