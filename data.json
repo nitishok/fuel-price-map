@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-04T06:06:10+00:00",
+  "lastUpdated": "2026-05-04T08:31:29+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -88,7 +88,7 @@
       "lat": 17.6599,
       "lng": 75.9064,
       "petrol": 90.78,
-      "diesel": 90.78
+      "diesel": 90.82
     },
     {
       "name": "Amravati",
@@ -1271,7 +1271,7 @@
       "state": "Haryana",
       "lat": 28.4595,
       "lng": 77.0266,
-      "petrol": 96.46,
+      "petrol": 95.24,
       "diesel": 88.09
     },
     {
