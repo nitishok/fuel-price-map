@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-03T23:47:15+00:00",
+  "lastUpdated": "2026-05-04T02:11:34+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -32,7 +32,7 @@
       "lat": 19.2183,
       "lng": 72.9781,
       "petrol": 103.59,
-      "diesel": 90.12
+      "diesel": 90.15
     },
     {
       "name": "Navi Mumbai",
@@ -184,7 +184,7 @@
       "lat": 15.8497,
       "lng": 74.4977,
       "petrol": 102.73,
-      "diesel": 90.91
+      "diesel": 90.85
     },
     {
       "name": "Davangere",
