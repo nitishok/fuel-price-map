@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-04T15:17:02+00:00",
+  "lastUpdated": "2026-05-04T17:34:18+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -639,7 +639,7 @@
       "state": "West Bengal",
       "lat": 22.5726,
       "lng": 88.3639,
-      "petrol": 105.45,
+      "petrol": 104.99,
       "diesel": 91.81
     },
     {
