@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-05T17:28:21+00:00",
+  "lastUpdated": "2026-05-05T19:19:09+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -23,7 +23,7 @@
       "state": "Maharashtra",
       "lat": 19.076,
       "lng": 72.8777,
-      "petrol": 103.54,
+      "petrol": 103.49,
       "diesel": 90.01
     },
     {
@@ -552,14 +552,14 @@
       "lat": 17.6868,
       "lng": 83.2185,
       "petrol": 108.33,
-      "diesel": 96.56
+      "diesel": 96.22
     },
     {
       "name": "Vijayawada",
       "state": "Andhra Pradesh",
       "lat": 16.5062,
       "lng": 80.648,
-      "petrol": 110.39,
+      "petrol": 108.33,
       "diesel": 96.22
     },
     {
@@ -567,7 +567,7 @@
       "state": "Andhra Pradesh",
       "lat": 13.6288,
       "lng": 79.4192,
-      "petrol": 111.07,
+      "petrol": 108.33,
       "diesel": 96.22
     },
     {
