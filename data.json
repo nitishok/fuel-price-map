@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-04T23:55:25+00:00",
+  "lastUpdated": "2026-05-05T02:11:57+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -824,7 +824,7 @@
       "lat": 24.5854,
       "lng": 73.7125,
       "petrol": 105.5,
-      "diesel": 90.92
+      "diesel": 90.52
     },
     {
       "name": "Kota",
