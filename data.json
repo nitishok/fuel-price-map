@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-05T10:07:14+00:00",
+  "lastUpdated": "2026-05-05T11:25:21+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -399,7 +399,7 @@
       "state": "Kerala",
       "lat": 9.9312,
       "lng": 76.2673,
-      "petrol": 96.47,
+      "petrol": 105.15,
       "diesel": 96.47
     },
     {
@@ -456,7 +456,7 @@
       "lat": 11.8745,
       "lng": 75.3704,
       "petrol": 96.47,
-      "diesel": 94.76
+      "diesel": 94.71
     },
     {
       "name": "Malappuram",
@@ -1207,7 +1207,7 @@
       "state": "Chandigarh (UT)",
       "lat": 30.7333,
       "lng": 76.7794,
-      "petrol": 94.3,
+      "petrol": 94.28,
       "diesel": 82.44
     },
     {
