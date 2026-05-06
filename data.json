@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-06T19:35:01+00:00",
+  "lastUpdated": "2026-05-06T21:14:25+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -495,7 +495,7 @@
       "state": "Telangana",
       "lat": 17.9689,
       "lng": 79.5941,
-      "petrol": 106.88,
+      "petrol": 106.84,
       "diesel": 95.15
     },
     {
@@ -1456,7 +1456,7 @@
       "lat": 23.3441,
       "lng": 85.3096,
       "petrol": 97.85,
-      "diesel": 92.6
+      "diesel": 92.62
     },
     {
       "name": "Jamshedpur",
