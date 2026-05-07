@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-07T16:12:21+00:00",
+  "lastUpdated": "2026-05-07T18:01:58+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -943,7 +943,7 @@
       "state": "Uttar Pradesh",
       "lat": 25.3176,
       "lng": 82.9739,
-      "petrol": 95.39,
+      "petrol": 95.53,
       "diesel": 88.7
     },
     {
@@ -1872,7 +1872,7 @@
       "lat": 10.9254,
       "lng": 79.838,
       "petrol": 100.79,
-      "diesel": 92.38
+      "diesel": 86.42
     },
     {
       "name": "Yanam",
