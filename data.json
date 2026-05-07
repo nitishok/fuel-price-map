@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-07T21:09:30+00:00",
+  "lastUpdated": "2026-05-07T22:09:15+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -1664,7 +1664,7 @@
       "lat": 32.7266,
       "lng": 74.857,
       "petrol": 96.48,
-      "diesel": 83.32
+      "diesel": 83.33
     },
     {
       "name": "Anantnag",
