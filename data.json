@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-08T15:26:13+00:00",
+  "lastUpdated": "2026-05-08T17:14:46+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -47,7 +47,7 @@
       "state": "Maharashtra",
       "lat": 18.5204,
       "lng": 73.8567,
-      "petrol": 103.24,
+      "petrol": 103.8,
       "diesel": 90.34
     },
     {
@@ -464,7 +464,7 @@
       "lat": 11.051,
       "lng": 76.0711,
       "petrol": 95.22,
-      "diesel": 95.27
+      "diesel": 95.22
     },
     {
       "name": "Kasaragod",
@@ -936,14 +936,14 @@
       "lat": 27.1767,
       "lng": 78.0081,
       "petrol": 94.5,
-      "diesel": 87.56
+      "diesel": 87.44
     },
     {
       "name": "Varanasi",
       "state": "Uttar Pradesh",
       "lat": 25.3176,
       "lng": 82.9739,
-      "petrol": 95.39,
+      "petrol": 95.53,
       "diesel": 88.7
     },
     {
@@ -1279,7 +1279,7 @@
       "state": "Haryana",
       "lat": 28.4089,
       "lng": 77.3178,
-      "petrol": 96.72,
+      "petrol": 95.55,
       "diesel": 88.39
     },
     {
