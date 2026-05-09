@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-09T15:54:32+00:00",
+  "lastUpdated": "2026-05-09T16:52:54+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -295,7 +295,7 @@
       "state": "Tamil Nadu",
       "lat": 10.7905,
       "lng": 78.7047,
-      "petrol": 101.23,
+      "petrol": 101.5,
       "diesel": 92.85
     },
     {
@@ -864,7 +864,7 @@
       "lat": 27.2152,
       "lng": 77.4977,
       "petrol": 104.71,
-      "diesel": 89.99
+      "diesel": 90.21
     },
     {
       "name": "Sikar",
