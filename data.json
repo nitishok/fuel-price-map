@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-09T16:52:54+00:00",
+  "lastUpdated": "2026-05-09T17:55:26+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -295,7 +295,7 @@
       "state": "Tamil Nadu",
       "lat": 10.7905,
       "lng": 78.7047,
-      "petrol": 101.5,
+      "petrol": 101.23,
       "diesel": 92.85
     },
     {
@@ -1872,7 +1872,7 @@
       "lat": 10.9254,
       "lng": 79.838,
       "petrol": 100.79,
-      "diesel": 92.38
+      "diesel": 86.42
     },
     {
       "name": "Yanam",
