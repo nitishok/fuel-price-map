@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-09T20:46:13+00:00",
+  "lastUpdated": "2026-05-09T21:46:20+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -279,7 +279,7 @@
       "state": "Tamil Nadu",
       "lat": 11.0168,
       "lng": 76.9558,
-      "petrol": 101.37,
+      "petrol": 101.28,
       "diesel": 92.88
     },
     {
@@ -311,7 +311,7 @@
       "state": "Tamil Nadu",
       "lat": 8.7139,
       "lng": 77.7567,
-      "petrol": 100.79,
+      "petrol": 101.3,
       "diesel": 92.72
     },
     {
@@ -999,7 +999,7 @@
       "state": "Uttar Pradesh",
       "lat": 28.367,
       "lng": 79.4304,
-      "petrol": 94.79,
+      "petrol": 94.66,
       "diesel": 87.9
     },
     {
