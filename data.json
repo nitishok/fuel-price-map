@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-09T13:11:23+00:00",
+  "lastUpdated": "2026-05-09T14:27:35+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -823,7 +823,7 @@
       "state": "Rajasthan",
       "lat": 24.5854,
       "lng": 73.7125,
-      "petrol": 105.03,
+      "petrol": 105.5,
       "diesel": 90.92
     },
     {
@@ -1272,7 +1272,7 @@
       "lat": 28.4595,
       "lng": 77.0266,
       "petrol": 95.24,
-      "diesel": 88.09
+      "diesel": 88.93
     },
     {
       "name": "Faridabad",
