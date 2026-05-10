@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-10T16:53:04+00:00",
+  "lastUpdated": "2026-05-10T17:53:54+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -287,7 +287,7 @@
       "state": "Tamil Nadu",
       "lat": 9.9252,
       "lng": 78.1198,
-      "petrol": 101.68,
+      "petrol": 101.51,
       "diesel": 93.13
     },
     {
