@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-10T13:23:58+00:00",
+  "lastUpdated": "2026-05-10T14:44:40+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -24,7 +24,7 @@
       "lat": 19.076,
       "lng": 72.8777,
       "petrol": 103.49,
-      "diesel": 90.01
+      "diesel": 90.03
     },
     {
       "name": "Thane",
@@ -32,7 +32,7 @@
       "lat": 19.2183,
       "lng": 72.9781,
       "petrol": 103.59,
-      "diesel": 90.12
+      "diesel": 90.15
     },
     {
       "name": "Navi Mumbai",
@@ -47,7 +47,7 @@
       "state": "Maharashtra",
       "lat": 18.5204,
       "lng": 73.8567,
-      "petrol": 103.8,
+      "petrol": 103.24,
       "diesel": 90.34
     },
     {
@@ -72,7 +72,7 @@
       "lat": 19.8762,
       "lng": 75.3433,
       "petrol": 106.75,
-      "diesel": 93.52
+      "diesel": 93.53
     },
     {
       "name": "Kolhapur",
@@ -120,22 +120,22 @@
       "lat": 16.9944,
       "lng": 73.3002,
       "petrol": 103.49,
-      "diesel": 90.01
+      "diesel": 90.36
     },
     {
       "name": "Latur",
       "state": "Maharashtra",
       "lat": 18.4088,
       "lng": 76.5604,
-      "petrol": 103.49,
-      "diesel": 90.01
+      "petrol": 104.77,
+      "diesel": 89.89
     },
     {
       "name": "Akola",
       "state": "Maharashtra",
       "lat": 20.7002,
       "lng": 77.0082,
-      "petrol": 103.49,
+      "petrol": 103.57,
       "diesel": 90.01
     },
     {
@@ -343,7 +343,7 @@
       "state": "Tamil Nadu",
       "lat": 10.787,
       "lng": 79.1378,
-      "petrol": 101.69,
+      "petrol": 101.41,
       "diesel": 101.41
     },
     {
@@ -600,7 +600,7 @@
       "lat": 14.4426,
       "lng": 79.9865,
       "petrol": 110.05,
-      "diesel": 98.3
+      "diesel": 97.81
     },
     {
       "name": "Kadapa",
@@ -608,7 +608,7 @@
       "lat": 14.4753,
       "lng": 78.8298,
       "petrol": 109.02,
-      "diesel": 96.93
+      "diesel": 95.69
     },
     {
       "name": "Anantapur",
@@ -616,7 +616,7 @@
       "lat": 14.6819,
       "lng": 77.6006,
       "petrol": 110.11,
-      "diesel": 97.93
+      "diesel": 95.69
     },
     {
       "name": "Ongole",
@@ -712,7 +712,7 @@
       "lat": 23.0225,
       "lng": 72.5714,
       "petrol": 94.48,
-      "diesel": 90.25
+      "diesel": 90.15
     },
     {
       "name": "Surat",
@@ -759,8 +759,8 @@
       "state": "Gujarat",
       "lat": 22.4707,
       "lng": 70.0577,
-      "petrol": 94.43,
-      "diesel": 90.12
+      "petrol": 94.42,
+      "diesel": 90.09
     },
     {
       "name": "Bhavnagar",
@@ -800,7 +800,7 @@
       "lat": 21.6417,
       "lng": 69.6293,
       "petrol": 94.48,
-      "diesel": 90.15
+      "diesel": 90.73
     },
     {
       "name": "Jaipur",
@@ -808,30 +808,30 @@
       "lat": 26.9124,
       "lng": 75.7873,
       "petrol": 104.71,
-      "diesel": 90.21
+      "diesel": 90.36
     },
     {
       "name": "Jodhpur",
       "state": "Rajasthan",
       "lat": 26.2389,
       "lng": 73.0243,
-      "petrol": 104.52,
-      "diesel": 90.23
+      "petrol": 104.71,
+      "diesel": 90.05
     },
     {
       "name": "Udaipur",
       "state": "Rajasthan",
       "lat": 24.5854,
       "lng": 73.7125,
-      "petrol": 105.5,
-      "diesel": 90.92
+      "petrol": 105.03,
+      "diesel": 90.52
     },
     {
       "name": "Kota",
       "state": "Rajasthan",
       "lat": 25.2138,
       "lng": 75.8648,
-      "petrol": 104.25,
+      "petrol": 104.28,
       "diesel": 89.78
     },
     {
@@ -847,8 +847,8 @@
       "state": "Rajasthan",
       "lat": 28.0229,
       "lng": 73.3119,
-      "petrol": 104.71,
-      "diesel": 90.21
+      "petrol": 107.75,
+      "diesel": 92.88
     },
     {
       "name": "Alwar",
@@ -856,14 +856,14 @@
       "lat": 27.553,
       "lng": 76.6346,
       "petrol": 104.71,
-      "diesel": 90.21
+      "diesel": 90.97
     },
     {
       "name": "Bharatpur",
       "state": "Rajasthan",
       "lat": 27.2152,
       "lng": 77.4977,
-      "petrol": 104.71,
+      "petrol": 104.51,
       "diesel": 90.21
     },
     {
@@ -871,7 +871,7 @@
       "state": "Rajasthan",
       "lat": 27.6094,
       "lng": 75.1399,
-      "petrol": 104.71,
+      "petrol": 105.92,
       "diesel": 90.21
     },
     {
@@ -951,7 +951,7 @@
       "state": "Uttar Pradesh",
       "lat": 28.5355,
       "lng": 77.391,
-      "petrol": 94.79,
+      "petrol": 94.87,
       "diesel": 88.0
     },
     {
@@ -975,8 +975,8 @@
       "state": "Uttar Pradesh",
       "lat": 28.9845,
       "lng": 77.7064,
-      "petrol": 94.4,
-      "diesel": 87.48
+      "petrol": 94.49,
+      "diesel": 87.55
     },
     {
       "name": "Aligarh",
@@ -1183,7 +1183,7 @@
       "state": "Bihar",
       "lat": 25.7771,
       "lng": 87.4753,
-      "petrol": 106.67,
+      "petrol": 105.22,
       "diesel": 92.09
     },
     {
@@ -1320,7 +1320,7 @@
       "lat": 28.8955,
       "lng": 76.6066,
       "petrol": 95.53,
-      "diesel": 88.9
+      "diesel": 82.44
     },
     {
       "name": "Rewari",
@@ -1399,7 +1399,7 @@
       "state": "Assam",
       "lat": 26.1445,
       "lng": 91.7362,
-      "petrol": 93.23,
+      "petrol": 98.2,
       "diesel": 89.42
     },
     {
