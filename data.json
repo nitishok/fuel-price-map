@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-10T10:27:32+00:00",
+  "lastUpdated": "2026-05-10T12:10:05+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -63,7 +63,7 @@
       "state": "Maharashtra",
       "lat": 19.9975,
       "lng": 73.7898,
-      "petrol": 104.74,
+      "petrol": 104.12,
       "diesel": 91.25
     },
     {
@@ -103,7 +103,7 @@
       "state": "Maharashtra",
       "lat": 16.8524,
       "lng": 74.5815,
-      "petrol": 104.07,
+      "petrol": 103.43,
       "diesel": 90.63
     },
     {
@@ -119,7 +119,7 @@
       "state": "Maharashtra",
       "lat": 16.9944,
       "lng": 73.3002,
-      "petrol": 103.49,
+      "petrol": 105.25,
       "diesel": 90.01
     },
     {
@@ -135,7 +135,7 @@
       "state": "Maharashtra",
       "lat": 20.7002,
       "lng": 77.0082,
-      "petrol": 103.49,
+      "petrol": 103.57,
       "diesel": 90.01
     },
     {
@@ -144,7 +144,7 @@
       "lat": 19.9615,
       "lng": 79.2961,
       "petrol": 103.49,
-      "diesel": 90.01
+      "diesel": 88.82
     },
     {
       "name": "Bengaluru",
@@ -183,7 +183,7 @@
       "state": "Karnataka",
       "lat": 15.8497,
       "lng": 74.4977,
-      "petrol": 102.77,
+      "petrol": 90.85,
       "diesel": 90.85
     },
     {
@@ -328,7 +328,7 @@
       "lat": 11.341,
       "lng": 77.7172,
       "petrol": 101.31,
-      "diesel": 93.18
+      "diesel": 92.92
     },
     {
       "name": "Tiruppur",
@@ -343,7 +343,7 @@
       "state": "Tamil Nadu",
       "lat": 10.787,
       "lng": 79.1378,
-      "petrol": 101.69,
+      "petrol": 101.41,
       "diesel": 101.41
     },
     {
@@ -376,7 +376,7 @@
       "lat": 11.748,
       "lng": 79.7714,
       "petrol": 100.79,
-      "diesel": 94.79
+      "diesel": 92.38
     },
     {
       "name": "Ooty",
@@ -384,7 +384,7 @@
       "lat": 11.4102,
       "lng": 76.695,
       "petrol": 100.79,
-      "diesel": 92.38
+      "diesel": 94.56
     },
     {
       "name": "Thiruvananthapuram",
@@ -408,14 +408,14 @@
       "lat": 11.2588,
       "lng": 75.7804,
       "petrol": 105.76,
-      "diesel": 94.79
+      "diesel": 94.76
     },
     {
       "name": "Thrissur",
       "state": "Kerala",
       "lat": 10.5276,
       "lng": 76.2144,
-      "petrol": 105.92,
+      "petrol": 106.11,
       "diesel": 95.07
     },
     {
@@ -919,7 +919,7 @@
       "state": "Uttar Pradesh",
       "lat": 26.8467,
       "lng": 80.9462,
-      "petrol": 94.69,
+      "petrol": 94.65,
       "diesel": 87.8
     },
     {
@@ -928,7 +928,7 @@
       "lat": 26.4499,
       "lng": 80.3319,
       "petrol": 94.44,
-      "diesel": 87.51
+      "diesel": 87.49
     },
     {
       "name": "Agra",
@@ -952,7 +952,7 @@
       "lat": 28.5355,
       "lng": 77.391,
       "petrol": 94.87,
-      "diesel": 87.89
+      "diesel": 88.0
     },
     {
       "name": "Ghaziabad",
@@ -1207,7 +1207,7 @@
       "state": "Chandigarh (UT)",
       "lat": 30.7333,
       "lng": 76.7794,
-      "petrol": 94.28,
+      "petrol": 94.3,
       "diesel": 82.44
     },
     {
@@ -1663,7 +1663,7 @@
       "state": "Jammu & Kashmir (UT)",
       "lat": 32.7266,
       "lng": 74.857,
-      "petrol": 96.42,
+      "petrol": 96.48,
       "diesel": 83.33
     },
     {
