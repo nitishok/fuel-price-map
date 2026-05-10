@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-10T08:16:54+00:00",
+  "lastUpdated": "2026-05-10T10:27:32+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -183,7 +183,7 @@
       "state": "Karnataka",
       "lat": 15.8497,
       "lng": 74.4977,
-      "petrol": 90.85,
+      "petrol": 102.77,
       "diesel": 90.85
     },
     {
@@ -328,7 +328,7 @@
       "lat": 11.341,
       "lng": 77.7172,
       "petrol": 101.31,
-      "diesel": 92.92
+      "diesel": 93.18
     },
     {
       "name": "Tiruppur",
@@ -343,7 +343,7 @@
       "state": "Tamil Nadu",
       "lat": 10.787,
       "lng": 79.1378,
-      "petrol": 101.41,
+      "petrol": 101.69,
       "diesel": 101.41
     },
     {
@@ -376,7 +376,7 @@
       "lat": 11.748,
       "lng": 79.7714,
       "petrol": 100.79,
-      "diesel": 92.38
+      "diesel": 94.79
     },
     {
       "name": "Ooty",
@@ -408,14 +408,14 @@
       "lat": 11.2588,
       "lng": 75.7804,
       "petrol": 105.76,
-      "diesel": 94.76
+      "diesel": 94.79
     },
     {
       "name": "Thrissur",
       "state": "Kerala",
       "lat": 10.5276,
       "lng": 76.2144,
-      "petrol": 106.11,
+      "petrol": 105.92,
       "diesel": 95.07
     },
     {
@@ -463,7 +463,7 @@
       "state": "Kerala",
       "lat": 11.051,
       "lng": 76.0711,
-      "petrol": 106.13,
+      "petrol": 106.24,
       "diesel": 95.22
     },
     {
@@ -928,7 +928,7 @@
       "lat": 26.4499,
       "lng": 80.3319,
       "petrol": 94.44,
-      "diesel": 87.49
+      "diesel": 87.51
     },
     {
       "name": "Agra",
@@ -952,7 +952,7 @@
       "lat": 28.5355,
       "lng": 77.391,
       "petrol": 94.87,
-      "diesel": 88.0
+      "diesel": 87.89
     },
     {
       "name": "Ghaziabad",
@@ -1215,7 +1215,7 @@
       "state": "Punjab",
       "lat": 30.901,
       "lng": 75.8573,
-      "petrol": 98.22,
+      "petrol": 97.48,
       "diesel": 87.97
     },
     {
@@ -1271,7 +1271,7 @@
       "state": "Haryana",
       "lat": 28.4595,
       "lng": 77.0266,
-      "petrol": 96.46,
+      "petrol": 95.24,
       "diesel": 95.24
     },
     {
@@ -1663,7 +1663,7 @@
       "state": "Jammu & Kashmir (UT)",
       "lat": 32.7266,
       "lng": 74.857,
-      "petrol": 96.48,
+      "petrol": 96.42,
       "diesel": 83.33
     },
     {
