@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-10T21:52:33+00:00",
+  "lastUpdated": "2026-05-10T22:46:14+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -23,15 +23,15 @@
       "state": "Maharashtra",
       "lat": 19.076,
       "lng": 72.8777,
-      "petrol": 103.54,
-      "diesel": 90.03
+      "petrol": 103.49,
+      "diesel": 90.01
     },
     {
       "name": "Thane",
       "state": "Maharashtra",
       "lat": 19.2183,
       "lng": 72.9781,
-      "petrol": 103.66,
+      "petrol": 103.59,
       "diesel": 90.12
     },
     {
