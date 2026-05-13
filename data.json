@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-13T14:30:21+00:00",
+  "lastUpdated": "2026-05-13T17:20:46+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -23,7 +23,7 @@
       "state": "Maharashtra",
       "lat": 19.076,
       "lng": 72.8777,
-      "petrol": 103.54,
+      "petrol": 103.49,
       "diesel": 90.01
     },
     {
@@ -360,7 +360,7 @@
       "lat": 8.1788,
       "lng": 77.4334,
       "petrol": 101.73,
-      "diesel": 93.34
+      "diesel": 93.67
     },
     {
       "name": "Kanchipuram",
@@ -831,8 +831,8 @@
       "state": "Rajasthan",
       "lat": 25.2138,
       "lng": 75.8648,
-      "petrol": 104.28,
-      "diesel": 89.78
+      "petrol": 104.25,
+      "diesel": 89.83
     },
     {
       "name": "Ajmer",
@@ -927,7 +927,7 @@
       "state": "Uttar Pradesh",
       "lat": 26.4499,
       "lng": 80.3319,
-      "petrol": 94.43,
+      "petrol": 94.44,
       "diesel": 87.49
     },
     {
@@ -983,7 +983,7 @@
       "state": "Uttar Pradesh",
       "lat": 27.8974,
       "lng": 78.088,
-      "petrol": 94.84,
+      "petrol": 94.69,
       "diesel": 87.94
     },
     {
@@ -999,7 +999,7 @@
       "state": "Uttar Pradesh",
       "lat": 28.367,
       "lng": 79.4304,
-      "petrol": 94.66,
+      "petrol": 94.79,
       "diesel": 87.9
     },
     {
@@ -1664,7 +1664,7 @@
       "lat": 32.7266,
       "lng": 74.857,
       "petrol": 96.48,
-      "diesel": 83.32
+      "diesel": 83.33
     },
     {
       "name": "Anantnag",
