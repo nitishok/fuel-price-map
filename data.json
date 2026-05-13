@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-13T17:20:46+00:00",
+  "lastUpdated": "2026-05-13T19:52:49+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -360,7 +360,7 @@
       "lat": 8.1788,
       "lng": 77.4334,
       "petrol": 101.73,
-      "diesel": 93.67
+      "diesel": 93.34
     },
     {
       "name": "Kanchipuram",
@@ -832,7 +832,7 @@
       "lat": 25.2138,
       "lng": 75.8648,
       "petrol": 104.25,
-      "diesel": 89.83
+      "diesel": 89.78
     },
     {
       "name": "Ajmer",
