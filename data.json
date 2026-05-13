@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-13T06:31:43+00:00",
+  "lastUpdated": "2026-05-13T09:47:58+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -80,7 +80,7 @@
       "lat": 16.705,
       "lng": 74.2433,
       "petrol": 104.54,
-      "diesel": 89.02
+      "diesel": 91.08
     },
     {
       "name": "Solapur",
@@ -719,7 +719,7 @@
       "state": "Gujarat",
       "lat": 21.1702,
       "lng": 72.8311,
-      "petrol": 94.42,
+      "petrol": 94.35,
       "diesel": 90.04
     },
     {
@@ -1664,7 +1664,7 @@
       "lat": 32.7266,
       "lng": 74.857,
       "petrol": 96.48,
-      "diesel": 83.32
+      "diesel": 83.33
     },
     {
       "name": "Anantnag",
