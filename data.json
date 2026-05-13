@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-13T19:52:49+00:00",
+  "lastUpdated": "2026-05-13T21:29:50+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -983,7 +983,7 @@
       "state": "Uttar Pradesh",
       "lat": 27.8974,
       "lng": 78.088,
-      "petrol": 94.69,
+      "petrol": 94.84,
       "diesel": 87.94
     },
     {
@@ -1504,7 +1504,7 @@
       "lat": 21.2514,
       "lng": 81.6296,
       "petrol": 93.37,
-      "diesel": 93.37
+      "diesel": 93.39
     },
     {
       "name": "Bilaspur",
