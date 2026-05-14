@@ -49,6 +49,19 @@
     .cities-grid{display:flex;flex-wrap:wrap;gap:8px}
     .clink{font-size:12px;color:#0f766e;text-decoration:none;background:#f0fdf9;border:1px solid #d1fae5;border-radius:6px;padding:4px 10px;white-space:nowrap}
     .clink:hover{background:#d1fae5;text-decoration:none}
+    .news-section{margin-top:32px;padding-top:20px;border-top:1px solid #e5e7eb}
+    .news-head{display:flex;align-items:center;gap:7px;margin-bottom:12px}
+    .news-dot{width:8px;height:8px;border-radius:50%;background:#ef4444;animation:pulse 1.8s ease-in-out infinite;flex-shrink:0}
+    @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.75)}}
+    .news-head-text{font-size:14px;font-weight:700;color:#111827;text-transform:uppercase;letter-spacing:.5px}
+    .news-item{padding:10px 0;border-bottom:1px solid #f3f4f6}
+    .news-item:last-child{border-bottom:none}
+    .news-link{font-size:13px;color:#1a56db;text-decoration:none;line-height:1.45;display:block;margin-bottom:3px}
+    .ext-icon{font-size:11px;margin-left:4px;opacity:.7;font-style:normal}
+    .news-link:hover{text-decoration:underline}
+    .news-meta{font-size:11px;color:#9ca3af;display:flex;gap:6px;align-items:center}
+    .news-src{color:#374151;font-weight:500}
+    .news-time::before{content:"·";margin-right:4px;color:#d1d5db}
   </style>
 </head>
 <body>
@@ -101,6 +114,15 @@
     </tbody>
   </table>
 
+
+  <div class="news-section">
+    <div class="news-head"><span class="news-dot"></span><span class="news-head-text">Latest Fuel News — Kanpur &amp; Uttar Pradesh</span></div>
+      <div class="news-item"><a class="news-link" href="https://news.google.com/rss/articles/CBMi4AFBVV95cUxQbVhLem5fOFV2UE1wV2I0TlhIU0hrRXVZb1BkbFRXWEZIbHUwbFZwU2I0eTdUNEtNUktuVVBzamx2SnlyZ0lXTjBUbU9XZm1maHF2Sl9CQWxuNDYyQ1h0S0xHR0habTYxM0xGSTlYRGRHTmFtWVVFM0xOZVJWNE94YUVSTjJvRUIzN014UmRWTE5qZHdkSEpKLUdkTEYtSmNIaFJ5S01HZ2FPTmpoN0JSMHJVLVVmM3lJYm5rdi1KQkNpODFGRjJ4YXFCa014TnV3MkxqLWVIcWUwelhydE9rStIB5AFBVV95cUxNSzlFLWZYMWxlaVllMUdpZnlUTDFqUTBzVHRWanp5eHJ5UXlsdjl4cTdXZFlFOGhjRDJyWW9OYUxjb1E0QUZNRFU4REJRM0dKRzY4ZU95OTYyVnFYeFVoZmRDTFpfc1ZBcDRPeEl6YnVJZXp3eFpoRTJOdWJoMEVhdlFBUkpwV0pEVTJFRllMMFJWV1ZYSlFnOUJWcDV3UUp2bGxxLWhiaFRidGlreUhqYXB2OTFnWDRrbWF5M0FMNWNQX0lFUHpVOUR6bC1fOGI4WTcwTXVMU2xZOUhmZnZUcDBMNkw?oc=5" target="_blank" rel="noopener noreferrer">Work from home in Noida, Ghaziabad, Lucknow, Kanpur offices? UP CM Yogi takes big decision on WFH, details inside<i class="ext-icon">↗</i></a><div class="news-meta"><span class="news-src">news24online.com</span><span class="news-time">1 day ago</span></div></div>
+      <div class="news-item"><a class="news-link" href="https://news.google.com/rss/articles/CBMicEFVX3lxTE1DMExMdGdkbG1qcy1hVzBnSVhHUHFVek10SnNLUzE1d0JUUkxyUU1NTUJyMnJVYXNiUFcxdGNlay1ONFAzdWpzaGhWaVdsWUY3RDcyM2N3TWVScC00dzVNUDhOb3gwNVBHaXdfYWVIRDU?oc=5" target="_blank" rel="noopener noreferrer">Tata Sierra On Road Price in Kanpur - 2026 Sierra price in Kanpur, RTO, insurance and EMI<i class="ext-icon">↗</i></a><div class="news-meta"><span class="news-src">ZigWheels.com</span><span class="news-time">170 days ago</span></div></div>
+      <div class="news-item"><a class="news-link" href="https://news.google.com/rss/articles/CBMi0gFBVV95cUxPM0ZJNXNsTTMtTnptaDIyYk02RHdXS1VNcWJpMzFYUlV4ZENJelljOXNNY1lRbkFRa2tCRlB6cEtFSTlXUEhvSHUxNVpVaTZqNXhLci1IbV9SQzV2UnZTZ0hvRUtKVXBUdzZ5TVNLR2VwczNLcE8wMmFuNFFENkFRWGswVGlGdVFIMzAyTTNrdlpLeFNxNXhVQmdYNW5MYnUzS2ZMOFB0b3lMMnJFbnc3eTVnUG15THBOUm5aV25zSVNqb01VWkRGSGRlay0tVFFXS2fSAdcBQVVfeXFMTm9nM2Z4NmU5Mkk4b3J2NHZSN3lZeW9uVlNrVXlfTTMyTi1QZy1OZ1Z3aTA4aUdlYXd1NlBxSHZqUzM4aUpOU1hBbEFiampfZ01sSVMzMEZZOVIzY3I4LVJBS2dLenB4ZW5Gdzk2czNpR09MNnM4VVhCUWRTamF3aVV0d1M2TldTcXE4dEN4NXBkamJDZ2RJQUFGMEt6TzhMbTJIN3ZDYUFVa1dtVjdEREg0YzFDSUFZa0NDNWVCTHdFZkhfQTNWQlNpdDZFQ2ZTZ2t3aHNicmc?oc=5" target="_blank" rel="noopener noreferrer">Rumours fuel rush at petrol pumps in select Uttar Pradesh cities | Hindustan Times<i class="ext-icon">↗</i></a><div class="news-meta"><span class="news-src">Hindustan Times</span><span class="news-time">48 days ago</span></div></div>
+      <div class="news-item"><a class="news-link" href="https://news.google.com/rss/articles/CBMi0AFBVV95cUxQZnpVMkdhU0lNNHdhclhNa1ZtZ3hiZmhjYkxmRm1oX3ZkTFNUYXFZYkJNeWVON3BkcTM1RnlmUl9lZmVqTjBYeVFFU2w1V1NrZ0RNQzB2NnNqOHNjdThsVGpkQTZMSUlYbXZIQkFQdmNYYTNHbHBiMUhMVklRbUNqNXVUS2RnU2gxR2tuQ1ptUWU0ZVZqWnFQT0pNMFJNU0pYWmotV0hkeFE5cjQyS1lIUmhWOWZmTFZ5aUV1eFZ1TTBjZ0hlOFNSNDF1YXBDUGZr0gHWAUFVX3lxTE5NRFkySDA3UENseU9ycTF5YzdDNFdjb3FrenE3UVBhbExENEx4c1B0R1JQMlRReTZXaTBRVkFTVnBrU1BTZlVRbUJZdjdYOEpvX3NOaTVUYXFncDFSSG1laEZiNU96aEd3Y0xacWJwRlJfSmMyNGNmQ1prQ1drS3hvdTFjNnRTYzNndFRxZzh6QkY3Rm9DMFNQQ0xpdU14Q29rc3FzMWJGY1lLQ1F6TzlYUjFtSHJlVkctUDlBWEEyTVg2NWduTnVCQ1VXZUtUYzZRSV9ySXc?oc=5" target="_blank" rel="noopener noreferrer">Massive Crackdown in Kanpur: Over 13,000 Litres of Adulterated Oil Seized By FSSAI & UPFSDA During Raid<i class="ext-icon">↗</i></a><div class="news-meta"><span class="news-src">Republic World</span><span class="news-time">82 days ago</span></div></div>
+      <div class="news-item"><a class="news-link" href="https://news.google.com/rss/articles/CBMif0FVX3lxTE1faG1mWkJYVkxnWVVCdXAxZlBBNFpMakZ6bVgwemJ0SlpEbEtvbUJRc1Vwd2s5OFZLWHdENVdla1lWRWZsdVRMSXNVaXl1NVQzOHZkeFJuT1dxb29heGpUV1BVWmR0enBFMl93SUoySEM0T3J2MVdESW1QbUdJc1E?oc=5" target="_blank" rel="noopener noreferrer">Diesel Price in Kanpur Urban, Check Today's Kanpur Urban Diesel Rates 13th May 2026<i class="ext-icon">↗</i></a><div class="news-meta"><span class="news-src">Business Today</span><span class="news-time">61 days ago</span></div></div>
+  </div>
   <a class="back" href="/">🗺 View Live Price Map</a>
   <p class="note">Prices are updated automatically every hour.</p>
 

@@ -80,6 +80,8 @@ def fetch_posts() -> list[dict]:
 
             try:
                 pub_dt  = datetime.fromtimestamp(created_utc, tz=timezone.utc)
+                if (datetime.now(timezone.utc) - pub_dt).days > 180:
+                    continue
                 pub_iso = pub_dt.isoformat()
                 rel     = relative_time(pub_dt)
             except Exception:

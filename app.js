@@ -375,7 +375,7 @@ function updateMetroCities() {
     const yest = YESTERDAY_MAP.get(city.name.toLowerCase());
     const slug = CITY_SLUGS[city.name];
     const cityLabel = slug
-      ? `<a href="/${slug}" class="city-page-link" title="See 10-day history for ${city.name}">${city.name}</a>`
+      ? `<a href="/${slug}" class="city-page-link" title="See 10-day history for ${city.name}">${city.name} <span class="city-ext">↗</span></a>`
       : city.name;
     return `<tr class="${i % 2 === 0 ? "tr-even" : "tr-odd"} metro-row" data-name="${city.name}" style="cursor:pointer">
       <td class="td-state">${cityLabel}</td>

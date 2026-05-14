@@ -49,6 +49,19 @@
     .cities-grid{display:flex;flex-wrap:wrap;gap:8px}
     .clink{font-size:12px;color:#0f766e;text-decoration:none;background:#f0fdf9;border:1px solid #d1fae5;border-radius:6px;padding:4px 10px;white-space:nowrap}
     .clink:hover{background:#d1fae5;text-decoration:none}
+    .news-section{margin-top:32px;padding-top:20px;border-top:1px solid #e5e7eb}
+    .news-head{display:flex;align-items:center;gap:7px;margin-bottom:12px}
+    .news-dot{width:8px;height:8px;border-radius:50%;background:#ef4444;animation:pulse 1.8s ease-in-out infinite;flex-shrink:0}
+    @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.75)}}
+    .news-head-text{font-size:14px;font-weight:700;color:#111827;text-transform:uppercase;letter-spacing:.5px}
+    .news-item{padding:10px 0;border-bottom:1px solid #f3f4f6}
+    .news-item:last-child{border-bottom:none}
+    .news-link{font-size:13px;color:#1a56db;text-decoration:none;line-height:1.45;display:block;margin-bottom:3px}
+    .ext-icon{font-size:11px;margin-left:4px;opacity:.7;font-style:normal}
+    .news-link:hover{text-decoration:underline}
+    .news-meta{font-size:11px;color:#9ca3af;display:flex;gap:6px;align-items:center}
+    .news-src{color:#374151;font-weight:500}
+    .news-time::before{content:"·";margin-right:4px;color:#d1d5db}
   </style>
 </head>
 <body>
@@ -101,6 +114,15 @@
     </tbody>
   </table>
 
+
+  <div class="news-section">
+    <div class="news-head"><span class="news-dot"></span><span class="news-head-text">Latest Fuel News — Hyderabad &amp; Telangana</span></div>
+      <div class="news-item"><a class="news-link" href="https://news.google.com/rss/articles/CBMigwFBVV95cUxQTXJqX3IwMDdxMUc3cE1iU05fVHR3TEttV1o1NmJQalNtTGVBcllCWnBPaXBnczRJTUlUOTJGMk45X0xMbjB5cDJzbjhOQkJmdkI5b3l5VExxRXlaRUtJbkowem83YVRoU3ZhUHpIMXpPX2FWNFphNWpNeV9TVkJoLXFFYw?oc=5" target="_blank" rel="noopener noreferrer">Petrol Diesel Price Hike Rumours False, Centre Clarifies<i class="ext-icon">↗</i></a><div class="news-meta"><span class="news-src">INDToday</span><span class="news-time">21 days ago</span></div></div>
+      <div class="news-item"><a class="news-link" href="https://news.google.com/rss/articles/CBMi2wFBVV95cUxNYjVDcmxZYm43a0FUeUtsdC11QmsteHJ0SHNmRXo0djlCWXRnbTBtb1VQVmZTQ2Z3Znd2YVNsTHhjSXVZcXVVMXhoYmN0UndZdXVEb2hZY01pcDFaQXlTajFMekxFWFJVMm1oQkdxbUVRVHoyT21jYUdXeFNKanlIcEtqeVJsVGJ6ZVRuX2RRVDRacFFfcy0tYm5PS2JuTy1NNWYyd2R6d0NMQ08xYW9JM0FoLWZnNWxfM1lrSEw2LTdSUk51eGhjYjdPMWlJWkRxdjlkZjVLelBxM1HSAegBQVVfeXFMTUFyeTByY1pGNVpVcXIwTU9PWGZSMmNXNzlxRjZYVjd4STB3MHpKdnZGMWhWYzJlX2dodzZ6MkZPSVpNWWtIR2VQWmoxclhnaEZqOXJESEVuQnpmb2FYZFRrdi1aNzlXZ09yem51TFN6VWx5Q2JkWDJJRlRtNno4MXoxLVdCd0ZRNFY2X1RmQzBER184R01QbmJzNi1yWWhGaWtvVnFpZUk1U2dKY1pHUHM2T3RobHVydzVSNTJCOGFaWVBBUGFjVzFEQWVJYUxjSHJaVXVBSkRrNkI2YVBNZVZ5bVJpV3pRbQ?oc=5" target="_blank" rel="noopener noreferrer">Fuel panic grips Hyderabad as shortage rumours trigger long queues, pump shutdowns<i class="ext-icon">↗</i></a><div class="news-meta"><span class="news-src">The New Indian Express</span><span class="news-time">16 days ago</span></div></div>
+      <div class="news-item"><a class="news-link" href="https://news.google.com/rss/articles/CBMiswFBVV95cUxPUkZHcXQ2c1lBZU50b3hBcWdycnBIZXpMRGJsRmZweVdjbl9Jd0Z5UzVZWTBxY2cxWVBpajJwWUJVcG0yRjhodFB5azBzNmZRRVRjZzR3eUZkS19CazA1M0szRld1QTFyd1cyQlVhRXR2TGVucy1TZWNTcFY1UHp5ZzlCSHJrQUF4YW9wZkpzZUlXOGQ0U2pnQk9WZk54c2VmTmVWenhsUnRKZW1IekhLOXBwUdIBuAFBVV95cUxQUEtleWtYbmxFTU1JQmZoZDlDWGh2eGZlTFN0S1U1N0xWakwxWE4zX1RGR3NGcU0zcWxBRFh4SEJzdmlXLTI0MldvU0ZYUHEzeExBM0RxemlrNnJFUHhGM3VzU2J5OEh2SDI3TWJaLUVON3RnQTh3SFhtWEVxcm0tdnQ1RHBSTFZjYWVJRTZ6dHRfd0JnaVpxLUlqc2F2U1RjT0lXMjZDOFNqYm90UXNvbnROeTZkazVX?oc=5" target="_blank" rel="noopener noreferrer">Telangana, AP Face Shortage of High-Speed Diesel<i class="ext-icon">↗</i></a><div class="news-meta"><span class="news-src">Deccan Chronicle</span><span class="news-time">21 days ago</span></div></div>
+      <div class="news-item"><a class="news-link" href="https://news.google.com/rss/articles/CBMi0wFBVV95cUxQQUhzLVkzQnFqbHlnR3ZSY0h0U3lFRXJEb1p0TC0wTUJwbW90aDJYTlhsVXZOTXJtWk9LbmVBOUMyakp4OWl6VHcxQ3RnVjVQSVpIRmc3bFo1Mm9SZWpJeFpFN0dSVGFKMHlxcHlEVTRyNjAyOEZpSzRndC1rS0pfY3lQelQwUDE3WUlfcHBpc25wM0drd2FZUm8tY2stdGhWQ2JpYzdJYWxkOUdSSTUwZFQtOEF1ZVA2R2JrWEYzUmRsZHRiNldwRWg0dlRRYjFXQmx30gHYAUFVX3lxTFBYTzVpY2V3VW9nT2w4Q0lTWXJ3STlDWDMyWVByWGZNZW5TUnlDbi0tVE94Um9iOG1mS05acktTQUFnQkk3SEE3OE1vc0FhOHRpVk5HZmxqaHZLNzdPYlhSMmduV0tfRWRDSThWMHRjTTBVN1Zkb1hLS2x5UzFUYmxQeDBSN1JfeDlyOFpxOTZsR3hObmlTdUJiZk1yeUNvNzI2MTN3SzdMV2I3WGNQNWdiMHFyVDVHZjgwRjBuMS1zaFhheGVtVm9qV2R0ZFR6c2w5dTY2VzlGaQ?oc=5" target="_blank" rel="noopener noreferrer">Petrol, diesel prices today: Hyderabad top metros list, Delhi remains cheapest | India News<i class="ext-icon">↗</i></a><div class="news-meta"><span class="news-src">Hindustan Times</span><span class="news-time">70 days ago</span></div></div>
+      <div class="news-item"><a class="news-link" href="https://news.google.com/rss/articles/CBMigAJBVV95cUxPQzJGUzRuQkhCc19YZWdGRzYwemwtN2l3VUJsU1kxYVNNOFFwbjQ2STZXMnIxSFpOejR6b2ZJRFdkNVJIeEZyeHNKa05JeVlmVVl1ZFVYd2RqRVRtdzU3cjBWakdFSy1MMXJvcUdqekZScGZ1UE41VDhlV0lTaHlBQ3NoU015XzVyc2dxNDdVcjlRSTZ1VWpRSlJFRTlOWE53ZWU5TEZGLU9NNzFMdXZJWmF2YVJxWnJGYzZEM3hoM1JPUk1RVDkwUnFLcktHelQ5WVNwM2ZWbU1reDNUMmRlZ2RJY1ZPZ2lDSHhQZFQ4RzRXODVET3BiVE1MR0RNT0Vf0gGGAkFVX3lxTE1CMGZBYUp1MUJMVTdrVVhsY2ZXcUdydkVZQndSWlRNVTdGNEIyT3dibkdfdHBBU1ZKbHR3VWN1TTNZVXFiU3BaNWl6djdBakVwQ1ZKZFQxaEsybGRfSDI4a1FwUFY4My0xdkFzRGpPZmZzanlUdGhrVkhibGY3VWY2MWttNEFxUGVjNXhNMzFoMTQwTGhKZnhxUm9KU3Fta3BFb2FWeGRiSzFKcXlnUnAzMlRicENpYkhYbGtzaktlM3g4V19yUVNFcWhObUN5S2doVlRfZ21NMmpOSC1fekhjSnVfb3FRQ0I4ZUU1cEd3VTc3MFNucFR0M3hQeTlScFoza0ZhZGc?oc=5" target="_blank" rel="noopener noreferrer">Avoid buying gold, work from home: PM Modi's 7 big appeals to cushion India from soaring energy costs amid Iran war<i class="ext-icon">↗</i></a><div class="news-meta"><span class="news-src">Mint</span><span class="news-time">3 days ago</span></div></div>
+  </div>
   <a class="back" href="/">🗺 View Live Price Map</a>
   <p class="note">Prices are updated automatically every hour.</p>
 

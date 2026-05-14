@@ -49,6 +49,19 @@
     .cities-grid{display:flex;flex-wrap:wrap;gap:8px}
     .clink{font-size:12px;color:#0f766e;text-decoration:none;background:#f0fdf9;border:1px solid #d1fae5;border-radius:6px;padding:4px 10px;white-space:nowrap}
     .clink:hover{background:#d1fae5;text-decoration:none}
+    .news-section{margin-top:32px;padding-top:20px;border-top:1px solid #e5e7eb}
+    .news-head{display:flex;align-items:center;gap:7px;margin-bottom:12px}
+    .news-dot{width:8px;height:8px;border-radius:50%;background:#ef4444;animation:pulse 1.8s ease-in-out infinite;flex-shrink:0}
+    @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.75)}}
+    .news-head-text{font-size:14px;font-weight:700;color:#111827;text-transform:uppercase;letter-spacing:.5px}
+    .news-item{padding:10px 0;border-bottom:1px solid #f3f4f6}
+    .news-item:last-child{border-bottom:none}
+    .news-link{font-size:13px;color:#1a56db;text-decoration:none;line-height:1.45;display:block;margin-bottom:3px}
+    .ext-icon{font-size:11px;margin-left:4px;opacity:.7;font-style:normal}
+    .news-link:hover{text-decoration:underline}
+    .news-meta{font-size:11px;color:#9ca3af;display:flex;gap:6px;align-items:center}
+    .news-src{color:#374151;font-weight:500}
+    .news-time::before{content:"·";margin-right:4px;color:#d1d5db}
   </style>
 </head>
 <body>
@@ -101,6 +114,15 @@
     </tbody>
   </table>
 
+
+  <div class="news-section">
+    <div class="news-head"><span class="news-dot"></span><span class="news-head-text">Latest Fuel News — Kolkata &amp; West Bengal</span></div>
+      <div class="news-item"><a class="news-link" href="https://news.google.com/rss/articles/CBMiqwJBVV95cUxONG5Tb2F5WjFfQmQ0ZHJxV0cxVENlZnB3c0N6dFJHWFRVUFU2a25sMGFyYW53WGJldGQ2OXZxTDlENEZIaHNOYk5QbDVHWTZXYVZVQ2l3dkRHcVJIeU1VamY1ZjFNNGhFeEJXZWY2eWZlekpycU1uYTJSbmREYllIY2w2TjBUZm0zanNEc0xhZzBGTnJiMWlvdHFpQTRWR01jQzc5b2hDcENsQ1lhVm9SanRmQTduUmlDZWR1YTdVTEFYd0k3UVRfV2V3NHRkMlRiWjE3VXFsS1p6NkRrOVU5ZVZwbVZlWE1wZkZ0eGlrWTBwWXl5elU2T1YxZjlKVXpyUjZObHpFOVVkV3E3cEh3eEczajlUU3FzQXpuNVV2dDVnbDJKWWl1MDlNWdIBsAJBVV95cUxOdWhJX2xEUHhEZVp2NTNPY3lHeFNRM2ZLc21YV0ZZV2hHWU9YUmNKVG1BTERMNGFaZ2VBV1AteFZWV01acjhmRkFfYXpFTHRTcUdXS2llNU9ILTV5REdwbjR5SEY5SnZYOC1RemhLbXppcGVWajdGUjBlQk9pR2R6V3BUeEVDSVEtN3ZWYnFrZ0xVOHBXUWVzeVlnaE5VenBmdGE1YnAtUW5WcDhVU015OXlDTC1QQUFuUzgtOTdheC1Jd3lGVTZmUEpqbE0xa1VoZTNYejlYTTNIcFRUcW9QOHBkUW9IODFZUVpzUjJxTG83WU9qSENQNUtTMDdESy1tSXkzTTNVa09KNjlwNXZXVmItOTM1Q3M3djhDUzJLejQ1eGVsZ2g0SGE1VUU1enBk?oc=5" target="_blank" rel="noopener noreferrer">Petrol, Diesel Price hiked today as OMCs face Rs 30,000 crore monthly losses? Check fuel rates in Delhi, M<i class="ext-icon">↗</i></a><div class="news-meta"><span class="news-src">The Economic Times</span><span class="news-time">4 days ago</span></div></div>
+      <div class="news-item"><a class="news-link" href="https://news.google.com/rss/articles/CBMitANBVV95cUxOX0NrVG9rRHQyYklDME15cHU2VlZfY096U01VVU1YdnFOcTlWd0hIMHY2QUJXR19NWTU0dlUzT1NYWjQ4WEdNaWl6VUpfNmd4Mm92eTB5Q2g5c2NIOG9LU3hidGlxZTZlUlROQWJTNndoQkhyVFVLcXlRMFdPcFM0MkxJNEJxN2htWnJoOW5qUVJZeFQ4RG9MOGxKOXhORFpHem55REw1UHVGZkpGdXpTRnpNNVlhUG1oYUpUc25YUEdnblRwbWdWOXJTWnlBRlZFSVdlRHZzcFpzc2pjSDJBektPNW9wVWlKRHlQa3JzczY3WDAyZ1lqYkt4QVVoWHBuMnRtUkdrTVlYU3VmRF9QVUZpWmx5MXB6em5seTBCWWFXV1ljdmZJVTB4MHF3Y3A4aXpRdGo5dXVIQzJzMHl0Q1hrMFdadXFXRDlveDBxQUY2QUFGQ1NCdDEwUWtZeFkzNGxkVkZMM1ppbEhvSVQ2S0RwZlNDT2lzMVV0bUhuakk3WFNkQnRsVDZ6WjN5MEM1Z0R0eV9hWktIUk9nYTRlQ3Y5cFpWNjAzQmpkXy1qZF9tVDUt?oc=5" target="_blank" rel="noopener noreferrer">Petrol, diesel prices hiked on May 6? Check new rates in Mumbai, Hyderabad, Kolkata, Chennai and more<i class="ext-icon">↗</i></a><div class="news-meta"><span class="news-src">MSN</span><span class="news-time">2 days ago</span></div></div>
+      <div class="news-item"><a class="news-link" href="https://news.google.com/rss/articles/CBMi8gFBVV95cUxNYjNmLW5VcHl0d21id3I1aWxqRmNSXy15ZTJhekhvYnQzU3ZYcjZLS29FMXQ2VTVMSVJXRlF5UUNGdWJscXRfZjZKODZtRk1xOUg2MmdNeUZadFF6NmhULWZDMzdMNnpyVjdwb0NWRV9sc1ZhTG40bWdINENzTDJydU8xZW83eG9IeWJiZjVCZHo3S0xCUlh5LW5yaldwMEJPUVE4YU81Z1FpaHR1X05KUDBxYmh1TEMxWWVONHZsampXcjhsTVVJZjMySUhYUGxBVnAtc3RYVXh3bUlrUnZpOTZMc3luNVhIaXY4SEt0Y1hDUdIB-gFBVV95cUxPczY0d3RuRElQSkFna2tyWmZ3bUtlU204MmtjV0JuX01zQ1B1WTFnU2s5R1gwblZfeHpmQXhDLWpEOHRaZXZ3alZSWGdBSTV0Qk9TNW5MTy1NcnIwMV95QjJETllxaVdKanJ6WTNKVE04UFB4OFpKMjAyYXZfbWRncHFybF9MWjBET0tqY2RldU9NWndUeXhER3B4LV9aQW9pN0FVVm5iem02eV9LSlhsZmJ0a2FXMS1FRUNhb2pDZmJCNEh1cXVWNHN3cE1RWG5GTmhjMUd1VWJ6M0w0THFab1RUbks0VG5jSEwxR29WeHZuMjhtX0hJZXF3?oc=5" target="_blank" rel="noopener noreferrer">Election Impact: Have Petrol, Diesel Prices Been Hiked On May 5? Check New Rates In Kolkata, Mumbai, Chennai, And More<i class="ext-icon">↗</i></a><div class="news-meta"><span class="news-src">NDTV Profit</span><span class="news-time">9 days ago</span></div></div>
+      <div class="news-item"><a class="news-link" href="https://news.google.com/rss/articles/CBMi8gFBVV95cUxPX005SGZTUjJKU2x1Y2tqQnMyUzlwRXpHclg2SjdPWDlXTGlwYUhWb1lJbUxKVzZORlc2MWw2OVFNTE9MOVVYTlB1OG5rN2hGaFNZckZwWFNjd0RuOXR4c3VrYkFrWlNRaFN5SmVqTnNxVWZtZnVLLW5NWXJHUEJrX1lpajJsVnRaNTF2aHhyaTVKMm82clVPM05pRnZkRzlWYTRjVHIxeWdmcEVBWU41NVV3TG1GNG9CV3lyenFwckJTd1NKQTF1LVlpblM1TE1RZU4xMHpCRUZvQlFqWVRKTG81UW1UeTdOSzhmc2tkWjhyZ9IB9wFBVV95cUxNb0FNZFZLczRKVXVDV3FDUF9sYm1VY05MaV9wal9EdlZtRElEQWpzb1lzaDY0X1ozblFkN2hKMGV1Rm1SNk5GQkZISWZneGxyQ0VJdnl3S3A2TUlSS21XWmd5NjNyUmpZMHprSEs5QXlLazJiU0pBNzN0MXA2RHpPTFV2RElaQnhQX3Z5aE5UbXFCYk1FSERlUS13VjlNRXgxWjAxaVNyeThWaDR4SDA5OUlJR054cGw5VlY3RkdRdHpoRjRmR3lBNW1DVGFrN09qVXdBYnFzaHhIa1NoM05SSTdCQjYxTjduRjBxZUoyb3VRQ0JEWGZV?oc=5" target="_blank" rel="noopener noreferrer">Petrol, diesel prices today, April 30: Prices to rise today? Check prices in Delhi, Mumbai, Chennai, Kolkata<i class="ext-icon">↗</i></a><div class="news-meta"><span class="news-src">Business Today</span><span class="news-time">14 days ago</span></div></div>
+      <div class="news-item"><a class="news-link" href="https://news.google.com/rss/articles/CBMi4wFBVV95cUxNOWtRWWlqTFdsbF9yTlZIZzltWDd6TUlHNTZTOGpSQS12TUNIeUFFaGRyei00YV85QTFPc1lIdjlKdHVTMlJ5OHI0cWxCNlcxcHZiOW9DbVFrYVA0WmRpYzVpdUI0eVQ5cWFWanlfNGlkblhCVFdjVzQtOU5oNTVxb09uOFVqUVBwOW5zSVNpTk1VaHFzUUpwZTNQN2RfLUYzeW9xdDQtLXpSZUpLU1NSWTN5TURBR0FyblJsdzdOQjVGbjkzVkN5OW93SGZkN1VFTWNvNGJtT3FLRUlVUDJ2Z1F0VdIB6AFBVV95cUxQNUxUTzYxX3hXcEFCRFZZZDFIeVEwUzB1N0tTWjJEbHh4XzlSQ1pvT2EyUlVGbk9aUzZxbmFzM05jcXVjNG1LbEdzbW9ZaGNPNlJabnpEZUhROVJVMW9OcGUzOGx5QmFLTzh3N0VXUTVBbVB0QnJhendiVHJwZjZqRF9HZUNlVU9ZUWQ5NWEySW9CTDNkVGtMcnFnYmFwanp5by1ITzdxb1ZzX0JGcWdXV3hIWnMtQWlJeTk2STFrNFdDeUlmN0NGN0JtdFBRdEROQ2QtbExtQkFySzlHcXlMcjZPYmI0VWJG?oc=5" target="_blank" rel="noopener noreferrer">Petrol, diesel prices today: How much does fuel cost in Delhi, Mumbai, Kolkata, Bengaluru on 8 May<i class="ext-icon">↗</i></a><div class="news-meta"><span class="news-src">Mint</span><span class="news-time">6 days ago</span></div></div>
+  </div>
   <a class="back" href="/">🗺 View Live Price Map</a>
   <p class="note">Prices are updated automatically every hour.</p>
 

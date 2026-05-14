@@ -461,6 +461,7 @@ main {
   margin-bottom: 3px;
 }
 .sn-item:hover .sn-title { text-decoration: underline; }
+.sn-title::after { content: " ↗"; font-size: 10px; opacity: 0.6; }
 .sn-meta {
   display: flex;
   gap: 6px;
@@ -569,6 +570,7 @@ main {
   font-weight: 500;
 }
 .fd-title:hover { text-decoration: underline; }
+.fd-title::after { content: " ↗"; font-size: 10px; opacity: 0.6; }
 .fd-meta {
   display: flex;
   align-items: center;
@@ -796,4 +798,9 @@ main {
 .city-page-link:hover {
   color: #0f766e;
   text-decoration: underline;
+}
+.city-ext {
+  font-size: 10px;
+  opacity: 0.5;
+  font-weight: 400;
 }

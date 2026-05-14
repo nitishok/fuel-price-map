@@ -10,12 +10,46 @@ from __future__ import annotations
 import json
 import os
 import sys
-from datetime import datetime
+from datetime import datetime, timezone, timedelta
+from email.utils import parsedate_to_datetime
+from urllib.request import urlopen
+from urllib.error import URLError
+from xml.etree import ElementTree as ET
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 PROJECT_ROOT = os.path.dirname(HERE)
 HISTORY_JSON = os.path.join(PROJECT_ROOT, "history.json")
 DATA_JSON = os.path.join(PROJECT_ROOT, "data.json")
+
+IST = timezone(timedelta(hours=5, minutes=30))
+
+CITY_STATES: dict[str, str] = {
+    "Mumbai":             "Maharashtra",
+    "New Delhi":          "Delhi",
+    "Bengaluru":          "Karnataka",
+    "Hyderabad":          "Telangana",
+    "Ahmedabad":          "Gujarat",
+    "Chennai":            "Tamil Nadu",
+    "Kolkata":            "West Bengal",
+    "Surat":              "Gujarat",
+    "Pune":               "Maharashtra",
+    "Jaipur":             "Rajasthan",
+    "Lucknow":            "Uttar Pradesh",
+    "Kanpur":             "Uttar Pradesh",
+    "Nagpur":             "Maharashtra",
+    "Indore":             "Madhya Pradesh",
+    "Bhopal":             "Madhya Pradesh",
+    "Visakhapatnam":      "Andhra Pradesh",
+    "Patna":              "Bihar",
+    "Vadodara":           "Gujarat",
+    "Kochi":              "Kerala",
+    "Coimbatore":         "Tamil Nadu",
+    "Guwahati":           "Assam",
+    "Ranchi":             "Jharkhand",
+    "Chandigarh":         "Chandigarh",
+    "Thiruvananthapuram": "Kerala",
+    "Varanasi":           "Uttar Pradesh",
+}
 
 METRO_CITY_SLUGS: dict[str, str] = {
     "Mumbai": "mumbai",
@@ -44,6 +78,80 @@ METRO_CITY_SLUGS: dict[str, str] = {
     "Thiruvananthapuram": "thiruvananthapuram",
     "Varanasi": "varanasi",
 }
+
+
+def relative_time(dt: datetime) -> str:
+    now = datetime.now(IST)
+    secs = int((now - dt.astimezone(IST)).total_seconds())
+    if secs < 60:   return "just now"
+    if secs < 3600: return f"{secs // 60} min ago"
+    if secs < 86400:
+        h = secs // 3600
+        return f"{h} hr{'s' if h > 1 else ''} ago"
+    d = secs // 86400
+    return f"{d} day{'s' if d > 1 else ''} ago"
+
+
+def fetch_city_news(city_name: str, state_name: str, max_articles: int = 5) -> list[dict]:
+    """Fetch Google News RSS articles relevant to city/state fuel news."""
+    query = f"petrol diesel price {city_name} {state_name}"
+    url = (
+        f"https://news.google.com/rss/search"
+        f"?q={query.replace(' ', '+')}&hl=en-IN&gl=IN&ceid=IN:en"
+    )
+    try:
+        with urlopen(url, timeout=15) as resp:
+            xml_data = resp.read()
+    except (URLError, OSError) as e:
+        print(f"  Warning: could not fetch news for {city_name}: {e}", file=sys.stderr)
+        return []
+
+    try:
+        root = ET.fromstring(xml_data)
+    except ET.ParseError:
+        return []
+
+    channel = root.find("channel")
+    if channel is None:
+        return []
+
+    articles: list[dict] = []
+    seen: set[str] = set()
+    for item in channel.findall("item"):
+        raw_title = (item.findtext("title") or "").strip()
+        link      = (item.findtext("link")  or "").strip()
+        pub_str   = (item.findtext("pubDate") or "").strip()
+        src_el    = item.find("source")
+        source    = src_el.text.strip() if src_el is not None else ""
+
+        if source and raw_title.endswith(f" - {source}"):
+            title = raw_title[: -(len(source) + 3)].strip()
+        else:
+            parts = raw_title.rsplit(" - ", 1)
+            title = parts[0].strip() if len(parts) == 2 and len(parts[1]) < 60 else raw_title
+            if not source and len(parts) == 2:
+                source = parts[1].strip()
+
+        key = title.lower()
+        if key in seen:
+            continue
+        seen.add(key)
+
+        try:
+            pub_dt  = parsedate_to_datetime(pub_str)
+            if (datetime.now(IST) - pub_dt.astimezone(IST)).days > 180:
+                continue
+            pub_iso = pub_dt.isoformat()
+            rel     = relative_time(pub_dt)
+        except Exception:
+            pub_iso = ""
+            rel     = ""
+
+        articles.append({"title": title, "url": link, "source": source, "published": pub_iso, "relative": rel})
+        if len(articles) >= max_articles:
+            break
+
+    return articles
 
 
 def format_date(date_str: str) -> str:
@@ -95,7 +203,7 @@ def delta_html(current: float, previous: float | None) -> str:
     )
 
 
-def generate_page(city_name: str, slug: str, entries: list[dict], all_cities: dict[str, str], scrape_ts: str = "") -> str:
+def generate_page(city_name: str, slug: str, entries: list[dict], all_cities: dict[str, str], scrape_ts: str = "", news: list[dict] | None = None) -> str:
     today = entries[0] if entries else None
     prev = entries[1] if len(entries) > 1 else None
 
@@ -132,6 +240,26 @@ def generate_page(city_name: str, slug: str, entries: list[dict], all_cities: di
 
     if not rows_html:
         rows_html = '<tr><td colspan="3" class="empty">No history yet — check back tomorrow.</td></tr>'
+
+    # Build city news section
+    state_name = CITY_STATES.get(city_name, "")
+    news_html = ""
+    if news:
+        def _news_item(a: dict) -> str:
+            src  = f'<span class="news-src">{a["source"]}</span>'  if a["source"]   else ""
+            time = f'<span class="news-time">{a["relative"]}</span>' if a["relative"] else ""
+            return (
+                f'      <div class="news-item">'
+                f'<a class="news-link" href="{a["url"]}" target="_blank" rel="noopener noreferrer">{a["title"]}<i class="ext-icon">↗</i></a>'
+                f'<div class="news-meta">{src}{time}</div></div>'
+            )
+        news_items_html = "\n".join(_news_item(a) for a in news)
+        heading = f"Latest Fuel News — {city_name}" + (f" &amp; {state_name}" if state_name else "")
+        news_html = f"""
+  <div class="news-section">
+    <div class="news-head"><span class="news-dot"></span><span class="news-head-text">{heading}</span></div>
+{news_items_html}
+  </div>"""
 
     # Cross-links to all other city pages
     other_links = "\n".join(
@@ -206,6 +334,19 @@ def generate_page(city_name: str, slug: str, entries: list[dict], all_cities: di
     .cities-grid{{display:flex;flex-wrap:wrap;gap:8px}}
     .clink{{font-size:12px;color:#0f766e;text-decoration:none;background:#f0fdf9;border:1px solid #d1fae5;border-radius:6px;padding:4px 10px;white-space:nowrap}}
     .clink:hover{{background:#d1fae5;text-decoration:none}}
+    .news-section{{margin-top:32px;padding-top:20px;border-top:1px solid #e5e7eb}}
+    .news-head{{display:flex;align-items:center;gap:7px;margin-bottom:12px}}
+    .news-dot{{width:8px;height:8px;border-radius:50%;background:#ef4444;animation:pulse 1.8s ease-in-out infinite;flex-shrink:0}}
+    @keyframes pulse{{0%,100%{{opacity:1;transform:scale(1)}}50%{{opacity:.4;transform:scale(.75)}}}}
+    .news-head-text{{font-size:14px;font-weight:700;color:#111827;text-transform:uppercase;letter-spacing:.5px}}
+    .news-item{{padding:10px 0;border-bottom:1px solid #f3f4f6}}
+    .news-item:last-child{{border-bottom:none}}
+    .news-link{{font-size:13px;color:#1a56db;text-decoration:none;line-height:1.45;display:block;margin-bottom:3px}}
+    .ext-icon{{font-size:11px;margin-left:4px;opacity:.7;font-style:normal}}
+    .news-link:hover{{text-decoration:underline}}
+    .news-meta{{font-size:11px;color:#9ca3af;display:flex;gap:6px;align-items:center}}
+    .news-src{{color:#374151;font-weight:500}}
+    .news-time::before{{content:"·";margin-right:4px;color:#d1d5db}}
   </style>
 </head>
 <body>
@@ -248,6 +389,7 @@ def generate_page(city_name: str, slug: str, entries: list[dict], all_cities: di
 {rows_html}    </tbody>
   </table>
 
+{news_html}
   <a class="back" href="/">🗺 View Live Price Map</a>
   <p class="note">Prices are updated automatically every hour.</p>
 
@@ -282,7 +424,9 @@ def main() -> int:
             print(f"  SKIP {city_name} — no data in history.json", file=sys.stderr)
             continue
 
-        page_html = generate_page(city_name, slug, entries, METRO_CITY_SLUGS, scrape_ts)
+        state_name = CITY_STATES.get(city_name, "")
+        city_news = fetch_city_news(city_name, state_name)
+        page_html = generate_page(city_name, slug, entries, METRO_CITY_SLUGS, scrape_ts, city_news)
 
         city_dir = os.path.join(PROJECT_ROOT, slug)
         os.makedirs(city_dir, exist_ok=True)

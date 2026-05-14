@@ -49,6 +49,19 @@
     .cities-grid{display:flex;flex-wrap:wrap;gap:8px}
     .clink{font-size:12px;color:#0f766e;text-decoration:none;background:#f0fdf9;border:1px solid #d1fae5;border-radius:6px;padding:4px 10px;white-space:nowrap}
     .clink:hover{background:#d1fae5;text-decoration:none}
+    .news-section{margin-top:32px;padding-top:20px;border-top:1px solid #e5e7eb}
+    .news-head{display:flex;align-items:center;gap:7px;margin-bottom:12px}
+    .news-dot{width:8px;height:8px;border-radius:50%;background:#ef4444;animation:pulse 1.8s ease-in-out infinite;flex-shrink:0}
+    @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.75)}}
+    .news-head-text{font-size:14px;font-weight:700;color:#111827;text-transform:uppercase;letter-spacing:.5px}
+    .news-item{padding:10px 0;border-bottom:1px solid #f3f4f6}
+    .news-item:last-child{border-bottom:none}
+    .news-link{font-size:13px;color:#1a56db;text-decoration:none;line-height:1.45;display:block;margin-bottom:3px}
+    .ext-icon{font-size:11px;margin-left:4px;opacity:.7;font-style:normal}
+    .news-link:hover{text-decoration:underline}
+    .news-meta{font-size:11px;color:#9ca3af;display:flex;gap:6px;align-items:center}
+    .news-src{color:#374151;font-weight:500}
+    .news-time::before{content:"·";margin-right:4px;color:#d1d5db}
   </style>
 </head>
 <body>
@@ -101,6 +114,15 @@
     </tbody>
   </table>
 
+
+  <div class="news-section">
+    <div class="news-head"><span class="news-dot"></span><span class="news-head-text">Latest Fuel News — Nagpur &amp; Maharashtra</span></div>
+      <div class="news-item"><a class="news-link" href="https://news.google.com/rss/articles/CBMi2AFBVV95cUxQczhHXzEtZ3pxNlpqeE1yNW5ldVg3clFCRU9Hb0R2aGl0bG51RjR4SHl6SUtSVVJqQ2dGZlBQR0NwSG1KeFpBTUMyQ2c2WUkxM04tTUVRdUhWc1JWSkg1Rmh0LWNCWFdWTHZVQllXVDBRWV9jTW5BdjR5a04wYmtoOHI4b1I4SzJjX0dyb0dlaEhHTG9rWC1YRDA1UGVkR2NzZGZYR3VsRkxyc0ttbUNpUjNZOWJBaGtlLXBweUk4OXBtWlBwZjdlUkdSYms2RlFHQlhlS3cyLWfSAd4BQVVfeXFMT3RGaVgzZm11UGJseHpqWHRyYzZ3a2JsbGxCdU1DZzNWaHhPbkJ5NWloR3ViVndCclhYZVUxTkIzZW1VTXdKa3ZJdjJEVU16bENWZjFnMjZ3XzJyQnNXS29zMUJqQUo4eVIybkNOVHFXeHMta0lYbTZoa1JHeEdCLVNURUl1RS1PN1NGa1FEWV96blViVFItbnd6ZVZKUjg4dTQxUHlGVks1OVJ1WXpvbFY2Z2szdFFmTlE5VElZeGFQSzA4SlNQbmxtVGNtaEpqYXhhXzhtR3ZPU1JxWk9B?oc=5" target="_blank" rel="noopener noreferrer">Diesel crunch leaves Indian truckers stranded in roadside lines<i class="ext-icon">↗</i></a><div class="news-meta"><span class="news-src">The Economic Times</span><span class="news-time">1 day ago</span></div></div>
+      <div class="news-item"><a class="news-link" href="https://news.google.com/rss/articles/CBMivgFBVV95cUxQeEFUc0Q3ZnZXZGNyUnZLbWkya2hNNzRlLTlHN2FUam5RXy1XUmZJQ2FmWlpnVG5tLTFOUDlMc3kwVGRDajRoY09CWWh3ZGtOcEF1a2hDcUp2b3d5SWw3Y3o4LVZYNFBCUkxMNmQxbmczUmJFODdxc21GUzJ6cTBLYzRfeFpJQ3lxNnFLblF3VndEcnNVWjBSM3lMODhiMDNNTllSMlVaVjRVWVYyTThUT2pQUTJRM3R3T3o3cDRR0gHDAUFVX3lxTE9sUDhiS2w0Ym5YandIb0t1aUJ1cUlsQldoM0xPNGNxN0VmeVJOV1JXZzRyZ29BOU1pc2ItTFNMNjM4SGtyS0xhaTAyYThhbGhXdlBxMmdITHltU2J5aWQwR180QkVkM25sWXNvQ2RZZExtWXJXWVJQMzIxSWNfSU1ia09sOHBpdnVxcWdLZUFYQmtRZHFOYmwwRWlFSzF1NFlqcGhfNzlqMEZGYzVNY1FGdFdPNDhqNTloZXZneFRVM05JYw?oc=5" target="_blank" rel="noopener noreferrer">Petrol sale doubles amid panic buying in Nagpur<i class="ext-icon">↗</i></a><div class="news-meta"><span class="news-src">The Times of India</span><span class="news-time">49 days ago</span></div></div>
+      <div class="news-item"><a class="news-link" href="https://news.google.com/rss/articles/CBMijgFBVV95cUxOMk9vT2YyQVdnaW45NmctdWZjaVpHMjJWcXo4TU8wTFFlVHY4cjFVVVZFNzQwNWFjZ1VXWURMQTdfb3ROZmIxcWZURUJEekhQWFNEX2NrNFlZQWF6bVZ6LXRvS1loU1c1MFZzcGFHbDMzaTVfQlVFb19jVUp2dmJRX3ZMWmpkLWU0NTkwWnRB?oc=5" target="_blank" rel="noopener noreferrer">War? No – Here’s the Real Reason Behind Nagpur’s Petrol Crisis<i class="ext-icon">↗</i></a><div class="news-meta"><span class="news-src">Nagpur Today</span><span class="news-time">51 days ago</span></div></div>
+      <div class="news-item"><a class="news-link" href="https://news.google.com/rss/articles/CBMicEFVX3lxTFBXQTJyQy0zR1oxdHQ4bk9oU3FiVTQ0V21YaWxVd2puN18wbUwycEgxY09UQUZYMnlTTnJubHlpMTJwTjlwYnhuNzNCU3VzLVFOay1TYVRjcW5oQWpnYk9DMnVjR19JdUFMNVhoeU1lNWM?oc=5" target="_blank" rel="noopener noreferrer">Tata Sierra On Road Price in Nagpur - 2026 Sierra price in Nagpur, RTO, insurance and EMI<i class="ext-icon">↗</i></a><div class="news-meta"><span class="news-src">ZigWheels.com</span><span class="news-time">172 days ago</span></div></div>
+      <div class="news-item"><a class="news-link" href="https://news.google.com/rss/articles/CBMitwFBVV95cUxPamZMYWJOTzJibnZNTnBjVlh1emtSeFFldTZuSmVTVnBjdE55ZVctYkZKUUJYdy1mcExzdFhncmVQV29OdzBHUEZXUEpCUkx1TDFwVHNqelhKWGRyRkxpdnFldzZMZlloR1JTLW50dTJTMVlqTDVrc2p4NGJ1V2s3Zzd6ejBtYUZjeUVKNHhQaHI2NWZnLUl1VlA4aUpOakZwRl9xT1RmeE9xV21sdzJOSXJ2dExCeknSAbwBQVVfeXFMT2hyQU1qMHBGRG9mcDF2M21hWU1WcjVEM3Z6Z05ORXNMaVJPZDJQOWlPWlZkaFM4TnZMSERfNzBVb0VaQ1VnVnRqNnBuRThnYi1mS09LMERabU96X1EwNUJYNENMSlYwLVpocWlzZzcwT3d3Vll2ZlRBbjN5Nll4aTBTcVYtZzFXUG9ZTzJfYnlfQ3M1dkZ6Y2MtdmEyTTdGZHNTTmtIMkJDeGkwZDF2blloOS1JTFpIaDNxUzE?oc=5" target="_blank" rel="noopener noreferrer">Day 4: Over 25 Petrol Pumps Shut By Evening<i class="ext-icon">↗</i></a><div class="news-meta"><span class="news-src">The Times of India</span><span class="news-time">48 days ago</span></div></div>
+  </div>
   <a class="back" href="/">🗺 View Live Price Map</a>
   <p class="note">Prices are updated automatically every hour.</p>
 

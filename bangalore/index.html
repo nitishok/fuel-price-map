@@ -49,6 +49,19 @@
     .cities-grid{display:flex;flex-wrap:wrap;gap:8px}
     .clink{font-size:12px;color:#0f766e;text-decoration:none;background:#f0fdf9;border:1px solid #d1fae5;border-radius:6px;padding:4px 10px;white-space:nowrap}
     .clink:hover{background:#d1fae5;text-decoration:none}
+    .news-section{margin-top:32px;padding-top:20px;border-top:1px solid #e5e7eb}
+    .news-head{display:flex;align-items:center;gap:7px;margin-bottom:12px}
+    .news-dot{width:8px;height:8px;border-radius:50%;background:#ef4444;animation:pulse 1.8s ease-in-out infinite;flex-shrink:0}
+    @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.75)}}
+    .news-head-text{font-size:14px;font-weight:700;color:#111827;text-transform:uppercase;letter-spacing:.5px}
+    .news-item{padding:10px 0;border-bottom:1px solid #f3f4f6}
+    .news-item:last-child{border-bottom:none}
+    .news-link{font-size:13px;color:#1a56db;text-decoration:none;line-height:1.45;display:block;margin-bottom:3px}
+    .ext-icon{font-size:11px;margin-left:4px;opacity:.7;font-style:normal}
+    .news-link:hover{text-decoration:underline}
+    .news-meta{font-size:11px;color:#9ca3af;display:flex;gap:6px;align-items:center}
+    .news-src{color:#374151;font-weight:500}
+    .news-time::before{content:"·";margin-right:4px;color:#d1d5db}
   </style>
 </head>
 <body>
@@ -101,6 +114,15 @@
     </tbody>
   </table>
 
+
+  <div class="news-section">
+    <div class="news-head"><span class="news-dot"></span><span class="news-head-text">Latest Fuel News — Bengaluru &amp; Karnataka</span></div>
+      <div class="news-item"><a class="news-link" href="https://news.google.com/rss/articles/CBMi3AFBVV95cUxNZGwyaUlpM1JwY2ZJb3d1RThXVHhfWlNSbmxPMWdZVENWU3kzUWQ0Vk5UbXVFWFJyT21SOWQ0bTNJaUoyWDdKUmRQU0E2bVd2OC03ZmxpM0tORWNYZkRCVW1xd3BwVU1SREV0MHRkQS1KV3l2OWptblA1ZjcyekVUVmlTNTQ4VV9rT2NRNllMa0hEOFR4eU92eDZWQ09MTTM0Zl9rV0lGaFF6YzlVbFR2N000dkhxOWpJT0lxS3Y5WkZ3Wk1yNFI0TmNUbGFYZFFEM0F4Y05VNzBYRHNK0gHjAUFVX3lxTFAyNnFPd1FVX2pMTWtVZWdEMGc3TTluVW1KSGRpU005VVhTaVkxeWNobDE2X1NSMzVkbEdDQ3QyeHB0c0VQX3hLQlpCXzNNUGpPdGoyUHJtS2ZqZmdMeDA0WVJfSDhNUkFQS2N3MjlNSUhPT3E1TlR4R0p3OEYtWXlPT1hiN0Qxb3BZLU9nZzZpVlBxX3VqY2JMTGQ2NWk5V0t4dzZPMTZIZVRTUUJvclV1azZkZXRsbTk2STgyTzhON1ZhVG1NTTllSGJLSmUtcVlRX1JuLVpxdGlfN1hLdktWMnlB?oc=5" target="_blank" rel="noopener noreferrer">Premium petrol price hike pinches Bengaluru motorists, crosses ₹112 per litre<i class="ext-icon">↗</i></a><div class="news-meta"><span class="news-src">The Hindu</span><span class="news-time">55 days ago</span></div></div>
+      <div class="news-item"><a class="news-link" href="https://news.google.com/rss/articles/CBMi4wFBVV95cUxPSTBTVThvOGJ0UG5VWEVuczdKd1gxODFkSEtwSHpLTzlsY3FMX25OTnJEaWN0LTVMakdKLUstdGpaUk9ERGJ3UGYyRmtSMnNxVjM4M0ZRNmdpbExEV1NlM0pyQS1jbGJubTRYS3Y1VWU5N3Q0anhwSld3Y1RZTU1tOThUT3pXQUZic2RmbDFxcWt2dnFyMzJvV3RkcGdTVE1Vb1BKbDdtRHg2UkNaQ3ZZdEFlTDhxd2FwNmVRN25nNzVFc2xVTk5EZ1J2SEs5Q3phR2RoT0p3ZXJaSUNGTzlKVndOVdIB6AFBVV95cUxOZjR2UGZCdG1lTWpJZDRySURDS19Hel9ybFVET3l5d0ZzalBUdUJEZ0RqRkNGOEx4R2hUV2ZScGtNQ19NT0FCVDhVNVdCWDcyWkk0WVY2ZUNVU09hbFhQUnl0Y1pfdnFUOUpDTjBKMDJxTDJZeG91TEt5RGhzaEtHX29ROHhrMm9zbDVGaXYwOE9oRXo2SXZpUlJBR3JLTjdqQlRtNlVNS1JRWXA0Z0RQLXFmRm5CUmFfMTM3ZVI2RjczOEVScFJtWXlUNkxtYllrNTN4a0txclMzZDcydHY1b3NJb0xZVFFs?oc=5" target="_blank" rel="noopener noreferrer">Fuel Price Shock: Nayara, Shell Hike Petrol And Diesel Rates Across India; Bengaluru Sees Sharp Spike<i class="ext-icon">↗</i></a><div class="news-meta"><span class="news-src">ETV Bharat</span><span class="news-time">42 days ago</span></div></div>
+      <div class="news-item"><a class="news-link" href="https://news.google.com/rss/articles/CBMiswFBVV95cUxOMXhwTFZENGR3eHNydGRobExFbFNVTzIyQzJKMU1veE40QzRiVUdfQkNfMzh1MWZQcGpoSjVWMDg4a0pTbFhLV2cwRmtqZFRZN3BHT2xDbUtWZXJ3ZnRSMnBJTEN0eTJzZG9zbjRkV3RETUxSMVE4OEVZd0NFU085OGZZaHk2dXhJZm9FSVJiM3FuOVNRclA5MnFxdUJIT3YwRzZ4dUkyWC1Ya1RTYmhQUkRnQdIBuAFBVV95cUxOWFdMOEp1TEdqMjFRTTcwRnY4MzVKNkQtYk9LWTh5UzJDSWhLWC05UEdiTHFIbVZnSUdWck9HcUlYMTNhOTllUEJiWUZteXNrNWx0RzJMUVhZalpfeUk0YmRsa0hyYms0RlhyTFJzSDhjY0dqeDRMNTdoYVV3SF93SjdBb0JPNnVWbEJaTnNYR2ZjUkVscGU1NXdlX0w4dGhuUzFXNDJZcXAzYTRQaEpPWGE3dW83T0hr?oc=5" target="_blank" rel="noopener noreferrer">No shortage of petrol & diesel: Traders<i class="ext-icon">↗</i></a><div class="news-meta"><span class="news-src">The Times of India</span><span class="news-time">64 days ago</span></div></div>
+      <div class="news-item"><a class="news-link" href="https://news.google.com/rss/articles/CBMiwgFBVV95cUxNVGZSbmtjakdSMDJxb1Zfa2FMNGUtYzNlMWdab3N0RS1GVXFIMUNoYVBWZU1sYU1vNzFZYXJOZHNNNGpYNnlpQmpoYk4zTUtSMTJLNzkyTkxINnBzSFZXUTIxUjVUbkZ0aEt3X2IwX1o1SG8ya3hKaWlwQVFBaloyVWFHeGFxWEtoMF9zaEcwVEFJUFBvRl8zUDIyVXdqSS0tOERVc2hqMWc4dDYtZDR4N3pNZ0dKcHBNQjBJOWNXRWdDUdIBzwFBVV95cUxOR2FEc2NCZElkNnRjYW40cGplWXRBN29PbXNlR1NEaHdJNDRaWjR3bTZIX01Hdk9RdDNTdUk0cXQyN1pYTWpFWGNzUnoycmw2NWpwNDhRc2E5T19fN0xUc1hSVlRBMHZEbUNEVjYyTklsSjR3ZEtOV21ubXQyZ1V4VXBESDA4dGZWdVFfZkNPUVM3RXo4aDlFMUZzek5zbENmd2FDNTV0VC1rd3NKWGd1NEFZalliUGc1cHNzRkV4ckxZZ3diNS1qVXY2blZKUFk?oc=5" target="_blank" rel="noopener noreferrer">Don't throng bunks: Karnataka petroleum traders advise motorists<i class="ext-icon">↗</i></a><div class="news-meta"><span class="news-src">The New Indian Express</span><span class="news-time">65 days ago</span></div></div>
+      <div class="news-item"><a class="news-link" href="https://news.google.com/rss/articles/CBMilwFBVV95cUxNd2lvTGhhVnNqbVNPRjAwVFIzNmJnamhsUTZKdm9xVmJnNFZHTFFnZGFyUnZ6WGczaHVHR0t3Ym8zTWVXbzBVSVRIQmRDUHI0RFFvZ1pVaV81UjdnZGtQSG1hRmwybEt0ZVc2M2ZrYUhqenFKWjloSHYzbTRoTERhWFctQ1JqQWg4eTNjc1Z1Zlk2RkQ3WEhz0gGcAUFVX3lxTFBIRXpwUEFzZEVLRFY5enVSeW1uelpqdXZrR0NXS0xnOUdnd3QtQUFjU3E2QlVKM2pWMGxIVjB5cVZlNUwzR2FRLW1fTlRoVHg3S3FqT2dRRzhtSExtd2tYdl91NEtiQkV2eERFTHRZbDBSYWFodXFJeEgzU0lRa0l1QUt2ZS1CUnMxWGdKTVlWZUtGWTc4RTFQV093dg?oc=5" target="_blank" rel="noopener noreferrer">No bus fare hike despite fuel price surge: Karnataka Minister<i class="ext-icon">↗</i></a><div class="news-meta"><span class="news-src">The Siasat Daily</span><span class="news-time">54 days ago</span></div></div>
+  </div>
   <a class="back" href="/">🗺 View Live Price Map</a>
   <p class="note">Prices are updated automatically every hour.</p>
 

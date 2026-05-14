@@ -88,6 +88,8 @@ def fetch_articles() -> list[dict]:
 
             try:
                 pub_dt  = parsedate_to_datetime(pub_str)
+                if (datetime.now(IST) - pub_dt.astimezone(IST)).days > 180:
+                    continue
                 pub_iso = pub_dt.isoformat()
                 rel     = relative_time(pub_dt)
             except Exception:

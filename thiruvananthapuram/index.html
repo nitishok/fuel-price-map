@@ -49,6 +49,19 @@
     .cities-grid{display:flex;flex-wrap:wrap;gap:8px}
     .clink{font-size:12px;color:#0f766e;text-decoration:none;background:#f0fdf9;border:1px solid #d1fae5;border-radius:6px;padding:4px 10px;white-space:nowrap}
     .clink:hover{background:#d1fae5;text-decoration:none}
+    .news-section{margin-top:32px;padding-top:20px;border-top:1px solid #e5e7eb}
+    .news-head{display:flex;align-items:center;gap:7px;margin-bottom:12px}
+    .news-dot{width:8px;height:8px;border-radius:50%;background:#ef4444;animation:pulse 1.8s ease-in-out infinite;flex-shrink:0}
+    @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.75)}}
+    .news-head-text{font-size:14px;font-weight:700;color:#111827;text-transform:uppercase;letter-spacing:.5px}
+    .news-item{padding:10px 0;border-bottom:1px solid #f3f4f6}
+    .news-item:last-child{border-bottom:none}
+    .news-link{font-size:13px;color:#1a56db;text-decoration:none;line-height:1.45;display:block;margin-bottom:3px}
+    .ext-icon{font-size:11px;margin-left:4px;opacity:.7;font-style:normal}
+    .news-link:hover{text-decoration:underline}
+    .news-meta{font-size:11px;color:#9ca3af;display:flex;gap:6px;align-items:center}
+    .news-src{color:#374151;font-weight:500}
+    .news-time::before{content:"·";margin-right:4px;color:#d1d5db}
   </style>
 </head>
 <body>
@@ -101,6 +114,15 @@
     </tbody>
   </table>
 
+
+  <div class="news-section">
+    <div class="news-head"><span class="news-dot"></span><span class="news-head-text">Latest Fuel News — Thiruvananthapuram &amp; Kerala</span></div>
+      <div class="news-item"><a class="news-link" href="https://news.google.com/rss/articles/CBMi9gFBVV95cUxQZ2h3bFN1ajllZmdVX0tNTmJSaWxpdXlEUFhGNGxUUm5LQUNsYXloUWU1OWJ1VTN2cnU4ZzhXeE9GcGYwRDBmd2ZjQWx1RGNHY01qTWJ2RlM3T3R5T3FoekZpYVViLV8yUUNUQThQRnpuN3llOV9lbHhBWDNiSlJ3Ykg2SjlleUo4RlFhYkhMeEs4S05YRm9jWDdhMWRubFBaN1JQdk4zc09oaXZST2t1dGhLb1ZDYmxQQzFTcTJoWjVieDk5X2FIdTNucEZKdEhCcUgyU191WDFCSUV1MlhkYVROOGJtNTJpZXBOTWtNbUtyN2JWRXfSAfsBQVVfeXFMTi1QZ3pyS3JFMU1wOWEybnpmM1VpcWdiV2ZOVUFrMUxiZ1V6VE5tLVNGeWxhUHh3SWd5Y3lKM3hic3lHQkVKYVR3SUhrS3NhY2NOSzJVNnVwRmpsenhjVHVhcm9ZUWtJMF9XOU5PTzJBNkVQdGpkUmZWdlA2NWNUeFhadVBnX05DSEFKRjJqRS1SVkVHbTNGVjRhRnpHN3l3dk9tYTgyQ1lydElUcU1YempBNXFpLUpnSkpGUGU0MUdaWDM2R2ZNaU5rejB4dnlXUDN4TExMT3JYUHd2QllQSTVoZFhDbkQwSk9ZclNobDE5VS1KV28wQWdYYWs?oc=5" target="_blank" rel="noopener noreferrer">Petrol, Diesel prices hiked in Kerala: Check new rates in Thiruvananthapuram, Kochi , Waynad and other cities<i class="ext-icon">↗</i></a><div class="news-meta"><span class="news-src">Business Today</span><span class="news-time">14 days ago</span></div></div>
+      <div class="news-item"><a class="news-link" href="https://news.google.com/rss/articles/CBMitAFBVV95cUxOS1hWeUpuSE9hanNYUzVyLXBqQ1EyOXRYa3hsTDVDckpqSzBUT3VEUEtpX2I0N3BaYzItMF85Y2xMYjRMNjUxNUN0dmpucjdGQkViS3VWNFNabGpLRHczcHk3UlJiUFYwNWhRUE9qMnR5SDBWbnZtYW5FR1RUWUVjVHNTYnNOVW1La0xMbjR5bzgwbHVEUWlJcElreUhDVUEtbUU5SkJoemNqbi1QMlpRcURoNHjSAboBQVVfeXFMTkItYU5LUDRETDdVc0tQQ05JLTU5ZlZ1WXp3LWdaUlhrOHQzWTgwY2pQdWNxZDdiOVN3WEVCX0xzTE9EUDE5M2FISVpBV3d5U0k5MHd5YmRlUkl6UFRqYjNZVGI5QUFsbUEzcmRId0ozd2xmcHE5a0FTTTJ5dUE5ZUpXWE1IWjBqNWJpNExmb2RBQ1ZDNzk4QVJyLUxoMmJnU0xKaFYyOEZUVl9HUWlwREs3blBzN0xpR3Zn?oc=5" target="_blank" rel="noopener noreferrer">Petrol, Diesel Costliest In Andhra Pradesh, Cheapest In Andaman<i class="ext-icon">↗</i></a><div class="news-meta"><span class="news-src">ETV Bharat</span><span class="news-time">150 days ago</span></div></div>
+      <div class="news-item"><a class="news-link" href="https://news.google.com/rss/articles/CBMi1gFBVV95cUxQM0ttR1YybGNFck03M01oLUJUbjYzZi1rb1hGWDFHems0c1VKV2FjQi0zeTQ1ZXpKaHRMZEppXzM1TnRVd1A3eURfNHVtRzdXQ0RzN3QwNDJXdks4T1Jma1J6azRaRjNycHA2Z0FJNzl0YTdBSThhNGFZclhMclowOW42cjZ4Ujl5d3V3TGdMOXVUT3FMYmQ4dU9KQVphMlRUVmR0QnpzdXFHWDEzMFNSTkRIQm5zeEtlLV96RXl1ZU4yTlpLT2U4VkVIU2RYYlJMeG82bUpn0gHbAUFVX3lxTE9fRmpNbEd3V2pIWTNWN0VsYXVLQlpWNlc2V0t1M1lxQWVRZWQxbnRfRkdaaEpKd0RuX1FZbkV4bHVRTHhHQUpsTWVMeUtGTmpWb1gtR19NQ1lTNDNfRXdoaE83MjAyQk1VVlVXdWg0dXRrbkRDSjl2Y3VOSzNoUi1yOTdxQS12OFh4ajBWRDdpckh0bWo2OW9nUVQ0Tk95dXJKZTRhRTB6dElmV2pBLUZReVU3aVg4X2tuYXU2Z05MSVl6SzJpcDNtSHl1RnNGZ3BuQ2Y4TDJ3aVhUVQ?oc=5" target="_blank" rel="noopener noreferrer">Fuel prices on December 24, 2025: Check petrol, diesel, LPG and CNG rates across key cities<i class="ext-icon">↗</i></a><div class="news-meta"><span class="news-src">Mathrubhumi English</span><span class="news-time">141 days ago</span></div></div>
+      <div class="news-item"><a class="news-link" href="https://news.google.com/rss/articles/CBMi2wFBVV95cUxPRkZoNG1PMTR3ME9nVGExa1k4QzBHVjZwSGRtdm05M1pVUmxtWjBjdTdCZWNHanBCdTlIZ01ETTl6MHdqLXc2VWhVUG5wWm1HUEV2UzVSTWJiZzhmVTM3WkFiQnJtQXhIMmxrVjVFVlAwSVBvNmxORkprdnBWSEdLakp0QmkydEV2dzZZbUtYNkZ3cnFqbkt0VFV5WGYyQWJfOEVuNEd1cXktbkwxWmwxa0w5dlRjbkxlMWkwUDFaWDBSOTRaTVlQMXpHTy1OcHcyS0NDVmZSUFJTYUHSAeABQVVfeXFMUDRQUGdEWVFLTnhHMVBVNVhOMXlYekZwbWFVUTVZQW1HWXM3RGhEM1hYdmhBYzhHUmdvVjFqU2pyYWRRSWtPZUw5RHdadW81azNwclh5NFlCYnVtaTlkTllCVEhvencxdXN4RmNkbFdGa2ZwOGJwSkNQWjJCd3hGaklValVtTE50X21LZTRxZjlEdWs5VnIxYUlhampyblRhV0hib0FSMzdoeDZ5V0JvNFlBc18yMktXU0ZzRTBTYU1GOVhrLXliN2Rrc0JXMWF1WkVBMkhaQWFrNGx5RmQ3anA?oc=5" target="_blank" rel="noopener noreferrer">City-wise fuel update (12-12-2025): Petrol, diesel steady in metros; slight hike in Kerala, Jaipur<i class="ext-icon">↗</i></a><div class="news-meta"><span class="news-src">Mathrubhumi English</span><span class="news-time">153 days ago</span></div></div>
+      <div class="news-item"><a class="news-link" href="https://news.google.com/rss/articles/CBMigAFBVV95cUxPd3JyeHNoYlR3Y0pEbzJocU5zUU9QUUk4ejF4QWVPV24xOXZvaGxXNVJjMUp6aFZqZGw4eWVXY2ZPZ1lSWTdFYldSVWhsWkhPM1hsQnBMbGtFQm9VeDc0UllfZXZOeklaRTlJTGR4OW1UZHA1UVZUb21xX2RSNU9rSQ?oc=5" target="_blank" rel="noopener noreferrer">Tata Sierra On Road Price in Thiruvananthapuram - 2026 Sierra price in Thiruvananthapuram, RTO, insurance and EMI<i class="ext-icon">↗</i></a><div class="news-meta"><span class="news-src">ZigWheels.com</span><span class="news-time">170 days ago</span></div></div>
+  </div>
   <a class="back" href="/">🗺 View Live Price Map</a>
   <p class="note">Prices are updated automatically every hour.</p>
 

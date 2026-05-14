@@ -49,6 +49,19 @@
     .cities-grid{display:flex;flex-wrap:wrap;gap:8px}
     .clink{font-size:12px;color:#0f766e;text-decoration:none;background:#f0fdf9;border:1px solid #d1fae5;border-radius:6px;padding:4px 10px;white-space:nowrap}
     .clink:hover{background:#d1fae5;text-decoration:none}
+    .news-section{margin-top:32px;padding-top:20px;border-top:1px solid #e5e7eb}
+    .news-head{display:flex;align-items:center;gap:7px;margin-bottom:12px}
+    .news-dot{width:8px;height:8px;border-radius:50%;background:#ef4444;animation:pulse 1.8s ease-in-out infinite;flex-shrink:0}
+    @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.75)}}
+    .news-head-text{font-size:14px;font-weight:700;color:#111827;text-transform:uppercase;letter-spacing:.5px}
+    .news-item{padding:10px 0;border-bottom:1px solid #f3f4f6}
+    .news-item:last-child{border-bottom:none}
+    .news-link{font-size:13px;color:#1a56db;text-decoration:none;line-height:1.45;display:block;margin-bottom:3px}
+    .ext-icon{font-size:11px;margin-left:4px;opacity:.7;font-style:normal}
+    .news-link:hover{text-decoration:underline}
+    .news-meta{font-size:11px;color:#9ca3af;display:flex;gap:6px;align-items:center}
+    .news-src{color:#374151;font-weight:500}
+    .news-time::before{content:"·";margin-right:4px;color:#d1d5db}
   </style>
 </head>
 <body>
@@ -101,6 +114,15 @@
     </tbody>
   </table>
 
+
+  <div class="news-section">
+    <div class="news-head"><span class="news-dot"></span><span class="news-head-text">Latest Fuel News — Ranchi &amp; Jharkhand</span></div>
+      <div class="news-item"><a class="news-link" href="https://news.google.com/rss/articles/CBMiwwFBVV95cUxPSXJNY2EtS052X3lMSG1KWHlweVFOeVZ4ZzhkSDM0LXhONy0zdlZFY2Jlamd2Q0ZxZlVkQ3R3REhQV2dZRnVWY2poOURzRkx0TE1JVkxVT3BrRFFoMnViU2JpcFdhc04yclptUFJOWUkwWXRidUVQODVza0xWQUdaRXNGVFpwVnU1ekMxc09CZzdRaEtNWE1JSWl0M0tqN3d2YmJFd1VXZVM0X3BGUi0zMUlOZGFyc3J4X2Jycmw2MW5VYXPSAdABQVVfeXFMUGxWOF8tQ1hHamNkU01UX2RwVEc3b2toSFY5NUcxdkJ1U0tnbkJsbjRMSmdycUd0NjJNdjBnQ0NGSEJiWGxpOVFyTTQ2cHZRVk9LZFk4eGFsa25IMzZKclZOWWN5OVNweW9OMy1tLXRkc1pzN2pnTFFXczM5MlZfd1RLMGwtRTBqSXQxU1N0ZVROVzgyUDV0MkUtNE9YNGFFMHR4VGNBRUhfMG5mTzZwQXpVVVNsVGgyOExoTV8tT3BTV3FuNTJfOTZDU2xyMEY3LQ?oc=5" target="_blank" rel="noopener noreferrer">Jharkhand Assembly erupts in protest over LPG shortage, rising fuel prices<i class="ext-icon">↗</i></a><div class="news-meta"><span class="news-src">The New Indian Express</span><span class="news-time">62 days ago</span></div></div>
+      <div class="news-item"><a class="news-link" href="https://news.google.com/rss/articles/CBMitwJBVV95cUxNRkljbVV2M0RXTzVxRHZheFQwblRRdXlfa3ZaeVJjWHJ4cU9pV1BvS2FpSVVyN0xtOHJ4Q3N2cUEzM1hfQk1UZi1JdThLemxwaGV5OUY3dkpCeW90WWNwcVpnWEdyb2VaRHEyYl9BcjJlVENYVEk2SzNGWEttZ1pNakhvYVlOb1FiU3hSRG9oR1pVVldkblpVbzNuUlUtNWpXUmJ0ZVlSMHYzY2RZalFMdmtHWTVaX1p1dFZvNENpclhVV2o3VjNoN1hUektpWUg5VTRTcUl1MjlWVmhhOFRpNWF2aWZ3cWxvUWN6cG9uNk5tWUw3VDYwVGtvRzhDeFJSZWhIOXp4SG1mdXFFQzhJVVlFY1J0TjhRME1Kckd0dUpzQnhTQWR3X21UeHhJanN1RHJLdzZMNNIBvAJBVV95cUxPUFdkcEpoNHVPOTZkT3lNTm5La0dhZEh6VHBxUUF1T1RYWDVVZF8tLUF4N2dPVms5WFgxeDYzTmlVc3ZEdHBwRWVqLWRVbDdzQzNwTWlKSHRWNHptcDRsal9TaHNEcU9ZUjl3Y01ZMm5mdkNSczhqck9MaVkzRDhJM0RacUV6azdDRWdSb3c3RFcyTEJUVXB0c3FlRThxVk9ha0FBeS1MT1ZoM3RnWk1WU3NIYWloZVVydzdhMzMyelp4SlZNVU5LMDhud2JfdXpjVmRTcHFEZWU1MmxoSWEtdkt6T0xHSV9Fa3ZVdUUxMHJlRV9lajN4eU5yZFV2a3hGbWYyRlNxaXFteHZlSDM0TW5pNDRxMVVLN3AzQld6bFQwNW1UWjNFZ183S1RaSTl2T25uODJhYTBQeE5U?oc=5" target="_blank" rel="noopener noreferrer">Curbing fuel hoarding: Jamshedpur petrol pumps cap transactions to prevent hoarding; Fuel companies monit<i class="ext-icon">↗</i></a><div class="news-meta"><span class="news-src">The Times of India</span><span class="news-time">30 days ago</span></div></div>
+      <div class="news-item"><a class="news-link" href="https://news.google.com/rss/articles/CBMicEFVX3lxTE95bTZqVW1sQWZpRlJTWVdpdVBjVk9fRUhQVVBDNTlsYTZKVG41cGN0N0swOU9xZlI0WEk1MGhJZm1yVXFVOTlfWEM4bFctSzZlTWlIME1GMEltQm1NczhKYmd0VkZveTRvM1pLYXEtTGo?oc=5" target="_blank" rel="noopener noreferrer">Tata Sierra On Road Price in Ranchi - 2026 Sierra price in Ranchi, RTO, insurance and EMI<i class="ext-icon">↗</i></a><div class="news-meta"><span class="news-src">ZigWheels.com</span><span class="news-time">170 days ago</span></div></div>
+      <div class="news-item"><a class="news-link" href="https://news.google.com/rss/articles/CBMipAJBVV95cUxPTjQyRVVqSEhpRmhUTE5UaUZJanJhWVVscEg0RFFwbDNjNUs1empHUjllODNsMjlwQURDZFBRa0JFS0xjY0Y0bkYxcm5NTktlLWh6X2x5QkxIc2czclZpZ2NxTHoxejQyNDZ3YWNxRVlXUFZ4YzRuRmxKSV81QUM4bzFrNjF2SnhwOFBwcmdJNVdBYWU4Zk84eUdoMzk3YjREWkdRTTkxUFZWemlHUW0xQnVXQksxcTNaRS1yZXhOZHJUSER3T3BnbVJvdTg2Q01vbExSOXYyVTkxOVRyb25Xd0VhVkVZZ1UzRldQbkk5Zm42TjN6VXZCM2M0UWpjekpfVXJTbzdRT2RMUk5yLVJGYnZRdFBFQ2hlaDlEbXI1ZldvRW9a0gGqAkFVX3lxTE9TeXVLYVp1ZTFMRXppbWNBYWpCbUlyY0tBNTc1TWUwSHBCcWhmNUtjZ3N3NVVHZUFRSnc3Nk9FazhJb0R2bWdXQ0stZy1HTnQwbkVobnpwQWhaSVVVTFJoNEZnWU1OYTZoSUlYX2lSOGUwb081M19sTjIxTURzckxPYW1SNTVkeWZyNFJ1d201STlldzZqNXNEcnJhbzlGOGlvZHFwNF9Na3VFUzh1RDRzdzBWbVJxOHFPWjlxWTNDellBWTdIWWJBVVB6M3FrMDBCV3lmTU9IcWhIY2lqVENueVNZNkFGVWFIdG1UZ1ljZWRLb0VLNkpLM1VSM1hNZ1loZUdqZ1RidnUyWm4yTlRHYWpZUFJlLUFyQmI2X1NsODZkMTM3RWFLRmc?oc=5" target="_blank" rel="noopener noreferrer">Bitumen price surge: Bitumen costs escalate, slowing road projects; Industry calls for state reserve syst<i class="ext-icon">↗</i></a><div class="news-meta"><span class="news-src">The Times of India</span><span class="news-time">49 days ago</span></div></div>
+      <div class="news-item"><a class="news-link" href="https://news.google.com/rss/articles/CBMi4AFBVV95cUxQSEU4dTdXNGRYX205enltc2c2V05WLXNsLVlENHIwX2djVjdheDZ1QUJCQWFBNlhPTnZWaFAwQnVrbDRlVE1SejRIbTJGNUljZzdwVHNsR0FUdTFkMUo2NGZudzVfRkttV2MzLTdQb0xwY2ExdW04cGtMQ3hHcEtWNkVnYlgtQUhGSWpZLW0wYURfT3FPQU0xTDZlUWU5OWNvd21wRFU5VEI5a3lWSS12cDJIYlYxc0xENVpiZzlVbXI1UHJYWWRtWnVYM2d3a1kwdTJYclpiTkdKN192SURlQ9IB5gFBVV95cUxOZjZZSlgzcDk2QTVxTFo4d3ZveGNFVW4xZTU4WFVzX0JCLTkxVDN3d3dUNWxweTdaTVhCMzgwaldrZFh2RXRkNGxtSXRuaDFCTzdkVzdWbXV5ckUtUXJCajl2WXdDS0lrQk5SYmI1RU5DSEtSNDhXdWtCUGhjbGs1V2NpaWUwNnJET05YbHlJMjlTU0FWYVExczJVOEZGMlJncHhVeG5ONVo3YXMxTzlXVml4M0NnaWhyVUtuLVVseXY1SVowNGZ1TXZQU3l4QTNpVE9GZlRISVpjbGMwdmFUTGg3cHk3QQ?oc=5" target="_blank" rel="noopener noreferrer">Ranchi Petrol Pump Attacks: Dealers Fearful, Demand Increased Police Patrol<i class="ext-icon">↗</i></a><div class="news-meta"><span class="news-src">The Times of India</span><span class="news-time">49 days ago</span></div></div>
+  </div>
   <a class="back" href="/">🗺 View Live Price Map</a>
   <p class="note">Prices are updated automatically every hour.</p>
 

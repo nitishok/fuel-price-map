@@ -49,6 +49,19 @@
     .cities-grid{display:flex;flex-wrap:wrap;gap:8px}
     .clink{font-size:12px;color:#0f766e;text-decoration:none;background:#f0fdf9;border:1px solid #d1fae5;border-radius:6px;padding:4px 10px;white-space:nowrap}
     .clink:hover{background:#d1fae5;text-decoration:none}
+    .news-section{margin-top:32px;padding-top:20px;border-top:1px solid #e5e7eb}
+    .news-head{display:flex;align-items:center;gap:7px;margin-bottom:12px}
+    .news-dot{width:8px;height:8px;border-radius:50%;background:#ef4444;animation:pulse 1.8s ease-in-out infinite;flex-shrink:0}
+    @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.75)}}
+    .news-head-text{font-size:14px;font-weight:700;color:#111827;text-transform:uppercase;letter-spacing:.5px}
+    .news-item{padding:10px 0;border-bottom:1px solid #f3f4f6}
+    .news-item:last-child{border-bottom:none}
+    .news-link{font-size:13px;color:#1a56db;text-decoration:none;line-height:1.45;display:block;margin-bottom:3px}
+    .ext-icon{font-size:11px;margin-left:4px;opacity:.7;font-style:normal}
+    .news-link:hover{text-decoration:underline}
+    .news-meta{font-size:11px;color:#9ca3af;display:flex;gap:6px;align-items:center}
+    .news-src{color:#374151;font-weight:500}
+    .news-time::before{content:"·";margin-right:4px;color:#d1d5db}
   </style>
 </head>
 <body>
@@ -101,6 +114,15 @@
     </tbody>
   </table>
 
+
+  <div class="news-section">
+    <div class="news-head"><span class="news-dot"></span><span class="news-head-text">Latest Fuel News — Vadodara &amp; Gujarat</span></div>
+      <div class="news-item"><a class="news-link" href="https://news.google.com/rss/articles/CBMiekFVX3lxTFBhcVl4akc1ejdqUW5kRC1qTHl0QU1mWGRiNDd3ZHVWMk9JdDkyeGp6YXc5dGRvWEx5bzhucVliNHZUaHV3eno2WE41bmowbFc2amJWaDJrS3haOTVTdlY2a0tTMERBS3FNNEFVeHJRNnhidXNRaFZZeVlR?oc=5" target="_blank" rel="noopener noreferrer">Diesel Price in Vadodara, Check Today's Vadodara Diesel Rates 13th May 2026<i class="ext-icon">↗</i></a><div class="news-meta"><span class="news-src">Business Today</span><span class="news-time">61 days ago</span></div></div>
+      <div class="news-item"><a class="news-link" href="https://news.google.com/rss/articles/CBMiogFBVV95cUxPdUpFYnkwRzFzQncyZHRNWWxVTG83SzlwcWo2ZnRacXJvekZ6QkxocWpyY21pdV8wQ2pPNUNfXzdMOGFOb0tlX040VTVUcnhCcllrTDNKWWRYN3RsUVhxNnpZTHVCcVhjRFdVTkk2eHZ3ejFjQld4Qjg1NUY3NHl5OGxWOTAta01iUFpKUVpYdEd6TTJaaHJRSGxRNUg2V1N5enc?oc=5" target="_blank" rel="noopener noreferrer">Private Oil Company Nayara Energy Hikes Petrol and Diesel Prices<i class="ext-icon">↗</i></a><div class="news-meta"><span class="news-src">DeshGujarat</span><span class="news-time">49 days ago</span></div></div>
+      <div class="news-item"><a class="news-link" href="https://news.google.com/rss/articles/CBMi4gFBVV95cUxQRTlJcS1EUWhrTXIwZUtaSkQ1RW1lWlhNdFZUY3RDeEFVdDg2U3dqYUJ1UXJlR2l0U3p6aFlzNmtNdkF5M01EanVndE13Y0pfLWJBUkJ2Q0xOUzFyTWttb0dhWGFGY2U0YXZWbnlNN09mWktISWlxb3RVZm5OMkhfWFBYSGk5YmNtOEhLcHRTemM5Mk9wTUxKT1oxb09zbnhMNHJsemhMeFRULUNxNXV1TDdsbTRYbUtaVFQ4RjRaTjA0MTlnT0o5Y3Jmb1hjc19HQUd1TG1uMUFFWlNZMng0RUlR0gHnAUFVX3lxTE50NVBnX3FaME1BZ1pmWmRaRHV0ZTZfV0hGbnhKYW1HQ3JnYmZyT1FaZGdveGY3T1JXOXJEZUZSd09lNFRpR084TWZxRkoyVm50em14VDVzcWlBZm8zSldPYXNBaldrWjdUbzRwOW55QVR5WGJEZUhCZVoxeTZ0TVhvRUxEUDdabmtNY0dZeDczbVZLb0hjRHo4NDhReGhFZUxDQk91OF92NFItRk1ycDFBOWVzQW52bG9uU2xfUTNRYTZwbk5GcFVXazJTemlndVl5dlZpU2lGMVhhMTRMdnpyNG9uQ25adw?oc=5" target="_blank" rel="noopener noreferrer">Demand for petrol jumps by two-and-a-half times at IOCL pumps in Gujarat<i class="ext-icon">↗</i></a><div class="news-meta"><span class="news-src">The Times of India</span><span class="news-time">50 days ago</span></div></div>
+      <div class="news-item"><a class="news-link" href="https://news.google.com/rss/articles/CBMic0FVX3lxTE5VZS04OFB4UlhnV2dkeE9fZXRzWU5sSVhoYU5relc4QncxUHRSYjBaRUJKOVlOaldoRWlKaVplMFNBam1vS1NFUkVJMXhTcW1XaXVIM3pDQnZzOXVoZnRkMHBVaU1qQWxQU2p2ZkhLQ2VISk0?oc=5" target="_blank" rel="noopener noreferrer">Tata Sierra On Road Price in Vadodara - 2026 Sierra price in Vadodara, RTO, insurance and EMI<i class="ext-icon">↗</i></a><div class="news-meta"><span class="news-src">ZigWheels.com</span><span class="news-time">173 days ago</span></div></div>
+      <div class="news-item"><a class="news-link" href="https://news.google.com/rss/articles/CBMi2wFBVV95cUxOdDBXSzVjdEdqSXJwcGlBWmx1WUZhRmVBOWZsakxXYXBqQzNkTHR5T1VScWxSZHZlbzdfRnZuRkF4Tmg4QlpkR1d1MzZvT2F3WTZWVVNLcTJXVDIzUU1ybWJSOXBRaUZXbDZqZ0xoTUZkdU5jN0hLbW80VzNFaWZzYkpvT3lDeWNPcUpVTTV6Z19NR3JyQnNvQ1RUQ0xFeF84dm5JZzJFRktKVElwcnZKdTNQaGZ4bmVia0NVYWZJNnVlMlpWRWM0ZURTWnA4eF9TbmJwcFQ3MEwwcG_SAegBQVVfeXFMT2tVM1ZmWjIyYnF1RUlKVXRkQ3ZhWDA0a0xNOG9JU2ZvTDEtTHJjT2VGcW1Ib0xhYndKT0tDWVZXWV96c1VlbkJUTHBJb0NERGlqaTd0MVc5LWNFNVFIYnB5VGJqNFNzZlNlRmdrZlo2TXBEamdjSmlLOFdvdmFZLVBnVU9fbVNwMnVuT3EtZ2JFU2w5NmkyRU1xcGgwLUtKcEFJUEJkT1U3OFkyV3JxdFVGQU9JNTNvXzFZemlJX2tHM3d5cF9GdDhBQ0FaQkJEbkFFSFg1Y0RzUTNwWVVsQzhmQjhtX1FWZA?oc=5" target="_blank" rel="noopener noreferrer">Fuel panic grips Gujarat as pumps shut down across major cities; government says no shortage<i class="ext-icon">↗</i></a><div class="news-meta"><span class="news-src">The New Indian Express</span><span class="news-time">52 days ago</span></div></div>
+  </div>
   <a class="back" href="/">🗺 View Live Price Map</a>
   <p class="note">Prices are updated automatically every hour.</p>
 
