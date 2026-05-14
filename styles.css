@@ -20,6 +20,7 @@ html, body {
     "Helvetica Neue", Arial, sans-serif;
   color: #1f2937;
   background: #f3f4f6;
+  overflow-x: hidden;
 }
 
 body {
@@ -296,14 +297,29 @@ main {
     width: 100%;
     max-width: 100%;
   }
-  main {
+  /* Map viewport stacks vertically; map gets a fixed height, panel expands freely */
+  .map-viewport {
     flex-direction: column;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+  }
+  #map {
+    height: 320px !important;
+    flex: none !important;
+    width: 100% !important;
   }
   .info-panel {
     width: 100%;
-    max-height: 40vh;
+    max-height: none;
     border-left: none;
     border-top: 1px solid #e5e7eb;
+    overflow-y: visible;
+    padding: 16px;
+  }
+  .app-header {
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
@@ -524,7 +540,12 @@ main {
 }
 @media (max-width: 900px) {
   .two-col-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .two-col-left,
+  .two-col-right {
+    max-width: 100%;
+    overflow-x: hidden;
   }
   .two-col-left {
     border-right: none;
