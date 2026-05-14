@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-14T18:41:18+00:00",
+  "lastUpdated": "2026-05-14T20:36:03+00:00",
   "source": "bankbazaar.com, petroldieselprice.com",
   "cities": [
     {
@@ -64,7 +64,7 @@
       "lat": 19.9975,
       "lng": 73.7898,
       "petrol": 104.74,
-      "diesel": 89.23
+      "diesel": 91.25
     },
     {
       "name": "Aurangabad",
@@ -744,7 +744,7 @@
       "lat": 23.2156,
       "lng": 72.6369,
       "petrol": 94.8,
-      "diesel": 90.47
+      "diesel": 90.15
     },
     {
       "name": "Bhuj",
@@ -1271,7 +1271,7 @@
       "state": "Haryana",
       "lat": 28.4595,
       "lng": 77.0266,
-      "petrol": 96.46,
+      "petrol": 95.24,
       "diesel": 88.09
     },
     {
@@ -1399,7 +1399,7 @@
       "state": "Assam",
       "lat": 26.1445,
       "lng": 91.7362,
-      "petrol": 93.23,
+      "petrol": 98.2,
       "diesel": 89.42
     },
     {
