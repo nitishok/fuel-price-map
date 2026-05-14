@@ -468,7 +468,71 @@ function updateBelowMap() {
   }
 }
 
+// ---------- news & discussion feed (merged news + reddit) ----------
+
+async function loadFeed() {
+  const el = document.getElementById("feed-list");
+  if (!el) return;
+  try {
+    const [newsResp, socialResp] = await Promise.all([
+      fetch("./news.json",   { cache: "no-store" }),
+      fetch("./social.json", { cache: "no-store" }),
+    ]);
+    let newsItems = [], socialItems = [];
+    if (newsResp.ok) {
+      const d = await newsResp.json();
+      newsItems = (d.articles || []).map(a => ({ ...a, type: "news" }));
+    }
+    if (socialResp.ok) {
+      const d = await socialResp.json();
+      socialItems = (d.posts || []).map(p => ({ ...p, type: "reddit" }));
+    }
+    // 9 news + up to 3 social = 12 total (~75% news)
+    const guaranteed = newsItems.slice(0, 9);
+    const remaining = [...newsItems.slice(9), ...socialItems]
+      .sort((a, b) => b.published.localeCompare(a.published))
+      .slice(0, 3);
+    const top = [...guaranteed, ...remaining]
+      .sort((a, b) => b.published.localeCompare(a.published))
+      .slice(0, 12);
+    if (!top.length) { el.innerHTML = ""; return; }
+    el.innerHTML = top.map(item => {
+      const tag  = item.type === "news"
+        ? `<span class="fd-tag fd-tag--news">News</span>`
+        : `<span class="fd-tag fd-tag--reddit">Reddit</span>`;
+      const src  = item.source   ? `<span class="fd-src">${item.source}</span>` : "";
+      const time = item.relative ? `<span class="fd-time">${item.relative}</span>` : "";
+      const ups  = item.upvotes  ? `<span class="fd-ups">▲${item.upvotes}</span>` : "";
+      return `<div class="fd-item">
+        <div class="fd-title-row">${tag}<a class="fd-title" href="${item.url}" target="_blank" rel="noopener noreferrer">${item.title}</a></div>
+        <div class="fd-meta">${src}${time}${ups}</div>
+      </div>`;
+    }).join("");
+  } catch (_) {
+    el.innerHTML = "";
+  }
+}
+
+async function loadSidebarNews() {
+  const el = document.getElementById("sidebar-news-list");
+  if (!el) return;
+  try {
+    const resp = await fetch("./news.json", { cache: "no-store" });
+    if (!resp.ok) return;
+    const d = await resp.json();
+    const articles = (d.articles || []).slice(0, 5);
+    if (!articles.length) return;
+    el.innerHTML = articles.map(a => `
+      <a class="sn-item" href="${a.url}" target="_blank" rel="noopener noreferrer">
+        <span class="sn-title">${a.title}</span>
+        <span class="sn-meta">${a.source ? `<span class="sn-src">${a.source}</span>` : ""}${a.relative ? `<span class="sn-time">${a.relative}</span>` : ""}</span>
+      </a>`).join("");
+  } catch (_) {}
+}
+
 updateStatusLine();
 updateQuickStats();
 updateBelowMap();
 loadFreshData();
+loadFeed();
+loadSidebarNews();

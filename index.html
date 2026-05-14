@@ -114,12 +114,9 @@
         Prices are sourced daily from publicly available retail listings and
         may not reflect real-time rates.
       </p>
-
-      <!-- Option A: Current Prices -->
       <div class="quick-stats">
-        <h3 class="qs-title">Current Prices</h3>
-        <div class="qs-row"><span class="qs-label">Average petrol price</span><strong id="qs-avg-petrol">—</strong></div>
-        <div class="qs-row"><span class="qs-label">Average diesel price</span><strong id="qs-avg-diesel">—</strong></div>
+        <div class="qs-row"><span class="qs-label">Avg petrol</span><strong id="qs-avg-petrol">—</strong></div>
+        <div class="qs-row"><span class="qs-label">Avg diesel</span><strong id="qs-avg-diesel">—</strong></div>
         <div class="qs-divider"></div>
         <div class="qs-row qs-cheapest"><span class="qs-label">Cheapest petrol</span><strong id="qs-cheapest-petrol">—</strong></div>
         <div class="qs-row qs-costliest"><span class="qs-label">Costliest petrol</span><strong id="qs-costliest-petrol">—</strong></div>
@@ -127,54 +124,59 @@
         <div class="qs-row qs-cheapest"><span class="qs-label">Cheapest diesel</span><strong id="qs-cheapest-diesel">—</strong></div>
         <div class="qs-row qs-costliest"><span class="qs-label">Costliest diesel</span><strong id="qs-costliest-diesel">—</strong></div>
       </div>
-
-      <!-- Option B: Mini FAQ -->
-      <div class="faq-section">
-        <h3 class="faq-title">FAQs</h3>
-        <div class="faq-item">
-          <p class="faq-q">Why do petrol prices differ by city?</p>
-          <p class="faq-a">Fuel prices vary due to local VAT, freight charges, and state-level taxes applied on top of the central base price revised daily by oil companies.</p>
-        </div>
-        <div class="faq-item">
-          <p class="faq-q">How often are prices updated?</p>
-          <p class="faq-a">This map fetches fresh prices every hour from publicly available retail fuel listings across India.</p>
-        </div>
-        <div class="faq-item">
-          <p class="faq-q">Which city has the cheapest petrol today?</p>
-          <p class="faq-a">Check the "Current Prices" above — or click any marker on the map to see city-specific petrol and diesel rates.</p>
-        </div>
-        <div class="faq-item">
-          <p class="faq-q">Are these prices official?</p>
-          <p class="faq-a">Prices are sourced from publicly available retail listings and are for informational purposes only. For the exact rate, check with your local fuel station.</p>
-        </div>
+      <div class="sidebar-news">
+        <div class="sidebar-news-head">Latest News <a href="/news" class="sidebar-news-more">View all →</a></div>
+        <div id="sidebar-news-list"></div>
       </div>
+
     </aside>
   </main>
 
-  <!-- ── Below-map content: metro cities + state table ── -->
-  <section class="content-section">
+  <!-- ── 2-column: metro cities (left) + current prices & feed (right) ── -->
+  <section class="content-section two-col-section">
+    <div class="two-col-grid">
 
-    <!-- Metro cities grid — first below the map -->
-    <div class="content-block">
-      <h2 class="content-heading">Fuel Prices in Top 25 Indian Cities</h2>
-      <p class="content-desc">Today's petrol &amp; diesel rates across India's biggest economic hubs. Click a row to locate the city on the map.</p>
-      <div class="table-wrap">
-        <table class="state-table" id="metro-table">
-          <thead>
-            <tr>
-              <th>City</th>
-              <th>Petrol</th>
-              <th>Diesel</th>
-            </tr>
-          </thead>
-          <tbody id="metro-table-body">
-            <tr><td colspan="3" class="tbl-loading">Loading…</td></tr>
-          </tbody>
-        </table>
+      <!-- Left: Top 25 cities table -->
+      <div class="two-col-left">
+        <div class="content-block">
+          <h2 class="content-heading">Fuel Prices in Top 25 Indian Cities</h2>
+          <p class="content-desc">Today's petrol &amp; diesel rates across India's biggest economic hubs. Click a row to locate the city on the map.</p>
+          <div class="table-wrap">
+            <table class="state-table" id="metro-table">
+              <thead>
+                <tr>
+                  <th>City</th>
+                  <th>Petrol</th>
+                  <th>Diesel</th>
+                </tr>
+              </thead>
+              <tbody id="metro-table-body">
+                <tr><td colspan="3" class="tbl-loading">Loading…</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
-    </div>
 
-    <!-- State table — moved to the end -->
+      <!-- Right: News & Discussion feed -->
+      <div class="two-col-right">
+        <div class="content-block">
+          <div class="news-heading-row">
+            <h2 class="content-heading">News &amp; Discussion</h2>
+            <a href="/news" class="news-view-all">View all →</a>
+          </div>
+          <p class="content-desc">Latest news and community posts on India fuel prices, shortages &amp; policy.</p>
+          <div id="feed-list" class="fd-list">
+            <div class="na-item na-loading">Loading…</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── Full-width: State table ── -->
+  <section class="content-section">
     <div class="content-block">
       <h2 class="content-heading">Petrol &amp; Diesel Prices by State</h2>
       <p class="content-desc">Average fuel prices across all cities tracked per state, sorted cheapest petrol first. Includes the city with the lowest petrol and diesel price in each state.</p>
@@ -196,7 +198,31 @@
         </table>
       </div>
     </div>
+  </section>
 
+  <!-- ── FAQ ── -->
+  <section class="content-section faq-outer">
+    <div class="content-block">
+      <h2 class="content-heading">FAQs</h2>
+      <div class="faq-section">
+        <div class="faq-item">
+          <p class="faq-q">Why do petrol prices differ by city?</p>
+          <p class="faq-a">Fuel prices vary due to local VAT, freight charges, and state-level taxes applied on top of the central base price revised daily by oil companies.</p>
+        </div>
+        <div class="faq-item">
+          <p class="faq-q">How often are prices updated?</p>
+          <p class="faq-a">This map fetches fresh prices every hour from publicly available retail fuel listings across India.</p>
+        </div>
+        <div class="faq-item">
+          <p class="faq-q">Which city has the cheapest petrol today?</p>
+          <p class="faq-a">Check the "Current Prices" section above — or click any marker on the map to see city-specific petrol and diesel rates.</p>
+        </div>
+        <div class="faq-item">
+          <p class="faq-q">Are these prices official?</p>
+          <p class="faq-a">Prices are sourced from publicly available retail listings and are for informational purposes only. For the exact rate, check with your local fuel station.</p>
+        </div>
+      </div>
+    </div>
   </section>
 
   <footer class="site-footer">
@@ -215,6 +241,6 @@
     crossorigin=""
   ></script>
   <script src="data.js?v=3"></script>
-  <script src="app.js?v=6"></script>
+  <script src="app.js?v=7"></script>
 </body>
 </html>

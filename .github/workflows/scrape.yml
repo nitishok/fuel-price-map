@@ -37,7 +37,13 @@ jobs:
       - name: Generate city pages
         run: python3 scraper/generate_city_pages.py
 
-      - name: Commit data + city pages
+      - name: Fetch news
+        run: python3 scraper/fetch_news.py
+
+      - name: Fetch social posts
+        run: python3 scraper/fetch_social.py
+
+      - name: Commit data + city pages + news
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -47,6 +53,7 @@ jobs:
                   lucknow/ kanpur/ nagpur/ indore/ bhopal/ \
                   visakhapatnam/ patna/ vadodara/ kochi/ coimbatore/ \
                   guwahati/ ranchi/ chandigarh/ thiruvananthapuram/ varanasi/
+          git add news.json news/ social.json
           git diff --staged --quiet \
             && echo "Nothing changed — skipping commit" \
             || git commit -m "data: refresh prices + city pages $(date -u +'%Y-%m-%d %H:%M UTC')"
