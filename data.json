@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-15T06:37:59+00:00",
+  "lastUpdated": "2026-05-15T07:04:10+00:00",
   "source": "bankbazaar.com, petroldieselprice.com, goodreturns.in",
   "cities": [
     {
@@ -1727,32 +1727,32 @@
       "state": "Goa",
       "lat": 15.4909,
       "lng": 73.8278,
-      "petrol": 93.0,
-      "diesel": 89.5
+      "petrol": 99.41,
+      "diesel": 94.81
     },
     {
       "name": "Margao",
       "state": "Goa",
       "lat": 15.2832,
       "lng": 73.9862,
-      "petrol": 93.0,
-      "diesel": 87.6
+      "petrol": 99.41,
+      "diesel": 94.81
     },
     {
       "name": "Vasco da Gama",
       "state": "Goa",
       "lat": 15.3958,
       "lng": 73.8157,
-      "petrol": 97.14,
-      "diesel": 89.54
+      "petrol": 99.41,
+      "diesel": 94.81
     },
     {
       "name": "Mapusa",
       "state": "Goa",
       "lat": 15.5937,
       "lng": 73.8142,
-      "petrol": 93.0,
-      "diesel": 89.52
+      "petrol": 99.41,
+      "diesel": 94.81
     },
     {
       "name": "Imphal",
