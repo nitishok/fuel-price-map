@@ -107,6 +107,11 @@ SLUG_OVERRIDES: dict[str, list[str]] = {
     "Kolkata": ["kolkata"],
     "Varanasi": ["varanasi", "benares"],
     "Gurugram": ["gurgaon", "gurugram"],
+    # Goa cities: city-specific pages 404 on bankbazaar; state page works
+    "Panaji":       ["goa"],
+    "Margao":       ["goa"],
+    "Mapusa":       ["goa"],
+    "Vasco da Gama": ["goa"],
     "Dwarka (Delhi)": ["dwarka"],
 }
 
