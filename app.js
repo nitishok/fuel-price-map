@@ -470,6 +470,18 @@ function updateBelowMap() {
 
 // ---------- news & discussion feed (merged news + reddit) ----------
 
+function fmtPubDate(iso) {
+  if (!iso) return "";
+  const d = new Date(iso);
+  if (isNaN(d)) return "";
+  const now = new Date();
+  const months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+  const day = d.getDate();
+  const mon = months[d.getMonth()];
+  const yr  = d.getFullYear();
+  return yr === now.getFullYear() ? `${day} ${mon}` : `${day} ${mon} ${yr}`;
+}
+
 async function loadFeed() {
   const el = document.getElementById("feed-list");
   if (!el) return;
@@ -501,7 +513,7 @@ async function loadFeed() {
         ? `<span class="fd-tag fd-tag--news">News</span>`
         : `<span class="fd-tag fd-tag--reddit">Reddit</span>`;
       const src  = item.source   ? `<span class="fd-src">${item.source}</span>` : "";
-      const time = item.relative ? `<span class="fd-time">${item.relative}</span>` : "";
+      const time = item.published ? `<span class="fd-time">${fmtPubDate(item.published)}</span>` : "";
       const ups  = item.upvotes  ? `<span class="fd-ups">▲${item.upvotes}</span>` : "";
       return `<div class="fd-item">
         <div class="fd-title-row">${tag}<a class="fd-title" href="${item.url}" target="_blank" rel="noopener noreferrer">${item.title}</a></div>
@@ -525,7 +537,7 @@ async function loadSidebarNews() {
     el.innerHTML = articles.map(a => `
       <a class="sn-item" href="${a.url}" target="_blank" rel="noopener noreferrer">
         <span class="sn-title">${a.title}</span>
-        <span class="sn-meta">${a.source ? `<span class="sn-src">${a.source}</span>` : ""}${a.relative ? `<span class="sn-time">${a.relative}</span>` : ""}</span>
+        <span class="sn-meta">${a.source ? `<span class="sn-src">${a.source}</span>` : ""}${a.published ? `<span class="sn-time">${fmtPubDate(a.published)}</span>` : ""}</span>
       </a>`).join("");
   } catch (_) {}
 }

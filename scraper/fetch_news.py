@@ -24,20 +24,18 @@ RSS_URLS = [
 IST = timezone(timedelta(hours=5, minutes=30))
 
 
-def relative_time(dt: datetime) -> str:
+def fmt_pub_date(iso: str) -> str:
+    """Format an ISO datetime string as '15 May' or '15 May 2025'."""
+    if not iso:
+        return ""
+    try:
+        dt = datetime.fromisoformat(iso).astimezone(IST)
+    except Exception:
+        return ""
     now = datetime.now(IST)
-    dt_ist = dt.astimezone(IST)
-    secs = int((now - dt_ist).total_seconds())
-    if secs < 60:
-        return "just now"
-    if secs < 3600:
-        m = secs // 60
-        return f"{m} min ago"
-    if secs < 86400:
-        h = secs // 3600
-        return f"{h} hr{'s' if h > 1 else ''} ago"
-    d = secs // 86400
-    return f"{d} day{'s' if d > 1 else ''} ago"
+    day = dt.day
+    mon = dt.strftime("%b")
+    return f"{day} {mon}" if dt.year == now.year else f"{day} {mon} {dt.year}"
 
 
 def fetch_articles() -> list[dict]:
@@ -91,17 +89,14 @@ def fetch_articles() -> list[dict]:
                 if (datetime.now(IST) - pub_dt.astimezone(IST)).days > 180:
                     continue
                 pub_iso = pub_dt.isoformat()
-                rel     = relative_time(pub_dt)
             except Exception:
                 pub_iso = ""
-                rel     = ""
 
             articles.append({
                 "title":     title,
                 "url":       link,
                 "source":    source,
                 "published": pub_iso,
-                "relative":  rel,
             })
 
     articles.sort(key=lambda a: a["published"], reverse=True)
@@ -137,7 +132,7 @@ def generate_page(articles: list[dict]) -> None:
     news_rows = ""
     for a in articles:
         src  = f'<span class="ns-src">{a["source"]}</span>' if a["source"] else ""
-        time = f'<span class="ns-time">{a["relative"]}</span>' if a["relative"] else ""
+        time = f'<span class="ns-time">{fmt_pub_date(a["published"])}</span>' if a.get("published") else ""
         news_rows += f"""
       <div class="col-item">
         <a class="col-title" href="{a['url']}" target="_blank" rel="noopener noreferrer">{a['title']}</a>
@@ -147,7 +142,7 @@ def generate_page(articles: list[dict]) -> None:
     reddit_rows = ""
     for p in posts:
         src  = f'<span class="ns-src">{p["source"]}</span>' if p.get("source") else ""
-        time = f'<span class="ns-time">{p["relative"]}</span>' if p.get("relative") else ""
+        time = f'<span class="ns-time">{fmt_pub_date(p["published"])}</span>' if p.get("published") else ""
         ups  = f'<span class="rd-ups">▲{p["upvotes"]}</span>' if p.get("upvotes") else ""
         reddit_rows += f"""
       <div class="col-item">

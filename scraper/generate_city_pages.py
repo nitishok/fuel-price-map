@@ -80,16 +80,16 @@ METRO_CITY_SLUGS: dict[str, str] = {
 }
 
 
-def relative_time(dt: datetime) -> str:
+def fmt_pub_date(iso: str) -> str:
+    """Format an ISO datetime string as '15 May' or '15 May 2025'."""
+    if not iso:
+        return ""
+    try:
+        dt = datetime.fromisoformat(iso).astimezone(IST)
+    except Exception:
+        return ""
     now = datetime.now(IST)
-    secs = int((now - dt.astimezone(IST)).total_seconds())
-    if secs < 60:   return "just now"
-    if secs < 3600: return f"{secs // 60} min ago"
-    if secs < 86400:
-        h = secs // 3600
-        return f"{h} hr{'s' if h > 1 else ''} ago"
-    d = secs // 86400
-    return f"{d} day{'s' if d > 1 else ''} ago"
+    return f"{dt.day} {dt.strftime('%b')}" if dt.year == now.year else f"{dt.day} {dt.strftime('%b')} {dt.year}"
 
 
 def fetch_city_news(city_name: str, state_name: str, max_articles: int = 5) -> list[dict]:
@@ -142,12 +142,10 @@ def fetch_city_news(city_name: str, state_name: str, max_articles: int = 5) -> l
             if (datetime.now(IST) - pub_dt.astimezone(IST)).days > 180:
                 continue
             pub_iso = pub_dt.isoformat()
-            rel     = relative_time(pub_dt)
         except Exception:
             pub_iso = ""
-            rel     = ""
 
-        articles.append({"title": title, "url": link, "source": source, "published": pub_iso, "relative": rel})
+        articles.append({"title": title, "url": link, "source": source, "published": pub_iso})
         if len(articles) >= max_articles:
             break
 
@@ -247,7 +245,7 @@ def generate_page(city_name: str, slug: str, entries: list[dict], all_cities: di
     if news:
         def _news_item(a: dict) -> str:
             src  = f'<span class="news-src">{a["source"]}</span>'  if a["source"]   else ""
-            time = f'<span class="news-time">{a["relative"]}</span>' if a["relative"] else ""
+            time = f'<span class="news-time">{fmt_pub_date(a["published"])}</span>' if a.get("published") else ""
             return (
                 f'      <div class="news-item">'
                 f'<a class="news-link" href="{a["url"]}" target="_blank" rel="noopener noreferrer">{a["title"]}<i class="ext-icon">↗</i></a>'
