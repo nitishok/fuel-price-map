@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-15T06:16:22+00:00",
+  "lastUpdated": "2026-05-15T06:37:59+00:00",
   "source": "bankbazaar.com, petroldieselprice.com, goodreturns.in",
   "cities": [
     {
@@ -199,8 +199,8 @@
       "state": "Karnataka",
       "lat": 15.1394,
       "lng": 76.9214,
-      "petrol": 106.68,
-      "diesel": 106.68
+      "petrol": 108.56,
+      "diesel": 96.27
     },
     {
       "name": "Shivamogga",
@@ -215,8 +215,8 @@
       "state": "Karnataka",
       "lat": 13.3379,
       "lng": 77.1022,
-      "petrol": 106.68,
-      "diesel": 106.68
+      "petrol": 106.8,
+      "diesel": 94.64
     },
     {
       "name": "Udupi",
@@ -527,8 +527,8 @@
       "state": "Telangana",
       "lat": 16.748,
       "lng": 77.986,
-      "petrol": 106.68,
-      "diesel": 106.68
+      "petrol": 111.95,
+      "diesel": 99.92
     },
     {
       "name": "Adilabad",
@@ -607,7 +607,7 @@
       "state": "Andhra Pradesh",
       "lat": 14.4753,
       "lng": 78.8298,
-      "petrol": 106.68,
+      "petrol": 111.79,
       "diesel": 98.69
     },
     {
@@ -1263,7 +1263,7 @@
       "state": "Punjab",
       "lat": 30.7046,
       "lng": 76.7179,
-      "petrol": 106.68,
+      "petrol": 102.35,
       "diesel": 90.97
     },
     {
