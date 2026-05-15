@@ -517,16 +517,14 @@ def main(argv: list[str]) -> int:
 
         new_petrol, new_diesel, src = fetch_all_sources(name, verbose=args.verbose)
 
-        # Spike guard: reject any price that moves more than 8 Rs from stored value.
-        # Real Indian fuel revisions are 2-5 Rs; larger swings indicate a bad page.
-        SPIKE_LIMIT = 8.0
-        if new_petrol is not None and abs(new_petrol - city["petrol"]) > SPIKE_LIMIT:
-            print(f"  SPIKE {name} petrol {city['petrol']}->{new_petrol} (>{SPIKE_LIMIT} Rs, skipping)",
+        # Spike guard: in India diesel is always cheaper than petrol.
+        # If the new prices would make diesel >= petrol, the data is bad — skip both.
+        eff_petrol = new_petrol if new_petrol is not None else city["petrol"]
+        eff_diesel = new_diesel if new_diesel is not None else city["diesel"]
+        if new_diesel is not None and eff_diesel >= eff_petrol:
+            print(f"  SPIKE {name} diesel {eff_diesel} >= petrol {eff_petrol} after update, skipping",
                   file=sys.stderr)
             new_petrol = None
-        if new_diesel is not None and abs(new_diesel - city["diesel"]) > SPIKE_LIMIT:
-            print(f"  SPIKE {name} diesel {city['diesel']}->{new_diesel} (>{SPIKE_LIMIT} Rs, skipping)",
-                  file=sys.stderr)
             new_diesel = None
 
         updated = []
