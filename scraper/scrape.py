@@ -3,11 +3,12 @@
 Fuel price scraper for the India Fuel Price Map project.
 
 Multi-source scraper that tries sources in priority order:
-  1. bankbazaar.com        — hero price (font-size:32px anchor), 2 reqs per city
+  1. goodreturns.in        — Rs.XX.XX/Ltr in JSON-LD WebPage name, 2 reqs per city
+                             covers all 236 cities, no bot protection
+  2. bankbazaar.com        — hero price (font-size:32px anchor), 2 reqs per city
                              requires Google Referer header to bypass Cloudflare
-  2. petroldieselprice.com — JSON-LD structured data, 1 req per city (both fuels)
+  3. petroldieselprice.com — JSON-LD structured data, 1 req per city (both fuels)
                              broader coverage including NE India & hill stations
-  3. goodreturns.in        — Rs.XX.XX/Ltr in JSON-LD WebPage name, 2 reqs per city
 
 Reads the canonical dataset from data.json (or bootstraps from data.js),
 fetches fresh prices, and writes back to data.json.
@@ -165,7 +166,7 @@ def title_slug(name: str) -> str:
 
 
 # ---------------------------------------------------------------------------
-# Source 1: bankbazaar.com
+# Source 2: bankbazaar.com
 # ---------------------------------------------------------------------------
 
 # The hero price is the ONLY element with font-size:32px on the page.
@@ -204,7 +205,7 @@ def fetch_bankbazaar(name: str, verbose: bool = False) -> dict[str, Optional[flo
 
 
 # ---------------------------------------------------------------------------
-# Source 2: petroldieselprice.com
+# Source 3: petroldieselprice.com
 # ---------------------------------------------------------------------------
 
 # JSON-LD on every page contains:
@@ -249,7 +250,7 @@ def fetch_petroldieselprice(name: str, verbose: bool = False) -> dict[str, Optio
 
 
 # ---------------------------------------------------------------------------
-# Source 3: goodreturns.in
+# Source 1: goodreturns.in
 # ---------------------------------------------------------------------------
 
 # Slug overrides for goodreturns.in (slug differs from auto_slug output)
@@ -311,9 +312,9 @@ def fetch_goodreturns(name: str, verbose: bool = False) -> dict[str, Optional[fl
 # ---------------------------------------------------------------------------
 
 SOURCES = [
+    ("goodreturns",      fetch_goodreturns),
     ("bankbazaar",       fetch_bankbazaar),
     ("petroldieselprice", fetch_petroldieselprice),
-    ("goodreturns",      fetch_goodreturns),
 ]
 
 
