@@ -7,6 +7,7 @@ Multi-source scraper that tries sources in priority order:
                              requires Google Referer header to bypass Cloudflare
   2. petroldieselprice.com — JSON-LD structured data, 1 req per city (both fuels)
                              broader coverage including NE India & hill stations
+  3. goodreturns.in        — Rs.XX.XX/Ltr in JSON-LD WebPage name, 2 reqs per city
 
 Reads the canonical dataset from data.json (or bootstraps from data.js),
 fetches fresh prices, and writes back to data.json.
@@ -248,12 +249,71 @@ def fetch_petroldieselprice(name: str, verbose: bool = False) -> dict[str, Optio
 
 
 # ---------------------------------------------------------------------------
+# Source 3: goodreturns.in
+# ---------------------------------------------------------------------------
+
+# Slug overrides for goodreturns.in (slug differs from auto_slug output)
+_GR_SLUG_OVERRIDES: dict[str, str | None] = {
+    "Bengaluru":          "bangalore",
+    "Thiruvananthapuram": "trivandrum",
+    "Mysuru":             "mysore",
+    "Gurugram":           "gurgaon",
+    "Puducherry":         "pondicherry",
+    "New Delhi":          "new-delhi",   # auto_slug already gives "new-delhi"; explicit for clarity
+}
+
+# Price extracted from the JSON-LD WebPage name: "... Rs. 106.68/Ltr"
+_GR_PRICE_RE = re.compile(r'Rs\.\s*(\d{2,3}(?:\.\d{1,2})?)/Ltr')
+# Fallback: first fuel-range span.value on the page
+_GR_SPAN_RE  = re.compile(r'<span class="value">₹\s*(\d{2,3}(?:\.\d{1,2})?)</span>')
+
+
+def _gr_slug(name: str) -> str | None:
+    """Return the goodreturns.in slug for a city, or None to skip."""
+    if name in _GR_SLUG_OVERRIDES:
+        return _GR_SLUG_OVERRIDES[name]
+    return auto_slug(name)
+
+
+def _gr_parse(html: str) -> Optional[float]:
+    m = _GR_PRICE_RE.search(html)
+    if not m:
+        m = _GR_SPAN_RE.search(html)
+    if m:
+        val = float(m.group(1))
+        if 30.0 <= val <= 200.0:
+            return val
+    return None
+
+
+def fetch_goodreturns(name: str, verbose: bool = False) -> dict[str, Optional[float]]:
+    """Return {"petrol": price|None, "diesel": price|None} from goodreturns.in."""
+    result: dict[str, Optional[float]] = {"petrol": None, "diesel": None}
+    slug = _gr_slug(name)
+    if slug is None:
+        return result
+    for fuel in ("petrol", "diesel"):
+        url = f"https://www.goodreturns.in/{fuel}-price-in-{slug}.html"
+        if verbose:
+            print(f"    [gr] GET {url}", file=sys.stderr)
+        html = fetch_url(url)
+        if html is None:
+            continue
+        price = _gr_parse(html)
+        if price is not None:
+            result[fuel] = price
+        time.sleep(REQUEST_DELAY_SEC)
+    return result
+
+
+# ---------------------------------------------------------------------------
 # Multi-source orchestrator
 # ---------------------------------------------------------------------------
 
 SOURCES = [
-    ("bankbazaar", fetch_bankbazaar),
+    ("bankbazaar",       fetch_bankbazaar),
     ("petroldieselprice", fetch_petroldieselprice),
+    ("goodreturns",      fetch_goodreturns),
 ]
 
 
@@ -470,7 +530,7 @@ def main(argv: list[str]) -> int:
     )
 
     data["lastUpdated"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
-    data["source"] = "bankbazaar.com, petroldieselprice.com"
+    data["source"] = "bankbazaar.com, petroldieselprice.com, goodreturns.in"
 
     if args.dry_run:
         print("--dry-run: not writing data.json", file=sys.stderr)
