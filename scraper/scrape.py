@@ -300,10 +300,22 @@ def fetch_goodreturns(name: str, verbose: bool = False) -> dict[str, Optional[fl
         html = fetch_url(url)
         if html is None:
             continue
+        # Reject if the page doesn't mention this city (goodreturns serves a
+        # generic/Mumbai fallback for cities it doesn't cover).
+        city_word = slug.split("-")[0].lower()
+        if city_word not in html.lower():
+            if verbose:
+                print(f"    [gr] city not found in page, skipping", file=sys.stderr)
+            continue
         price = _gr_parse(html)
         if price is not None:
             result[fuel] = price
         time.sleep(REQUEST_DELAY_SEC)
+    # Sanity check: petrol and diesel are never equal in India — reject if same.
+    if result["petrol"] is not None and result["petrol"] == result["diesel"]:
+        if verbose:
+            print(f"    [gr] petrol==diesel ({result['petrol']}), rejecting", file=sys.stderr)
+        return {"petrol": None, "diesel": None}
     return result
 
 
