@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-16T11:59:36+00:00",
+  "lastUpdated": "2026-05-16T13:17:00+00:00",
   "source": "bankbazaar.com, petroldieselprice.com, goodreturns.in",
   "cities": [
     {
@@ -575,7 +575,7 @@
       "state": "Andhra Pradesh",
       "lat": 16.3067,
       "lng": 80.4365,
-      "petrol": 112.93,
+      "petrol": 112.92,
       "diesel": 100.62
     },
     {
