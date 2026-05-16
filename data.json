@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-16T00:01:58+00:00",
+  "lastUpdated": "2026-05-16T02:21:30+00:00",
   "source": "bankbazaar.com, petroldieselprice.com, goodreturns.in",
   "cities": [
     {
@@ -31,8 +31,8 @@
       "state": "Maharashtra",
       "lat": 19.2183,
       "lng": 72.9781,
-      "petrol": 107.08,
-      "diesel": 93.53
+      "petrol": 106.98,
+      "diesel": 93.46
     },
     {
       "name": "Navi Mumbai",
@@ -47,7 +47,7 @@
       "state": "Maharashtra",
       "lat": 18.5204,
       "lng": 73.8567,
-      "petrol": 107.01,
+      "petrol": 107.43,
       "diesel": 93.92
     },
     {
@@ -55,7 +55,7 @@
       "state": "Maharashtra",
       "lat": 21.1458,
       "lng": 79.0882,
-      "petrol": 107.18,
+      "petrol": 107.16,
       "diesel": 93.69
     },
     {
@@ -151,7 +151,7 @@
       "state": "Karnataka",
       "lat": 12.9716,
       "lng": 77.5946,
-      "petrol": 106.21,
+      "petrol": 106.17,
       "diesel": 94.1
     },
     {
@@ -159,7 +159,7 @@
       "state": "Karnataka",
       "lat": 12.2958,
       "lng": 76.6394,
-      "petrol": 106.33,
+      "petrol": 105.73,
       "diesel": 93.69
     },
     {
@@ -240,7 +240,7 @@
       "lat": 17.3297,
       "lng": 76.8343,
       "petrol": 105.67,
-      "diesel": 93.79
+      "diesel": 93.93
     },
     {
       "name": "Bidar",
@@ -255,7 +255,7 @@
       "state": "Karnataka",
       "lat": 16.2076,
       "lng": 77.3463,
-      "petrol": 107.35,
+      "petrol": 107.36,
       "diesel": 95.29
     },
     {
@@ -279,7 +279,7 @@
       "state": "Tamil Nadu",
       "lat": 11.0168,
       "lng": 76.9558,
-      "petrol": 104.13,
+      "petrol": 104.35,
       "diesel": 95.97
     },
     {
@@ -608,7 +608,7 @@
       "lat": 14.4753,
       "lng": 78.8298,
       "petrol": 111.79,
-      "diesel": 98.69
+      "diesel": 99.58
     },
     {
       "name": "Anantapur",
