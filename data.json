@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-16T02:21:30+00:00",
+  "lastUpdated": "2026-05-16T06:01:00+00:00",
   "source": "bankbazaar.com, petroldieselprice.com, goodreturns.in",
   "cities": [
     {
@@ -240,7 +240,7 @@
       "lat": 17.3297,
       "lng": 76.8343,
       "petrol": 105.67,
-      "diesel": 93.93
+      "diesel": 93.79
     },
     {
       "name": "Bidar",
@@ -608,7 +608,7 @@
       "lat": 14.4753,
       "lng": 78.8298,
       "petrol": 111.79,
-      "diesel": 99.58
+      "diesel": 98.69
     },
     {
       "name": "Anantapur",
