@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-17T02:22:48+00:00",
+  "lastUpdated": "2026-05-17T06:29:12+00:00",
   "source": "bankbazaar.com, petroldieselprice.com, goodreturns.in",
   "cities": [
     {
@@ -143,8 +143,8 @@
       "state": "Maharashtra",
       "lat": 19.9615,
       "lng": 79.2961,
-      "petrol": 107.24,
-      "diesel": 93.78
+      "petrol": 108.05,
+      "diesel": 94.58
     },
     {
       "name": "Bengaluru",
@@ -295,8 +295,8 @@
       "state": "Tamil Nadu",
       "lat": 10.7905,
       "lng": 78.7047,
-      "petrol": 104.23,
-      "diesel": 95.85
+      "petrol": 104.12,
+      "diesel": 95.74
     },
     {
       "name": "Salem",
@@ -752,7 +752,7 @@
       "lat": 23.242,
       "lng": 69.6669,
       "petrol": 97.51,
-      "diesel": 35.15
+      "diesel": 93.26
     },
     {
       "name": "Jamnagar",
@@ -800,7 +800,7 @@
       "lat": 21.6417,
       "lng": 69.6293,
       "petrol": 97.51,
-      "diesel": 35.15
+      "diesel": 93.26
     },
     {
       "name": "Jaipur",
@@ -1031,16 +1031,16 @@
       "state": "Uttar Pradesh",
       "lat": 27.5805,
       "lng": 77.7008,
-      "petrol": 97.69,
-      "diesel": 90.8
+      "petrol": 97.53,
+      "diesel": 90.82
     },
     {
       "name": "Ayodhya",
       "state": "Uttar Pradesh",
       "lat": 26.7922,
       "lng": 82.1998,
-      "petrol": 97.69,
-      "diesel": 90.8
+      "petrol": 97.53,
+      "diesel": 90.82
     },
     {
       "name": "Jhansi",
@@ -1127,8 +1127,8 @@
       "state": "Madhya Pradesh",
       "lat": 24.8318,
       "lng": 79.9199,
-      "petrol": 109.51,
-      "diesel": 94.88
+      "petrol": 109.8,
+      "diesel": 94.98
     },
     {
       "name": "Chhindwara",
@@ -1136,7 +1136,7 @@
       "lat": 22.0574,
       "lng": 78.9382,
       "petrol": 109.86,
-      "diesel": 109.8
+      "diesel": 94.98
     },
     {
       "name": "Patna",
