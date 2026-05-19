@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-19T00:11:30+00:00",
+  "lastUpdated": "2026-05-19T03:07:36+00:00",
   "source": "bankbazaar.com, petroldieselprice.com, goodreturns.in",
   "cities": [
     {
@@ -399,7 +399,7 @@
       "state": "Kerala",
       "lat": 9.9312,
       "lng": 76.2673,
-      "petrol": 106.68,
+      "petrol": 107.59,
       "diesel": 99.38
     },
     {
@@ -608,7 +608,7 @@
       "lat": 14.4753,
       "lng": 78.8298,
       "petrol": 111.79,
-      "diesel": 98.96
+      "diesel": 99.58
     },
     {
       "name": "Anantapur",
