@@ -266,12 +266,19 @@ _GR_SLUG_OVERRIDES: dict[str, str | None] = {
     "Gurugram":           "gurgaon",
     "Puducherry":         "pondicherry",
     "New Delhi":          "new-delhi",   # auto_slug already gives "new-delhi"; explicit for clarity
+    # Goa: use the state-level page (goodreturns slug suffix -s11)
+    "Panaji":             "goa-s11",
+    "Margao":             "goa-s11",
+    "Mapusa":             "goa-s11",
+    "Vasco da Gama":      "goa-s11",
 }
 
 # Price extracted from the JSON-LD WebPage name: "... Rs. 106.68/Ltr"
 _GR_PRICE_RE = re.compile(r'Rs\.\s*(\d{2,3}(?:\.\d{1,2})?)/Ltr')
 # Fallback: first fuel-range span.value on the page
 _GR_SPAN_RE  = re.compile(r'<span class="value">₹\s*(\d{2,3}(?:\.\d{1,2})?)</span>')
+# State pages (e.g. /petrol-price-in-goa-s11.html) embed the price in the intro paragraph
+_GR_STATE_RE = re.compile(r'&#x20b9;<b>(\d{2,3}(?:\.\d{1,2})?)</b>')
 
 
 def _gr_slug(name: str) -> str | None:
@@ -281,10 +288,16 @@ def _gr_slug(name: str) -> str | None:
     return auto_slug(name)
 
 
-def _gr_parse(html: str) -> Optional[float]:
-    m = _GR_PRICE_RE.search(html)
-    if not m:
-        m = _GR_SPAN_RE.search(html)
+_GR_STATE_SLUG_RE = re.compile(r'-s\d+$')
+
+def _gr_parse(html: str, slug: str = "") -> Optional[float]:
+    is_state_page = bool(_GR_STATE_SLUG_RE.search(slug))
+    if is_state_page:
+        m = _GR_STATE_RE.search(html)
+    else:
+        m = _GR_PRICE_RE.search(html)
+        if not m:
+            m = _GR_SPAN_RE.search(html)
     if m:
         val = float(m.group(1))
         if 30.0 <= val <= 200.0:
@@ -312,7 +325,7 @@ def fetch_goodreturns(name: str, verbose: bool = False) -> dict[str, Optional[fl
             if verbose:
                 print(f"    [gr] city not found in page, skipping", file=sys.stderr)
             continue
-        price = _gr_parse(html)
+        price = _gr_parse(html, slug=slug)
         if price is not None:
             result[fuel] = price
         time.sleep(REQUEST_DELAY_SEC)
