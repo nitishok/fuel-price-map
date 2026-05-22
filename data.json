@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-22T06:55:54+00:00",
+  "lastUpdated": "2026-05-22T10:33:14+00:00",
   "source": "bankbazaar.com, petroldieselprice.com, goodreturns.in",
   "cities": [
     {
@@ -296,7 +296,7 @@
       "lat": 10.7905,
       "lng": 78.7047,
       "petrol": 104.95,
-      "diesel": 96.86
+      "diesel": 96.6
     },
     {
       "name": "Salem",
@@ -1031,16 +1031,16 @@
       "state": "Uttar Pradesh",
       "lat": 27.5805,
       "lng": 77.7008,
-      "petrol": 98.43,
-      "diesel": 91.72
+      "petrol": 98.4,
+      "diesel": 91.73
     },
     {
       "name": "Ayodhya",
       "state": "Uttar Pradesh",
       "lat": 26.7922,
       "lng": 82.1998,
-      "petrol": 98.43,
-      "diesel": 91.72
+      "petrol": 98.4,
+      "diesel": 91.73
     },
     {
       "name": "Jhansi",
@@ -1567,7 +1567,7 @@
       "state": "Uttarakhand",
       "lat": 30.0869,
       "lng": 78.2676,
-      "petrol": 97.1,
+      "petrol": 99.9,
       "diesel": 92.26
     },
     {
@@ -1583,7 +1583,7 @@
       "state": "Uttarakhand",
       "lat": 28.9845,
       "lng": 79.4141,
-      "petrol": 97.1,
+      "petrol": 99.9,
       "diesel": 92.26
     },
     {
@@ -1591,7 +1591,7 @@
       "state": "Uttarakhand",
       "lat": 29.2176,
       "lng": 78.9593,
-      "petrol": 97.1,
+      "petrol": 99.9,
       "diesel": 92.26
     },
     {
