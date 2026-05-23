@@ -408,7 +408,7 @@ def generate_page(city_name: str, slug: str, entries: list[dict], all_cities: di
       <div class="cdelta">{diesel_delta}</div>
     </div>{"" if tc is None else f"""
     <div class="card">
-      <div class="clbl">🟡 CNG</div>
+      <div class="clbl">&#x1F7E1; CNG</div>
       <div class="cval" style="color:#92400e">₹{tc:.2f}</div>
       <div class="cunit">per kg</div>
     </div>"""}
