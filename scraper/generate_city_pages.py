@@ -220,6 +220,13 @@ def generate_page(city_name: str, slug: str, entries: list[dict], all_cities: di
     petrol_delta = delta_html(tp, pp)
     diesel_delta = delta_html(td, pd)
 
+    cng_card_html = (
+        '<div class="card">' +
+        '<div class="clbl">&#x1F7E1; CNG</div>' +
+        (f'<div class="cval" style="color:#92400e">&#x20B9;{tc:.2f}</div>' if tc is not None else "") +
+        '<div class="cunit">per kg</div></div>'
+    ) if tc is not None else ""
+
     # Build history table rows (newest first)
     rows_html = ""
     for i, entry in enumerate(entries):
@@ -406,12 +413,8 @@ def generate_page(city_name: str, slug: str, entries: list[dict], all_cities: di
       <div class="cval" style="color:#1e3a8a">₹{td:.2f}</div>
       <div class="cunit">per litre</div>
       <div class="cdelta">{diesel_delta}</div>
-    </div>{"" if tc is None else f"""
-    <div class="card">
-      <div class="clbl">&#x1F7E1; CNG</div>
-      <div class="cval" style="color:#92400e">₹{tc:.2f}</div>
-      <div class="cunit">per kg</div>
-    </div>"""}
+    </div>
+    {cng_card_html}
   </div>
   {station_html}
   <button id="city-share-btn" class="share-btn">📤 Share Prices</button>
