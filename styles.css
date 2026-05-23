@@ -193,7 +193,10 @@ main {
 }
 
 .prices:has(.price.cng:not(.hidden)) {
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+.price.cng:not(.hidden) {
+  grid-column: span 2;
 }
 
 .price {
