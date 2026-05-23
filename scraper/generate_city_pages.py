@@ -385,7 +385,7 @@ def generate_page(city_name: str, slug: str, entries: list[dict], all_cities: di
 <header class="hdr">
   <div class="hdr-left">
     <a href="/" class="hdr-title">⛽ FuelPrice<span class="brand-t">Today</span><span class="brand-i">.in</span></a>
-    <p class="hdr-sub">Live petrol &amp; diesel prices in {city_name}. Updated hourly from official pump rates.</p>
+    <p class="hdr-sub">{"Live petrol, diesel &amp; CNG prices" if tc is not None else "Live petrol &amp; diesel prices"} in {city_name}. Updated hourly from official pump rates.</p>
   </div>
   <a href="/" class="hdr-nav">← Live Map</a>
 </header>
