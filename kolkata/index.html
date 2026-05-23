@@ -11,6 +11,7 @@
   <meta property="og:url" content="https://www.fuelpricetoday.in/kolkata/" />
   <meta property="og:type" content="website" />
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "Petrol & Diesel Price in Kolkata Today", "url": "https://www.fuelpricetoday.in/kolkata/", "description": "Today's petrol price in Kolkata is ₹110.64/L and diesel is ₹97.02/L as of 23 May 2026, 12:55 PM IST. See last 10 days price history."}</script>
+  <script id="city-data" type="application/json">{"name": "Kolkata", "state": "West Bengal", "petrol": 110.64, "diesel": 97.02, "cng": 93.5, "updated": "2026-05-23T12:55+05:30"}</script>
   <style>
     *{box-sizing:border-box;margin:0;padding:0}
     body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#f8fafc;color:#111827;line-height:1.5}
@@ -62,6 +63,8 @@
     .news-meta{font-size:11px;color:#9ca3af;display:flex;gap:6px;align-items:center}
     .news-src{color:#374151;font-weight:500}
     .news-time::before{content:"·";margin-right:4px;color:#d1d5db}
+    .share-btn{display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:24px;width:100%;padding:12px 16px;background:linear-gradient(135deg,#0f766e,#0ea5e9);color:#fff;border:none;border-radius:10px;font-size:15px;font-weight:700;cursor:pointer;font-family:inherit}
+    .share-btn:hover{opacity:.9}.share-btn:active{opacity:.75}
   </style>
 </head>
 <body>
@@ -95,6 +98,7 @@
       <div class="cunit">per kg</div>
     </div>
   </div>
+  <button id="city-share-btn" class="share-btn">📤 Share Prices</button>
 
   <p class="sec-title">Last 10 Days — Kolkata Fuel Price History</p>
   <table>
@@ -124,7 +128,7 @@
   <div class="news-section">
     <div class="news-head"><span class="news-dot"></span><span class="news-head-text">Latest Fuel News — Kolkata &amp; West Bengal</span></div>
       <div class="news-item"><a class="news-link" href="https://news.google.com/rss/articles/CBMi7wFBVV95cUxQQmFWUF90TmRTR2szTUU3Q25xRG5seEZveWdia3l1UnRzb1E0VTBjOHVCVngxLWp1VDRGbDlsSmoyM1NUMUtRQWhEOTFRXzhCTkoyYXZJeWZ3d1pXMjNRZVNWalhaODJDYmRseXlmZXNrRHpwUDFDMGxocVQzSFd0TjE1WFVwSV9SYUhzemhnYjdJbW1wZXQ2azdsd0V3ZGhTZTdCaE4zejR2TVVMOFI5a1ZtNFh2YzEzWlFhMlAzMFBpOVk5aTAxSlB2OFRhMlZjNEJuVm5xek15TWF0eXIyMERWTnR1VkcwVy1KbzNBcw?oc=5" target="_blank" rel="noopener noreferrer">Petrol, diesel prices hiked in West Bengal: Check new rates in Kolkata, Darjeeling, Howrah and other cities<i class="ext-icon">↗</i></a><div class="news-meta"><span class="news-src">MSN</span><span class="news-time">20 May</span></div></div>
-      <div class="news-item"><a class="news-link" href="https://news.google.com/rss/articles/CBMi5gFBVV95cUxOQkx0N0FMV09FVHVGYW5iZnNvTjJ1bXcyX2tJNkNacThmSzFFVjFSRi1IanRUOU5iQU1Ia2JxQWVtbW0xOUx3MzR1ZklpMjdoVkNDYS1yR2duYVE0ZHkySGF4YTRpSXQzSXhjeEJZUmIxZHlDem1qMk51WmppckItZS10Q2pFMmNScFdoNmd1Ym5ndjJCbjd4YWJTZHpHYnlLTUVoVHFUS1VGUFoyV2N6Y19HUGVrN2ExZUdxUk9FX2V4THV6bER3cXh2VlVZMXhMdWZaRU80SXVFSGlNU2hVU2pkOW5pdw?oc=5" target="_blank" rel="noopener noreferrer">Petrol, Diesel prices hiked for third time: Check latest fuel rates in Delhi, Mumbai, Bengaluru on 23 May<i class="ext-icon">↗</i></a><div class="news-meta"><span class="news-src">Mint</span><span class="news-time">23 May</span></div></div>
+      <div class="news-item"><a class="news-link" href="https://news.google.com/rss/articles/CBMi5gFBVV95cUxOQkx0N0FMV09FVHVGYW5iZnNvTjJ1bXcyX2tJNkNacThmSzFFVjFSRi1IanRUOU5iQU1Ia2JxQWVtbW0xOUx3MzR1ZklpMjdoVkNDYS1yR2duYVE0ZHkySGF4YTRpSXQzSXhjeEJZUmIxZHlDem1qMk51WmppckItZS10Q2pFMmNScFdoNmd1Ym5ndjJCbjd4YWJTZHpHYnlLTUVoVHFUS1VGUFoyV2N6Y19HUGVrN2ExZUdxUk9FX2V4THV6bER3cXh2VlVZMXhMdWZaRU80SXVFSGlNU2hVU2pkOW5pd9IB6wFBVV95cUxQdWVMVWFhMGdVd2RkR0FocWFOTURDWkJ0ZzRwZ3owQy1hNHpqeHlTSDE2QWg5MUt4MWhlU0xleFp6MEVvNjBlZ0pjNkRreU4xOWxGRWdkN2lnVWQ3YjFKM29QR3JsUEx5Y1NxZWd0bmRpcGZocWwwcHpJOHRhYnVmcmNpck41S21xLWpBOGtHRHNTdXJTSjV6eklRYTVSMF9fbzFwR2RVaGVjQTVLS25CXy1sZ3d5V0JVcEZ6ZmlmcmlKYXg5OXFvRGJmLTcwLVRnN3d6QzMxalJJSVdWVHh2MUozM3AzamtHRjlJ?oc=5" target="_blank" rel="noopener noreferrer">Petrol, Diesel prices hiked for third time: Check latest fuel rates in Delhi, Mumbai, Bengaluru on 23 May<i class="ext-icon">↗</i></a><div class="news-meta"><span class="news-src">Mint</span><span class="news-time">23 May</span></div></div>
       <div class="news-item"><a class="news-link" href="https://news.google.com/rss/articles/CBMi1wFBVV95cUxPVWdCSUlSUUg0X2toaERyRUxxNzBUUVAwaGZmSUZXY181dU1FZzc1VWJHc2drX2ZObnRfTFJwRHZnVW8xQ19QMXFHOXlVVldURmtWY1ItNkcyVUE4dWltWjRKd2ltcExTV2ttN0xmdWhlQS1fOTRORGtRU180akptWXFIYzdTbkNXaWEtRG5DWnJkdm5ZWGlGay1HS18wZERNM004Z3laWTJJTkRWQ3FTa3JlUnk1Y0dwMlMzUEdBWWZjemRjUEJfWWlOTkFJdlZqQ1FncFlRZ9IB3AFBVV95cUxNMkxkejEzXzRFWXdnOTV4TUJ2bzRoZnl0ZWVPaDBNc2J6UWJpbEstT3g2V1FXaVZRLVo0MWJfZDU3dVAtTnNjeUI1VlpmbnBSaU9zSFhhbTZudy0yVjdNa3lUQTB0RXBTdy1aX0tscTlvSmlFN3lBT29BX2xGaUhkNUpwSk5qSnYwMkpaSHlybW04MlF4VUloYk14NEVwbDJnMlhHUm9ZMjdYN2NxcmRGV1JSeDdLV3ZGYWtYcVVOUl9xWlNZNk5salZEc0Z4endOS05ETTUzNDAxU1dU?oc=5" target="_blank" rel="noopener noreferrer">Kolkata fuel price today: Petrol prices rises to ₹ ₹108.74 per litre, diesel priced at ₹95.13per litre | India News<i class="ext-icon">↗</i></a><div class="news-meta"><span class="news-src">Hindustan Times</span><span class="news-time">15 May</span></div></div>
       <div class="news-item"><a class="news-link" href="https://news.google.com/rss/articles/CBMiiwJBVV95cUxNY1h6WnR0NUZFWVNaRVdCRlV0YzFhTTZPRFhJTjRGaGZjc25HNURueXB0bFdkb3YwUy13V1RWTmZrSmZVdVRGZ1NGU2lxMU9VMzZmSXlkNEJGZWhlVTlZckdkMnB1bkVyTHF6NHppYmhkMWhoWFdBRnRsSGNfRUJ5ZE5UOFVQSVhwRUl5TWJKMnlGUWNRTkswN3cxZVA5RUpDUmpsUWNqbU5uSzFqYVNqMUN6Qk5GcVRaekpUV1VnbXdBRFJVeFFfTmZyb2ZDU1RRVE51eFpPNGROalBmeERld0FLWEhhRVhLbUl2SU1rX25MTHhpdjdlU0RUd19YWm10Wm1TM2gzVTZDWUHSAZACQVVfeXFMTWgxU09XaEV6UTZjb1lWQ2FmSVVZTzFPRTZJOVNLVmdfRVRPOGVLR1piX1R3dndQdU5TNC0xRDF4aVVSRVpIcGpJa0QyYzNQRXR4T0huT3lPR01HQlVhUndfZE9aYVk3U3psVzVZd0YyNjFWSU5ZTGNRbVNycEdOZVJ2dGFjOVZjZlB1QlROcG40VDVXckxkTGQ3TzFmOG11V2FZSDBjbkJXMkZINUM5TUdOMVFtRHpXeV9nbzU2aUZ4X21yenFjR2RvWUR1M003RFJsT21TMF85YVl2NlRIeGE0cnJnNDdkVXR5amNxZ0hjdW1ZVFA4RDlqa013SXc3UmN4dzRJdTZoMDNVVXZ4cm4?oc=5" target="_blank" rel="noopener noreferrer">Petrol, diesel prices hiked: Check latest fuel rates after Rs 3 increase in Delhi, Mumbai, Bengaluru, Kol<i class="ext-icon">↗</i></a><div class="news-meta"><span class="news-src">The Times of India</span><span class="news-time">15 May</span></div></div>
       <div class="news-item"><a class="news-link" href="https://news.google.com/rss/articles/CBMipwJBVV95cUxOanRROGYtcFo5b180TkswWEFMNmFRSXJweTRIa0N3NVZFaFF4OVV3bXJEOHBIeGJOVVFkWGhsaU5FRjJ5d2RXczIxR1JIMDk5TjFHZUZVTERQbFJRcnRmeUJOM3YxV2N6bTlLTENQMkRKbzJweUdZbWNJdzIwMGhnS2ZRVmg5b21pNWdxT2lpcEdWYXUyeXJEYlAzZ1V1VDFZcWluQXo5cm1QbjFQU1dqVDRQeDBMRFVaa0hKZ2o0NzYwVkIwVm1nVlZ4RFBOX2NXai1kZmIzVWNSUUZiMTcwZG5jUjVqSTZJXzdISEhqUlI4MUducElWTEJWUlNfM1dLRXRYMWtHTjc5OTVCZVdub01pUDA3SHBwQ1B4cjE4VHJQWDdqSkZR0gGsAkFVX3lxTFB4LWVYOEplYklzeExkMlNoZUhtYmFpNU10RFZsQ0s2dWNmOTU2TDlzSFRJTHZhbDlFWHIzMjdVcTkwNnRJM1RhOE9QelRyWTFVRUN0NW8zdktIYWswS2s0SVFDc0JZQ1RBaUlWS25ab0x0YXdwUzY3WW9fQm1EWXVVbUxYMzRPa3V1NTBLYVcxSzdYeEsyV2NPbzludUNaUkw0ZFNkczEyNzhiZERNOWh2WTcwdF82WEhNQllxdG40elR1dnpkZXFER1dmd21QYnE5aVowYzQ1VUw1NV9xWnp3Ym05cWZTM3lqYUxQRW90ZkRiNEswa1pPSjZtdUh2RmU1VnFwYXV4bDJmUmlwNVRyTXd4THdHQnNzV1FmN0VqZ1NPc2NpYnpkNkJoZQ?oc=5" target="_blank" rel="noopener noreferrer">Kolkata Petrol, Diesel Prices Today: Petrol rate crosses 100-mark, to now cost Rs 108.74 per litre after West<i class="ext-icon">↗</i></a><div class="news-meta"><span class="news-src">India.Com</span><span class="news-time">15 May</span></div></div>
@@ -162,5 +166,12 @@
     </div>
   </div>
 </div>
+<script src="../share-card.js?v=1"></script>
+<script>
+document.getElementById('city-share-btn').addEventListener('click', function() {
+  var d = JSON.parse(document.getElementById('city-data').textContent);
+  shareFuelPriceCard(d, d.updated);
+});
+</script>
 </body>
 </html>

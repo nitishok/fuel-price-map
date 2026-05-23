@@ -141,6 +141,7 @@ function popupHtml(c) {
       <div class="row"><span class="k">Petrol</span><span class="v">₹ ${fmtPrice(c.petrol)} ${pd}</span></div>
       <div class="row"><span class="k">Diesel</span><span class="v">₹ ${fmtPrice(c.diesel)} ${dd}</span></div>
       ${cngRow}
+      <button class="popup-share-btn" onclick="window._shareFuelFromPopup('${c.name.replace(/'/g, "\\'")}')">📤 Share</button>
     </div>
   `;
 }
@@ -179,7 +180,19 @@ const pcCng = document.getElementById("pc-cng");
 const pcDistance = document.getElementById("pc-distance");
 const hint = document.querySelector(".hint");
 
+let _cardCity = null;
+
+document.getElementById("pc-share").addEventListener("click", () => {
+  if (_cardCity) shareFuelPriceCard(_cardCity, LAST_UPDATED);
+});
+
+window._shareFuelFromPopup = function (name) {
+  const city = FUEL_CITIES.find(c => c.name === name);
+  if (city) shareFuelPriceCard(city, LAST_UPDATED);
+};
+
 function showPriceCard(city, distanceKm) {
+  _cardCity = city;
   pcName.textContent = city.name;
   pcRegion.textContent = city.state;
   pcPetrol.textContent = fmtPrice(city.petrol);

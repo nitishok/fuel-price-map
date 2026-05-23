@@ -819,6 +819,49 @@ main {
   color: #d1d5db;
 }
 
+/* ── Share button ── */
+.share-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 12px;
+  width: 100%;
+  padding: 9px 16px;
+  background: linear-gradient(135deg, #0f766e, #0ea5e9);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.15s;
+  font-family: inherit;
+}
+.share-btn:hover  { opacity: 0.9; }
+.share-btn:active { opacity: 0.75; }
+
+/* Share button inside Leaflet popups */
+.popup-share-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 8px;
+  width: 100%;
+  padding: 6px 10px;
+  background: linear-gradient(135deg, #0f766e, #0ea5e9);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.15s;
+  font-family: inherit;
+}
+.popup-share-btn:hover  { opacity: 0.9; }
+.popup-share-btn:active { opacity: 0.75; }
+
 /* ── City page link in metro table ── */
 .city-page-link {
   color: inherit;

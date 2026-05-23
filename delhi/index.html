@@ -11,6 +11,7 @@
   <meta property="og:url" content="https://www.fuelpricetoday.in/delhi/" />
   <meta property="og:type" content="website" />
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "Petrol & Diesel Price in New Delhi Today", "url": "https://www.fuelpricetoday.in/delhi/", "description": "Today's petrol price in New Delhi is ₹99.51/L and diesel is ₹92.49/L as of 23 May 2026, 12:55 PM IST. See last 10 days price history."}</script>
+  <script id="city-data" type="application/json">{"name": "New Delhi", "state": "Delhi", "petrol": 99.51, "diesel": 92.49, "cng": 77.09, "updated": "2026-05-23T12:55+05:30"}</script>
   <style>
     *{box-sizing:border-box;margin:0;padding:0}
     body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#f8fafc;color:#111827;line-height:1.5}
@@ -62,6 +63,8 @@
     .news-meta{font-size:11px;color:#9ca3af;display:flex;gap:6px;align-items:center}
     .news-src{color:#374151;font-weight:500}
     .news-time::before{content:"·";margin-right:4px;color:#d1d5db}
+    .share-btn{display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:24px;width:100%;padding:12px 16px;background:linear-gradient(135deg,#0f766e,#0ea5e9);color:#fff;border:none;border-radius:10px;font-size:15px;font-weight:700;cursor:pointer;font-family:inherit}
+    .share-btn:hover{opacity:.9}.share-btn:active{opacity:.75}
   </style>
 </head>
 <body>
@@ -95,6 +98,7 @@
       <div class="cunit">per kg</div>
     </div>
   </div>
+  <button id="city-share-btn" class="share-btn">📤 Share Prices</button>
 
   <p class="sec-title">Last 10 Days — New Delhi Fuel Price History</p>
   <table>
@@ -124,7 +128,7 @@
   <div class="news-section">
     <div class="news-head"><span class="news-dot"></span><span class="news-head-text">Latest Fuel News — New Delhi &amp; Delhi</span></div>
       <div class="news-item"><a class="news-link" href="https://news.google.com/rss/articles/CBMi1wFBVV95cUxQNjVzYm1vZ2VHaHVZX3ZFUUxvakdwbXVyQVFjb2xEcTR5VzJLdjMxdTludXczQ3dOXzltaHVwR3N4ZTFLR0ZmTnZjaGdNNDAyQzh1cVA4SnJDWFU5WGFLSW9ZYVBmcHJ4ZXdSZ29GdWlPN0U0RlB0VlE5a0twYTBlS2xicURGVUxzSW5XTUJJM3pRQy1xMnFIanpQejdnaXBIeVBGdE4wUzVnU2wtWTBiT1dfWEpuMmdweGhjaXVRNmV5SFdLTDZTdURzV2dSYjBvdGV1UF9tTdIB3wFBVV95cUxNUTVuaWtWY1NEdmlnTGU2amdtQU5GX3ltcWFscUQ0MjRxdnBBSC1yS3R2Zk5TdEhhSGVQN3ZTbnB2VWtoU2lfWlNNRlJmWUZwU3BhMHpXMk9tdFhFMm84RGFMalBpQVpmYlBlejRRbDRHWkhhTVQ0VEdjNzhSYkN5Z0xRREZzOGkteXZfUXVmTElUdEpPeWt0dVVBd2NHeWxfVFJMRGlIUXp0d0JxNXJoTlZqZWYxenJ6Q0VsM29RNHpacDdCTTZGaTlqekROM1prWm9pN0hXUkxNVncyUFo4?oc=5" target="_blank" rel="noopener noreferrer">Petrol Now Costs Rs 110 In Kolkata, 99 In Delhi: Know Fuel Prices In Your City<i class="ext-icon">↗</i></a><div class="news-meta"><span class="news-src">NDTV</span><span class="news-time">23 May</span></div></div>
-      <div class="news-item"><a class="news-link" href="https://news.google.com/rss/articles/CBMisgFBVV95cUxPci1qSHVQdFE2dG9JOVdWS1lXcnM2TmhZaGRiVEtqbGFqN2dGOFE3c3YwaHFQVjlCSC1DXzRLaksxelZkUC14aXo3YkFxT3FHNjBCdmVNWjBCdHdXZU1VdjE4dmVLU1ZjNGdOcV81TUQyODM2ajhUMXowNE1VS0NybHhfZ3QzMFhDX290YmtJQ3RKbjZDcExvTXQxamctWUV3TFoweW5UUDRlQTVCT1YyVWh30gG4AUFVX3lxTE1SSThET2N0SDNicUxmUzJRaXRsQ19GTk1JU19COTdGS2U5MGJJemlxaGw3TTFJblFuakRfeTc4a2lXdjRWaGFGSGVoX3FfNHRVUElyZmZoNWw5UEV2TURweThPbllqXzFqblRLR3RmMzNhSExsX09sRmhYVVRIOG9CWkkzZEY0d2lvVElBUHdLWHh4eExlSVF0UVc4aVg2VGVaRnF4eEFvLUw1dFhEX3lsRm0tQTd5Z2E?oc=5" target="_blank" rel="noopener noreferrer">Petrol, diesel prices up by 87-91 paise per litre; third hike this month<i class="ext-icon">↗</i></a><div class="news-meta"><span class="news-src">The Hindu</span><span class="news-time">23 May</span></div></div>
+      <div class="news-item"><a class="news-link" href="https://news.google.com/rss/articles/CBMisgFBVV95cUxPci1qSHVQdFE2dG9JOVdWS1lXcnM2TmhZaGRiVEtqbGFqN2dGOFE3c3YwaHFQVjlCSC1DXzRLaksxelZkUC14aXo3YkFxT3FHNjBCdmVNWjBCdHdXZU1VdjE4dmVLU1ZjNGdOcV81TUQyODM2ajhUMXowNE1VS0NybHhfZ3QzMFhDX290YmtJQ3RKbjZDcExvTXQxamctWUV3TFoweW5UUDRlQTVCT1YyVWh30gG4AUFVX3lxTE1SSThET2N0SDNicUxmUzJRaXRsQ19GTk1JU19COTdGS2U5MGJJemlxaGw3TTFJblFuakRfeTc4a2lXdjRWaGFGSGVoX3FfNHRVUElyZmZoNWw5UEV2TURweThPbllqXzFqblRLR3RmMzNhSExsX09sRmhYVVRIOG9CWkkzZEY0d2lvVElBUHdLWHh4eExlSVF0UVc4aVg2VGVaRnF4eEFvLUw1dFhEX3lsRm0tQTd5Z2E?oc=5" target="_blank" rel="noopener noreferrer">Petrol, diesel prices hiked third time in eight days; latest by about 90 paise<i class="ext-icon">↗</i></a><div class="news-meta"><span class="news-src">The Hindu</span><span class="news-time">23 May</span></div></div>
       <div class="news-item"><a class="news-link" href="https://news.google.com/rss/articles/CBMipAJBVV95cUxOQWlDaGZwMGVkSHgyMEdwZGpOdnkwUXBISnRNZGlaYnNsbFRmVm1sX2g1UTNIRVBxeWx2alNZMVBWNWlWU3NNR2xCbWNaa2JXeGdPYmZjVTlqNGN6T2RfbExkRXZscmsxNlJacTVDVy11cXpXVUI5Y29pN2REbkVQcjVaT2plVmNnSWwwX1UyM3hZaUh5dEZlSm1TeEJ3MnlsYS1Eek0tYlN3V2pRcjJxWFEtM1NSTUNHTUJoMHpwMHY0blZnUHZOdGV5VUlXUWhIZjRvWkRnd200UU9xQkwzYlFLTjNOeXFqeGROWmdrcmdlNzI2U3pGQ2pHb1VtNzJudnBId2lQVWl3VTRtZF9qZmxJXzVGMV8xVGkwTms2NlVEMXhD0gGqAkFVX3lxTE9TZXhDdmdxWDVwSmZHSF9uVjZyYVAxRUNCa0NHUlJoUVVlMVpyUnlwQnh2WGd3SnZFZUJJRk5RbTBKSHhCV1FXUjl6NUhPa2pONDh0ZFp3MGNzNUNSd1UzczNnTy1BcGQzQUFUVTV3QmUydUJKU3BPMExUQmpBa1RtWE13REh6RWxvemgwakJ6X1dJQWFtUGxUR3plSGxkU18zYmJoUXBJb3ZkTGFJLXlGQjI5NUpQd1N4VC0xTWc2NzNYX0tQYVZ2NndQTmY2ai1Dc00wemh3WmJoclFzTWJrTWNTUXUtWm1tRktMcFQ0czd2M2UyWXIxbTFXSDRRemRJbTQ5Y1lORl9hVGo5WGxIWjZXY0NyUWF6UkJETkt6UmRSLWE4Smk4Tmc?oc=5" target="_blank" rel="noopener noreferrer">After petrol, diesel, CNG prices hiked for third time by Re 1 per kg - check rates in your city<i class="ext-icon">↗</i></a><div class="news-meta"><span class="news-src">The Times of India</span><span class="news-time">23 May</span></div></div>
       <div class="news-item"><a class="news-link" href="https://news.google.com/rss/articles/CBMikwJBVV95cUxQblp0aUZvLTVuQUp2RjU2TFIzWVI4YTFzMGJjMGl0cXZ2ZlNvdGlvalZ6SVNNS3dMYkpFTVlpN0ZlYm5uTU1UeGtCWlRXUDlXSWN6TVhUdlNDRGNrbG1ZaUtPbG9KOXVFM0NZb2NldDRqdTZ5ZHF2ZFBQTjFzYWloaGt6Mk1xOXd4dEZmZElkY2lWR3h6THVMRVJhclZsUVlleF9ZUVo4WG5SQTdoTkZxX0trUXdvaGpiQ2FFM29ESmhwX1dObjY3NUVnQ2ZOal9mRTZHc2FoT1VPR0ZlYlBYS1ZNWDZIZDlzY0JiOXRWdmlRT1FkcEIwcWN2YUtLaFg5UmFWalhiRnNtb1ZwdV9tRktDUdIBmAJBVV95cUxPZVFuWDZQNEFveGRWS2ZTUkhTa283bGhGd1h6NHd0c2VJYUg5aTZ1Tk1PSndmUmx0ZTBfVk1nQXR3UjF6cW43Z21mN0RySmRYLTNCWDh1LTRJUWtkOWJGN0lmMDNIU0pLbmxUOXh5SS1yb2pqa3dHNUt3Rk1pby0zb1dxRXE4ajVwZ01OenVoSFN1VzRDUEl0b3RwV1NkNkpGQTRMSTBJNHpjRTRXTXpoVk1JbDhaVDRfVnpFajBUb2V5WW5TVFJSWFZpS3VGa1lXMm9FS3RPenpISnJkNGstUy1kNFdISmozY0llazJSOW5sRXJXbFJMaVhqa015YmdoeUd2Y1dKU2k5T3NrbnF0ZGQyTHgxUjAx?oc=5" target="_blank" rel="noopener noreferrer">Fuel Price Today, May 23, 2026: What is the petrol, diesel & CNG price in Delhi, Mumbai, Kolkata & Chennai<i class="ext-icon">↗</i></a><div class="news-meta"><span class="news-src">The Economic Times</span><span class="news-time">23 May</span></div></div>
       <div class="news-item"><a class="news-link" href="https://news.google.com/rss/articles/CBMizAFBVV95cUxQMy1neWljaXBucGlIZEFrVlhRZnVsYWVpNUpGcktZMnFickU1OUJ2Q1NwSG5ZTTljRTNHX0VQeDVHNWU1VFlaSjRTd0dxY2ozdGpLY3pHVi13djR2TWN2eEt2WHZNV0lpWldRTnlXY0Jqa1JXOGRiN2xWRk45bUo4RHRDR0RLb0NvR0djRFVCVTV1VlBaRE5TWkowU3oyWF9EZVpFYTdZbFp5d29QZ25QdzRRWmRubjZZRG9yUHROTmY3NklSaFdpakg2QUHSAdIBQVVfeXFMTkdEV1FqNGRDUEQ4eWxnYW55amVmY1lxamtuU045d2JzSDlHalRIZVdqVXoxdkwxbmtOajJnSFJ6dzlIellFd1dMU3NSS2pIR29ZYU1RTkVUTVdXbjBSR2NET09Ub3RUTHNnQW5kMk5MU3pwZnI5WDhYWmZTTWJLQVFjaHFhcElkbERmUzYwSFlXcFdEY0E1UUdWUGRiR0VQenoyLTIxRVhuN3VENUVub0piTG1UYmV2MFV4UlIwWjNsMnIwa3h3dkhSYmhPaXgySVh3?oc=5" target="_blank" rel="noopener noreferrer">Petrol price raised by 87 paise, diesel by 91 paise; third hike in 10 days<i class="ext-icon">↗</i></a><div class="news-meta"><span class="news-src">India Today</span><span class="news-time">23 May</span></div></div>
@@ -162,5 +166,12 @@
     </div>
   </div>
 </div>
+<script src="../share-card.js?v=1"></script>
+<script>
+document.getElementById('city-share-btn').addEventListener('click', function() {
+  var d = JSON.parse(document.getElementById('city-data').textContent);
+  shareFuelPriceCard(d, d.updated);
+});
+</script>
 </body>
 </html>

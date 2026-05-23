@@ -11,6 +11,7 @@
   <meta property="og:url" content="https://www.fuelpricetoday.in/chennai/" />
   <meta property="og:type" content="website" />
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "Petrol & Diesel Price in Chennai Today", "url": "https://www.fuelpricetoday.in/chennai/", "description": "Today's petrol price in Chennai is ₹105.33/L and diesel is ₹97.00/L as of 23 May 2026, 12:55 PM IST. See last 10 days price history."}</script>
+  <script id="city-data" type="application/json">{"name": "Chennai", "state": "Tamil Nadu", "petrol": 105.33, "diesel": 97.0, "cng": 91.5, "updated": "2026-05-23T12:55+05:30"}</script>
   <style>
     *{box-sizing:border-box;margin:0;padding:0}
     body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#f8fafc;color:#111827;line-height:1.5}
@@ -62,6 +63,8 @@
     .news-meta{font-size:11px;color:#9ca3af;display:flex;gap:6px;align-items:center}
     .news-src{color:#374151;font-weight:500}
     .news-time::before{content:"·";margin-right:4px;color:#d1d5db}
+    .share-btn{display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:24px;width:100%;padding:12px 16px;background:linear-gradient(135deg,#0f766e,#0ea5e9);color:#fff;border:none;border-radius:10px;font-size:15px;font-weight:700;cursor:pointer;font-family:inherit}
+    .share-btn:hover{opacity:.9}.share-btn:active{opacity:.75}
   </style>
 </head>
 <body>
@@ -95,6 +98,7 @@
       <div class="cunit">per kg</div>
     </div>
   </div>
+  <button id="city-share-btn" class="share-btn">📤 Share Prices</button>
 
   <p class="sec-title">Last 10 Days — Chennai Fuel Price History</p>
   <table>
@@ -125,9 +129,9 @@
     <div class="news-head"><span class="news-dot"></span><span class="news-head-text">Latest Fuel News — Chennai &amp; Tamil Nadu</span></div>
       <div class="news-item"><a class="news-link" href="https://news.google.com/rss/articles/CBMiiwJBVV95cUxNNXhPTHhGM2RYTnpUOFI3Z0VNQVZxbDhvb3lfSWVNcWx6dEVTc0JwaEkwZGl6Q3JyUmhnTE5BUWRabUY5TTQ5dlpaOU1hLXlBcUhjaU81blhOcjhNTkwxM2tycFp1Q2ZKOWNmZ3RScElmelFydGNNUnNiV0syOTRMUWVyUy0yazV6M2RjMzE0M05XdEkzUE5TajZXMzdRdy1QV3o2enhKR3BiTTFPdWJhWlc1dUhhOG4wZ3BnaEtPX2hEem5kMGJnRnJ4Mk43cnJsODlLUHR3bjA2MHdwb0lGLXhxSlVvdzlISkdDRzZrZXRRVnlFYzBFU2FmLXdXcXFUczdlTmstalhHck3SAZACQVVfeXFMTkZnMlBjM19nS1VmRTVGQWZPaXVQeEpiLXRHNFJhNDZwTEQteExxNzJaeC1NTUlsSWtrbWFYZVdQS2l5a0VGT1VwVWgySGVzWldPdVFHNUdyNHdxMnB2VHR5UkpKS3hZV25nVHhpSTVMcWUxM1VoTlJ4SzBtNGUtU2VwT3BSMk1mV1AxOTN2a2RfN0IxekY5Qkg3STA3MzlPTkpDaUd0aFZ6YV83OTJBakoyVUxiQkg4SFZIQlZGRVp2dTdXZnRIOVlPbnFxZkpjX3ZhSjZ6bVRxX0lQQ1FuRy1McVJvQ0VtWVNJQ3VEckNrM2ktMG1BdFQ1MVZMeURzSTJ3ajBsc2c4RGJxSjJCVkw?oc=5" target="_blank" rel="noopener noreferrer">Petrol, Diesel prices today on May 20: Check fuel rates in Delhi, Mumbai, Chennai, Kolkata and other metro<i class="ext-icon">↗</i></a><div class="news-meta"><span class="news-src">The Economic Times</span><span class="news-time">20 May</span></div></div>
       <div class="news-item"><a class="news-link" href="https://news.google.com/rss/articles/CBMi7wFBVV95cUxOekEzWWtFTlBXNUM1QjI4ODkydUpibk8wWVlrY2hyeElIRHpFXzhUcnZJTVJhbEJHYnZwN28wMjFmRGIwMTZWRE8zNG5ySGhhUThRVzl4clVCcjdZNDd1UUEwanJWcFE1UEhTNERGSVJIYmlMTlhNbjJ0aUNoYWlKX0c2dDR6VFE0ay1kRzJrd0V6SEtrV1ZWejQweUlTMmxjcXFpbVhvd05pSndnZmZtMk9iUW5nNEtWN2FJTlhGUjFPN054TkZLMmJUSVNQdEUwR2hUejA4amhRSEZkeDBWNTkxdExlZnE4VHRIa2JvUQ?oc=5" target="_blank" rel="noopener noreferrer">Petrol, diesel prices hiked in Tamil Nadu: Check new rates in Chennai, Coimbatore, Madurai and other cities<i class="ext-icon">↗</i></a><div class="news-meta"><span class="news-src">MSN</span><span class="news-time">15 May</span></div></div>
-      <div class="news-item"><a class="news-link" href="https://news.google.com/rss/articles/CBMi4wFBVV95cUxQS0JGWEZTMW4wemdBWVFYM2NuXzRlUDV5Q3lIM2hxSnl4Q0FfdXE5allEN2RqNTJNbVYwMmJxbjFVVG9TMXpzNGVqN3BYS0l2Unp0NTlfRWwxMXU0SzZUbFYxZ0RTdndkV3NBR2h6YVFGcGlfSWhnd0pkYlpReTZoVWtfZnFERXRKN2M3bzU0RU9qWW0xVWpueVVtclpfNFRMSEw0QnpfOWZ4bEFSVm9JZzVLWEtyVkhybENsTFhBcDBLM1lxOGtMc1RKcGExVEZaaTIzZ2tyVEt1eFZkU1lpTnptY9IB6AFBVV95cUxNOGhkSkE3TDhSangtWHZMMWR0dS1Sa3RRa0NiTV9aOE1FUmRON203XzlSSnQzMk9rUnUxcnY2R2VybEx5emdpaU4tYkZvSWQxaXpwdjZoR2k4dXV2dDZjZTRxMTNhem1uX2ktcTlsZTFHd3hRTk96SHpOU3dTeG9pMnFjNEJZM1J6T1NDQzFqNF9lVE0wMjBMREN4OFNpMnNyMWh1TnZrazFVRURpaFByajBJVVRmTEVHalhiX01EdEtBdmFFdEVnV1ZNLUJmU09veGZhTGs0MEFGaTkzMGFCMy1veFFMalJw?oc=5" target="_blank" rel="noopener noreferrer">Will Petrol & Diesel Prices Rise Amid Tamil Nadu Exit Poll Projections? Petroleum Ministry Explains<i class="ext-icon">↗</i></a><div class="news-meta"><span class="news-src">News18</span><span class="news-time">29 Apr</span></div></div>
       <div class="news-item"><a class="news-link" href="https://news.google.com/rss/articles/CBMiiwJBVV95cUxNY1h6WnR0NUZFWVNaRVdCRlV0YzFhTTZPRFhJTjRGaGZjc25HNURueXB0bFdkb3YwUy13V1RWTmZrSmZVdVRGZ1NGU2lxMU9VMzZmSXlkNEJGZWhlVTlZckdkMnB1bkVyTHF6NHppYmhkMWhoWFdBRnRsSGNfRUJ5ZE5UOFVQSVhwRUl5TWJKMnlGUWNRTkswN3cxZVA5RUpDUmpsUWNqbU5uSzFqYVNqMUN6Qk5GcVRaekpUV1VnbXdBRFJVeFFfTmZyb2ZDU1RRVE51eFpPNGROalBmeERld0FLWEhhRVhLbUl2SU1rX25MTHhpdjdlU0RUd19YWm10Wm1TM2gzVTZDWUHSAZACQVVfeXFMTWgxU09XaEV6UTZjb1lWQ2FmSVVZTzFPRTZJOVNLVmdfRVRPOGVLR1piX1R3dndQdU5TNC0xRDF4aVVSRVpIcGpJa0QyYzNQRXR4T0huT3lPR01HQlVhUndfZE9aYVk3U3psVzVZd0YyNjFWSU5ZTGNRbVNycEdOZVJ2dGFjOVZjZlB1QlROcG40VDVXckxkTGQ3TzFmOG11V2FZSDBjbkJXMkZINUM5TUdOMVFtRHpXeV9nbzU2aUZ4X21yenFjR2RvWUR1M003RFJsT21TMF85YVl2NlRIeGE0cnJnNDdkVXR5amNxZ0hjdW1ZVFA4RDlqa013SXc3UmN4dzRJdTZoMDNVVXZ4cm4?oc=5" target="_blank" rel="noopener noreferrer">Petrol, diesel prices hiked: Check latest fuel rates after Rs 3 increase in Delhi, Mumbai, Bengaluru, Kol<i class="ext-icon">↗</i></a><div class="news-meta"><span class="news-src">The Times of India</span><span class="news-time">15 May</span></div></div>
-      <div class="news-item"><a class="news-link" href="https://news.google.com/rss/articles/CBMiggJBVV95cUxPWmxRMVBGVk00ejJzaWNwVmxPWHhpUUFSeHdFZE5nYjFOVmFweEd3YmQ1QnZQbUM3T0ZrY2EzQllSa2hyR2lpLVdCamJHajVaX05abWw1OWFtb0c0eFNVRVpENERMalUtU3hlcUsxLXJieExMaFppLXJiZlEzNzZtdFpQSlpPZlV6Z3pWQmJtWms1R0Q2bjJONjZvMGRobkFuZ2NKS2VQeGdvaWtOR0dLZGJvUWpvdlNMdjVlQ1FKOGZYbE80em8xN2RXSlhSVWNmaXhXM2RlREwybE92MVhFLXJJR0VlRl9rQXg1c2JoWkZLeFZKdzJnRDRSTkRWREZUWEHSAYcCQVVfeXFMTzlOLURXdW1EWXVyQXkzMVdJd0pQVUlEZ3Z5aHZoUmVpdU1jMjBNV2V3TlRQcTFOcGRkTjFramVjOXJOdmhVTnVfN2w5b1pLUFJYdFRIbUVqT2VoYldSU1l2TXJPbXluTmhMejFmbHpGNEJpa0hjTjBKUXhpNlJ4RlpGNE1EeUtlWkF0RVlVanVLT3R2RjRWLTJoanJoV2NKaUNGRExHYlRycFNlVmdiMXVBTWVmZUdwRXk5UGo2NWc4RG4wU0dadWRjTmhuakpnTVo5cnhNdWRuR25TaXNlRjBHLTBCU3dKOVFZYWItM3NQMXQ5Zmp0Zjh5SnJ1OVk4eDZ6NDc0aGM?oc=5" target="_blank" rel="noopener noreferrer">Petrol, diesel prices today, May 1: Check prices in Delhi, Mumbai, Kolkata, Chennai, Hyderabad and other cities<i class="ext-icon">↗</i></a><div class="news-meta"><span class="news-src">Business Today</span><span class="news-time">1 May</span></div></div>
+      <div class="news-item"><a class="news-link" href="https://news.google.com/rss/articles/CBMi4wFBVV95cUxQS0JGWEZTMW4wemdBWVFYM2NuXzRlUDV5Q3lIM2hxSnl4Q0FfdXE5allEN2RqNTJNbVYwMmJxbjFVVG9TMXpzNGVqN3BYS0l2Unp0NTlfRWwxMXU0SzZUbFYxZ0RTdndkV3NBR2h6YVFGcGlfSWhnd0pkYlpReTZoVWtfZnFERXRKN2M3bzU0RU9qWW0xVWpueVVtclpfNFRMSEw0QnpfOWZ4bEFSVm9JZzVLWEtyVkhybENsTFhBcDBLM1lxOGtMc1RKcGExVEZaaTIzZ2tyVEt1eFZkU1lpTnptY9IB6AFBVV95cUxNOGhkSkE3TDhSangtWHZMMWR0dS1Sa3RRa0NiTV9aOE1FUmRON203XzlSSnQzMk9rUnUxcnY2R2VybEx5emdpaU4tYkZvSWQxaXpwdjZoR2k4dXV2dDZjZTRxMTNhem1uX2ktcTlsZTFHd3hRTk96SHpOU3dTeG9pMnFjNEJZM1J6T1NDQzFqNF9lVE0wMjBMREN4OFNpMnNyMWh1TnZrazFVRURpaFByajBJVVRmTEVHalhiX01EdEtBdmFFdEVnV1ZNLUJmU09veGZhTGs0MEFGaTkzMGFCMy1veFFMalJw?oc=5" target="_blank" rel="noopener noreferrer">Will Petrol & Diesel Prices Rise Amid Tamil Nadu Exit Poll Projections? Petroleum Ministry Explains<i class="ext-icon">↗</i></a><div class="news-meta"><span class="news-src">News18</span><span class="news-time">29 Apr</span></div></div>
+      <div class="news-item"><a class="news-link" href="https://news.google.com/rss/articles/CBMi5AFBVV95cUxOTnNpaHNWa2w2WlA1OGVpQU8yRnpJR3psaG5zRVhsNmxqX3Z3Znc2OVBubUpFSm9WY2JUaFZFRFliWW1CeDBVUDNOOXpEdHItTllxNjdCRjh0cUVMR1pPbzhZSDFGa0xZYVB5SDNsUlkwelU0MkNwSGEya0xEcjdYY3NhVC1jN3pGUmJXVHFidld3Mjh1bU9wcDZCa2hNSmRxZnJOcTBOeFczSUFJT3Z1bW94ZDhZdEJERlZSZXVVUkl2M3BRMVFrWHhmQ2R0elV4bDBzNjZsd1o3bGFnY1A3YVJnS3XSAfIBQVVfeXFMT2RMR19QV1VhMjFTdjY0SHhPZ0g1QW01YnVGUFVrSWVBeXRLcDRqTU9NOENxcnJjRjNEWFVpZkdvN3dwbGlTb0FIRFl4bEJfRUtCYTlxa0dhQTJoS3c5YjFWLTgzNGk5OWNHSmo4eEM4VE1ROUJnbTFLVG5qZ291Ykdia0E4REM1c19zcWRyRzNYT0JqY29RdFVHcGx1S2VYQlBuNmJ1cFc1Um9IdlBfN294MmxhWjhiZFhfQ2NYVldUWml3YmItWXB2UzI3NXZsNkpiWkxoem5HdGw0VzlNazlfLTFZbmlCbXpCSFR5alJmMFE?oc=5" target="_blank" rel="noopener noreferrer">Centre hikes petrol, diesel prices by Rs 3 per litre each amid West Asia conflict-driven crude surge<i class="ext-icon">↗</i></a><div class="news-meta"><span class="news-src">The New Indian Express</span><span class="news-time">15 May</span></div></div>
   </div>
   <a class="back" href="/">🗺 View Live Price Map</a>
   <p class="note">Prices are updated automatically every hour.</p>
@@ -162,5 +166,12 @@
     </div>
   </div>
 </div>
+<script src="../share-card.js?v=1"></script>
+<script>
+document.getElementById('city-share-btn').addEventListener('click', function() {
+  var d = JSON.parse(document.getElementById('city-data').textContent);
+  shareFuelPriceCard(d, d.updated);
+});
+</script>
 </body>
 </html>

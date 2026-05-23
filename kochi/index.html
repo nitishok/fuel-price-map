@@ -11,6 +11,7 @@
   <meta property="og:url" content="https://www.fuelpricetoday.in/kochi/" />
   <meta property="og:type" content="website" />
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "Petrol & Diesel Price in Kochi Today", "url": "https://www.fuelpricetoday.in/kochi/", "description": "Today's petrol price in Kochi is ₹108.45/L and diesel is ₹101.30/L as of 23 May 2026, 12:55 PM IST. See last 10 days price history."}</script>
+  <script id="city-data" type="application/json">{"name": "Kochi", "state": "Kerala", "petrol": 108.45, "diesel": 101.3, "cng": null, "updated": "2026-05-23T12:55+05:30"}</script>
   <style>
     *{box-sizing:border-box;margin:0;padding:0}
     body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#f8fafc;color:#111827;line-height:1.5}
@@ -62,6 +63,8 @@
     .news-meta{font-size:11px;color:#9ca3af;display:flex;gap:6px;align-items:center}
     .news-src{color:#374151;font-weight:500}
     .news-time::before{content:"·";margin-right:4px;color:#d1d5db}
+    .share-btn{display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:24px;width:100%;padding:12px 16px;background:linear-gradient(135deg,#0f766e,#0ea5e9);color:#fff;border:none;border-radius:10px;font-size:15px;font-weight:700;cursor:pointer;font-family:inherit}
+    .share-btn:hover{opacity:.9}.share-btn:active{opacity:.75}
   </style>
 </head>
 <body>
@@ -90,6 +93,7 @@
       <div class="cdelta"><span style="color:#dc2626;font-size:11px;font-weight:700;margin-left:5px">▲0.97</span></div>
     </div>
   </div>
+  <button id="city-share-btn" class="share-btn">📤 Share Prices</button>
 
   <p class="sec-title">Last 10 Days — Kochi Fuel Price History</p>
   <table>
@@ -119,8 +123,8 @@
   <div class="news-section">
     <div class="news-head"><span class="news-dot"></span><span class="news-head-text">Latest Fuel News — Kochi &amp; Kerala</span></div>
       <div class="news-item"><a class="news-link" href="https://news.google.com/rss/articles/CBMi0AFBVV95cUxOcGRZdUJaenJ2azhEbVh1cGZuS2pEUVkzbXd3UkdmbTN0ZHFzSWNmYjJDX3FlSXpMNXU5bnBXalNzOXVJd0UwLXA2VkVpOXJ4ZElHdUlrTGUxVlB0ODJVVThyWlJ4aE12alVTYS1lZ0t6UW1qbGVhcGpEUGwxWjROOWxWOU5DVmNFakZFb2tNeVdjTzlQa092TWxQbzNUVnJmcGNqMHhmak96MkZ2cWtzTnU5VjhIZm8yekFyd1Y4YUJaTVRjcy14dW1Fd0E1MTh6?oc=5" target="_blank" rel="noopener noreferrer">Fuel prices surge across South India: Petrol hits Rs 108 in Bengaluru, diesel Rs 112 in Hyderabad<i class="ext-icon">↗</i></a><div class="news-meta"><span class="news-src">The South First</span><span class="news-time">23 May</span></div></div>
-      <div class="news-item"><a class="news-link" href="https://news.google.com/rss/articles/CBMi8AFBVV95cUxQSzFFR0s0S0U5QlNQSS1sRTlzdDJOSW92YmdMSjdnS2txV3N5Qjc5NWMyYXZKYkJ2Q1Q4b0xUMnE0ZXdERXQ5azdMaHdWcWlzMGthVC1QQU9MWXhUUUlqVVd4d19jUUIzVlZDOVdlUzBQamlDMnB2Znd1N1Z5M29HWmd0aVgydmRwWmdHMlFLUXFMVThQZ29HSG11WE9uRWNGcy10bmRvRHJzUl9PMEQzTHoyYlJ4NndUc2xCMFp0ZU5DMDgxa0VNWndlLVZOT2RLRXI1MUhzTWdHa1Bya0hMZkhkSEE0TmlmelltV2N6cWc?oc=5" target="_blank" rel="noopener noreferrer">Petrol, Diesel prices hiked in Kerala: Check new rates in Thiruvananthapuram, Kochi , Waynad and other cities<i class="ext-icon">↗</i></a><div class="news-meta"><span class="news-src">MSN</span><span class="news-time">22 May</span></div></div>
       <div class="news-item"><a class="news-link" href="https://news.google.com/rss/articles/CBMi0gFBVV95cUxPQWpjU1Jpa0NSWFpJbjBoM3p3eGo3ZDZLRmZvNDdPSDN0bUVMVWU3MXA0WldoX3hLb0oyNlIxS0l6SGFtWUJyU0ZZVVh2cGZlQzV1WmFIS1c2cF9vWG5aeXFTMGYwUnRUUU9meXcwRi1pOW5iRmE4Wk5LSXVIdmlSYjZOVHdsTHBaVEpPMXdydGpmbmFja1NZNWhiWENZcVNadXM5WFNNdEJ2al9uRTJONVBqUkZiMl9ISEV5ejJpaThvdWRUNzV0RDZOcWR4YlREWEHSAdgBQVVfeXFMUGlFUXE0Uld2RUY1bGlNOEYzN1l4ZkRKckNSSTJPMXBkdDJhSjkwZ3NxZEJyQ09xZ0JBQzVralJoRnBid2h6UDgyRUxnTVo4UzZpZHlNX054U28tdXBDUXR4bnUzZXRBWXJnX0JzeUhVT1N1eDB1TjZjUThjVndMZmtBR2hhNE1tcmNlT1kyOVBSVU55Q1p2UnRsXzhNdFFYdjNrQ0hjWHBaWmRDZUZmWlpJcmJ4ZjZMT1RMa2pkYVlWMVdRVktjREN1ZWhfaGtyaTF4b0wwTVR0?oc=5" target="_blank" rel="noopener noreferrer">Fuel price surge jolts Kerala as people brace for all-round price rise<i class="ext-icon">↗</i></a><div class="news-meta"><span class="news-src">The Hindu</span><span class="news-time">15 May</span></div></div>
+      <div class="news-item"><a class="news-link" href="https://news.google.com/rss/articles/CBMihwNBVV95cUxQa0czQXlKN2xmUlZsdkxUUV9EVkp3MjMyWWV2YkdLTlZCLWFacllEWDJjQTBSVERLbDd4RU5HOUtnbkVrVHVnenUxZ2xUTW1xN0J3bjF1UnVWM0tma1RpbGEyXzdTcWxUSEdGa3dERkdGY3NCTlZYQ0IwUTU5c01hWTJFVVJmVEpPczVaajljYUd1ampLc3IxdEpOQVJWcTR4OUVERFcwMGZPUjRhVWt6Umk2aThFOW00ejRPc3lETnJrc2ROS2gyVVMtNlZHWTFKZ0tySGJWbnY1Tk4zaEQzbENNNjZiOS1Pb2pHSXBKMlVWZ1liQ0dQSXYwMVlCYnVjT0dvU25VdGN0azloQTNFeVI3dTBZaVo0S2lIaFIwLUhfZkE0RUNOeWZra2ZLTzNIR1E2WnhGclhveTEtQmV0RG1zMUNRZ1ZiLVk1a09hYkQyRmhHUEZiejVxdTJNS21RbFlfelVIVHlhbE5RZG1xV0dDeGxqVDFKVUdxSC1zclZkbzFWUHRn?oc=5" target="_blank" rel="noopener noreferrer">Petrol, Diesel prices hiked in Kerala: Check new rates in Thiruvananthapuram, Kochi , Waynad and other cities<i class="ext-icon">↗</i></a><div class="news-meta"><span class="news-src">MSN</span><span class="news-time">18 May</span></div></div>
       <div class="news-item"><a class="news-link" href="https://news.google.com/rss/articles/CBMipwFBVV95cUxQaGVsM3hlbmF1VDZWcHhmcEZZY2tvdk9CdHVhTF9PbW5Ic3ZHQXNvZFpSVXZQVmE2b0RyRWZDX2dUNmpBY0REVjE4QUNNRE9OQUFoTG9GVzJiQUhTaERSNVRGbnhQeFlSNm1nYXlCdm42UjZPZVJRZnZoeERCTThwc00tdENOSDNvWlBPMTc0dGZ4eHc0WFVkcmFWaWh2X09rS2RjcXZkVQ?oc=5" target="_blank" rel="noopener noreferrer">Union government hikes petrol, diesel prices by Rs 3 per litre<i class="ext-icon">↗</i></a><div class="news-meta"><span class="news-src">The South First</span><span class="news-time">15 May</span></div></div>
       <div class="news-item"><a class="news-link" href="https://news.google.com/rss/articles/CBMi1wFBVV95cUxNYnRWTldSSWNXN1paZ2s3ekxQUkZKRFdRMGNaT252QXA0NDdycks3UFluMEs5WGxDby1NRFktdWFMa2xNdDBKVXdQdmlRd0FEZlhUblRsZWQyVVNraTd3VkNEcU9uTWZpT0tfLVp1QVc1b2JOeEJYaTAwNExjTE1hdkJDV1hmRkdZb2kyUUpnZTdJR3dFcGVXNUtzWGhCU3N1N0VWS1A1b0diTUh6OXhCLVJTMkNwV1lQZzl1bnlDNy1BOThhN2F5YnRsRG1waVRSZ1U1cXlVUdIB3gFBVV95cUxNTDZteGhES1E4SUhXb2ZYOGlBRFJjTGdOcmZYa2ItUVpnSmJQVGRNbDZxemRrNS13VmN6NHBYdkRWOXlaRk42M3NCekotY1pKWi1Xc2hLNk9yVG9xUko5ZWtqajYtYVV5dWRacnJDZmhsa0NiMmY2dEg4NzNLQ2oxTzdWbkJrTmhoYzRvWE9Sc3k3eDRuVUwwMUxwYUVoQVRQUFk5NWxkWDE3Snp6WjRZeDJYUU8tb0RYRXo3aTBFTDRtQ3hXMnRNa2tWUU1saFlCOXlsVlJUN3NFLWprMnc?oc=5" target="_blank" rel="noopener noreferrer">Kerala fisheries sector hit by fuel shortage & rising kerosene prices<i class="ext-icon">↗</i></a><div class="news-meta"><span class="news-src">BusinessLine</span><span class="news-time">16 Apr</span></div></div>
   </div>
@@ -157,5 +161,12 @@
     </div>
   </div>
 </div>
+<script src="../share-card.js?v=1"></script>
+<script>
+document.getElementById('city-share-btn').addEventListener('click', function() {
+  var d = JSON.parse(document.getElementById('city-data').textContent);
+  shareFuelPriceCard(d, d.updated);
+});
+</script>
 </body>
 </html>

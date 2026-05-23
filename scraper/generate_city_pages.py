@@ -245,6 +245,11 @@ def generate_page(city_name: str, slug: str, entries: list[dict], all_cities: di
 
     # Build city news section
     state_name = CITY_STATES.get(city_name, "")
+    city_data_json = json.dumps({
+        "name": city_name, "state": state_name,
+        "petrol": tp, "diesel": td, "cng": tc,
+        "updated": entries[0].get("updated", "") if entries else "",
+    }, ensure_ascii=False)
     news_html = ""
     if news:
         def _news_item(a: dict) -> str:
@@ -298,6 +303,7 @@ def generate_page(city_name: str, slug: str, entries: list[dict], all_cities: di
   <meta property="og:url" content="https://www.fuelpricetoday.in/{slug}/" />
   <meta property="og:type" content="website" />
   <script type="application/ld+json">{schema}</script>
+  <script id="city-data" type="application/json">{city_data_json}</script>
   <style>
     *{{box-sizing:border-box;margin:0;padding:0}}
     body{{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#f8fafc;color:#111827;line-height:1.5}}
@@ -349,6 +355,8 @@ def generate_page(city_name: str, slug: str, entries: list[dict], all_cities: di
     .news-meta{{font-size:11px;color:#9ca3af;display:flex;gap:6px;align-items:center}}
     .news-src{{color:#374151;font-weight:500}}
     .news-time::before{{content:"·";margin-right:4px;color:#d1d5db}}
+    .share-btn{{display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:24px;width:100%;padding:12px 16px;background:linear-gradient(135deg,#0f766e,#0ea5e9);color:#fff;border:none;border-radius:10px;font-size:15px;font-weight:700;cursor:pointer;font-family:inherit}}
+    .share-btn:hover{{opacity:.9}}.share-btn:active{{opacity:.75}}
   </style>
 </head>
 <body>
@@ -382,6 +390,7 @@ def generate_page(city_name: str, slug: str, entries: list[dict], all_cities: di
       <div class="cunit">per kg</div>
     </div>"""}
   </div>
+  <button id="city-share-btn" class="share-btn">📤 Share Prices</button>
 
   <p class="sec-title">Last 10 Days — {city_name} Fuel Price History</p>
   <table>
@@ -408,6 +417,13 @@ def generate_page(city_name: str, slug: str, entries: list[dict], all_cities: di
     </div>
   </div>
 </div>
+<script src="../share-card.js?v=1"></script>
+<script>
+document.getElementById('city-share-btn').addEventListener('click', function() {{
+  var d = JSON.parse(document.getElementById('city-data').textContent);
+  shareFuelPriceCard(d, d.updated);
+}});
+</script>
 </body>
 </html>
 """
