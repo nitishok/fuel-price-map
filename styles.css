@@ -192,6 +192,10 @@ main {
   gap: 10px;
 }
 
+.prices:has(.price.cng:not(.hidden)) {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 .price {
   padding: 10px;
   border-radius: 8px;
@@ -226,6 +230,10 @@ main {
 
 .price.diesel {
   background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+}
+
+.price.cng {
+  background: linear-gradient(135deg, #92400e, #f59e0b);
 }
 
 .distance {
@@ -672,6 +680,7 @@ main {
 .td-state  { font-weight: 500; color: #111827; }
 .td-petrol { text-align: right; color: #065f46; font-weight: 500; }
 .td-diesel { text-align: right; color: #1e3a8a; font-weight: 500; }
+.td-cng    { text-align: right; color: #92400e; font-weight: 500; }
 .td-count  { text-align: right; color: #374151; }
 .tbl-loading { text-align: center; color: #9ca3af; padding: 20px; }
 

@@ -48,6 +48,51 @@ DATA_JS = os.path.join(PROJECT_ROOT, "data.js")
 DATA_YESTERDAY_JSON = os.path.join(PROJECT_ROOT, "data-yesterday.json")
 HISTORY_JSON = os.path.join(PROJECT_ROOT, "history.json")
 
+# Cities where CNG is available and scraped from goodreturns.in
+CNG_CITIES: set[str] = {
+    "New Delhi", "Mumbai", "Pune", "Ahmedabad", "Surat", "Vadodara",
+    "Lucknow", "Kanpur", "Jaipur", "Agra", "Meerut", "Varanasi",
+    "Patna", "Indore", "Bhopal", "Nagpur", "Hyderabad", "Bengaluru",
+    "Chennai", "Kolkata", "Chandigarh", "Faridabad", "Gurugram",
+    "Ghaziabad", "Ranchi", "Kochi",
+}
+
+# Slug overrides for CNG city pages on goodreturns.in
+_CNG_SLUG_OVERRIDES: dict[str, str] = {
+    "New Delhi":  "new-delhi",
+    "Bengaluru":  "bangalore",
+    "Gurugram":   "gurgaon",
+}
+
+# Price regex for CNG pages — unit is /Kg, not /Ltr
+_GR_CNG_RE = re.compile(r'Rs\.\s*(\d{2,3}(?:\.\d{1,2})?)/Kg')
+
+
+def fetch_cng(name: str, verbose: bool = False) -> Optional[float]:
+    """Fetch CNG price from goodreturns.in for a single city. Returns float or None."""
+    slug = _CNG_SLUG_OVERRIDES.get(name) or auto_slug(name)
+    url = f"https://www.goodreturns.in/cng-price-in-{slug}.html"
+    if verbose:
+        print(f"    [cng] GET {url}", file=sys.stderr)
+    html = fetch_url(url)
+    if html is None:
+        return None
+    city_word = slug.split("-")[0].lower()
+    if city_word not in html.lower():
+        if verbose:
+            print(f"    [cng] city not found in page, skipping", file=sys.stderr)
+        return None
+    m = _GR_CNG_RE.search(html)
+    if not m:
+        return None
+    val = float(m.group(1))
+    # CNG prices in India are typically 60–120 Rs/kg
+    if not (50.0 <= val <= 150.0):
+        return None
+    time.sleep(REQUEST_DELAY_SEC)
+    return val
+
+
 # City name → URL slug for individual city pages
 METRO_CITY_SLUGS: dict[str, str] = {
     "Mumbai": "mumbai",
@@ -466,6 +511,7 @@ def update_history(data: dict) -> None:
             "updated": updated_str,
             "petrol": round(city["petrol"], 2),
             "diesel": round(city["diesel"], 2),
+            "cng": round(city["cng"], 2) if city.get("cng") is not None else None,
         }
         if entries and entries[0].get("date") == today_str:
             entries[0] = new_entry  # overwrite today's entry with latest prices
@@ -540,6 +586,11 @@ def main(argv: list[str]) -> int:
             new_petrol = None
             new_diesel = None
 
+        # CNG — only for cities in CNG_CITIES
+        new_cng: Optional[float] = None
+        if name in CNG_CITIES:
+            new_cng = fetch_cng(name, verbose=args.verbose)
+
         updated = []
         if new_petrol is not None:
             if abs(new_petrol - city["petrol"]) > 0.001:
@@ -551,6 +602,12 @@ def main(argv: list[str]) -> int:
                 updated.append(f"diesel {city['diesel']}->{new_diesel}")
             city["diesel"] = round(new_diesel, 2)
             stats["diesel_ok"] += 1
+        if new_cng is not None:
+            if abs(new_cng - (city.get("cng") or 0)) > 0.001:
+                updated.append(f"cng {city.get('cng')}->{new_cng}")
+            city["cng"] = round(new_cng, 2)
+        elif "cng" not in city:
+            city["cng"] = None
         if new_petrol is None and new_diesel is None:
             stats["miss"] += 1
             print(f"  MISS {name} (all sources failed)", file=sys.stderr)

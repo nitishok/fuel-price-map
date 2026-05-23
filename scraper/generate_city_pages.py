@@ -207,6 +207,7 @@ def generate_page(city_name: str, slug: str, entries: list[dict], all_cities: di
 
     tp = today["petrol"] if today else 0.0
     td = today["diesel"] if today else 0.0
+    tc = today.get("cng") if today else None
     pp = prev["petrol"] if prev else None
     pd = prev["diesel"] if prev else None
 
@@ -228,16 +229,19 @@ def generate_page(city_name: str, slug: str, entries: list[dict], all_cities: di
         today_badge = (
             ' <span class="today-badge">today</span>' if i == 0 else ""
         )
+        cng_v = entry.get("cng")
+        cng_td = "—" if cng_v is None else f"₹{cng_v:.2f}"
         rows_html += (
             f'<tr class="{row_cls}">'
             f'<td class="dc">{format_date(entry["date"])}{today_badge}</td>'
             f'<td class="np">₹{entry["petrol"]:.2f}{p_d}</td>'
             f'<td class="nd">₹{entry["diesel"]:.2f}{d_d}</td>'
+            f'<td class="nd">{cng_td}</td>'
             f"</tr>\n"
         )
 
     if not rows_html:
-        rows_html = '<tr><td colspan="3" class="empty">No history yet — check back tomorrow.</td></tr>'
+        rows_html = '<tr><td colspan="4" class="empty">No history yet — check back tomorrow.</td></tr>'
 
     # Build city news section
     state_name = CITY_STATES.get(city_name, "")
@@ -371,7 +375,12 @@ def generate_page(city_name: str, slug: str, entries: list[dict], all_cities: di
       <div class="cval" style="color:#1e3a8a">₹{td:.2f}</div>
       <div class="cunit">per litre</div>
       <div class="cdelta">{diesel_delta}</div>
-    </div>
+    </div>{"" if tc is None else f"""
+    <div class="card">
+      <div class="clbl">🟡 CNG</div>
+      <div class="cval" style="color:#92400e">₹{tc:.2f}</div>
+      <div class="cunit">per kg</div>
+    </div>"""}
   </div>
 
   <p class="sec-title">Last 10 Days — {city_name} Fuel Price History</p>
@@ -381,6 +390,7 @@ def generate_page(city_name: str, slug: str, entries: list[dict], all_cities: di
         <th>Date</th>
         <th style="text-align:right">Petrol (₹/L)</th>
         <th style="text-align:right">Diesel (₹/L)</th>
+        <th style="text-align:right">CNG (₹/Kg)</th>
       </tr>
     </thead>
     <tbody>

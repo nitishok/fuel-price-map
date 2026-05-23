@@ -31,7 +31,7 @@ async function loadFreshData() {
       if (yest && Array.isArray(yest.cities)) {
         YESTERDAY_MAP.clear();
         for (const c of yest.cities) {
-          YESTERDAY_MAP.set(c.name.toLowerCase(), { petrol: c.petrol, diesel: c.diesel });
+          YESTERDAY_MAP.set(c.name.toLowerCase(), { petrol: c.petrol, diesel: c.diesel, cng: c.cng ?? null });
         }
       }
     }
@@ -131,12 +131,16 @@ function popupHtml(c) {
   const yest = YESTERDAY_MAP.get(c.name.toLowerCase());
   const pd = yest ? deltaHtml(c.petrol, yest.petrol) : "";
   const dd = yest ? deltaHtml(c.diesel, yest.diesel) : "";
+  const cngRow = c.cng != null
+    ? `<div class="row"><span class="k">CNG</span><span class="v">₹ ${fmtPrice(c.cng)}/kg</span></div>`
+    : "";
   return `
     <div class="popup-inner">
       <div class="name">${c.name}</div>
       <div class="region">${c.state}</div>
       <div class="row"><span class="k">Petrol</span><span class="v">₹ ${fmtPrice(c.petrol)} ${pd}</span></div>
       <div class="row"><span class="k">Diesel</span><span class="v">₹ ${fmtPrice(c.diesel)} ${dd}</span></div>
+      ${cngRow}
     </div>
   `;
 }
@@ -170,6 +174,8 @@ const pcName = document.getElementById("pc-name");
 const pcRegion = document.getElementById("pc-region");
 const pcPetrol = document.getElementById("pc-petrol");
 const pcDiesel = document.getElementById("pc-diesel");
+const pcCngCard = document.getElementById("pc-cng-card");
+const pcCng = document.getElementById("pc-cng");
 const pcDistance = document.getElementById("pc-distance");
 const hint = document.querySelector(".hint");
 
@@ -178,6 +184,12 @@ function showPriceCard(city, distanceKm) {
   pcRegion.textContent = city.state;
   pcPetrol.textContent = fmtPrice(city.petrol);
   pcDiesel.textContent = fmtPrice(city.diesel);
+  if (city.cng != null) {
+    pcCng.textContent = fmtPrice(city.cng);
+    pcCngCard.classList.remove("hidden");
+  } else {
+    pcCngCard.classList.add("hidden");
+  }
   if (distanceKm > 0.5) {
     pcDistance.textContent = `Nearest reference point · ${distanceKm.toFixed(
       1
@@ -369,7 +381,7 @@ function updateMetroCities() {
     if (!city) {
       return `<tr class="${i % 2 === 0 ? "tr-even" : "tr-odd"}">
         <td class="td-state">${name}</td>
-        <td class="td-city" colspan="2">data unavailable</td>
+        <td class="td-city" colspan="3">data unavailable</td>
       </tr>`;
     }
     const yest = YESTERDAY_MAP.get(city.name.toLowerCase());
@@ -377,10 +389,14 @@ function updateMetroCities() {
     const cityLabel = slug
       ? `<a href="/${slug}" class="city-page-link" title="See 10-day history for ${city.name}">${city.name} <span class="city-ext">↗</span></a>`
       : city.name;
+    const cngCell = city.cng != null
+      ? `<td class="td-cng">₹${city.cng.toFixed(2)}</td>`
+      : `<td class="td-cng">—</td>`;
     return `<tr class="${i % 2 === 0 ? "tr-even" : "tr-odd"} metro-row" data-name="${city.name}" style="cursor:pointer">
       <td class="td-state">${cityLabel}</td>
       <td class="td-petrol">${priceCellHtml(city.petrol, yest?.petrol)}</td>
       <td class="td-diesel">${priceCellHtml(city.diesel, yest?.diesel)}</td>
+      ${cngCell}
     </tr>`;
   }).join("");
 
@@ -412,9 +428,10 @@ function updateBelowMap() {
   // ── State table ──
   const stateMap = {};
   for (const c of FUEL_CITIES) {
-    if (!stateMap[c.state]) stateMap[c.state] = { petrol: [], diesel: [], cities: [], count: 0 };
+    if (!stateMap[c.state]) stateMap[c.state] = { petrol: [], diesel: [], cng: [], cities: [], count: 0 };
     stateMap[c.state].petrol.push(c.petrol);
     stateMap[c.state].diesel.push(c.diesel);
+    if (c.cng != null) stateMap[c.state].cng.push(c.cng);
     stateMap[c.state].cities.push(c);
     stateMap[c.state].count++;
   }
@@ -444,6 +461,7 @@ function updateBelowMap() {
         name,
         avgPetrol: avg(d.petrol),
         avgDiesel: avg(d.diesel),
+        avgCng: d.cng.length ? avg(d.cng) : null,
         count: d.count,
         lowestPetrolCity: `₹${lowestPetrol.petrol.toFixed(2)} (${lowestPetrol.name})`,
         lowestDieselCity: `₹${lowestDiesel.diesel.toFixed(2)} (${lowestDiesel.name})`,
@@ -455,11 +473,15 @@ function updateBelowMap() {
   if (tbody) {
     tbody.innerHTML = states.map((s, i) => {
       const y = yestStateAvg[s.name];
+      const cngCell = s.avgCng != null
+        ? `<td class="td-cng">₹${s.avgCng.toFixed(2)}</td>`
+        : `<td class="td-cng">—</td>`;
       return `
       <tr class="${i % 2 === 0 ? "tr-even" : "tr-odd"}">
         <td class="td-state">${s.name}</td>
         <td class="td-petrol">${priceCellHtml(s.avgPetrol, y?.petrol)}</td>
         <td class="td-diesel">${priceCellHtml(s.avgDiesel, y?.diesel)}</td>
+        ${cngCell}
         <td class="td-city">${s.lowestPetrolCity}</td>
         <td class="td-city td-city--diesel">${s.lowestDieselCity}</td>
         <td class="td-count">${s.count}</td>
