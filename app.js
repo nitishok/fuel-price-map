@@ -191,10 +191,22 @@ window._shareFuelFromPopup = function (name) {
   if (city) shareFuelPriceCard(city, LAST_UPDATED);
 };
 
+const pcPetrolStations = document.getElementById("pc-petrol-stations");
+const pcCngStations    = document.getElementById("pc-cng-stations");
+
 function showPriceCard(city, distanceKm) {
   _cardCity = city;
   pcName.textContent = city.name;
   pcRegion.textContent = city.state;
+
+  // Station finder links
+  pcPetrolStations.href = `https://www.google.com/maps/search/petrol+station/@${city.lat},${city.lng},14z`;
+  if (city.cng != null) {
+    pcCngStations.href = `https://www.google.com/maps/search/CNG+station/@${city.lat},${city.lng},14z`;
+    pcCngStations.classList.remove("hidden");
+  } else {
+    pcCngStations.classList.add("hidden");
+  }
   pcPetrol.textContent = fmtPrice(city.petrol);
   pcDiesel.textContent = fmtPrice(city.diesel);
   if (city.cng != null) {

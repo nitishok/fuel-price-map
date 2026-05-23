@@ -201,7 +201,7 @@ def delta_html(current: float, previous: float | None) -> str:
     )
 
 
-def generate_page(city_name: str, slug: str, entries: list[dict], all_cities: dict[str, str], scrape_ts: str = "", news: list[dict] | None = None) -> str:
+def generate_page(city_name: str, slug: str, entries: list[dict], all_cities: dict[str, str], scrape_ts: str = "", news: list[dict] | None = None, coords: dict | None = None) -> str:
     today = entries[0] if entries else None
     prev = entries[1] if len(entries) > 1 else None
 
@@ -242,6 +242,23 @@ def generate_page(city_name: str, slug: str, entries: list[dict], all_cities: di
 
     if not rows_html:
         rows_html = '<tr><td colspan="4" class="empty">No history yet — check back tomorrow.</td></tr>'
+
+    # Build station finder buttons
+    city_coords = (coords or {}).get(city_name, {})
+    clat = city_coords.get("lat", "")
+    clng = city_coords.get("lng", "")
+    petrol_maps_url = f"https://www.google.com/maps/search/petrol+station/@{clat},{clng},14z"
+    cng_maps_url    = f"https://www.google.com/maps/search/CNG+station/@{clat},{clng},14z"
+    cng_stn_btn = "" if tc is None else (
+        f'<a class="stn-btn cng" href="{cng_maps_url}" target="_blank" rel="noopener">'
+        f'💨 Find CNG Stations near {city_name}</a>'
+    )
+    station_html = (
+        f'<div class="stn-btns">'
+        f'<a class="stn-btn" href="{petrol_maps_url}" target="_blank" rel="noopener">'
+        f'⛽ Find Petrol &amp; Diesel Stations near {city_name}</a>'
+        f'{cng_stn_btn}</div>'
+    )
 
     # Build city news section
     state_name = CITY_STATES.get(city_name, "")
@@ -357,6 +374,11 @@ def generate_page(city_name: str, slug: str, entries: list[dict], all_cities: di
     .news-time::before{{content:"·";margin-right:4px;color:#d1d5db}}
     .share-btn{{display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:24px;width:100%;padding:12px 16px;background:linear-gradient(135deg,#0f766e,#0ea5e9);color:#fff;border:none;border-radius:10px;font-size:15px;font-weight:700;cursor:pointer;font-family:inherit}}
     .share-btn:hover{{opacity:.9}}.share-btn:active{{opacity:.75}}
+    .stn-btns{{display:flex;flex-direction:column;gap:8px;margin-bottom:16px}}
+    .stn-btn{{display:flex;align-items:center;justify-content:center;gap:6px;padding:10px 16px;background:#f1f5f9;color:#0f172a;border:1px solid #e2e8f0;border-radius:8px;font-size:14px;font-weight:600;text-decoration:none;font-family:inherit}}
+    .stn-btn:hover{{background:#e2e8f0}}
+    .stn-btn.cng{{background:#fef3c7;border-color:#fcd34d;color:#78350f}}
+    .stn-btn.cng:hover{{background:#fde68a}}
   </style>
 </head>
 <body>
@@ -390,6 +412,7 @@ def generate_page(city_name: str, slug: str, entries: list[dict], all_cities: di
       <div class="cunit">per kg</div>
     </div>"""}
   </div>
+  {station_html}
   <button id="city-share-btn" class="share-btn">📤 Share Prices</button>
 
   <p class="sec-title">Last 10 Days — {city_name} Fuel Price History</p>
@@ -441,6 +464,13 @@ def main() -> int:
     if scrape_ts:
         print(f"  Using scrape timestamp: {scrape_ts}", file=sys.stderr)
 
+    # Load city coordinates from data.json for station finder links
+    coords: dict = {}
+    if os.path.exists(DATA_JSON):
+        with open(DATA_JSON, encoding="utf-8") as f:
+            _d = json.load(f)
+        coords = {c["name"]: {"lat": c["lat"], "lng": c["lng"]} for c in _d.get("cities", []) if "lat" in c}
+
     count = 0
     for city_name, slug in METRO_CITY_SLUGS.items():
         entries = history.get(city_name, [])
@@ -450,7 +480,7 @@ def main() -> int:
 
         state_name = CITY_STATES.get(city_name, "")
         city_news = fetch_city_news(city_name, state_name)
-        page_html = generate_page(city_name, slug, entries, METRO_CITY_SLUGS, scrape_ts, city_news)
+        page_html = generate_page(city_name, slug, entries, METRO_CITY_SLUGS, scrape_ts, city_news, coords)
 
         city_dir = os.path.join(PROJECT_ROOT, slug)
         os.makedirs(city_dir, exist_ok=True)

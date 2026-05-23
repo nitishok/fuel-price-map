@@ -819,6 +819,33 @@ main {
   color: #d1d5db;
 }
 
+/* ── Station finder buttons ── */
+.station-btns {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 10px;
+}
+.station-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 8px 14px;
+  background: #f1f5f9;
+  color: #0f172a;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.15s;
+  font-family: inherit;
+}
+.station-btn:hover { background: #e2e8f0; }
+.station-btn.cng   { background: #fef3c7; border-color: #fcd34d; color: #78350f; }
+.station-btn.cng:hover { background: #fde68a; }
+
 /* ── Share button ── */
 .share-btn {
   display: flex;
