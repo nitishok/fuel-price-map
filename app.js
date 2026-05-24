@@ -37,6 +37,7 @@ async function loadFreshData() {
     }
 
     rebuildMarkers();
+    if (_viewMode === "heatmap") renderHeatmap();
     updateStatusLine();
     updateQuickStats();
     updateBelowMap();
@@ -70,6 +71,219 @@ L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
 
 // Remove "Leaflet" branding — keep only the required OSM attribution.
 map.attributionControl.setPrefix("");
+
+// ---------- heatmap (state choropleth + city dots) ----------
+
+// Data state names → GeoJSON ST_NM property
+const STATE_NAME_FIX = {
+  "A&N Islands (UT)":      "Andaman & Nicobar",
+  "Chandigarh (UT)":       "Chandigarh",
+  "Jammu & Kashmir (UT)":  "Jammu & Kashmir",
+  "Ladakh (UT)":           "Ladakh",
+  "Lakshadweep (UT)":      "Lakshadweep",
+  "Puducherry (UT)":       "Puducherry",
+};
+function normState(s) { return STATE_NAME_FIX[s] || s; }
+
+function computeStateAverages(cities, fuelKey) {
+  const byState = {};
+  for (const c of cities) {
+    if (c[fuelKey] == null) continue;
+    const s = normState(c.state);
+    (byState[s] ||= []).push(c[fuelKey]);
+  }
+  const out = {};
+  for (const s in byState) {
+    const arr = byState[s];
+    out[s] = arr.reduce((a, b) => a + b, 0) / arr.length;
+  }
+  return out;
+}
+
+const HEAT_STOPS = ["#10b981", "#84cc16", "#eab308", "#f97316", "#ef4444"];
+const HEAT_NO_DATA = "#cbd5e1";
+
+function _hex(c) { return parseInt(c, 16); }
+function _lerpHex(a, b, t) {
+  const ar = _hex(a.slice(1, 3)), ag = _hex(a.slice(3, 5)), ab = _hex(a.slice(5, 7));
+  const br = _hex(b.slice(1, 3)), bg = _hex(b.slice(3, 5)), bb = _hex(b.slice(5, 7));
+  const r = Math.round(ar + (br - ar) * t);
+  const g = Math.round(ag + (bg - ag) * t);
+  const bl = Math.round(ab + (bb - ab) * t);
+  return "#" + [r, g, bl].map(v => v.toString(16).padStart(2, "0")).join("");
+}
+function priceToColor(price, min, max) {
+  if (price == null || isNaN(price)) return HEAT_NO_DATA;
+  if (max === min) return HEAT_STOPS[2];
+  const t = Math.max(0, Math.min(1, (price - min) / (max - min)));
+  const idx = t * (HEAT_STOPS.length - 1);
+  const lo = Math.floor(idx), hi = Math.ceil(idx);
+  return lo === hi ? HEAT_STOPS[lo] : _lerpHex(HEAT_STOPS[lo], HEAT_STOPS[hi], idx - lo);
+}
+
+let _statesGeoJSON = null;
+let _heatStateLayer = null;
+let _heatDotsLayer  = null;
+let _currentFuel    = "petrol";
+let _viewMode       = "pins"; // "pins" | "heatmap"
+
+async function loadStates() {
+  if (_statesGeoJSON) return _statesGeoJSON;
+  const res = await fetch("./india-states.geojson", { cache: "force-cache" });
+  _statesGeoJSON = await res.json();
+  return _statesGeoJSON;
+}
+
+async function renderHeatmap() {
+  await loadStates();
+  const stateAvg = computeStateAverages(FUEL_CITIES, _currentFuel);
+  const vals = Object.values(stateAvg);
+  if (!vals.length) {
+    // No data for selected fuel — show empty heatmap
+    if (_heatStateLayer) { _heatStateLayer.remove(); _heatStateLayer = null; }
+    if (_heatDotsLayer)  { _heatDotsLayer.remove();  _heatDotsLayer  = null; }
+    updateLegend(null, null);
+    return;
+  }
+  const minV = Math.min(...vals), maxV = Math.max(...vals);
+
+  if (_heatStateLayer) _heatStateLayer.remove();
+  _heatStateLayer = L.geoJSON(_statesGeoJSON, {
+    style: (f) => {
+      const v = stateAvg[f.properties.ST_NM];
+      return {
+        fillColor: priceToColor(v, minV, maxV),
+        fillOpacity: 0.62,
+        color: "#1e293b",
+        weight: 0.7,
+      };
+    },
+    onEachFeature: (f, layer) => {
+      const name = f.properties.ST_NM;
+      const v = stateAvg[name];
+      const fuelLabel = _currentFuel === "cng" ? "CNG" :
+                        _currentFuel.charAt(0).toUpperCase() + _currentFuel.slice(1);
+      const unit = _currentFuel === "cng" ? "/Kg" : "/L";
+      const tip = v == null
+        ? `<b>${name}</b><br>No data`
+        : `<b>${name}</b><br>Avg ${fuelLabel}: ₹${v.toFixed(2)}${unit}`;
+      layer.bindTooltip(tip, { sticky: true, className: "state-tooltip" });
+      // Pass clicks through to map so nearest-city lookup still works.
+      layer.on("click", (e) => {
+        map.fire("click", e);
+      });
+    },
+  }).addTo(map);
+
+  if (_heatDotsLayer) _heatDotsLayer.remove();
+  _heatDotsLayer = L.layerGroup(
+    FUEL_CITIES
+      .filter(c => c[_currentFuel] != null)
+      .map(c => {
+        const dot = L.circleMarker([c.lat, c.lng], {
+          radius: 4,
+          fillColor: priceToColor(c[_currentFuel], minV, maxV),
+          color: "#0f172a",
+          weight: 0.6,
+          fillOpacity: 0.95,
+        });
+        dot.on("click", () => showPriceCard(c, 0));
+        return dot;
+      })
+  ).addTo(map);
+
+  updateLegend(minV, maxV);
+}
+
+function showHeatmap() {
+  _viewMode = "heatmap";
+  if (map.hasLayer(markerGroup)) map.removeLayer(markerGroup);
+  renderHeatmap();
+  const legend = document.querySelector(".heatmap-legend");
+  if (legend) legend.classList.remove("hidden");
+}
+
+function showPinsView() {
+  _viewMode = "pins";
+  if (_heatStateLayer) { _heatStateLayer.remove(); _heatStateLayer = null; }
+  if (_heatDotsLayer)  { _heatDotsLayer.remove();  _heatDotsLayer  = null; }
+  if (!map.hasLayer(markerGroup)) markerGroup.addTo(map);
+  const legend = document.querySelector(".heatmap-legend");
+  if (legend) legend.classList.add("hidden");
+}
+
+function updateLegend(minV, maxV) {
+  const legend = document.querySelector(".heatmap-legend");
+  if (!legend) return;
+  const unit = _currentFuel === "cng" ? "/Kg" : "/L";
+  const lo = legend.querySelector(".lg-min");
+  const hi = legend.querySelector(".lg-max");
+  if (minV == null || maxV == null) {
+    if (lo) lo.textContent = "—";
+    if (hi) hi.textContent = "—";
+  } else {
+    if (lo) lo.textContent = `₹${minV.toFixed(2)}${unit}`;
+    if (hi) hi.textContent = `₹${maxV.toFixed(2)}${unit}`;
+  }
+}
+
+// ── View toggle + fuel pills control (top-right) ──
+const ViewToggleControl = L.Control.extend({
+  options: { position: "topright" },
+  onAdd: function () {
+    const div = L.DomUtil.create("div", "map-view-toggle");
+    div.innerHTML = `
+      <div class="seg">
+        <button type="button" data-mode="pins"    class="active">Prices</button>
+        <button type="button" data-mode="heatmap">Heatmap</button>
+      </div>
+      <div class="fuel-pills hidden">
+        <button type="button" data-fuel="petrol" class="active">Petrol</button>
+        <button type="button" data-fuel="diesel">Diesel</button>
+        <button type="button" data-fuel="cng">CNG</button>
+      </div>`;
+    L.DomEvent.disableClickPropagation(div);
+    L.DomEvent.disableScrollPropagation(div);
+    div.addEventListener("click", (e) => {
+      const btn = e.target.closest("button");
+      if (!btn) return;
+      const mode = btn.getAttribute("data-mode");
+      const fuel = btn.getAttribute("data-fuel");
+      if (mode) {
+        div.querySelectorAll(".seg button").forEach(b => b.classList.toggle("active", b === btn));
+        const pills = div.querySelector(".fuel-pills");
+        if (mode === "heatmap") {
+          pills.classList.remove("hidden");
+          showHeatmap();
+        } else {
+          pills.classList.add("hidden");
+          showPinsView();
+        }
+      } else if (fuel) {
+        div.querySelectorAll(".fuel-pills button").forEach(b => b.classList.toggle("active", b === btn));
+        _currentFuel = fuel;
+        if (_viewMode === "heatmap") renderHeatmap();
+      }
+    });
+    return div;
+  },
+});
+map.addControl(new ViewToggleControl());
+
+// ── Legend control (bottom-left) ──
+const LegendControl = L.Control.extend({
+  options: { position: "bottomleft" },
+  onAdd: function () {
+    const div = L.DomUtil.create("div", "heatmap-legend hidden");
+    div.innerHTML = `
+      <span class="lg-min">—</span>
+      <span class="lg-bar"></span>
+      <span class="lg-max">—</span>`;
+    L.DomEvent.disableClickPropagation(div);
+    return div;
+  },
+});
+map.addControl(new LegendControl());
 
 // ---------- helpers ----------
 
