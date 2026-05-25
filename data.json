@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-25T02:51:28+00:00",
+  "lastUpdated": "2026-05-25T07:18:41+00:00",
   "source": "bankbazaar.com, petroldieselprice.com, goodreturns.in",
   "cities": [
     {
@@ -43,8 +43,8 @@
       "state": "Maharashtra",
       "lat": 19.033,
       "lng": 73.0297,
-      "petrol": 108.49,
-      "diesel": 95.02,
+      "petrol": 111.21,
+      "diesel": 97.83,
       "cng": null
     },
     {
@@ -187,8 +187,8 @@
       "state": "Karnataka",
       "lat": 12.9141,
       "lng": 74.856,
-      "petrol": 112.16,
-      "diesel": 97.31,
+      "petrol": 115.01,
+      "diesel": 100.1,
       "cng": null
     },
     {
@@ -196,8 +196,8 @@
       "state": "Karnataka",
       "lat": 15.3647,
       "lng": 75.124,
-      "petrol": 108.09,
-      "diesel": 95.99,
+      "petrol": 110.93,
+      "diesel": 98.8,
       "cng": null
     },
     {
@@ -205,8 +205,8 @@
       "state": "Karnataka",
       "lat": 15.8497,
       "lng": 74.4977,
-      "petrol": 112.16,
-      "diesel": 97.31,
+      "petrol": 115.01,
+      "diesel": 100.1,
       "cng": null
     },
     {
@@ -223,8 +223,8 @@
       "state": "Karnataka",
       "lat": 15.1394,
       "lng": 76.9214,
-      "petrol": 110.49,
-      "diesel": 98.2,
+      "petrol": 113.39,
+      "diesel": 101.08,
       "cng": null
     },
     {
@@ -241,8 +241,8 @@
       "state": "Karnataka",
       "lat": 13.3379,
       "lng": 77.1022,
-      "petrol": 108.69,
-      "diesel": 96.54,
+      "petrol": 111.55,
+      "diesel": 99.37,
       "cng": null
     },
     {
@@ -268,8 +268,8 @@
       "state": "Karnataka",
       "lat": 17.3297,
       "lng": 76.8343,
-      "petrol": 107.83,
-      "diesel": 95.8,
+      "petrol": 110.66,
+      "diesel": 98.61,
       "cng": null
     },
     {
@@ -331,8 +331,8 @@
       "state": "Tamil Nadu",
       "lat": 10.7905,
       "lng": 78.7047,
-      "petrol": 105.76,
-      "diesel": 97.47,
+      "petrol": 108.23,
+      "diesel": 100.05,
       "cng": null
     },
     {
@@ -376,8 +376,8 @@
       "state": "Tamil Nadu",
       "lat": 11.1085,
       "lng": 77.3411,
-      "petrol": 105.27,
-      "diesel": 96.98,
+      "petrol": 107.74,
+      "diesel": 99.55,
       "cng": null
     },
     {
@@ -403,8 +403,8 @@
       "state": "Tamil Nadu",
       "lat": 8.1788,
       "lng": 77.4334,
-      "petrol": 106.22,
-      "diesel": 97.96,
+      "petrol": 108.68,
+      "diesel": 100.54,
       "cng": null
     },
     {
@@ -430,8 +430,8 @@
       "state": "Tamil Nadu",
       "lat": 11.4102,
       "lng": 76.695,
-      "petrol": 105.27,
-      "diesel": 96.98,
+      "petrol": 107.74,
+      "diesel": 99.55,
       "cng": null
     },
     {
@@ -449,7 +449,7 @@
       "lat": 9.9312,
       "lng": 76.2673,
       "petrol": 111.18,
-      "diesel": 101.3,
+      "diesel": 104.15,
       "cng": null
     },
     {
@@ -538,8 +538,8 @@
       "state": "Kerala",
       "lat": 10.0889,
       "lng": 77.0595,
-      "petrol": 112.5,
-      "diesel": 101.3,
+      "petrol": 115.34,
+      "diesel": 104.15,
       "cng": null
     },
     {
@@ -592,8 +592,8 @@
       "state": "Telangana",
       "lat": 16.748,
       "lng": 77.986,
-      "petrol": 113.89,
-      "diesel": 101.92,
+      "petrol": 116.8,
+      "diesel": 104.83,
       "cng": null
     },
     {
@@ -655,8 +655,8 @@
       "state": "Andhra Pradesh",
       "lat": 17.0005,
       "lng": 81.804,
-      "petrol": 113.78,
-      "diesel": 101.5,
+      "petrol": 116.64,
+      "diesel": 89.17,
       "cng": null
     },
     {
@@ -682,8 +682,8 @@
       "state": "Andhra Pradesh",
       "lat": 14.4753,
       "lng": 78.8298,
-      "petrol": 113.46,
-      "diesel": 100.94,
+      "petrol": 116.58,
+      "diesel": 115.73,
       "cng": null
     },
     {
@@ -700,8 +700,8 @@
       "state": "Andhra Pradesh",
       "lat": 15.5057,
       "lng": 80.0499,
-      "petrol": 113.78,
-      "diesel": 101.5,
+      "petrol": 116.64,
+      "diesel": 89.17,
       "cng": null
     },
     {
@@ -844,8 +844,8 @@
       "state": "Gujarat",
       "lat": 23.242,
       "lng": 69.6669,
-      "petrol": 99.23,
-      "diesel": 95.13,
+      "petrol": 101.83,
+      "diesel": 97.92,
       "cng": null
     },
     {
@@ -898,8 +898,8 @@
       "state": "Gujarat",
       "lat": 21.6417,
       "lng": 69.6293,
-      "petrol": 99.23,
-      "diesel": 95.13,
+      "petrol": 101.83,
+      "diesel": 97.92,
       "cng": null
     },
     {
@@ -997,8 +997,8 @@
       "state": "Rajasthan",
       "lat": 29.9094,
       "lng": 73.88,
-      "petrol": 109.84,
-      "diesel": 95.05,
+      "petrol": 112.66,
+      "diesel": 97.78,
       "cng": null
     },
     {
@@ -1042,8 +1042,8 @@
       "state": "Uttar Pradesh",
       "lat": 26.4499,
       "lng": 80.3319,
-      "petrol": 98.98,
-      "diesel": 92.34,
+      "petrol": 101.59,
+      "diesel": 95.06,
       "cng": null
     },
     {
@@ -1159,8 +1159,8 @@
       "state": "Uttar Pradesh",
       "lat": 27.5805,
       "lng": 77.7008,
-      "petrol": 99.26,
-      "diesel": 92.64,
+      "petrol": 101.86,
+      "diesel": 95.36,
       "cng": null
     },
     {
@@ -1168,8 +1168,8 @@
       "state": "Uttar Pradesh",
       "lat": 26.7922,
       "lng": 82.1998,
-      "petrol": 99.26,
-      "diesel": 92.64,
+      "petrol": 101.86,
+      "diesel": 95.36,
       "cng": null
     },
     {
@@ -1276,8 +1276,8 @@
       "state": "Madhya Pradesh",
       "lat": 22.0574,
       "lng": 78.9382,
-      "petrol": 111.76,
-      "diesel": 96.85,
+      "petrol": 114.61,
+      "diesel": 114.54,
       "cng": null
     },
     {
@@ -1421,7 +1421,7 @@
       "lat": 30.7046,
       "lng": 76.7179,
       "petrol": 106.77,
-      "diesel": 92.83,
+      "diesel": 95.48,
       "cng": null
     },
     {
@@ -1528,8 +1528,8 @@
       "state": "Odisha",
       "lat": 22.2604,
       "lng": 84.8536,
-      "petrol": 106.53,
-      "diesel": 98.15,
+      "petrol": 109.33,
+      "diesel": 101.02,
       "cng": null
     },
     {
@@ -1564,8 +1564,8 @@
       "state": "Odisha",
       "lat": 21.4934,
       "lng": 86.9335,
-      "petrol": 106.53,
-      "diesel": 98.15,
+      "petrol": 109.33,
+      "diesel": 101.02,
       "cng": null
     },
     {
@@ -1591,8 +1591,8 @@
       "state": "Assam",
       "lat": 24.8333,
       "lng": 92.7789,
-      "petrol": 103.01,
-      "diesel": 94.39,
+      "petrol": 105.73,
+      "diesel": 97.23,
       "cng": null
     },
     {
@@ -1609,8 +1609,8 @@
       "state": "Assam",
       "lat": 26.6528,
       "lng": 92.7926,
-      "petrol": 103.01,
-      "diesel": 94.39,
+      "petrol": 105.73,
+      "diesel": 97.23,
       "cng": null
     },
     {
@@ -1645,8 +1645,8 @@
       "state": "Jharkhand",
       "lat": 22.8046,
       "lng": 86.2029,
-      "petrol": 102.53,
-      "diesel": 97.59,
+      "petrol": 105.19,
+      "diesel": 100.42,
       "cng": null
     },
     {
@@ -1726,8 +1726,8 @@
       "state": "Chhattisgarh",
       "lat": 19.0778,
       "lng": 82.0239,
-      "petrol": 105.36,
-      "diesel": 98.47,
+      "petrol": 108.06,
+      "diesel": 101.32,
       "cng": null
     },
     {
@@ -1762,8 +1762,8 @@
       "state": "Uttarakhand",
       "lat": 30.0869,
       "lng": 78.2676,
-      "petrol": 97.95,
-      "diesel": 93.18,
+      "petrol": 100.5,
+      "diesel": 95.9,
       "cng": null
     },
     {
@@ -1780,8 +1780,8 @@
       "state": "Uttarakhand",
       "lat": 28.9845,
       "lng": 79.4141,
-      "petrol": 97.95,
-      "diesel": 93.18,
+      "petrol": 100.5,
+      "diesel": 95.9,
       "cng": null
     },
     {
@@ -1789,8 +1789,8 @@
       "state": "Uttarakhand",
       "lat": 29.2176,
       "lng": 78.9593,
-      "petrol": 97.95,
-      "diesel": 93.18,
+      "petrol": 100.5,
+      "diesel": 95.9,
       "cng": null
     },
     {
@@ -1807,8 +1807,8 @@
       "state": "Himachal Pradesh",
       "lat": 32.2396,
       "lng": 77.1887,
-      "petrol": 99.94,
-      "diesel": 91.86,
+      "petrol": 102.51,
+      "diesel": 94.5,
       "cng": null
     },
     {
@@ -1816,8 +1816,8 @@
       "state": "Himachal Pradesh",
       "lat": 32.219,
       "lng": 76.3234,
-      "petrol": 99.94,
-      "diesel": 91.86,
+      "petrol": 102.51,
+      "diesel": 94.5,
       "cng": null
     },
     {
@@ -2086,7 +2086,7 @@
       "state": "Lakshadweep (UT)",
       "lat": 10.5593,
       "lng": 72.6358,
-      "petrol": 105.87,
+      "petrol": 108.58,
       "diesel": 102.8,
       "cng": null
     },
