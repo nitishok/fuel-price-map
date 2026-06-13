@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-11T06:30:49+00:00",
+  "lastUpdated": "2026-06-12T06:24:12+00:00",
   "source": "bankbazaar.com, petroldieselprice.com, goodreturns.in",
   "cities": [
     {
@@ -1645,7 +1645,7 @@
       "state": "Jharkhand",
       "lat": 22.8046,
       "lng": 86.2029,
-      "petrol": 105.87,
+      "petrol": 105.19,
       "diesel": 100.42,
       "cng": null
     },
