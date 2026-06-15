@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-14T06:27:57+00:00",
+  "lastUpdated": "2026-06-15T07:00:48+00:00",
   "source": "bankbazaar.com, petroldieselprice.com, goodreturns.in",
   "cities": [
     {
@@ -171,7 +171,7 @@
       "lng": 77.5946,
       "petrol": 110.89,
       "diesel": 98.8,
-      "cng": 95.0
+      "cng": 97.0
     },
     {
       "name": "Mysuru",
@@ -306,7 +306,7 @@
       "lng": 80.2707,
       "petrol": 107.87,
       "diesel": 99.66,
-      "cng": 96.0
+      "cng": 97.0
     },
     {
       "name": "Coimbatore",
