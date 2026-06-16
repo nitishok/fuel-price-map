@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-15T07:00:48+00:00",
+  "lastUpdated": "2026-06-16T07:11:37+00:00",
   "source": "bankbazaar.com, petroldieselprice.com, goodreturns.in",
   "cities": [
     {
@@ -683,7 +683,7 @@
       "lat": 14.4753,
       "lng": 78.8298,
       "petrol": 116.58,
-      "diesel": 103.82,
+      "diesel": 115.73,
       "cng": null
     },
     {
