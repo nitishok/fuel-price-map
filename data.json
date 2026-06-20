@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-19T06:55:00+00:00",
+  "lastUpdated": "2026-06-20T06:05:41+00:00",
   "source": "bankbazaar.com, petroldieselprice.com, goodreturns.in",
   "cities": [
     {
@@ -188,7 +188,7 @@
       "lat": 12.9141,
       "lng": 74.856,
       "petrol": 115.01,
-      "diesel": 86.0,
+      "diesel": 100.1,
       "cng": null
     },
     {
@@ -1197,7 +1197,7 @@
       "lng": 77.4126,
       "petrol": 114.45,
       "diesel": 99.56,
-      "cng": 88.25
+      "cng": 94.75
     },
     {
       "name": "Indore",
@@ -1277,7 +1277,7 @@
       "lat": 22.0574,
       "lng": 78.9382,
       "petrol": 114.61,
-      "diesel": 101.76,
+      "diesel": 99.64,
       "cng": null
     },
     {
