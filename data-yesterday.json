@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-23T05:52:24+00:00",
+  "lastUpdated": "2026-06-24T05:46:36+00:00",
   "source": "bankbazaar.com, petroldieselprice.com, goodreturns.in",
   "cities": [
     {
@@ -169,8 +169,8 @@
       "state": "Karnataka",
       "lat": 12.9716,
       "lng": 77.5946,
-      "petrol": 111.68,
-      "diesel": 99.56,
+      "petrol": 110.93,
+      "diesel": 98.8,
       "cng": 97.0
     },
     {
@@ -799,7 +799,7 @@
       "state": "Gujarat",
       "lat": 23.0225,
       "lng": 72.5714,
-      "petrol": 101.81,
+      "petrol": 101.83,
       "diesel": 97.92,
       "cng": 88.02
     },
@@ -1033,8 +1033,8 @@
       "state": "Uttar Pradesh",
       "lat": 26.8467,
       "lng": 80.9462,
-      "petrol": 101.92,
-      "diesel": 95.41,
+      "petrol": 102.08,
+      "diesel": 95.56,
       "cng": 95.75
     },
     {
@@ -1421,7 +1421,7 @@
       "lat": 30.7046,
       "lng": 76.7179,
       "petrol": 106.77,
-      "diesel": 95.48,
+      "diesel": 105.6,
       "cng": null
     },
     {
