@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-25T05:50:43+00:00",
+  "lastUpdated": "2026-06-26T05:59:10+00:00",
   "source": "bankbazaar.com, petroldieselprice.com, goodreturns.in",
   "cities": [
     {
@@ -106,8 +106,8 @@
       "state": "Maharashtra",
       "lat": 20.9374,
       "lng": 77.7796,
-      "petrol": 112.17,
-      "diesel": 98.85,
+      "petrol": 113.14,
+      "diesel": 99.78,
       "cng": null
     },
     {
@@ -799,8 +799,8 @@
       "state": "Gujarat",
       "lat": 23.0225,
       "lng": 72.5714,
-      "petrol": 102.15,
-      "diesel": 98.27,
+      "petrol": 101.83,
+      "diesel": 97.92,
       "cng": 88.02
     },
     {
@@ -1069,8 +1069,8 @@
       "state": "Uttar Pradesh",
       "lat": 28.5355,
       "lng": 77.391,
-      "petrol": 101.96,
-      "diesel": 95.44,
+      "petrol": 101.89,
+      "diesel": 95.37,
       "cng": null
     },
     {
@@ -1096,8 +1096,8 @@
       "state": "Uttar Pradesh",
       "lat": 28.9845,
       "lng": 77.7064,
-      "petrol": 101.99,
-      "diesel": 95.46,
+      "petrol": 101.69,
+      "diesel": 95.17,
       "cng": 91.5
     },
     {
@@ -1141,8 +1141,8 @@
       "state": "Uttar Pradesh",
       "lat": 26.7606,
       "lng": 83.3732,
-      "petrol": 102.13,
-      "diesel": 95.62,
+      "petrol": 102.33,
+      "diesel": 95.81,
       "cng": null
     },
     {
@@ -1250,7 +1250,7 @@
       "lat": 24.5854,
       "lng": 80.8305,
       "petrol": 116.02,
-      "diesel": 101.16,
+      "diesel": 101.15,
       "cng": null
     },
     {
@@ -1339,8 +1339,8 @@
       "state": "Bihar",
       "lat": 25.4182,
       "lng": 86.1272,
-      "petrol": 113.94,
-      "diesel": 99.9,
+      "petrol": 113.8,
+      "diesel": 99.77,
       "cng": null
     },
     {
@@ -1366,7 +1366,7 @@
       "state": "Punjab",
       "lat": 30.901,
       "lng": 75.8573,
-      "petrol": 105.79,
+      "petrol": 105.8,
       "diesel": 95.69,
       "cng": null
     },
@@ -1456,7 +1456,7 @@
       "state": "Haryana",
       "lat": 29.1492,
       "lng": 75.7217,
-      "petrol": 103.53,
+      "petrol": 103.54,
       "diesel": 96.17,
       "cng": null
     },
@@ -1465,8 +1465,8 @@
       "state": "Haryana",
       "lat": 29.6857,
       "lng": 76.9905,
-      "petrol": 102.22,
-      "diesel": 94.89,
+      "petrol": 102.42,
+      "diesel": 95.08,
       "cng": null
     },
     {
@@ -1717,8 +1717,8 @@
       "state": "Chhattisgarh",
       "lat": 22.3595,
       "lng": 82.7501,
-      "petrol": 108.06,
-      "diesel": 101.33,
+      "petrol": 107.74,
+      "diesel": 101.01,
       "cng": null
     },
     {
