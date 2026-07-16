@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-14T04:39:37+00:00",
+  "lastUpdated": "2026-07-15T04:39:38+00:00",
   "source": "bankbazaar.com, petroldieselprice.com, goodreturns.in",
   "cities": [
     {
@@ -169,8 +169,8 @@
       "state": "Karnataka",
       "lat": 12.9716,
       "lng": 77.5946,
-      "petrol": 110.82,
-      "diesel": 98.77,
+      "petrol": 111.68,
+      "diesel": 99.56,
       "cng": 97.0
     },
     {
@@ -656,7 +656,7 @@
       "lat": 17.0005,
       "lng": 81.804,
       "petrol": 116.64,
-      "diesel": 89.17,
+      "diesel": 104.34,
       "cng": null
     },
     {
@@ -701,7 +701,7 @@
       "lat": 15.5057,
       "lng": 80.0499,
       "petrol": 116.64,
-      "diesel": 89.17,
+      "diesel": 104.34,
       "cng": null
     },
     {
@@ -1250,7 +1250,7 @@
       "lat": 24.5854,
       "lng": 80.8305,
       "petrol": 116.02,
-      "diesel": 101.16,
+      "diesel": 101.15,
       "cng": null
     },
     {
