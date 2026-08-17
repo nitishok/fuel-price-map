@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-16T02:53:14+00:00",
+  "lastUpdated": "2026-08-17T02:54:01+00:00",
   "source": "bankbazaar.com, petroldieselprice.com, goodreturns.in",
   "cities": [
     {
@@ -259,8 +259,8 @@
       "state": "Karnataka",
       "lat": 13.0033,
       "lng": 76.1004,
-      "petrol": 111.27,
-      "diesel": 98.96,
+      "petrol": 111.05,
+      "diesel": 98.76,
       "cng": null
     },
     {
@@ -556,8 +556,8 @@
       "state": "Telangana",
       "lat": 17.9689,
       "lng": 79.5941,
-      "petrol": 115.62,
-      "diesel": 103.74,
+      "petrol": 115.13,
+      "diesel": 103.29,
       "cng": null
     },
     {
@@ -808,8 +808,8 @@
       "state": "Gujarat",
       "lat": 21.1702,
       "lng": 72.8311,
-      "petrol": 101.82,
-      "diesel": 97.95,
+      "petrol": 101.66,
+      "diesel": 97.79,
       "cng": 85.01
     },
     {
@@ -853,8 +853,8 @@
       "state": "Gujarat",
       "lat": 22.4707,
       "lng": 70.0577,
-      "petrol": 102.31,
-      "diesel": 98.43,
+      "petrol": 101.99,
+      "diesel": 98.11,
       "cng": null
     },
     {
@@ -871,8 +871,8 @@
       "state": "Gujarat",
       "lat": 21.5222,
       "lng": 70.4579,
-      "petrol": 102.05,
-      "diesel": 98.19,
+      "petrol": 102.79,
+      "diesel": 98.93,
       "cng": null
     },
     {
@@ -1033,7 +1033,7 @@
       "state": "Uttar Pradesh",
       "lat": 26.8467,
       "lng": 80.9462,
-      "petrol": 101.89,
+      "petrol": 101.86,
       "diesel": 95.36,
       "cng": 99.5
     },
@@ -1204,8 +1204,8 @@
       "state": "Madhya Pradesh",
       "lat": 22.7196,
       "lng": 75.8577,
-      "petrol": 114.58,
-      "diesel": 99.7,
+      "petrol": 115.46,
+      "diesel": 100.51,
       "cng": 97.76
     },
     {
@@ -1222,8 +1222,8 @@
       "state": "Madhya Pradesh",
       "lat": 23.1815,
       "lng": 79.9864,
-      "petrol": 116.17,
-      "diesel": 101.16,
+      "petrol": 114.51,
+      "diesel": 99.64,
       "cng": null
     },
     {
@@ -1619,7 +1619,7 @@
       "lat": 26.351,
       "lng": 92.6765,
       "petrol": 107.01,
-      "diesel": 98.56,
+      "diesel": 98.43,
       "cng": null
     },
     {
