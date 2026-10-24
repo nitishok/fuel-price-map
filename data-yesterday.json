@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-22T06:30:29+00:00",
+  "lastUpdated": "2026-10-23T06:23:46+00:00",
   "source": "bankbazaar.com, petroldieselprice.com, goodreturns.in",
   "cities": [
     {
@@ -359,7 +359,7 @@
       "lat": 12.9165,
       "lng": 79.1325,
       "petrol": 108.45,
-      "diesel": 100.24,
+      "diesel": 100.25,
       "cng": null
     },
     {
@@ -853,8 +853,8 @@
       "state": "Gujarat",
       "lat": 22.4707,
       "lng": 70.0577,
-      "petrol": 102.35,
-      "diesel": 98.47,
+      "petrol": 102.31,
+      "diesel": 98.43,
       "cng": null
     },
     {
@@ -862,8 +862,8 @@
       "state": "Gujarat",
       "lat": 21.7645,
       "lng": 72.1519,
-      "petrol": 103.19,
-      "diesel": 99.32,
+      "petrol": 103.05,
+      "diesel": 99.17,
       "cng": null
     },
     {
@@ -871,8 +871,8 @@
       "state": "Gujarat",
       "lat": 21.5222,
       "lng": 70.4579,
-      "petrol": 102.48,
-      "diesel": 98.62,
+      "petrol": 102.05,
+      "diesel": 98.19,
       "cng": null
     },
     {
@@ -1330,8 +1330,8 @@
       "state": "Bihar",
       "lat": 25.7771,
       "lng": 87.4753,
-      "petrol": 114.14,
-      "diesel": 100.09,
+      "petrol": 114.07,
+      "diesel": 100.02,
       "cng": null
     },
     {
@@ -1618,8 +1618,8 @@
       "state": "Assam",
       "lat": 26.351,
       "lng": 92.6765,
-      "petrol": 106.83,
-      "diesel": 98.25,
+      "petrol": 107.15,
+      "diesel": 98.56,
       "cng": null
     },
     {

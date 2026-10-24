@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-23T06:23:46+00:00",
+  "lastUpdated": "2026-10-24T06:19:28+00:00",
   "source": "bankbazaar.com, petroldieselprice.com, goodreturns.in",
   "cities": [
     {
@@ -359,7 +359,7 @@
       "lat": 12.9165,
       "lng": 79.1325,
       "petrol": 108.45,
-      "diesel": 100.25,
+      "diesel": 100.24,
       "cng": null
     },
     {
@@ -520,8 +520,8 @@
       "state": "Kerala",
       "lat": 11.051,
       "lng": 76.0711,
-      "petrol": 114.03,
-      "diesel": 102.94,
+      "petrol": 114.04,
+      "diesel": 102.95,
       "cng": null
     },
     {
@@ -664,8 +664,8 @@
       "state": "Andhra Pradesh",
       "lat": 15.8281,
       "lng": 78.0373,
-      "petrol": 118.03,
-      "diesel": 105.66,
+      "petrol": 117.95,
+      "diesel": 105.61,
       "cng": null
     },
     {
@@ -1357,7 +1357,7 @@
       "state": "Chandigarh (UT)",
       "lat": 30.7333,
       "lng": 76.7794,
-      "petrol": 101.54,
+      "petrol": 101.51,
       "diesel": 89.47,
       "cng": 93.8
     },
@@ -1366,7 +1366,7 @@
       "state": "Punjab",
       "lat": 30.901,
       "lng": 75.8573,
-      "petrol": 105.8,
+      "petrol": 105.79,
       "diesel": 95.69,
       "cng": null
     },
@@ -1447,8 +1447,8 @@
       "state": "Haryana",
       "lat": 29.3909,
       "lng": 76.9635,
-      "petrol": 102.23,
-      "diesel": 94.89,
+      "petrol": 102.52,
+      "diesel": 95.18,
       "cng": null
     },
     {
@@ -1672,8 +1672,8 @@
       "state": "Jharkhand",
       "lat": 23.9971,
       "lng": 85.3616,
-      "petrol": 106.01,
-      "diesel": 101.13,
+      "petrol": 106.18,
+      "diesel": 101.29,
       "cng": null
     },
     {
@@ -1807,7 +1807,7 @@
       "state": "Himachal Pradesh",
       "lat": 32.2396,
       "lng": 77.1887,
-      "petrol": 102.54,
+      "petrol": 99.9,
       "diesel": 94.52,
       "cng": null
     },
@@ -1816,7 +1816,7 @@
       "state": "Himachal Pradesh",
       "lat": 32.219,
       "lng": 76.3234,
-      "petrol": 102.54,
+      "petrol": 99.9,
       "diesel": 94.52,
       "cng": null
     },
