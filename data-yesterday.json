@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-25T06:39:03+00:00",
+  "lastUpdated": "2026-10-26T06:49:05+00:00",
   "source": "bankbazaar.com, petroldieselprice.com, goodreturns.in",
   "cities": [
     {
@@ -520,8 +520,8 @@
       "state": "Kerala",
       "lat": 11.051,
       "lng": 76.0711,
-      "petrol": 113.95,
-      "diesel": 102.86,
+      "petrol": 114.03,
+      "diesel": 102.94,
       "cng": null
     },
     {
@@ -691,8 +691,8 @@
       "state": "Andhra Pradesh",
       "lat": 14.6819,
       "lng": 77.6006,
-      "petrol": 117.58,
-      "diesel": 105.26,
+      "petrol": 117.61,
+      "diesel": 105.3,
       "cng": null
     },
     {
@@ -925,8 +925,8 @@
       "state": "Rajasthan",
       "lat": 24.5854,
       "lng": 73.7125,
-      "petrol": 113.46,
-      "diesel": 98.5,
+      "petrol": 113.37,
+      "diesel": 98.41,
       "cng": null
     },
     {
@@ -1366,7 +1366,7 @@
       "state": "Punjab",
       "lat": 30.901,
       "lng": 75.8573,
-      "petrol": 105.79,
+      "petrol": 105.8,
       "diesel": 95.69,
       "cng": null
     },
@@ -1421,7 +1421,7 @@
       "lat": 30.7046,
       "lng": 76.7179,
       "petrol": 106.77,
-      "diesel": 95.48,
+      "diesel": 105.6,
       "cng": null
     },
     {
@@ -1465,8 +1465,8 @@
       "state": "Haryana",
       "lat": 29.6857,
       "lng": 76.9905,
-      "petrol": 102.42,
-      "diesel": 95.08,
+      "petrol": 102.22,
+      "diesel": 94.89,
       "cng": null
     },
     {
@@ -1807,7 +1807,7 @@
       "state": "Himachal Pradesh",
       "lat": 32.2396,
       "lng": 77.1887,
-      "petrol": 99.9,
+      "petrol": 102.54,
       "diesel": 94.52,
       "cng": null
     },
@@ -1816,7 +1816,7 @@
       "state": "Himachal Pradesh",
       "lat": 32.219,
       "lng": 76.3234,
-      "petrol": 99.9,
+      "petrol": 102.54,
       "diesel": 94.52,
       "cng": null
     },
