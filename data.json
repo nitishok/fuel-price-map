@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-06T08:22:43+00:00",
+  "lastUpdated": "2026-11-07T07:40:22+00:00",
   "source": "bankbazaar.com, petroldieselprice.com, goodreturns.in",
   "cities": [
     {
@@ -286,8 +286,8 @@
       "state": "Karnataka",
       "lat": 16.2076,
       "lng": 77.3463,
-      "petrol": 112.07,
-      "diesel": 99.99,
+      "petrol": 112.14,
+      "diesel": 100.07,
       "cng": null
     },
     {
@@ -801,7 +801,7 @@
       "lng": 72.5714,
       "petrol": 102.15,
       "diesel": 98.27,
-      "cng": 98.47
+      "cng": 100.77
     },
     {
       "name": "Surat",
@@ -819,7 +819,7 @@
       "lng": 73.1812,
       "petrol": 101.46,
       "diesel": 97.57,
-      "cng": 96.55
+      "cng": 98.95
     },
     {
       "name": "Rajkot",
@@ -862,8 +862,8 @@
       "state": "Gujarat",
       "lat": 21.7645,
       "lng": 72.1519,
-      "petrol": 103.05,
-      "diesel": 99.17,
+      "petrol": 103.41,
+      "diesel": 99.53,
       "cng": null
     },
     {
@@ -909,7 +909,7 @@
       "lng": 75.7873,
       "petrol": 113.19,
       "diesel": 98.25,
-      "cng": 99.5
+      "cng": 101.5
     },
     {
       "name": "Jodhpur",
@@ -1197,7 +1197,7 @@
       "lng": 77.4126,
       "petrol": 114.36,
       "diesel": 99.48,
-      "cng": 97.5
+      "cng": 98.5
     },
     {
       "name": "Indore",
@@ -1331,7 +1331,7 @@
       "lat": 25.7771,
       "lng": 87.4753,
       "petrol": 114.14,
-      "diesel": 100.08,
+      "diesel": 100.09,
       "cng": null
     },
     {
@@ -1429,8 +1429,8 @@
       "state": "Haryana",
       "lat": 28.4595,
       "lng": 77.0266,
-      "petrol": 102.97,
-      "diesel": 95.64,
+      "petrol": 102.77,
+      "diesel": 95.44,
       "cng": 92.01
     },
     {
@@ -1440,15 +1440,15 @@
       "lng": 77.3178,
       "petrol": 103.35,
       "diesel": 96.01,
-      "cng": 102.6
+      "cng": 104.6
     },
     {
       "name": "Panipat",
       "state": "Haryana",
       "lat": 29.3909,
       "lng": 76.9635,
-      "petrol": 102.23,
-      "diesel": 94.89,
+      "petrol": 102.52,
+      "diesel": 95.18,
       "cng": null
     },
     {
@@ -1456,8 +1456,8 @@
       "state": "Haryana",
       "lat": 29.1492,
       "lng": 75.7217,
-      "petrol": 103.54,
-      "diesel": 96.17,
+      "petrol": 103.78,
+      "diesel": 96.4,
       "cng": null
     },
     {
@@ -1465,8 +1465,8 @@
       "state": "Haryana",
       "lat": 29.6857,
       "lng": 76.9905,
-      "petrol": 102.22,
-      "diesel": 94.89,
+      "petrol": 102.48,
+      "diesel": 95.14,
       "cng": null
     },
     {
@@ -1861,7 +1861,7 @@
       "state": "Jammu & Kashmir (UT)",
       "lat": 34.0837,
       "lng": 74.7973,
-      "petrol": 108.43,
+      "petrol": 108.41,
       "diesel": 96.42,
       "cng": null
     },
