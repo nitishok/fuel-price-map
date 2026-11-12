@@ -341,6 +341,26 @@ function priceCellHtml(price, yesterdayPrice) {
 const markerGroup = L.layerGroup().addTo(map);
 const markersByName = new Map();
 
+function cityPriceDescription(city) {
+  const details = [city.state];
+  if (city.priceBasis === "reference" && city.priceReference) {
+    details.push(`Nearby reference rate from ${city.priceReference}`);
+  }
+  if (city.priceUpdated) {
+    const date = new Date(`${city.priceUpdated}T00:00:00Z`).toLocaleDateString("en-IN", {
+      day: "numeric", month: "short", year: "numeric", timeZone: "UTC",
+    });
+    details.push(`Rates as of ${date}`);
+  }
+  return details.join(" · ");
+}
+
+function escapePopupText(value) {
+  return String(value ?? "").replace(/[&<>"']/g, ch => ({
+    "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;",
+  })[ch]);
+}
+
 function popupHtml(c) {
   const yest = YESTERDAY_MAP.get(c.name.toLowerCase());
   const pd = yest ? deltaHtml(c.petrol, yest.petrol) : "";
@@ -351,7 +371,7 @@ function popupHtml(c) {
   return `
     <div class="popup-inner">
       <div class="name">${c.name}</div>
-      <div class="region">${c.state}</div>
+      <div class="region">${escapePopupText(cityPriceDescription(c))}</div>
       <div class="row"><span class="k">Petrol</span><span class="v">₹ ${fmtPrice(c.petrol)} ${pd}</span></div>
       <div class="row"><span class="k">Diesel</span><span class="v">₹ ${fmtPrice(c.diesel)} ${dd}</span></div>
       ${cngRow}
@@ -411,7 +431,7 @@ const pcCngStations    = document.getElementById("pc-cng-stations");
 function showPriceCard(city, distanceKm) {
   _cardCity = city;
   pcName.textContent = city.name;
-  pcRegion.textContent = city.state;
+  pcRegion.textContent = cityPriceDescription(city);
 
   // Station finder links
   pcPetrolStations.href = `https://www.google.com/maps/search/petrol+station/@${city.lat},${city.lng},14z`;
@@ -553,7 +573,7 @@ function updateStatusLine() {
     timeStyle: "short",
   });
   statusEl.textContent =
-    `Prices for ${FUEL_CITIES.length} cities • last updated ${pretty}`;
+    `Prices for ${FUEL_CITIES.length} cities • last full refresh ${pretty}`;
   statusEl.classList.remove("is-stale");
 }
 

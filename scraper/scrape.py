@@ -3,8 +3,8 @@
 Fuel price scraper for the India Fuel Price Map project.
 
 Multi-source scraper that tries sources in priority order:
-  1. goodreturns.in        — Rs.XX.XX/Ltr in JSON-LD WebPage name, 2 reqs per city
-                             covers all 236 cities, no bot protection
+  1. goodreturns.in        — city page JSON-LD plus Maharashtra state price table
+                             for direct Maharashtra rates, with city validation
   2. bankbazaar.com        — hero price (font-size:32px anchor), 2 reqs per city
                              requires Google Referer header to bypass Cloudflare
   3. petroldieselprice.com — JSON-LD structured data, 1 req per city (both fuels)
@@ -27,12 +27,13 @@ from __future__ import annotations
 
 import argparse
 import http.client
+import html as html_lib
 import json
 import os
 import re
 import sys
 import time
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from typing import Optional
 from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
@@ -209,6 +210,31 @@ def candidate_slugs(name: str) -> list[str]:
     return [auto_slug(name)]
 
 
+_CITY_PAGE_ALIASES: dict[str, tuple[str, ...]] = {
+    "Ahmednagar": ("Ahmadnagar", "Ahilyanagar"),
+    "Beed": ("Bid",),
+    "Dharashiv": ("Osmanabad",),
+    "Bengaluru": ("Bangalore",),
+    "Thiruvananthapuram": ("Trivandrum",),
+    "Puducherry": ("Pondicherry",),
+}
+
+
+def _identity_key(value: str) -> str:
+    return re.sub(r"[^a-z0-9]", "", html_lib.unescape(value).lower())
+
+
+def _page_city_matches(page: str, name: str) -> bool:
+    """Require a requested city to appear in a page title or heading."""
+    expected = (_identity_key(name), *(_identity_key(x) for x in _CITY_PAGE_ALIASES.get(name, ())))
+    identity_markup = re.findall(r"<(?:title|h1|h2)\b[^>]*>(.*?)</(?:title|h1|h2)>", page, re.I | re.S)
+    identities = [
+        _identity_key(re.sub(r"<[^>]+>", " ", text))
+        for text in identity_markup
+    ]
+    return any(alias and any(alias in text for text in identities) for alias in expected)
+
+
 def title_slug(name: str) -> str:
     """Derive a Title-Case slug for petroldieselprice.com: 'New Delhi' -> 'New-Delhi'."""
     s = re.sub(r"\s*\([^)]*\)", "", name).strip()
@@ -246,6 +272,10 @@ def fetch_bankbazaar(name: str, verbose: bool = False) -> dict[str, Optional[flo
             html = fetch_url(url, extra_headers=_BB_HEADERS)
             if html is None:
                 continue
+            if not _page_city_matches(html, name):
+                if verbose:
+                    print(f"    [bb] page identity did not match {name}, skipping", file=sys.stderr)
+                continue
             price = _bb_parse(html)
             if price is not None:
                 result[fuel] = price
@@ -261,7 +291,7 @@ def fetch_bankbazaar(name: str, verbose: bool = False) -> dict[str, Optional[flo
 # JSON-LD on every page contains:
 #   "petrol price in {City} is ₹{P} per litre and the diesel price is ₹{D} per litre"
 _PDP_RE = re.compile(
-    r"petrol price in .+? is ₹(\d{2,3}(?:\.\d{1,2})) per litre "
+    r"petrol price in (.+?) is ₹(\d{2,3}(?:\.\d{1,2})) per litre "
     r"and the diesel price is ₹(\d{2,3}(?:\.\d{1,2})) per litre"
 )
 
@@ -288,7 +318,13 @@ def fetch_petroldieselprice(name: str, verbose: bool = False) -> dict[str, Optio
             continue
         m = _PDP_RE.search(html)
         if m:
-            p, d = float(m.group(1)), float(m.group(2))
+            if not any(alias in _identity_key(m.group(1)) for alias in (
+                _identity_key(name), *(_identity_key(x) for x in _CITY_PAGE_ALIASES.get(name, ()))
+            )):
+                if verbose:
+                    print(f"    [pdp] page identity did not match {name}, skipping", file=sys.stderr)
+                continue
+            p, d = float(m.group(2)), float(m.group(3))
             if 30.0 <= p <= 200.0:
                 result["petrol"] = p
             if 30.0 <= d <= 200.0:
@@ -363,12 +399,11 @@ def fetch_goodreturns(name: str, verbose: bool = False) -> dict[str, Optional[fl
         html = fetch_url(url)
         if html is None:
             continue
-        # Reject if the page doesn't mention this city (goodreturns serves a
-        # generic/Mumbai fallback for cities it doesn't cover).
-        city_word = slug.split("-")[0].lower()
-        if city_word not in html.lower():
+        # Reject generic/state fallbacks that can mention the city in links or
+        # boilerplate without actually reporting its price.
+        if not _page_city_matches(html, name) and not _GR_STATE_SLUG_RE.search(slug):
             if verbose:
-                print(f"    [gr] city not found in page, skipping", file=sys.stderr)
+                print(f"    [gr] page identity did not match {name}, skipping", file=sys.stderr)
             continue
         price = _gr_parse(html, slug=slug)
         if price is not None:
@@ -380,6 +415,72 @@ def fetch_goodreturns(name: str, verbose: bool = False) -> dict[str, Optional[fl
             print(f"    [gr] petrol==diesel ({result['petrol']}), rejecting", file=sys.stderr)
         return {"petrol": None, "diesel": None}
     return result
+
+
+_GR_MAHARASHTRA_TABLE: dict[str, dict[str, float]] | None = None
+_GR_MAHARASHTRA_TABLE_ALIASES = {
+    "Ahmednagar": "Ahmadnagar",
+    "Beed": "Bid",
+    "Dharashiv": "Osmanabad",
+    "Raigad": "Raigarh",
+}
+_INDIA_TIMEZONE = timezone(timedelta(hours=5, minutes=30))
+
+
+def _parse_city_price_table(page: str) -> dict[str, float]:
+    prices: dict[str, float] = {}
+    for row in re.findall(r"<tr\b[^>]*>(.*?)</tr>", page, re.I | re.S):
+        cells = re.findall(r"<td\b[^>]*>(.*?)</td>", row, re.I | re.S)
+        if len(cells) < 2:
+            continue
+        city = html_lib.unescape(re.sub(r"<[^>]+>", " ", cells[0])).strip()
+        cell = html_lib.unescape(re.sub(r"<[^>]+>", " ", cells[1])).replace(",", "")
+        match = re.search(r"₹\s*(\d{2,3}(?:\.\d{1,2})?)", cell)
+        if city and match:
+            prices[_identity_key(city)] = float(match.group(1))
+    return prices
+
+
+def fetch_goodreturns_maharashtra_table(verbose: bool = False) -> dict[str, dict[str, float]]:
+    """Load the city's petrol/diesel rows from Goodreturns' Maharashtra tables."""
+    global _GR_MAHARASHTRA_TABLE
+    if _GR_MAHARASHTRA_TABLE is not None:
+        return _GR_MAHARASHTRA_TABLE
+    table: dict[str, dict[str, float]] = {"petrol": {}, "diesel": {}}
+    for fuel in ("petrol", "diesel"):
+        url = f"https://www.goodreturns.in/{fuel}-price-in-maharashtra-s20.html"
+        if verbose:
+            print(f"    [gr-state] GET {url}", file=sys.stderr)
+        page = fetch_url(url)
+        if page:
+            table[fuel] = _parse_city_price_table(page)
+        time.sleep(REQUEST_DELAY_SEC)
+    _GR_MAHARASHTRA_TABLE = table
+    return table
+
+
+def fetch_maharashtra_table_city(name: str, verbose: bool = False) -> dict[str, Optional[float]]:
+    table = fetch_goodreturns_maharashtra_table(verbose=verbose)
+    source_name = _GR_MAHARASHTRA_TABLE_ALIASES.get(name, name)
+    key = _identity_key(source_name)
+    return {
+        "petrol": table["petrol"].get(key),
+        "diesel": table["diesel"].get(key),
+    }
+
+
+def _reject_maharashtra_outliers(prices: dict[str, Optional[float]], name: str, verbose: bool) -> None:
+    """Reject fallback values far outside Maharashtra's published city range."""
+    table = fetch_goodreturns_maharashtra_table(verbose=verbose)
+    for fuel in ("petrol", "diesel"):
+        value = prices.get(fuel)
+        published = list(table[fuel].values())
+        if value is not None and (not published or min(published) - 5 <= value <= max(published) + 5):
+            continue
+        if value is not None:
+            if verbose:
+                print(f"    [price-check] {fuel} {value} for {name} is outside Maharashtra's published range, skipping", file=sys.stderr)
+            prices[fuel] = None
 
 
 # ---------------------------------------------------------------------------
@@ -394,10 +495,15 @@ SOURCES = [
 
 
 def fetch_all_sources(
-    name: str, verbose: bool = False
+    name: str, state: str = "", verbose: bool = False
 ) -> tuple[Optional[float], Optional[float], str]:
     """Try each source in order until both petrol & diesel are found.
     Returns (petrol, diesel, source_name)."""
+    if state == "Maharashtra":
+        city_table_prices = fetch_maharashtra_table_city(name, verbose=verbose)
+        if city_table_prices["petrol"] is not None and city_table_prices["diesel"] is not None:
+            return city_table_prices["petrol"], city_table_prices["diesel"], "goodreturns-maharashtra-table"
+
     petrol: Optional[float] = None
     diesel: Optional[float] = None
     sources_used: list[str] = []
@@ -406,6 +512,8 @@ def fetch_all_sources(
         if petrol is not None and diesel is not None:
             break  # already have both, done
         prices = fetcher(name, verbose=verbose)
+        if state == "Maharashtra":
+            _reject_maharashtra_outliers(prices, name, verbose)
         if petrol is None and prices["petrol"] is not None:
             petrol = prices["petrol"]
             sources_used.append(src_name)
@@ -432,18 +540,24 @@ def bootstrap_from_data_js() -> dict:
         r'lat:\s*(-?\d+\.?\d*),\s*'
         r'lng:\s*(-?\d+\.?\d*),\s*'
         r'petrol:\s*(-?\d+\.?\d*),\s*'
-        r'diesel:\s*(-?\d+\.?\d*)\s*\}'
+        r'diesel:\s*(-?\d+\.?\d*)([^}]*)\}'
     )
     cities = []
     for m in pattern.finditer(src):
-        cities.append({
+        city = {
             "name": m.group(1),
             "state": m.group(2),
             "lat": float(m.group(3)),
             "lng": float(m.group(4)),
             "petrol": float(m.group(5)),
             "diesel": float(m.group(6)),
-        })
+        }
+        metadata = m.group(7)
+        for key in ("priceBasis", "priceReference", "priceSourceCity", "priceUpdated"):
+            found = re.search(rf'{key}:\s*"([^"]+)"', metadata)
+            if found:
+                city[key] = found.group(1)
+        cities.append(city)
     if not cities:
         raise RuntimeError("Could not parse any cities from data.js")
     return {"lastUpdated": None, "source": "bootstrap:data.js", "cities": cities}
@@ -574,7 +688,8 @@ def main(argv: list[str]) -> int:
         if args.verbose:
             print(f"[{idx}/{len(targets)}] {name}", file=sys.stderr)
 
-        new_petrol, new_diesel, src = fetch_all_sources(name, verbose=args.verbose)
+        source_city = city.get("priceSourceCity", name)
+        new_petrol, new_diesel, src = fetch_all_sources(source_city, state=city.get("state", ""), verbose=args.verbose)
 
         # Spike guard: in India diesel is always cheaper than petrol.
         # If the new prices would make diesel >= petrol, the data is bad — skip both.
@@ -602,6 +717,8 @@ def main(argv: list[str]) -> int:
                 updated.append(f"diesel {city['diesel']}->{new_diesel}")
             city["diesel"] = round(new_diesel, 2)
             stats["diesel_ok"] += 1
+        if new_petrol is not None or new_diesel is not None:
+            city["priceUpdated"] = datetime.now(_INDIA_TIMEZONE).date().isoformat()
         if new_cng is not None:
             if abs(new_cng - (city.get("cng") or 0)) > 0.001:
                 updated.append(f"cng {city.get('cng')}->{new_cng}")

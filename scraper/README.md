@@ -21,7 +21,8 @@ Cloudflare bot detection — this is included in the scraper automatically.
 
 **petroldieselprice** uses a JSON-LD description sentence (`"petrol price in
 {City} is ₹X per litre and the diesel price is ₹Y per litre"`) which is
-stable and easy to parse.
+stable and easy to parse. City names in page titles/headings are checked before
+accepting prices so generic fallback pages are skipped.
 
 ## How it works
 
@@ -35,7 +36,7 @@ stable and easy to parse.
 From the project root:
 
 ```bash
-# Refresh everything (~8–12 minutes for ~240 cities).
+# Refresh everything (~8–12 minutes for ~286 cities).
 python3 scraper/scrape.py --verbose
 
 # Test a few cities without writing data.json.
@@ -71,8 +72,15 @@ To use system cron instead, add this to `crontab -e`:
 
 ## Adding new cities
 
-1. Add the city to `data.js` (name, state, lat, lng, seed petrol/diesel values).
-2. Delete `data.json` and re-run the scraper to pick up the new entry:
-   ```bash
-   rm data.json && python3 scraper/scrape.py --verbose
-   ```
+1. Add the city to both `data.js` and `data.json` (name, state, coordinates,
+   petrol/diesel values, and the relevant source metadata).
+2. Add a source slug override when the city page uses a different spelling.
+3. Run a targeted scrape for the new entry to check that its source page matches
+   the requested city before refreshing the full dataset.
+
+For Maharashtra entries, `priceSourceCity` names the city row used by the
+daily Maharashtra price-table lookup. Set `priceBasis` to `city` when that row
+is for the same city; for nearby reference rates, set it to `reference` and
+include a user-facing `priceReference`. The map displays this label alongside
+the rates. Keep the matching record in `data.json` as well as `data.js` so
+normal page loads and the static fallback agree.
