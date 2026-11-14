@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-13T08:34:57+00:00",
+  "lastUpdated": "2026-11-14T07:58:31+00:00",
   "source": "bankbazaar.com, petroldieselprice.com, goodreturns.in",
   "cities": [
     {
@@ -10,7 +10,7 @@
       "petrol": 102.12,
       "diesel": 95.2,
       "cng": 86.98,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Dwarka (Delhi)",
@@ -29,7 +29,7 @@
       "petrol": 111.21,
       "diesel": 97.83,
       "cng": 89.0,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Thane",
@@ -39,7 +39,7 @@
       "petrol": 111.31,
       "diesel": 97.97,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Navi Mumbai",
@@ -49,7 +49,7 @@
       "petrol": 111.21,
       "diesel": 97.83,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Pune",
@@ -59,7 +59,7 @@
       "petrol": 111.9,
       "diesel": 98.55,
       "cng": 100.5,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Nagpur",
@@ -69,7 +69,7 @@
       "petrol": 111.72,
       "diesel": 98.38,
       "cng": 88.9,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Nashik",
@@ -79,7 +79,7 @@
       "petrol": 112.24,
       "diesel": 98.89,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Aurangabad",
@@ -89,7 +89,7 @@
       "petrol": 112.08,
       "diesel": 98.72,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Kolhapur",
@@ -99,7 +99,7 @@
       "petrol": 112.6,
       "diesel": 99.25,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Solapur",
@@ -109,7 +109,7 @@
       "petrol": 111.85,
       "diesel": 98.52,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Amravati",
@@ -119,7 +119,7 @@
       "petrol": 111.97,
       "diesel": 98.64,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Sangli",
@@ -129,7 +129,7 @@
       "petrol": 112.44,
       "diesel": 99.11,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Jalgaon",
@@ -139,7 +139,7 @@
       "petrol": 112.57,
       "diesel": 99.2,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Ratnagiri",
@@ -149,7 +149,7 @@
       "petrol": 113.17,
       "diesel": 99.83,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Latur",
@@ -159,7 +159,7 @@
       "petrol": 112.61,
       "diesel": 99.21,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Akola",
@@ -169,7 +169,7 @@
       "petrol": 111.78,
       "diesel": 98.48,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Chandrapur",
@@ -179,7 +179,7 @@
       "petrol": 112.58,
       "diesel": 99.26,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Bengaluru",
@@ -189,7 +189,7 @@
       "petrol": 111.68,
       "diesel": 99.56,
       "cng": 99.0,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Mysuru",
@@ -199,7 +199,7 @@
       "petrol": 110.37,
       "diesel": 98.29,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Mangaluru",
@@ -209,7 +209,7 @@
       "petrol": 109.84,
       "diesel": 97.77,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Hubballi",
@@ -237,7 +237,7 @@
       "petrol": 112.04,
       "diesel": 100.02,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Ballari",
@@ -274,7 +274,7 @@
       "petrol": 110.56,
       "diesel": 98.46,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Hassan",
@@ -284,7 +284,7 @@
       "petrol": 111.23,
       "diesel": 98.94,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Kalaburagi",
@@ -294,7 +294,7 @@
       "petrol": 110.66,
       "diesel": 98.61,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Bidar",
@@ -304,7 +304,7 @@
       "petrol": 111.2,
       "diesel": 99.11,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Raichur",
@@ -314,7 +314,7 @@
       "petrol": 112.07,
       "diesel": 99.99,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Chikkamagaluru",
@@ -333,7 +333,7 @@
       "petrol": 107.76,
       "diesel": 99.55,
       "cng": 99.5,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Coimbatore",
@@ -343,7 +343,7 @@
       "petrol": 108.63,
       "diesel": 100.45,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Madurai",
@@ -353,7 +353,7 @@
       "petrol": 108.5,
       "diesel": 100.34,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Tiruchirappalli",
@@ -363,7 +363,7 @@
       "petrol": 108.23,
       "diesel": 100.32,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Salem",
@@ -373,7 +373,7 @@
       "petrol": 108.6,
       "diesel": 100.43,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Tirunelveli",
@@ -383,7 +383,7 @@
       "petrol": 108.67,
       "diesel": 100.52,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Vellore",
@@ -393,7 +393,7 @@
       "petrol": 108.45,
       "diesel": 100.24,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Erode",
@@ -403,7 +403,7 @@
       "petrol": 108.67,
       "diesel": 100.48,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Tiruppur",
@@ -413,7 +413,7 @@
       "petrol": 107.74,
       "diesel": 99.55,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Thanjavur",
@@ -423,7 +423,7 @@
       "petrol": 108.85,
       "diesel": 100.68,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Dindigul",
@@ -433,7 +433,7 @@
       "petrol": 108.36,
       "diesel": 100.2,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Nagercoil",
@@ -443,7 +443,7 @@
       "petrol": 108.68,
       "diesel": 100.54,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Kanchipuram",
@@ -453,7 +453,7 @@
       "petrol": 107.87,
       "diesel": 99.65,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Cuddalore",
@@ -463,7 +463,7 @@
       "petrol": 109.12,
       "diesel": 100.94,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Ooty",
@@ -473,7 +473,7 @@
       "petrol": 107.74,
       "diesel": 99.55,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Thiruvananthapuram",
@@ -483,7 +483,7 @@
       "petrol": 115.49,
       "diesel": 104.4,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Kochi",
@@ -493,7 +493,7 @@
       "petrol": 112.99,
       "diesel": 104.15,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Kozhikode",
@@ -503,7 +503,7 @@
       "petrol": 113.79,
       "diesel": 102.71,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Thrissur",
@@ -513,7 +513,7 @@
       "petrol": 114.62,
       "diesel": 103.48,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Kollam",
@@ -523,7 +523,7 @@
       "petrol": 114.8,
       "diesel": 103.64,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Alappuzha",
@@ -533,7 +533,7 @@
       "petrol": 114.19,
       "diesel": 103.08,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Kottayam",
@@ -543,7 +543,7 @@
       "petrol": 114.0,
       "diesel": 102.88,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Palakkad",
@@ -553,7 +553,7 @@
       "petrol": 114.55,
       "diesel": 103.41,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Kannur",
@@ -563,7 +563,7 @@
       "petrol": 114.59,
       "diesel": 103.47,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Malappuram",
@@ -573,7 +573,7 @@
       "petrol": 114.03,
       "diesel": 102.94,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Kasaragod",
@@ -583,7 +583,7 @@
       "petrol": 115.5,
       "diesel": 104.37,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Munnar",
@@ -593,7 +593,7 @@
       "petrol": 115.34,
       "diesel": 104.15,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Hyderabad",
@@ -603,7 +603,7 @@
       "petrol": 116.15,
       "diesel": 104.23,
       "cng": 112.0,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Warangal",
@@ -613,7 +613,7 @@
       "petrol": 115.71,
       "diesel": 103.82,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Nizamabad",
@@ -623,7 +623,7 @@
       "petrol": 117.07,
       "diesel": 105.22,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Karimnagar",
@@ -633,7 +633,7 @@
       "petrol": 115.73,
       "diesel": 103.82,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Khammam",
@@ -643,7 +643,7 @@
       "petrol": 115.72,
       "diesel": 103.82,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Mahbubnagar",
@@ -662,7 +662,7 @@
       "petrol": 117.08,
       "diesel": 105.25,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Amaravati",
@@ -672,7 +672,7 @@
       "petrol": 117.51,
       "diesel": 105.2,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Visakhapatnam",
@@ -682,7 +682,7 @@
       "petrol": 116.39,
       "diesel": 104.11,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Vijayawada",
@@ -692,7 +692,7 @@
       "petrol": 117.25,
       "diesel": 104.96,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Tirupati",
@@ -702,7 +702,7 @@
       "petrol": 117.88,
       "diesel": 105.49,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Guntur",
@@ -712,7 +712,7 @@
       "petrol": 117.68,
       "diesel": 105.36,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Rajahmundry",
@@ -722,7 +722,7 @@
       "petrol": 116.64,
       "diesel": 104.34,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Kurnool",
@@ -732,7 +732,7 @@
       "petrol": 117.95,
       "diesel": 105.61,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Nellore",
@@ -742,7 +742,7 @@
       "petrol": 118.14,
       "diesel": 105.73,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Kadapa",
@@ -761,7 +761,7 @@
       "petrol": 117.61,
       "diesel": 105.3,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Ongole",
@@ -771,7 +771,7 @@
       "petrol": 116.64,
       "diesel": 104.34,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Chittoor",
@@ -781,7 +781,7 @@
       "petrol": 118.34,
       "diesel": 106.06,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Kolkata",
@@ -791,7 +791,7 @@
       "petrol": 113.51,
       "diesel": 99.82,
       "cng": 103.0,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Howrah",
@@ -801,7 +801,7 @@
       "petrol": 113.5,
       "diesel": 99.82,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Siliguri",
@@ -811,7 +811,7 @@
       "petrol": 113.51,
       "diesel": 99.82,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Durgapur",
@@ -821,7 +821,7 @@
       "petrol": 113.51,
       "diesel": 99.82,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Asansol",
@@ -831,7 +831,7 @@
       "petrol": 113.51,
       "diesel": 99.82,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Darjeeling",
@@ -841,7 +841,7 @@
       "petrol": 113.18,
       "diesel": 99.54,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Malda",
@@ -851,7 +851,7 @@
       "petrol": 113.26,
       "diesel": 99.61,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Kharagpur",
@@ -861,7 +861,7 @@
       "petrol": 113.51,
       "diesel": 99.82,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Bardhaman",
@@ -871,7 +871,7 @@
       "petrol": 113.51,
       "diesel": 99.82,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Ahmedabad",
@@ -881,7 +881,7 @@
       "petrol": 102.15,
       "diesel": 98.27,
       "cng": 100.77,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Surat",
@@ -891,7 +891,7 @@
       "petrol": 101.82,
       "diesel": 97.95,
       "cng": 88.76,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Vadodara",
@@ -901,7 +901,7 @@
       "petrol": 101.46,
       "diesel": 97.57,
       "cng": 98.95,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Rajkot",
@@ -911,7 +911,7 @@
       "petrol": 101.59,
       "diesel": 97.72,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Gandhinagar",
@@ -921,7 +921,7 @@
       "petrol": 102.04,
       "diesel": 98.15,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Bhuj",
@@ -931,7 +931,7 @@
       "petrol": 101.83,
       "diesel": 97.92,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Jamnagar",
@@ -941,7 +941,7 @@
       "petrol": 102.31,
       "diesel": 98.43,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Bhavnagar",
@@ -951,7 +951,7 @@
       "petrol": 103.41,
       "diesel": 99.53,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Junagadh",
@@ -961,7 +961,7 @@
       "petrol": 102.71,
       "diesel": 98.85,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Anand",
@@ -971,7 +971,7 @@
       "petrol": 101.77,
       "diesel": 97.89,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Dwarka",
@@ -990,7 +990,7 @@
       "petrol": 101.83,
       "diesel": 97.92,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Jaipur",
@@ -1000,7 +1000,7 @@
       "petrol": 113.19,
       "diesel": 98.25,
       "cng": 101.5,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Jodhpur",
@@ -1010,7 +1010,7 @@
       "petrol": 112.49,
       "diesel": 97.63,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Udaipur",
@@ -1020,7 +1020,7 @@
       "petrol": 113.37,
       "diesel": 98.41,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Kota",
@@ -1030,7 +1030,7 @@
       "petrol": 112.21,
       "diesel": 97.36,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Ajmer",
@@ -1040,7 +1040,7 @@
       "petrol": 112.31,
       "diesel": 97.46,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Bikaner",
@@ -1050,7 +1050,7 @@
       "petrol": 114.15,
       "diesel": 99.29,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Alwar",
@@ -1060,7 +1060,7 @@
       "petrol": 113.07,
       "diesel": 98.12,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Bharatpur",
@@ -1070,7 +1070,7 @@
       "petrol": 112.28,
       "diesel": 97.41,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Sikar",
@@ -1080,7 +1080,7 @@
       "petrol": 113.57,
       "diesel": 98.59,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Pali",
@@ -1090,7 +1090,7 @@
       "petrol": 113.69,
       "diesel": 98.71,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Sri Ganganagar",
@@ -1100,7 +1100,7 @@
       "petrol": 112.66,
       "diesel": 97.78,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Jaisalmer",
@@ -1110,7 +1110,7 @@
       "petrol": 114.16,
       "diesel": 99.3,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Mount Abu",
@@ -1138,7 +1138,7 @@
       "petrol": 101.89,
       "diesel": 95.36,
       "cng": 107.0,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Kanpur",
@@ -1157,7 +1157,7 @@
       "petrol": 101.66,
       "diesel": 95.14,
       "cng": 107.0,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Varanasi",
@@ -1167,7 +1167,7 @@
       "petrol": 102.51,
       "diesel": 95.96,
       "cng": 93.0,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Noida",
@@ -1177,7 +1177,7 @@
       "petrol": 101.96,
       "diesel": 95.44,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Ghaziabad",
@@ -1187,7 +1187,7 @@
       "petrol": 101.88,
       "diesel": 95.36,
       "cng": 95.59,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Prayagraj",
@@ -1197,7 +1197,7 @@
       "petrol": 101.96,
       "diesel": 95.46,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Meerut",
@@ -1207,7 +1207,7 @@
       "petrol": 101.99,
       "diesel": 95.46,
       "cng": 96.5,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Aligarh",
@@ -1217,7 +1217,7 @@
       "petrol": 101.92,
       "diesel": 95.38,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Moradabad",
@@ -1227,7 +1227,7 @@
       "petrol": 102.11,
       "diesel": 95.59,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Bareilly",
@@ -1237,7 +1237,7 @@
       "petrol": 101.78,
       "diesel": 95.27,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Saharanpur",
@@ -1247,7 +1247,7 @@
       "petrol": 102.89,
       "diesel": 96.28,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Gorakhpur",
@@ -1257,7 +1257,7 @@
       "petrol": 102.33,
       "diesel": 95.81,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Mathura",
@@ -1267,7 +1267,7 @@
       "petrol": 101.44,
       "diesel": 94.91,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Vrindavan",
@@ -1286,7 +1286,7 @@
       "petrol": 101.89,
       "diesel": 95.36,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Jhansi",
@@ -1296,7 +1296,7 @@
       "petrol": 102.81,
       "diesel": 96.2,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Firozabad",
@@ -1306,7 +1306,7 @@
       "petrol": 102.04,
       "diesel": 95.51,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Bhopal",
@@ -1316,7 +1316,7 @@
       "petrol": 114.36,
       "diesel": 99.48,
       "cng": 98.5,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Indore",
@@ -1326,7 +1326,7 @@
       "petrol": 114.58,
       "diesel": 99.7,
       "cng": 97.76,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Gwalior",
@@ -1336,7 +1336,7 @@
       "petrol": 114.48,
       "diesel": 99.59,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Jabalpur",
@@ -1346,7 +1346,7 @@
       "petrol": 116.17,
       "diesel": 101.16,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Ujjain",
@@ -1356,7 +1356,7 @@
       "petrol": 114.99,
       "diesel": 100.06,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Sagar",
@@ -1366,7 +1366,7 @@
       "petrol": 114.13,
       "diesel": 99.26,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Satna",
@@ -1376,7 +1376,7 @@
       "petrol": 116.02,
       "diesel": 101.15,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Rewa",
@@ -1386,7 +1386,7 @@
       "petrol": 115.47,
       "diesel": 100.51,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Khajuraho",
@@ -1405,7 +1405,7 @@
       "petrol": 114.61,
       "diesel": 99.64,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Patna",
@@ -1415,7 +1415,7 @@
       "petrol": 113.35,
       "diesel": 99.36,
       "cng": 93.0,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Gaya",
@@ -1425,17 +1425,17 @@
       "petrol": 114.31,
       "diesel": 100.26,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Muzaffarpur",
       "state": "Bihar",
       "lat": 26.1197,
       "lng": 85.391,
-      "petrol": 114.07,
-      "diesel": 100.02,
+      "petrol": 114.1,
+      "diesel": 100.05,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Bhagalpur",
@@ -1445,7 +1445,7 @@
       "petrol": 114.37,
       "diesel": 100.3,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Darbhanga",
@@ -1455,7 +1455,7 @@
       "petrol": 114.16,
       "diesel": 100.1,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Purnia",
@@ -1465,7 +1465,7 @@
       "petrol": 114.14,
       "diesel": 100.08,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Begusarai",
@@ -1475,7 +1475,7 @@
       "petrol": 113.94,
       "diesel": 99.9,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Ara",
@@ -1494,7 +1494,7 @@
       "petrol": 101.54,
       "diesel": 89.47,
       "cng": 96.3,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Ludhiana",
@@ -1504,7 +1504,7 @@
       "petrol": 105.79,
       "diesel": 95.69,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Amritsar",
@@ -1514,7 +1514,7 @@
       "petrol": 105.56,
       "diesel": 95.47,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Jalandhar",
@@ -1524,7 +1524,7 @@
       "petrol": 104.82,
       "diesel": 94.76,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Patiala",
@@ -1534,7 +1534,7 @@
       "petrol": 105.69,
       "diesel": 95.59,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Bathinda",
@@ -1544,7 +1544,7 @@
       "petrol": 104.63,
       "diesel": 94.57,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Pathankot",
@@ -1554,7 +1554,7 @@
       "petrol": 105.68,
       "diesel": 95.59,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Mohali",
@@ -1564,7 +1564,7 @@
       "petrol": 106.77,
       "diesel": 95.48,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Gurugram",
@@ -1574,7 +1574,7 @@
       "petrol": 102.97,
       "diesel": 95.2,
       "cng": 92.01,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Faridabad",
@@ -1584,7 +1584,7 @@
       "petrol": 103.35,
       "diesel": 96.01,
       "cng": 104.6,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Panipat",
@@ -1594,7 +1594,7 @@
       "petrol": 102.52,
       "diesel": 95.18,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Hisar",
@@ -1604,7 +1604,7 @@
       "petrol": 103.78,
       "diesel": 96.4,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Karnal",
@@ -1614,7 +1614,7 @@
       "petrol": 102.22,
       "diesel": 94.89,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Ambala",
@@ -1624,7 +1624,7 @@
       "petrol": 103.32,
       "diesel": 95.96,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Rohtak",
@@ -1634,7 +1634,7 @@
       "petrol": 103.11,
       "diesel": 95.75,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Rewari",
@@ -1644,7 +1644,7 @@
       "petrol": 102.58,
       "diesel": 95.26,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Sonipat",
@@ -1654,7 +1654,7 @@
       "petrol": 102.72,
       "diesel": 95.37,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Bhubaneswar",
@@ -1664,7 +1664,7 @@
       "petrol": 108.97,
       "diesel": 100.68,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Cuttack",
@@ -1674,7 +1674,7 @@
       "petrol": 109.2,
       "diesel": 100.9,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Rourkela",
@@ -1693,7 +1693,7 @@
       "petrol": 109.27,
       "diesel": 100.97,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Berhampur",
@@ -1712,7 +1712,7 @@
       "petrol": 109.63,
       "diesel": 101.34,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Balasore",
@@ -1731,7 +1731,7 @@
       "petrol": 105.73,
       "diesel": 97.23,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Dibrugarh",
@@ -1741,7 +1741,7 @@
       "petrol": 107.77,
       "diesel": 99.16,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Silchar",
@@ -1751,7 +1751,7 @@
       "petrol": 105.73,
       "diesel": 97.23,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Jorhat",
@@ -1761,7 +1761,7 @@
       "petrol": 106.29,
       "diesel": 97.74,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Tezpur",
@@ -1771,7 +1771,7 @@
       "petrol": 105.73,
       "diesel": 97.23,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Nagaon",
@@ -1781,7 +1781,7 @@
       "petrol": 107.15,
       "diesel": 98.56,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Tinsukia",
@@ -1791,7 +1791,7 @@
       "petrol": 106.05,
       "diesel": 97.53,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Ranchi",
@@ -1801,7 +1801,7 @@
       "petrol": 106.19,
       "diesel": 101.31,
       "cng": 94.5,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Jamshedpur",
@@ -1811,7 +1811,7 @@
       "petrol": 105.19,
       "diesel": 100.42,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Dhanbad",
@@ -1821,7 +1821,7 @@
       "petrol": 105.66,
       "diesel": 100.86,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Bokaro",
@@ -1831,7 +1831,7 @@
       "petrol": 105.72,
       "diesel": 100.86,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Hazaribagh",
@@ -1841,7 +1841,7 @@
       "petrol": 106.01,
       "diesel": 101.13,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Deoghar",
@@ -1851,7 +1851,7 @@
       "petrol": 104.99,
       "diesel": 100.21,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Raipur",
@@ -1861,7 +1861,7 @@
       "petrol": 108.06,
       "diesel": 101.32,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Bilaspur",
@@ -1871,7 +1871,7 @@
       "petrol": 102.08,
       "diesel": 94.13,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Durg",
@@ -1881,17 +1881,17 @@
       "petrol": 108.35,
       "diesel": 101.61,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Korba",
       "state": "Chhattisgarh",
       "lat": 22.3595,
       "lng": 82.7501,
-      "petrol": 107.74,
-      "diesel": 101.01,
+      "petrol": 108.06,
+      "diesel": 101.33,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Jagdalpur",
@@ -1901,7 +1901,7 @@
       "petrol": 108.06,
       "diesel": 101.32,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Dehradun",
@@ -1911,7 +1911,7 @@
       "petrol": 99.54,
       "diesel": 95.05,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Haridwar",
@@ -1921,7 +1921,7 @@
       "petrol": 101.55,
       "diesel": 95.04,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Nainital",
@@ -1931,7 +1931,7 @@
       "petrol": 100.05,
       "diesel": 95.58,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Rishikesh",
@@ -1968,7 +1968,7 @@
       "petrol": 100.51,
       "diesel": 95.9,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Shimla",
@@ -1978,7 +1978,7 @@
       "petrol": 103.15,
       "diesel": 95.28,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Manali",
@@ -1988,7 +1988,7 @@
       "petrol": 103.15,
       "diesel": 95.13,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Dharamshala",
@@ -1998,7 +1998,7 @@
       "petrol": 103.15,
       "diesel": 95.13,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Kullu",
@@ -2008,7 +2008,7 @@
       "petrol": 103.2,
       "diesel": 95.22,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Solan",
@@ -2018,7 +2018,7 @@
       "petrol": 102.26,
       "diesel": 94.26,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Mandi",
@@ -2028,7 +2028,7 @@
       "petrol": 103.19,
       "diesel": 95.29,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Bilaspur HP",
@@ -2047,7 +2047,7 @@
       "petrol": 108.41,
       "diesel": 96.42,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Jammu",
@@ -2057,7 +2057,7 @@
       "petrol": 104.13,
       "diesel": 92.81,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Anantnag",
@@ -2067,7 +2067,7 @@
       "petrol": 108.35,
       "diesel": 96.37,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Baramulla",
@@ -2086,7 +2086,7 @@
       "petrol": 105.38,
       "diesel": 93.81,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Katra",
@@ -2123,7 +2123,7 @@
       "petrol": 110.01,
       "diesel": 94.73,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Panaji",
@@ -2133,7 +2133,7 @@
       "petrol": 104.0,
       "diesel": 95.88,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Margao",
@@ -2143,7 +2143,7 @@
       "petrol": 104.0,
       "diesel": 95.88,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Vasco da Gama",
@@ -2153,7 +2153,7 @@
       "petrol": 104.0,
       "diesel": 95.88,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Mapusa",
@@ -2163,7 +2163,7 @@
       "petrol": 104.0,
       "diesel": 95.88,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Imphal",
@@ -2171,9 +2171,9 @@
       "lat": 24.817,
       "lng": 93.9368,
       "petrol": 107.32,
-      "diesel": 92.97,
+      "diesel": 92.59,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Agartala",
@@ -2183,7 +2183,7 @@
       "petrol": 104.96,
       "diesel": 93.85,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Shillong",
@@ -2193,7 +2193,7 @@
       "petrol": 102.64,
       "diesel": 94.13,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Tura",
@@ -2212,7 +2212,7 @@
       "petrol": 106.54,
       "diesel": 95.16,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Kohima",
@@ -2222,7 +2222,7 @@
       "petrol": 104.9,
       "diesel": 96.18,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Dimapur",
@@ -2232,7 +2232,7 @@
       "petrol": 103.67,
       "diesel": 95.21,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Itanagar",
@@ -2242,7 +2242,7 @@
       "petrol": 97.96,
       "diesel": 87.32,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Tawang",
@@ -2252,7 +2252,7 @@
       "petrol": 99.86,
       "diesel": 89.23,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Gangtok",
@@ -2262,7 +2262,7 @@
       "petrol": 110.8,
       "diesel": 97.7,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Namchi",
@@ -2272,7 +2272,7 @@
       "petrol": 110.8,
       "diesel": 97.7,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Port Blair",
@@ -2282,7 +2282,7 @@
       "petrol": 88.66,
       "diesel": 84.56,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Kavaratti",
@@ -2301,7 +2301,7 @@
       "petrol": 103.58,
       "diesel": 93.79,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Karaikal",
@@ -2311,7 +2311,7 @@
       "petrol": 103.32,
       "diesel": 93.59,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Yanam",
@@ -2321,7 +2321,7 @@
       "petrol": 103.58,
       "diesel": 93.79,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Mahe",
@@ -2331,7 +2331,7 @@
       "petrol": 103.58,
       "diesel": 93.79,
       "cng": null,
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Pimpri-Chinchwad",
@@ -2343,7 +2343,7 @@
       "cng": null,
       "priceBasis": "reference",
       "priceSourceCity": "Pune",
-      "priceUpdated": "2026-11-13",
+      "priceUpdated": "2026-11-14",
       "priceReference": "Pune"
     },
     {
@@ -2356,7 +2356,7 @@
       "cng": null,
       "priceBasis": "reference",
       "priceSourceCity": "Thane",
-      "priceUpdated": "2026-11-13",
+      "priceUpdated": "2026-11-14",
       "priceReference": "Thane"
     },
     {
@@ -2369,7 +2369,7 @@
       "cng": null,
       "priceBasis": "reference",
       "priceSourceCity": "Palghar",
-      "priceUpdated": "2026-11-13",
+      "priceUpdated": "2026-11-14",
       "priceReference": "Palghar"
     },
     {
@@ -2382,7 +2382,7 @@
       "cng": null,
       "priceBasis": "reference",
       "priceSourceCity": "Thane",
-      "priceUpdated": "2026-11-13",
+      "priceUpdated": "2026-11-14",
       "priceReference": "Thane"
     },
     {
@@ -2395,7 +2395,7 @@
       "cng": null,
       "priceBasis": "reference",
       "priceSourceCity": "Thane",
-      "priceUpdated": "2026-11-13",
+      "priceUpdated": "2026-11-14",
       "priceReference": "Thane"
     },
     {
@@ -2408,7 +2408,7 @@
       "cng": null,
       "priceBasis": "reference",
       "priceSourceCity": "Thane",
-      "priceUpdated": "2026-11-13",
+      "priceUpdated": "2026-11-14",
       "priceReference": "Thane"
     },
     {
@@ -2421,7 +2421,7 @@
       "cng": null,
       "priceBasis": "reference",
       "priceSourceCity": "Nashik",
-      "priceUpdated": "2026-11-13",
+      "priceUpdated": "2026-11-14",
       "priceReference": "Nashik"
     },
     {
@@ -2434,7 +2434,7 @@
       "cng": null,
       "priceBasis": "city",
       "priceSourceCity": "Dhule",
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Ahmednagar",
@@ -2446,7 +2446,7 @@
       "cng": null,
       "priceBasis": "city",
       "priceSourceCity": "Ahmadnagar",
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Nanded",
@@ -2458,7 +2458,7 @@
       "cng": null,
       "priceBasis": "city",
       "priceSourceCity": "Nanded",
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Jalna",
@@ -2470,7 +2470,7 @@
       "cng": null,
       "priceBasis": "city",
       "priceSourceCity": "Jalna",
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Beed",
@@ -2482,7 +2482,7 @@
       "cng": null,
       "priceBasis": "city",
       "priceSourceCity": "Bid",
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Parbhani",
@@ -2494,7 +2494,7 @@
       "cng": null,
       "priceBasis": "city",
       "priceSourceCity": "Parbhani",
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Dharashiv",
@@ -2506,7 +2506,7 @@
       "cng": null,
       "priceBasis": "city",
       "priceSourceCity": "Osmanabad",
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Nandurbar",
@@ -2518,7 +2518,7 @@
       "cng": null,
       "priceBasis": "city",
       "priceSourceCity": "Nandurbar",
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Bhandara",
@@ -2530,7 +2530,7 @@
       "cng": null,
       "priceBasis": "city",
       "priceSourceCity": "Bhandara",
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Gondia",
@@ -2542,7 +2542,7 @@
       "cng": null,
       "priceBasis": "city",
       "priceSourceCity": "Gondia",
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Gadchiroli",
@@ -2554,7 +2554,7 @@
       "cng": null,
       "priceBasis": "city",
       "priceSourceCity": "Gadchiroli",
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Hingoli",
@@ -2566,7 +2566,7 @@
       "cng": null,
       "priceBasis": "city",
       "priceSourceCity": "Hingoli",
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Buldhana",
@@ -2578,7 +2578,7 @@
       "cng": null,
       "priceBasis": "city",
       "priceSourceCity": "Buldhana",
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Wardha",
@@ -2590,7 +2590,7 @@
       "cng": null,
       "priceBasis": "city",
       "priceSourceCity": "Wardha",
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Washim",
@@ -2602,7 +2602,7 @@
       "cng": null,
       "priceBasis": "city",
       "priceSourceCity": "Washim",
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Yavatmal",
@@ -2614,7 +2614,7 @@
       "cng": null,
       "priceBasis": "city",
       "priceSourceCity": "Yavatmal",
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Satara",
@@ -2626,7 +2626,7 @@
       "cng": null,
       "priceBasis": "city",
       "priceSourceCity": "Satara",
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Palghar",
@@ -2638,7 +2638,7 @@
       "cng": null,
       "priceBasis": "city",
       "priceSourceCity": "Palghar",
-      "priceUpdated": "2026-11-13"
+      "priceUpdated": "2026-11-14"
     },
     {
       "name": "Oros",
@@ -2650,7 +2650,7 @@
       "cng": null,
       "priceBasis": "reference",
       "priceSourceCity": "Sindhudurg",
-      "priceUpdated": "2026-11-13",
+      "priceUpdated": "2026-11-14",
       "priceReference": "Sindhudurg district"
     },
     {
@@ -2663,7 +2663,7 @@
       "cng": null,
       "priceBasis": "reference",
       "priceSourceCity": "Kolhapur",
-      "priceUpdated": "2026-11-13",
+      "priceUpdated": "2026-11-14",
       "priceReference": "Kolhapur"
     },
     {
@@ -2676,7 +2676,7 @@
       "cng": null,
       "priceBasis": "reference",
       "priceSourceCity": "Pune",
-      "priceUpdated": "2026-11-13",
+      "priceUpdated": "2026-11-14",
       "priceReference": "Pune"
     },
     {
@@ -2689,7 +2689,7 @@
       "cng": null,
       "priceBasis": "reference",
       "priceSourceCity": "Solapur",
-      "priceUpdated": "2026-11-13",
+      "priceUpdated": "2026-11-14",
       "priceReference": "Solapur"
     },
     {
@@ -2702,7 +2702,7 @@
       "cng": null,
       "priceBasis": "reference",
       "priceSourceCity": "Satara",
-      "priceUpdated": "2026-11-13",
+      "priceUpdated": "2026-11-14",
       "priceReference": "Satara"
     },
     {
@@ -2715,7 +2715,7 @@
       "cng": null,
       "priceBasis": "reference",
       "priceSourceCity": "Raigarh",
-      "priceUpdated": "2026-11-13",
+      "priceUpdated": "2026-11-14",
       "priceReference": "Raigad district"
     },
     {
@@ -2728,7 +2728,7 @@
       "cng": null,
       "priceBasis": "reference",
       "priceSourceCity": "Thane",
-      "priceUpdated": "2026-11-13",
+      "priceUpdated": "2026-11-14",
       "priceReference": "Thane"
     },
     {
@@ -2741,7 +2741,7 @@
       "cng": null,
       "priceBasis": "reference",
       "priceSourceCity": "Palghar",
-      "priceUpdated": "2026-11-13",
+      "priceUpdated": "2026-11-14",
       "priceReference": "Palghar"
     },
     {
@@ -2754,7 +2754,7 @@
       "cng": null,
       "priceBasis": "reference",
       "priceSourceCity": "Palghar",
-      "priceUpdated": "2026-11-13",
+      "priceUpdated": "2026-11-14",
       "priceReference": "Palghar"
     },
     {
@@ -2767,7 +2767,7 @@
       "cng": null,
       "priceBasis": "reference",
       "priceSourceCity": "Thane",
-      "priceUpdated": "2026-11-13",
+      "priceUpdated": "2026-11-14",
       "priceReference": "Thane"
     },
     {
@@ -2780,7 +2780,7 @@
       "cng": null,
       "priceBasis": "reference",
       "priceSourceCity": "Thane",
-      "priceUpdated": "2026-11-13",
+      "priceUpdated": "2026-11-14",
       "priceReference": "Thane"
     },
     {
@@ -2793,7 +2793,7 @@
       "cng": null,
       "priceBasis": "reference",
       "priceSourceCity": "Raigarh",
-      "priceUpdated": "2026-11-13",
+      "priceUpdated": "2026-11-14",
       "priceReference": "Raigad district"
     },
     {
@@ -2806,7 +2806,7 @@
       "cng": null,
       "priceBasis": "reference",
       "priceSourceCity": "Raigarh",
-      "priceUpdated": "2026-11-13",
+      "priceUpdated": "2026-11-14",
       "priceReference": "Raigad district"
     },
     {
@@ -2819,7 +2819,7 @@
       "cng": null,
       "priceBasis": "reference",
       "priceSourceCity": "Buldhana",
-      "priceUpdated": "2026-11-13",
+      "priceUpdated": "2026-11-14",
       "priceReference": "Buldhana"
     },
     {
@@ -2832,7 +2832,7 @@
       "cng": null,
       "priceBasis": "reference",
       "priceSourceCity": "Akola",
-      "priceUpdated": "2026-11-13",
+      "priceUpdated": "2026-11-14",
       "priceReference": "Akola"
     },
     {
@@ -2845,7 +2845,7 @@
       "cng": null,
       "priceBasis": "reference",
       "priceSourceCity": "Amravati",
-      "priceUpdated": "2026-11-13",
+      "priceUpdated": "2026-11-14",
       "priceReference": "Amravati"
     },
     {
@@ -2858,7 +2858,7 @@
       "cng": null,
       "priceBasis": "reference",
       "priceSourceCity": "Buldhana",
-      "priceUpdated": "2026-11-13",
+      "priceUpdated": "2026-11-14",
       "priceReference": "Buldhana"
     },
     {
@@ -2871,7 +2871,7 @@
       "cng": null,
       "priceBasis": "reference",
       "priceSourceCity": "Buldhana",
-      "priceUpdated": "2026-11-13",
+      "priceUpdated": "2026-11-14",
       "priceReference": "Buldhana"
     },
     {
@@ -2884,7 +2884,7 @@
       "cng": null,
       "priceBasis": "reference",
       "priceSourceCity": "Bid",
-      "priceUpdated": "2026-11-13",
+      "priceUpdated": "2026-11-14",
       "priceReference": "Beed"
     },
     {
@@ -2897,7 +2897,7 @@
       "cng": null,
       "priceBasis": "reference",
       "priceSourceCity": "Bid",
-      "priceUpdated": "2026-11-13",
+      "priceUpdated": "2026-11-14",
       "priceReference": "Beed"
     },
     {
@@ -2910,7 +2910,7 @@
       "cng": null,
       "priceBasis": "reference",
       "priceSourceCity": "Latur",
-      "priceUpdated": "2026-11-13",
+      "priceUpdated": "2026-11-14",
       "priceReference": "Latur"
     },
     {
@@ -2923,7 +2923,7 @@
       "cng": null,
       "priceBasis": "reference",
       "priceSourceCity": "Bhandara",
-      "priceUpdated": "2026-11-13",
+      "priceUpdated": "2026-11-14",
       "priceReference": "Bhandara"
     },
     {
@@ -2936,7 +2936,7 @@
       "cng": null,
       "priceBasis": "reference",
       "priceSourceCity": "Chandrapur",
-      "priceUpdated": "2026-11-13",
+      "priceUpdated": "2026-11-14",
       "priceReference": "Chandrapur"
     },
     {
@@ -2949,7 +2949,7 @@
       "cng": null,
       "priceBasis": "reference",
       "priceSourceCity": "Chandrapur",
-      "priceUpdated": "2026-11-13",
+      "priceUpdated": "2026-11-14",
       "priceReference": "Chandrapur"
     },
     {
@@ -2962,7 +2962,7 @@
       "cng": null,
       "priceBasis": "reference",
       "priceSourceCity": "Sangli",
-      "priceUpdated": "2026-11-13",
+      "priceUpdated": "2026-11-14",
       "priceReference": "Sangli"
     }
   ]
